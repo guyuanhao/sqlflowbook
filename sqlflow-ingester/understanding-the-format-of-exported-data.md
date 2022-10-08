@@ -7,6 +7,10 @@ description: >-
 
 This page gives an example and some clarifications on the format of the SQLFlow-Ingester exported data.
 
+We may have some similar fields in the exported json data due to the fact that different databases can have various structure concepts. These similar fields won't all appear in a real case. &#x20;
+
+Following json is a exhaustive example which lists all possible fields:
+
 ```json
 {
   "createTime":"", //export time
@@ -16,8 +20,8 @@ This page gives an example and some clarifications on the format of the SQLFlow-
       {
           "name":"",//server name
           "dbVendor":"",//database type，possible values are: dbvathena,dbvazuresql,dbvbigquery,dbvcouchbase,dbvdb2,dbvgreenplum,dbvhana,dbvhive,dbvimpala,dbvinformix,dbvmdx,dbvmysqldbvnetezza,dbvopenedge,dbvoracle,dbvpostgresql,dbvpresto,dbvredshift,dbvsnowflake,dbvsparksql,dbvmssql,dbvsybase,dbvteradata,dbvvertica
-          "supportsCatalogs":false,//whether support db, read only
-          "supportsSchemas":true,//whether support schema, read only
+          "supportsCatalogs":false,//whether there's a database layer
+          "supportsSchemas":true,//whether there's a schema layer 
           "databases":[
               {
                   "name":"",//database name
@@ -189,13 +193,25 @@ This page gives an example and some clarifications on the format of the SQLFlow-
 }
 ```
 
+You may have found that some of the fields appear multiple times. The reason is that there are three types of database from the database/schema structure layer:
+
+### Database who has the database layer and the schema layer (SQL Server for example)
+
+The database has the database layer and the schema layer. supportsCatalogs and supportsSchemas will be both true.
+
+### Database who has the database layer but doesn't have schema layer (MYSQL for example)
+
+### Database who doesn't have database layer but has the schema layer (Oracle for example)
+
+Some clarifications on the fields:
+
 * `$.createTime` : export time
 * `$.createdBy` : name of the export tool
 * `$.physicalInstance` : server address
 * `$.servers[0].name` : server name
 * `$.servers[0].dbVendor` : database type，possible values are: dbvathena,dbvazuresql,dbvbigquery,dbvcouchbase,dbvdb2,dbvgreenplum,dbvhana,dbvhive,dbvimpala,dbvinformix,dbvmdx,dbvmysqldbvnetezza,dbvopenedge,dbvoracle,dbvpostgresql,dbvpresto,dbvredshift,dbvsnowflake,dbvsparksql,dbvmssql,dbvsybase,dbvteradata,dbvvertica
-* `$.servers[0].supportsCatalogs` : whether support db, read only
-* `$.servers[0].supportsSchemas` : whether support schema, read only
+* `$.servers[0].supportsCatalogs` : whether there's a database layer
+* `$.servers[0].supportsSchemas` : whether there's a schema layer&#x20;
 * `$.servers[0].databases[0].name` : database name
 * `$.servers[0].databases[0].schemas[0].others` : //others, including resultset, variable, path etc
 * `$.servers[0].databases[0].synonyms` : synonym list when there's no schema object, same structure as the above servers.databases.schemas.synonyms
@@ -210,4 +226,6 @@ This page gives an example and some clarifications on the format of the SQLFlow-
 * `$.servers[0].schemas` : schema list when there's no database object, same structure as the above servers.databases.schemas
 * `$.servers[0].queries` : DDL scripts in database
 * `$.errorMessages` : errors during the exporting
+
+
 
