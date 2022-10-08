@@ -74,6 +74,7 @@
 ## SQLFlow-ingester
 
 * [Introduction](sqlflow-ingester/introduction.md)
+* [Understanding the format of exported data](sqlflow-ingester/understanding-the-format-of-exported-data.md)
 * [Git Repo](sqlflow-ingester/git-repo.md)
 
 ## OTHER
