@@ -385,7 +385,7 @@ paths:
           default: true
       - name: returnFullRelationship
         in: query
-        description: whether return full data relationship
+        description: whether return full data relationship. will return only summary info if set to false in case of exceeding the relation limit.
         schema:
           type: boolean
           default: false
