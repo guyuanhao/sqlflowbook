@@ -13,7 +13,7 @@ In query mode, user makes request to [/sqlflow/generation/sqlflow](../../../api-
 
 ### Features of Query mode
 
-Query mode is ideal to handle lightweight SQL(no more than 500KB) and get the detailed response with which you can know how SQLFlow works and learn usages of SQLFlow functions. Query mode iss
+Query mode is ideal to handle lightweight SQL(no more than 500KB) and get the detailed response with which you can know how SQLFlow works and learn usages of SQLFlow functions. Query mode  has the following features:
 
 * All paramaters are supported. Data lineage results are returned immediately after sending the request.
 * Support the smallest granularity analysis. Possible to give [Functions in data lineage](../../../concepts/data-lineage/aggregate-function-and-dataflow.md), I[ndirect data lineage](../../../concepts/data-lineage/indirect-dataflow.md) and Constant in data lineage.
