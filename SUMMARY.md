@@ -9,7 +9,7 @@
   * [Sign up a new account](introduction/getting-started/sign-up-a-new-account.md)
   * [Different modes in Gudu SQLFlow](introduction/getting-started/different-modes-in-gudu-sqlflow/README.md)
     * [Query mode](introduction/getting-started/different-modes-in-gudu-sqlflow/query-mode.md)
-    * [Job mode](introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode/README.md)
+    * [Job mode](introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
       * [Job folder structure](introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode/job-folder-structure.md)
     * [Summary mode](introduction/getting-started/different-modes-in-gudu-sqlflow/summary-mode.md)
 * [Installation](introduction/installation/README.md)
