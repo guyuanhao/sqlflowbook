@@ -381,8 +381,6 @@ curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/job/exportLineage
 
 > If you want to get table to table relation, please add option -F "tableToTable=true"
 
-**----------------------------------------------TODO---------------------------------------------**
-
 #### 4. Regular job rest API
 
 **1. Submit a regular job**

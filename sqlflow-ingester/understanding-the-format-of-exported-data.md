@@ -9,7 +9,7 @@ This page gives an example and some clarifications on the format of the SQLFlow-
 
 We may have some similar fields in the exported json data due to the fact that different databases can have various structure concepts. These similar fields won't all appear in a real case. &#x20;
 
-Following json is a exhaustive example which lists all possible fields:
+Following json is an exhaustive example which lists all possible fields:
 
 ```json
 {
