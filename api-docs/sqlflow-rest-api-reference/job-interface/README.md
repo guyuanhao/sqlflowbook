@@ -381,7 +381,7 @@ curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/job/exportLineage
 
 > If you want to get table to table relation, please add option -F "tableToTable=true"
 
-#### 4. Regular job rest API
+### Regular job rest API
 
 **1. Submit a regular job**
 
@@ -437,4 +437,4 @@ Return data:
 }
 ```
 
-Please records the jobId field.
+Please records the jobId field for the further usage.
