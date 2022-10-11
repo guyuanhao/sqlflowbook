@@ -1,6 +1,5 @@
 ---
-description: >-
-  https://github.com/sqlparser/gsp_demo_java/tree/master/src/main/java/demos/dlineage#dataflowanalyzer
+description: https://github.com/sqlparser/gsp_demo_java/releases/
 ---
 
 # Overview

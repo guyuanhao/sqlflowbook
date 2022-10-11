@@ -10,6 +10,8 @@ description: >-
 * Easy integration.
 * Rich demo code to help you start quick
 
+Download address: [https://github.com/sqlparser/gsp\_demo\_java/releases/](https://github.com/sqlparser/gsp\_demo\_java/releases/)
+
 ### Prerequisites
 
 *   JDK 1.8+ Installed&#x20;
@@ -30,7 +32,7 @@ description: >-
 
 
 * [DataFlowAnalyzer](overview.md#dataflowanalyzer) Binary package \
-  Library [binary file](https://github.com/sqlparser/gsp\_demo\_java/releases/) need to be downloaded on your machine.
+  Download library [binary file](https://github.com/sqlparser/gsp\_demo\_java/releases/) on your machine.
 
 
 
