@@ -9,4 +9,3 @@ In order to meet the needs of different data lineage analysis scenarios, Gudu SQ
 
 * [Query mode](query-mode.md)
 * [Job mode](job-mode.md)
-* [Summary mode](summary-mode.md)

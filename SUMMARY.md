@@ -11,7 +11,6 @@
     * [Query mode](introduction/getting-started/different-modes-in-gudu-sqlflow/query-mode.md)
     * [Job mode](introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
       * [Job folder structure](introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode/job-folder-structure.md)
-    * [Summary mode](introduction/getting-started/different-modes-in-gudu-sqlflow/summary-mode.md)
 * [Installation](introduction/installation/README.md)
   * [Linux](introduction/installation/linux.md)
   * [MacOS](introduction/installation/macos.md)

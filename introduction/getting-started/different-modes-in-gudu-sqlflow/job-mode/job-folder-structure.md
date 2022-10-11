@@ -5,4 +5,4 @@ description: >-
 
 # Job folder structure
 
-TODO
+Current folder structure
