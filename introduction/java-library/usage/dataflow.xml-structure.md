@@ -72,7 +72,62 @@ DataFlowAnalyzer will generate dataflow.xml. This page indends to describe the s
 
 ### Table Structure
 
-todo
+*   id
+
+    table id
+*   server
+
+    db server to which the table belongs
+*   database
+
+    database to which the table belongs
+* schema
+  * table索索schema
+*   name
+
+    table name, database.schema.table for example. if there's no database the name would be schema.table. If there's no schema the name will be database.table
+*   alias
+
+    alias name
+*   uri
+
+    mapped url when table type is file, path, stage or stream
+*   type
+
+    table type
+*   subType
+
+    subtype of the type
+*   processIds
+
+    linked process Ids
+*   fileType
+
+    mapped file type if the table type is stage
+*   fileFormat
+
+    mapped file format if table type is file, path, stage or stream
+*   location
+
+    location url if the table type is stage or datasource
+*   isTarget
+
+    if display in UI&#x20;
+*   coordinate
+
+    element coordinate
+*   parent
+
+    storage process of the table
+*   more
+
+    if collaspe in the UI
+
+Subnode in Table structure:
+
+*   column
+
+    Belongs to the Column Structure
 
 ### Column Structure
 
