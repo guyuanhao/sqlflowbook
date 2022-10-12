@@ -5,6 +5,8 @@ description: >-
 
 # Dataflow.xml structure
 
+DataFlowAnalyzer will generate dataflow.xml. This page indends to describe the structure of the dataflow.xml.
+
 ### Root elements
 
 *   table
@@ -67,3 +69,28 @@ description: >-
     UI graph orientation.&#x20;
 
     Enumeration, types are: LEFT\_TO\_RIGHT、RIGHT\_TO\_LEFT、TOP\_TO\_BOTTOM、BOTTOM\_TO\_TOP
+
+### Table Structure
+
+todo
+
+### Column Structure
+
+### OraclePackage Structure
+
+### Procedure Structure
+
+### Argument Structure
+
+### Process Structure
+
+### Relationship Structure
+
+### TargetColumn Structure
+
+### SourceColumn Structure
+
+### Transform Structure
+
+### Error Structure
+
