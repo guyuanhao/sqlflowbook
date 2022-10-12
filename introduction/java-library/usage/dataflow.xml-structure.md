@@ -145,6 +145,34 @@ Subnode in Table structure:
 
 ### OraclePackage Structure
 
+*   id
+
+    package id
+*   server
+
+    db server to which the package belongs
+*   database
+
+    database to which the package belongs
+*   schema
+
+    schema to which the package belongs
+*   name
+
+    package name: _`database.schema.package`_ The name would be : _`schema.package`_ If there's no database . The name would be _`database.package`_ if there 's no schema.
+*   type
+
+    package type
+*   coordinate
+
+    package coordinate&#x20;
+
+Subnode in OraclePackage structure:
+
+*   procedure
+
+    Belongs to the Procedure Structure
+
 ### Procedure Structure
 
 ### Argument Structure
