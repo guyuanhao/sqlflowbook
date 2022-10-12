@@ -68,7 +68,7 @@ DataFlowAnalyzer will generate dataflow.xml. This page indends to describe the s
 
     UI graph orientation.&#x20;
 
-    Enumeration, types are: LEFT\_TO\_RIGHT、RIGHT\_TO\_LEFT、TOP\_TO\_BOTTOM、BOTTOM\_TO\_TOP
+    Enumeration, types are: _`LEFT_TO_RIGHT、RIGHT_TO_LEFT、TOP_TO_BOTTOM、BOTTOM_TO_TOP`_
 
 ### Table Structure
 
@@ -82,16 +82,16 @@ DataFlowAnalyzer will generate dataflow.xml. This page indends to describe the s
 
     database to which the table belongs
 * schema
-  * table索索schema
+  * table schema
 *   name
 
-    table name, database.schema.table for example. if there's no database the name would be schema.table. If there's no schema the name will be database.table
+    table name, _`database.schema.table`_ for example. if there's no database the name would be _`schema.table`_. If there's no schema the name will be _`database.table`_
 *   alias
 
     alias name
 *   uri
 
-    mapped url when table type is file, path, stage or stream
+    mapped url when table type is _`file, path, stage`_ or _`stream`_
 *   type
 
     table type
@@ -103,13 +103,13 @@ DataFlowAnalyzer will generate dataflow.xml. This page indends to describe the s
     linked process Ids
 *   fileType
 
-    mapped file type if the table type is stage
+    mapped file type if the table type is _stage_
 *   fileFormat
 
-    mapped file format if table type is file, path, stage or stream
+    mapped file format if table type is ``` `_`file, path, stage`_ or _`stream`_
 *   location
 
-    location url if the table type is stage or datasource
+    location url if the table type is _`stage` or `datasource`_
 *   isTarget
 
     if display in UI&#x20;
@@ -130,6 +130,18 @@ Subnode in Table structure:
     Belongs to the Column Structure
 
 ### Column Structure
+
+* id
+  * column id
+* name
+  * column name
+* coordinate
+  * column coordinate
+*   source
+
+    column source. will not be dispalyed If source is _`system`_&#x20;
+* qualifiedTable
+  * Field which is used to distinguish the column when there are columns under the same name such as: table1.a, table2.a
 
 ### OraclePackage Structure
 
