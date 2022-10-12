@@ -25,7 +25,7 @@
     * [Analyze data linege from SQL files](introduction/java-library/analyze-data-linege-from-sql-files.md)
     * [Analyze data linege from a database](introduction/java-library/analyze-data-linege-from-a-database.md)
     * [Resolve the ambiguous columns in SQL query](introduction/java-library/usage/resolve-the-ambiguous-columns-in-sql-query.md)
-    * [Map the DataFlowAnalyzer and the settings on SQLFlow UI](introduction/java-library/usage/map-the-dataflowanalyzer-and-the-settings-on-sqlflow-ui.md)
+    * [Map the DataFlowAnalyzer and the settings on SQLFlow UI](introduction/java-library/usage/parameters-mapping-between-dataflowanalyzer-and-the-settings-in-sqlflow-ui.md)
     * [Dataflow.xml structure](introduction/java-library/usage/dataflow.xml-structure.md)
 
 ## CONCEPTS

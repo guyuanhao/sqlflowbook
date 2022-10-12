@@ -1,4 +1,4 @@
-# Parameters mapping between DataFlowAnalyzer and the settings in SQLFlow UI
+# Map the DataFlowAnalyzer and the settings on SQLFlow UI
 
 
 
