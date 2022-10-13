@@ -307,7 +307,7 @@ Column level can be: column --> column
 
     end time of the request&#x20;
 
-Subnode in the relationship:
+Subnode in the Relationship:
 
 *   target
 
@@ -362,14 +362,82 @@ Subnode in the relationship:
 * coordinate
 *   source
 
-    will be filtered out if the source is from system
+    will be filtered out on UI if the source is from system
 *   type
 
     type of the storage process if the Relationship type is _`call`_. could be: _`procedure`_, _`function`_, _`trigger`_, _`macro`_
 
 ### SourceColumn Structure
 
+*   id
+
+    source column Id
+*   name
+
+    caller name if the Relationship type is _`call`_
+* column
+  * source column name
+*   source\_id
+
+    source id when the source is not on column level
+*   source\_name
+
+    source name when the source is not on column level
+*   column\_type
+
+    column type
+*   parent\_id
+
+    source parent node id&#x20;
+*   parent\_name
+
+    source parent node name
+*   parent\_alias
+
+    source parent node alias
+* coordinate
+*   clauseType
+
+    source clause type
+*   source
+
+    will be filtered out on UI if the source is from system
+*   type
+
+    type of the storage process if the Relationship type is _`call`_. could be: _`procedure`_, _`function`_, _`trigger`_, _`macro`_
+
+subnode in the SourceColumn&#x20;
+
+*   transforms
+
+    Belongs to the Transform Structure
+
 ### Transform Structure
+
+Describe how the Relationship is generated
+
+*   type
+
+    type, could be: _`simple`_, _`function`_, _`expression`_, _`constant`_, _`case`_ or _`subquery`_
+* coordinate
+*   code
+
+    code expression
 
 ### Error Structure
 
+Errors during the analysis
+
+* errorMessage
+*   errorType
+
+    error type, could be: _`SyntaxError`_, _`SyntaxHint`_, _`AnalyzeError`_, _`LinkOrphanColumn`_
+*   coordinate
+
+    coordinate where errors happen
+*   file
+
+    sql file information of the errors
+*   originCoordinate
+
+    original coordinate where errors happen
