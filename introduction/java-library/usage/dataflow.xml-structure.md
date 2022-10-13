@@ -175,13 +175,197 @@ Subnode in OraclePackage structure:
 
 ### Procedure Structure
 
+*   id
+
+    procedure id
+*   server
+
+    db server to which the procedure belongs
+*   database
+
+    database to which the procedure belongs
+*   schema
+
+    schema to which the procedure belongs
+*   name
+
+    procedure name: _`database.schema.procedure`_ The name would be : _`schema.procedure`_ If there's no database . The name would be _`database.procedure`_ if there 's no schema
+
+    if the procedure belongs to package, full name will also contain package segment
+*   type
+
+    procedure type, could be _`procedure`_, _`function`_, _`trigger`_
+*   coordinate
+
+    procedure coordinate&#x20;
+
+Subnode in procedure structure:
+
+*   argument
+
+    Belongs to the Argument Structure
+
 ### Argument Structure
+
+Argument is to describe the parameters during the storage process
+
+*   id
+
+    argument id
+*   name
+
+    argument name
+*   coordinate
+
+    argument coordinate
+*   datatype
+
+    argument data type
+*   inout
+
+    in or out type
 
 ### Process Structure
 
+Process will be generated when data flow moves from one table to another
+
+* id
+  * process id
+*   server
+
+    db server to which the process belongs
+*   database
+
+    database to which the process belongs
+*   schema
+
+    schema to which the process belongs
+*   name
+
+    process name, different process can have the same name
+*   procedureName
+
+    procedure to which the process belongs
+*   procedureId
+
+    procedure id to which the process belongs
+*   queryHashId
+
+    statement hashcode to which the process belongs
+*   type
+
+    process type
+*   coordinate
+
+    process coordinate
+
 ### Relationship Structure
 
+Relationship will tell the data lineage relationship. It can be on table level and column level.&#x20;
+
+Table level can be: table --> process --> table
+
+Column level can be: column --> column
+
+*   id
+
+    relationship id
+*   type
+
+    relationship type: _`fdd`_, _`fdr`_, _`join`_ or _`call`_
+*   function
+
+    function name if the relationship is from a function
+*   effectType
+
+    effect type of the relationship
+*   clause
+
+    the join condtion clause type when the relationship is from join
+*   joinType
+
+    join type
+*   processId
+
+    relationship process id, which can be used to calculate table level
+*   processType
+
+    process type of the relationship
+*   sqlHash
+
+    statement hash of the relationship
+*   sqlComment
+
+    statement comment of the relationship, which is used to get extra information&#x20;
+*   condition
+
+    join condtion clause when the relationship type is _`join`_
+*   timestampMin
+
+    start time of the request
+*   timestampMax
+
+    end time of the request&#x20;
+
+Subnode in the relationship:
+
+*   target
+
+    Target when the relationship type is _`fdd`_, _`fdr`_, _`join`_
+
+    Belongs to the TargetColumn Structure
+*   source
+
+    Source when the relationship type is _`fdd`_, _`fdr`_, _`join`_
+
+    Belongs to the SourceColumn Structure
+*   caller
+
+    Caller when the relationship type is _`call`_
+
+    Belongs to the TargetColumn Structure
+*   callee
+
+    Callee when the relationship type is _`call`_
+
+    Belongs to the SourceColumn Structure
+
 ### TargetColumn Structure
+
+*   id
+
+    id of the target column&#x20;
+*   name
+
+    name of the target column. the name would be the caller if the Relationship type is _`call`_&#x20;
+*   column
+
+    column name
+*   function
+
+    fucntion name if the relationship is from a function
+*   target\_id
+
+    target id if the target is not on column level
+*   target\_name
+
+    target name if the target is not on column level
+*   parent\_id
+
+    parent id of the target's parent node
+*   parent\_name
+
+    parent name of the target's parent node
+*   parent\_alias
+
+    parent alias of the target's parent node
+* coordinate
+*   source
+
+    will be filtered out if the source is from system
+*   type
+
+    type of the storage process if the Relationship type is _`call`_. could be: _`procedure`_, _`function`_, _`trigger`_, _`macro`_
 
 ### SourceColumn Structure
 
