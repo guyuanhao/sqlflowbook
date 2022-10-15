@@ -5,11 +5,43 @@ description: >-
 
 # Data lineage format reference
 
+This page gives a detail reference of the data lineage response format which is returned on [SQLFlow UI](../../introduction/ui/).  The SQLFlow UI gets result from the /sqlflow/generation/sqlflow/graph endpoint and having following elements:
+
 ### 1. Top level elements
 
-* dbvendor: string, SQL dialects such as oracle, mysql
-* dbobjs: array, database objects such as table, view and etc
-* relations: array, column-level relationship
+```json
+{
+	"code": 200,
+	"data": {
+		"mode": "global",
+		"summary": {
+		},
+		"sqlflow": {
+		},
+		"graph": {
+		}
+	},
+	"sessionId": "3bf4a61f5d41a016d0f91f28c2c1791d7100e1c159c31dab4e1f3bce603afd1c_1663684880303",
+  	"jobId": "JobId",  
+	"error": "error msgs",
+}
+```
+
+* code: Http Status code, 200 for OK. 4XX **** for cases in which the client seems to have erred such as no authorization or bad request. 500 for internal server error. Error messages would be present in _`error`_ If the code is not 200 (request is not a success).
+* data: data payload
+  * mode: data mode. Could be _`global`_ or _`summary`_. Will be set to _ `summary` _ mode when the relation number exceeds the _`relation_limit`_
+    * _`global`_ show all data
+    * _`summary`_ only share the statics information and there's no graph information. No field data in the table and only table info. Users need to invoke [REST Api](../../api-docs/sqlflow-rest-api-reference/) to get the field data in detail.
+  * summary: payload for statics information in _`summary`_ mode
+  * sqlflow: data model of the analysis result
+  * graph: graph model of the analysis result
+* sessionId: session id, used to get the cache information in [Query mode](../../introduction/getting-started/different-modes-in-gudu-sqlflow/query-mode.md)
+* jobId: job id, used to get the cache informaion in [Job mode](../../introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
+* error: contains error messages if the status code is not 200
+
+
+
+
 
 ### 2. dbobjs
 
