@@ -195,6 +195,36 @@ There are tree types for the server instance (same logic [here](../../sqlflow-in
 3. if supportsCatalogs = false, supportsSchemas = true:
    * server --> schema --> tables/views/others/packages/procedures/functions/triggers
 
+Schema may contain other information indicating the data of _`procedure`_, _`trigger`_, _`function`_
+
+```json
+"others": [
+    {
+        "id": "85",
+        "name": "INSERT-SELECT-1",
+        "type": "insert-select",
+        "columns": [
+            {
+                "id": "84",
+                "name": "RelationRows",
+                "coordinates": [
+                    {
+                        "hashCode": "0",
+                        "x": 30,
+                        "y": 8
+                    },
+                    {
+                        "hashCode": "0",
+                        "x": 31,
+                        "y": 56
+                    }
+                ],
+                "source": "system",
+                "uiVisible": false
+            }, ...
+    ]
+```
+
 ### 5. Relationship payload
 
 Relationship is the atom unit of the data lineage. Relationship builds a link between the source and target column (column-level lineage).
