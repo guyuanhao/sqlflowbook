@@ -1,6 +1,6 @@
 ---
 description: >-
-  https://github.com/sqlparser/sqlflow_public/blob/master/doc/data-lineage-format/data-lineage-format-reference.md
+  https://e.gitee.com/gudusoft/projects/151613/docs/617965/file/1485427?sub_id=6032659
 ---
 
 # Data lineage format reference
@@ -33,7 +33,7 @@ This page gives a detail reference of the data lineage response format which is 
     * _`global`_ show all data
     * _`summary`_ only share the statics information and there's no graph information. No field data in the table and only table info. Users need to invoke [REST Api](../../api-docs/sqlflow-rest-api-reference/) to get the field data in detail.
   * [summary](data-lineage-format-reference.md#2.-summary-payload): payload for statics information in _`summary`_ mode
-  * sqlflow: data model of the analysis result
+  * [sqlflow](data-lineage-format-reference.md#undefined): data model of the analysis result
   * graph: graph model of the analysis result
 * sessionId: session id, used to get the cache information in [Query mode](../../introduction/getting-started/different-modes-in-gudu-sqlflow/query-mode.md)
 * jobId: job id, used to get the cache informaion in [Job mode](../../introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
@@ -67,7 +67,24 @@ This page gives a detail reference of the data lineage response format which is 
 * column: column number
 * relationship: relationship number
 * process: process number
-* mostRelationTables: the top three tables which contains the most relationships
+* mostRelationTables: the top three tables which contain the most relationships
+
+### 3. Sqlflow payload
+
+```json
+"sqlflow": {
+	"dbobjs": {
+		"createdBy": "grabit v1.7.0",
+		"servers": [{}]
+	},
+	"relationships": [{}]
+}
+```
+
+sqlflow payload contains two nodes. dbojbs and relationship.
+
+* dbojbs: metadata, contains information of instance, db, schema, table, view, storage procedure, function, trigger, dblink, sequence, ddl etc..
+* relationships: relationship after analyzing sql
 
 ### 2. dbobjs
 
