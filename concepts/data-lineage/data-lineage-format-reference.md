@@ -195,7 +195,7 @@ There are tree types for the server instance (same logic [here](../../sqlflow-in
 3. if supportsCatalogs = false, supportsSchemas = true:
    * server --> schema --> tables/views/others/packages/procedures/functions/triggers
 
-Schema may contain other information indicating the data of _`procedure`_, _`trigger`_, _`function`_
+Database node and Schema node may contain other information indicating the data of _`procedure`_, _`trigger`_, _`function`_
 
 ```json
 "others": [
