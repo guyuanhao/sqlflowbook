@@ -302,10 +302,10 @@ Column level can be: column --> column
     join condtion clause when the relationship type is _`join`_
 *   timestampMin
 
-    start time of the request
+    the earliest time when the relationship is generated
 *   timestampMax
 
-    end time of the request&#x20;
+    the latest time when the relationship is generated
 
 Subnode in the Relationship:
 

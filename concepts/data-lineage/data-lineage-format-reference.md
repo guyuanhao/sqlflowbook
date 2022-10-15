@@ -84,7 +84,7 @@ This page gives a detail reference of the data lineage response format which is 
 sqlflow payload contains two nodes. dbojbs and relationship.
 
 * [dbojbs](data-lineage-format-reference.md#4.-dbobjs-payload): metadata, contains information of instance, db, schema, table, view, storage procedure, function, trigger, dblink, sequence, ddl etc..
-* [relationships](data-lineage-format-reference.md#3.-relationship-payload): relationship after analyzing sql
+* [relationships](data-lineage-format-reference.md#3.-relationship-payload): relationships after analyzing sql
 
 ### 4. Dbobjs payload
 
@@ -195,7 +195,7 @@ There are tree types for the server instance (same logic [here](../../sqlflow-in
 3. if supportsCatalogs = false, supportsSchemas = true:
    * server --> schema --> tables/views/others/packages/procedures/functions/triggers
 
-### 3. Relationship payload
+### 5. Relationship payload
 
 Relationship is the atom unit of the data lineage. Relationship builds a link between the source and target column (column-level lineage).
 
@@ -250,8 +250,8 @@ A relation includes the `type`, `target`, `sources` and other attributes.
 * caller: caller if the type is _`call`_,  belongs to [RelationshipElement](data-lineage-format-reference.md#relationshipelement) structure
 * callees: callees if the type is _`call`_, is an array of  [RelationshipElement](data-lineage-format-reference.md#relationshipelement) objects
 * processId: process id by which the relation is generated
-* timestampMin: 产生关系发生的最早时间
-* timestampMax：产生关系发生的最晚时间
+* timestampMin: the earliest time when the relationship is generated
+* timestampMax: the latest time when the relationship is generated
 
 #### RelationshipElement
 
@@ -261,7 +261,7 @@ A relation includes the `type`, `target`, `sources` and other attributes.
 * columnType
 * sourceId
 * sourceName
-* transforms：产生关系的transeform 列表
+* transforms: array of [Transform](data-lineage-format-reference.md#transform)
 * parentId
 * parentName
 * clauseType
@@ -269,7 +269,7 @@ A relation includes the `type`, `target`, `sources` and other attributes.
 * type
 * coordinates
 
-Transform 包含以下属性：
+#### Transform&#x20;
 
 * type
 * code
