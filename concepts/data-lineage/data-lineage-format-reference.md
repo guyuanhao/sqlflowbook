@@ -34,7 +34,7 @@ This page gives a detail reference of the data lineage response format which is 
     * _`summary`_ only share the statics information and there's no graph information. No field data in the table and only table info. Users need to invoke [REST Api](../../api-docs/sqlflow-rest-api-reference/) to get the field data in detail.
   * [summary](data-lineage-format-reference.md#2.-summary-payload): payload for statics information in _`summary`_ mode
   * [sqlflow](data-lineage-format-reference.md#undefined): data model of the analysis result
-  * graph: graph model of the analysis result
+  * [graph](data-lineage-format-reference.md#undefined): graph model of the analysis result
 * sessionId: session id, used to get the cache information in [Query mode](../../introduction/getting-started/different-modes-in-gudu-sqlflow/query-mode.md)
 * jobId: job id, used to get the cache informaion in [Job mode](../../introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
 * error: contains error messages if the status code is not 200
@@ -274,6 +274,79 @@ A relation includes the `type`, `target`, `sources` and other attributes.
 * type
 * code
 * coordinates
+
+### 6. Graph payload
+
+```json
+"graph": {
+    "relationshipIdMap": {
+        "e0": ["5519", "fdd"],
+    },
+    "elements": {
+        "tables": [{
+            "columns": [{
+                "height": 16.0,
+                "id": "n0::n0",
+                "label": {
+                    "content": "oid",
+                    "fontFamily": "Segoe UI Symbol",
+                    "fontSize": "12",
+                    "height": 13.96875,
+                    "width": 35.0,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "width": 160.0,
+                "x": 575.0,
+                "y": -565.9073
+            }],
+	    "id": "n4",
+	    "label": {
+		"content": "customers",
+		"fontFamily": "Segoe UI Symbol",
+		"fontSize": "12",
+		"height": 17.96875,
+		"width": 162.0,
+		"x": 0.0,
+		"y": 0.0
+	    },
+	    "width": 162.0,
+	    "height": 57.96875,
+        }],
+        "edges": [{
+            "id": "e0",
+            "sourceId": "n9::n5",
+            "targetId": "n5::n5"
+        }
+    },
+    "tooltip": {},
+    "listIdMap": {
+        "n0": ["68"],
+        "n0::n0": ["110"],
+    }
+}
+```
+
+* relationIdMap:
+  * Mapping list between the graph ui id and the relationship id
+* listIdMap:
+  * Mapping list between graph ui id and the graph model id&#x20;
+* elements:
+  * tables
+    * id: table id, will be generated into UI model by mappings in the listIdMap
+    * table: table name
+    * width: table width
+    * height: table height
+    * x：table x-axis (horizontal) coordinate
+    * y：table y-axis (vertical) coordinate
+    * columns
+      * id: columns id, will be generated into UI model by mappings in the listIdMap
+      * x：column x-axis (horizontal) coordinate
+      * y：column y-axis (vertical) coordinate
+  * edges
+    * id: edge id, mapped with relationship id and type through relationIdMap
+    * sourceId: source column id
+    * targetId: target column id
 
 ### List of the elements in data lineage
 
