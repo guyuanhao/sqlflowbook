@@ -32,16 +32,42 @@ This page gives a detail reference of the data lineage response format which is 
   * mode: data mode. Could be _`global`_ or _`summary`_. Will be set to _ `summary` _ mode when the relation number exceeds the _`relation_limit`_
     * _`global`_ show all data
     * _`summary`_ only share the statics information and there's no graph information. No field data in the table and only table info. Users need to invoke [REST Api](../../api-docs/sqlflow-rest-api-reference/) to get the field data in detail.
-  * summary: payload for statics information in _`summary`_ mode
+  * [summary](data-lineage-format-reference.md#2.-summary-payload): payload for statics information in _`summary`_ mode
   * sqlflow: data model of the analysis result
   * graph: graph model of the analysis result
 * sessionId: session id, used to get the cache information in [Query mode](../../introduction/getting-started/different-modes-in-gudu-sqlflow/query-mode.md)
 * jobId: job id, used to get the cache informaion in [Job mode](../../introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
 * error: contains error messages if the status code is not 200
 
+### 2. Summary payload
 
+```json
+"summary": {
+	"schema": 1,
+	"process": 2,
+	"database": 0,
+	"view": 1,
+	"mostRelationTables": [{
+		"table": "SMALL_ORDERS"
+	}, {
+		"table": "MEDIUM_ORDERS"
+	}, {
+		"table": "LARGE_ORDERS"
+	}],
+	"column": 43,
+	"relationship": 41,
+	"table": 7
+}
+```
 
-
+* database: database number
+* schema: schema number
+* table: table number
+* view: view number
+* column: column number
+* relationship: relationship number
+* process: process number
+* mostRelationTables: the top three tables which contains the most relationships
 
 ### 2. dbobjs
 
