@@ -83,37 +83,197 @@ This page gives a detail reference of the data lineage response format which is 
 
 sqlflow payload contains two nodes. dbojbs and relationship.
 
-* dbojbs: metadata, contains information of instance, db, schema, table, view, storage procedure, function, trigger, dblink, sequence, ddl etc..
-* relationships: relationship after analyzing sql
+* [dbojbs](data-lineage-format-reference.md#4.-dbobjs-payload): metadata, contains information of instance, db, schema, table, view, storage procedure, function, trigger, dblink, sequence, ddl etc..
+* [relationships](data-lineage-format-reference.md#3.-relationship-payload): relationship after analyzing sql
 
-### 2. dbobjs
+### 4. Dbobjs payload
 
-This is an array that includes all database objects discovered during the data lineage analysis. JSON PATH: `$.dbobjs`.
+```json
+{
+    "servers": [{
+            "dbVendor": "dbvoracle",
+            "name": "\"ORCLPDB1.LOCALDOMAIN\"",
+            "supportsCatalogs": false,
+            "supportsSchemas": true,
+            "schemas": [{
+                "name": "OE",
+                "tables": [{
+                    "columns": [{
+                        "name": "ORDER_ID",
+                        "id": "57"
+                    }],
+                    "id": "56",
+                    "name": "ORDERS",
+                    "type": "table"
+                }],
+                "packages": [{
+                    "id": "26",
+                    "name": "package1",
+                    "procedures": [{
+                        "name": "procedure1",
+                        "type": "procedure"
+                    }]
+                }, {
+                    "id": "42",
+                    "name": "package2",
+                    "procedures": [{
+                        "name": "procedure1",
+                        "type": "procedure"
+                    }]
+                }]
+            }]
+        },
+        {
+            "name": "default_server",
+            "dbVendor": "dbvmysql",
+            "supportsCatalogs": true,
+            "supportsSchemas": false,
+            "databases": [{
+                "name": "DEFAULT",
+                "tables": [{
+                    "columns": [{
+                        "name": "field9",
+                        "id": "110"
+                    }, {
+                        "name": "field1",
+                        "id": "111"
+                    }, {
+                        "name": "field5",
+                        "id": "116"
+                    }],
+                    "id": "96",
+                    "name": "table1",
+                    "type": "table"
+                }]
+            }]
+        }, {
+            "dbVendor": "dbvmssql",
+            "name": "default_server",
+            "supportsCatalogs": true,
+            "supportsSchemas": true,
+            "databases": [{
+                "name": "DEFAULT",
+                "schemas": [{
+                    "name": "HumanResources",
+                    "tables": [{
+                        "columns": [{
+                            "name": "BusinessEntityID",
+                            "id": "13"
+                        }, {
+                            "name": "HireDate",
+                            "id": "14"
+                        }],
+                        "id": "12",
+                        "name": "Employee",
+                        "type": "table"
+                    }]
+                }]
+            }]
+        }
+    ]
+}
 
-#### Attributes
+```
 
-* id, this is the unique identifier of this object in the data lineage result.
-* name, name of the object.
-* type, type of the object such as table, view, process.
-* coordinates, position of the object in the SQL script.
-* columns, optional, valid when type is table, view
+The top element of the dbobjs payload is an array and the array representing different server instances. For each server instance, we will have:
 
-### 3. realtions
+1. dbVendor: database type
+2. name: instance name
+3. supportsCatalogs: whether support database (check [here](https://docs.gudusoft.com/sqlflow-ingester/understanding-the-format-of-exported-data#database-who-has-the-database-layer-and-the-schema-layer-sql-server-for-example) for more details on this flag)
+4. supportsSchemas: whether support schema (check [here](https://docs.gudusoft.com/sqlflow-ingester/understanding-the-format-of-exported-data#database-who-has-the-database-layer-and-the-schema-layer-sql-server-for-example) for more details on this flag)
+5. databases: present if support database
+6. schemas: present if database is not supported and only schema is supported. Type of the schema could be _`oracle`_ or _`db2`_
+7. dbLinks: dbLinks will be present if the resposne json is generated from metadata. Will not be present If the response json is generated from dataflow
+8. queries: present if the response json is generated from metadata&#x20;
 
-Relation is the atom unit of the data lineage. Relation build a link between the source and target column( column-level lineage).
+There are tree types for the server instance (same logic [here](../../sqlflow-ingester/understanding-the-format-of-exported-data.md)):
 
-Those relations are stored in the `$.relations`.
+1. if supportsCatalogs=true,supportsSchemas=true:
+   * server-->database-->schema-->tables/views/others/packages/procedures/functions/triggers
+2. if supportsCatalogs=true,supportsSchemas=false:
+   * server-->database-->tables/views/others/packages/procedures/functions/triggers
+3. if supportsCatalogs = false, supportsSchemas = true:
+   * server --> schema --> tables/views/others/packages/procedures/functions/triggers
+
+### 3. Relationship payload
+
+Relationship is the atom unit of the data lineage. Relationship builds a link between the source and target column (column-level lineage).
 
 A relation includes the `type`, `target`, `sources` and other attributes.
 
-#### Attributes
+```json
+"relationships": [{
+	"id": "56",
+	"type": "fdd",
+	"effectType": "insert",
+	"target": {
+		"id": "102",
+		"column": "CL",
+		"parentId": "52",
+		"parentName": "MEDIUM_ORDERS",
+		"coordinates": [{
+			"hashCode": "0",
+			"x": 31,
+			"y": 36
+		}, {
+			"hashCode": "0",
+			"x": 31,
+			"y": 38
+		}]
+	},
+	"sources": [{
+		"id": "90",
+		"column": "CL",
+		"parentId": "85",
+		"parentName": "INSERT-SELECT-1",
+		"coordinates": [{
+			"hashCode": "0",
+			"x": 31,
+			"y": 21
+		}, {
+			"hashCode": "0",
+			"x": 31,
+			"y": 38
+		}]
+	}],
+	"processId": "48"
+}]
+
+```
+
+* id: relation id
+* type: relation type, could be _`fdd`_, _`fdr`_, _`join`_, or _`call`_
+* function: present if the relationship is about function
+* effectType: effect type of the relation, based on STMT
+* target: relation target, of [RelationshipElement](data-lineage-format-reference.md#relationshipelement) structure
+* sources: relation sources, belongs to [RelationshipElement](data-lineage-format-reference.md#relationshipelement) structure
+* caller: caller if the type is _`call`_,  belongs to [RelationshipElement](data-lineage-format-reference.md#relationshipelement) structure
+* callees: callees if the type is _`call`_, is an array of  [RelationshipElement](data-lineage-format-reference.md#relationshipelement) objects
+* processId: process id by which the relation is generated
+* timestampMin: 产生关系发生的最早时间
+* timestampMax：产生关系发生的最晚时间
+
+#### RelationshipElement
 
 * id
+* name
+* column
+* columnType
+* sourceId
+* sourceName
+* transforms：产生关系的transeform 列表
+* parentId
+* parentName
+* clauseType
+* function
 * type
-* effectType
-* target, is an object
-* sources, array of source objects
-* processid, optional
+* coordinates
+
+Transform 包含以下属性：
+
+* type
+* code
+* coordinates
 
 ### List of the elements in data lineage
 
