@@ -3,9 +3,9 @@ description: >-
   https://e.gitee.com/gudusoft/projects/151613/docs/617965/file/1485427?sub_id=6032659
 ---
 
-# Data lineage format reference
+# Data Lineage Format Reference
 
-This page gives a detail reference of the data lineage response format which is returned on [SQLFlow UI](../introduction/ui/).  The SQLFlow UI gets result from the /sqlflow/generation/sqlflow/graph endpoint. The /sqlflow/generation/sqlflow/graph endpoint has nearly the same input and output field data as [/sqlflow/generation/sqlflow](../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) and the only difference is that [/sqlflow/generation/sqlflow](../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) does not contain [graph payload](data-lineage-format-reference.md#6.-graph-payload).  Let's get into details and check the data lineage json resposne:
+This page gives a detail reference of the data lineage response format which is returned on [SQLFlow UI](../introduction/ui/). The SQLFlow UI gets result from the /sqlflow/generation/sqlflow/graph endpoint. The /sqlflow/generation/sqlflow/graph endpoint has nearly the same input and output field data as [/sqlflow/generation/sqlflow](../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) and the only difference is that [/sqlflow/generation/sqlflow](../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) does not contain [graph payload](data-lineage-format-reference.md#6.-graph-payload). Let's get into details and check the data lineage json resposne:
 
 ### 1. Top level elements
 
@@ -27,9 +27,9 @@ This page gives a detail reference of the data lineage response format which is 
 }
 ```
 
-* code: Http Status code, 200 for OK. 4XX **** for cases in which the client seems to have erred such as no authorization or bad request. 500 for internal server error. Error messages would be present in _`error`_ If the code is not 200 (request is not a success).
+* code: Http Status code, 200 for OK. 4XX \*\*\*\* for cases in which the client seems to have erred such as no authorization or bad request. 500 for internal server error. Error messages would be present in _`error`_ If the code is not 200 (request is not a success).
 * data: data payload
-  * mode: data mode. Could be _`global`_ or _`summary`_. Will be set to _ `summary` _ mode when the relation number exceeds the _`relation_limit`_
+  * mode: data mode. Could be _`global`_ or _`summary`_. Will be set to \_ `summary` \_ mode when the relation number exceeds the _`relation_limit`_
     * _`global`_ show all data
     * _`summary`_ only share the statics information and there's no graph information. No field data in the table and only table info. Users need to invoke [REST Api](../api-docs/sqlflow-rest-api-reference/) to get the field data in detail.
   * [summary](data-lineage-format-reference.md#2.-summary-payload): payload for statics information in _`summary`_ mode
@@ -172,7 +172,6 @@ sqlflow payload contains two nodes. dbojbs and relationship.
         }
     ]
 }
-
 ```
 
 The top element of the dbobjs payload is an array and the array representing different server instances. For each server instance, we will have:
@@ -184,7 +183,8 @@ The top element of the dbobjs payload is an array and the array representing dif
 5. databases: present if support database
 6. schemas: present if database is not supported and only schema is supported. Type of the schema could be _`oracle`_ or _`db2`_
 7. dbLinks: dbLinks will be present if the resposne json is generated from metadata. Will not be present If the response json is generated from dataflow
-8. queries: present if the response json is generated from metadata&#x20;
+8. queries: present if the response json is generated from metadata
+9. tables, columns, package, prcedure, argument, process: check [here](sqlflow-data-reference.md#table-structure) for more details
 
 There are tree types for the server instance (same logic [here](../sqlflow-ingester/understanding-the-format-of-exported-data.md)):
 
@@ -268,7 +268,6 @@ A relation includes the `type`, `target`, `sources` and other attributes.
 	}],
 	"processId": "48"
 }]
-
 ```
 
 * id: relation id
@@ -277,8 +276,8 @@ A relation includes the `type`, `target`, `sources` and other attributes.
 * effectType: effect type of the relation, based on STMT
 * target: relation target, of [RelationshipElement](data-lineage-format-reference.md#relationshipelement) structure
 * sources: relation sources, belongs to [RelationshipElement](data-lineage-format-reference.md#relationshipelement) structure
-* caller: caller if the type is _`call`_,  belongs to [RelationshipElement](data-lineage-format-reference.md#relationshipelement) structure
-* callees: callees if the type is _`call`_, is an array of  [RelationshipElement](data-lineage-format-reference.md#relationshipelement) objects
+* caller: caller if the type is _`call`_, belongs to [RelationshipElement](data-lineage-format-reference.md#relationshipelement) structure
+* callees: callees if the type is _`call`_, is an array of [RelationshipElement](data-lineage-format-reference.md#relationshipelement) objects
 * processId: process id by which the relation is generated
 * timestampMin: the earliest time when the relationship is generated
 * timestampMax: the latest time when the relationship is generated
@@ -300,14 +299,15 @@ A relation includes the `type`, `target`, `sources` and other attributes.
 * coordinates
 
 Check here for more details
-{% content-ref url="../../../concepts/sqlflow-data-reference.md#target-fields-data" %}
-[sqlflow-data-reference.md](../../../concepts/sqlflow-data-reference.md#target-fields-data)
+
+{% content-ref url="sqlflow-data-reference.md#target-fields-data" %}
+[#target-fields-data](sqlflow-data-reference.md#target-fields-data)
 {% endcontent-ref %}
 
-#### Transform&#x20;
+#### Transform
 
-{% content-ref url="../../../concepts/sqlflow-data-reference.md#transform-fields-data" %}
-[sqlflow-data-reference.md](../../../concepts/sqlflow-data-reference.md#transform-fields-data)
+{% content-ref url="sqlflow-data-reference.md#transform-fields-data" %}
+[#transform-fields-data](sqlflow-data-reference.md#transform-fields-data)
 {% endcontent-ref %}
 
 ### 6. Graph payload
@@ -365,7 +365,7 @@ Check here for more details
 * relationIdMap:
   * Mapping list between the graph ui id and the relationship id
 * listIdMap:
-  * Mapping list between graph ui id and the graph model id&#x20;
+  * Mapping list between graph ui id and the graph model id
 * elements:
   * tables
     * id: table id, will be generated into UI model by mappings in the listIdMap
