@@ -332,40 +332,7 @@ Subnode in the Relationship:
 
 ### TargetColumn Structure
 
-*   id
-
-    id of the target column&#x20;
-*   name
-
-    name of the target column. the name would be the caller if the Relationship type is _`call`_&#x20;
-*   column
-
-    column name
-*   function
-
-    fucntion name if the relationship is from a function
-*   target\_id
-
-    target id if the target is not on column level
-*   target\_name
-
-    target name if the target is not on column level
-*   parent\_id
-
-    parent id of the target's parent node
-*   parent\_name
-
-    parent name of the target's parent node
-*   parent\_alias
-
-    parent alias of the target's parent node
-* coordinate
-*   source
-
-    will be filtered out on UI if the source is from system
-*   type
-
-    type of the storage process if the Relationship type is _`call`_. could be: _`procedure`_, _`function`_, _`trigger`_, _`macro`_
+Check here.
 
 ### SourceColumn Structure
 
