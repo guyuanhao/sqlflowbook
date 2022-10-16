@@ -332,7 +332,11 @@ Subnode in the Relationship:
 
 ### TargetColumn Structure
 
-Check here.
+[aaa](../../../concepts/sqlflow-data-reference.md#target-fields-data)
+
+{% content-ref url="../../../concepts/sqlflow-data-reference.md" %}
+[sqlflow-data-reference.md](../../../concepts/sqlflow-data-reference.md)
+{% endcontent-ref %}
 
 ### SourceColumn Structure
 

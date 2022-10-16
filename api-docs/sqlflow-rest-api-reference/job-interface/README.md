@@ -11,7 +11,7 @@ description: >-
 
 ### Simple job rest API
 
-**1.** [**Submit a sqlflow job**](./#sqlflow-job-submituserjob)****
+**1.** [**Submit a sqlflow job**](sqlflow-job-submituserjob.md)****
 
 Call this API by sending the SQL files and get the result includes the data lineage. SQLFlow job supports both of multiple files and zip archive file.
 
