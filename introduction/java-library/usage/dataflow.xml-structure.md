@@ -72,7 +72,9 @@ This page indends to describe the structure of the dataflow.xml. DataFlowAnalyze
 
 ### Table Structure
 
-* TODO
+{% content-ref url="../../../concepts/sqlflow-data-reference.md#table-structure" %}
+[#target-fields-data](../../../concepts/sqlflow-data-reference.md#table-structure)
+{% endcontent-ref %}
 
 Subnode in Table structure:
 
@@ -82,11 +84,15 @@ Subnode in Table structure:
 
 ### Column Structure
 
-* TODO
+{% content-ref url="../../../concepts/sqlflow-data-reference.md#column-structure" %}
+[#target-fields-data](../../../concepts/sqlflow-data-reference.md#column-structure)
+{% endcontent-ref %}
 
 ### OraclePackage Structure
 
-* TODO
+{% content-ref url="../../../concepts/sqlflow-data-reference.md#oraclepackage-structure" %}
+[#target-fields-data](../../../concepts/sqlflow-data-reference.md#oraclepackage-structure)
+{% endcontent-ref %}
 
 Subnode in OraclePackage structure:
 
@@ -96,7 +102,9 @@ Subnode in OraclePackage structure:
 
 ### Procedure Structure
 
-* TODO
+{% content-ref url="../../../concepts/sqlflow-data-reference.md#procedure-structure" %}
+[#target-fields-data](../../../concepts/sqlflow-data-reference.md#procedure-structure)
+{% endcontent-ref %}
 
 Subnode in procedure structure:
 
@@ -106,11 +114,15 @@ Subnode in procedure structure:
 
 ### Argument Structure
 
-* TODO
+{% content-ref url="../../../concepts/sqlflow-data-reference.md#argument-structure" %}
+[#target-fields-data](../../../concepts/sqlflow-data-reference.md#argument-structure)
+{% endcontent-ref %}
 
 ### Process Structure
 
-TODO
+{% content-ref url="../../../concepts/sqlflow-data-reference.md#process-structure" %}
+[#target-fields-data](../../../concepts/sqlflow-data-reference.md#process-structure)
+{% endcontent-ref %}
 
 ### Relationship Structure
 
