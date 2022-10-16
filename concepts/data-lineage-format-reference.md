@@ -5,7 +5,7 @@ description: >-
 
 # Data lineage format reference
 
-This page gives a detail reference of the data lineage response format which is returned on [SQLFlow UI](../../introduction/ui/).  The SQLFlow UI gets result from the /sqlflow/generation/sqlflow/graph endpoint and having following elements:
+This page gives a detail reference of the data lineage response format which is returned on [SQLFlow UI](../introduction/ui/).  The SQLFlow UI gets result from the /sqlflow/generation/sqlflow/graph endpoint. The /sqlflow/generation/sqlflow/graph endpoint has nearly the same input and output field data as [/sqlflow/generation/sqlflow](../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) and the only difference is that [/sqlflow/generation/sqlflow](../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) does not contain [graph payload](data-lineage-format-reference.md#6.-graph-payload).  Let's get into details and check the data lineage json resposne:
 
 ### 1. Top level elements
 
@@ -31,12 +31,12 @@ This page gives a detail reference of the data lineage response format which is 
 * data: data payload
   * mode: data mode. Could be _`global`_ or _`summary`_. Will be set to _ `summary` _ mode when the relation number exceeds the _`relation_limit`_
     * _`global`_ show all data
-    * _`summary`_ only share the statics information and there's no graph information. No field data in the table and only table info. Users need to invoke [REST Api](../../api-docs/sqlflow-rest-api-reference/) to get the field data in detail.
+    * _`summary`_ only share the statics information and there's no graph information. No field data in the table and only table info. Users need to invoke [REST Api](../api-docs/sqlflow-rest-api-reference/) to get the field data in detail.
   * [summary](data-lineage-format-reference.md#2.-summary-payload): payload for statics information in _`summary`_ mode
   * [sqlflow](data-lineage-format-reference.md#undefined): data model of the analysis result
   * [graph](data-lineage-format-reference.md#undefined): graph model of the analysis result
-* sessionId: session id, used to get the cache information in [Query mode](../../introduction/getting-started/different-modes-in-gudu-sqlflow/query-mode.md)
-* jobId: job id, used to get the cache informaion in [Job mode](../../introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
+* sessionId: session id, used to get the cache information in [Query mode](../introduction/getting-started/different-modes-in-gudu-sqlflow/query-mode.md)
+* jobId: job id, used to get the cache informaion in [Job mode](../introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
 * error: contains error messages if the status code is not 200
 
 ### 2. Summary payload
@@ -186,7 +186,7 @@ The top element of the dbobjs payload is an array and the array representing dif
 7. dbLinks: dbLinks will be present if the resposne json is generated from metadata. Will not be present If the response json is generated from dataflow
 8. queries: present if the response json is generated from metadata&#x20;
 
-There are tree types for the server instance (same logic [here](../../sqlflow-ingester/understanding-the-format-of-exported-data.md)):
+There are tree types for the server instance (same logic [here](../sqlflow-ingester/understanding-the-format-of-exported-data.md)):
 
 1. if supportsCatalogs=true,supportsSchemas=true:
    * server-->database-->schema-->tables/views/others/packages/procedures/functions/triggers
@@ -380,6 +380,6 @@ A relation includes the `type`, `target`, `sources` and other attributes.
 
 ### Dataflow.xml Structure
 
-{% content-ref url="../../introduction/java-library/usage/dataflow.xml-structure.md" %}
-[dataflow.xml-structure.md](../../introduction/java-library/usage/dataflow.xml-structure.md)
+{% content-ref url="../introduction/java-library/usage/dataflow.xml-structure.md" %}
+[dataflow.xml-structure.md](../introduction/java-library/usage/dataflow.xml-structure.md)
 {% endcontent-ref %}
