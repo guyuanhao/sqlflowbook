@@ -37,7 +37,7 @@
   * [Indirect Dataflow](concepts/data-lineage/indirect-dataflow.md)
   * [Aggregate function and Dataflow](concepts/data-lineage/aggregate-function-and-dataflow.md)
   * [Dataflow chain](concepts/data-lineage/dataflow-chain.md)
-  * [Data lineage format reference](concepts/data-lineage/data-lineage-format-reference.md)
+* [Data lineage format reference](concepts/data-lineage-format-reference.md)
 
 ## ARCHITECTURE
 
