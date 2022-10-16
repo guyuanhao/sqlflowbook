@@ -5,7 +5,7 @@ description: >-
 
 # Dataflow.xml structure
 
-DataFlowAnalyzer will generate dataflow.xml. This page indends to describe the structure of the dataflow.xml.
+DataFlowAnalyzer generates _`dataflow.xml`_ if the _`/json`_ is not set.  This page indends to describe the structure of the dataflow.xml.
 
 ### Root elements
 
