@@ -5,7 +5,7 @@ description: >-
 
 # Dataflow.xml structure
 
-This page indends to describe the structure of the dataflow.xml. DataFlowAnalyzer generates _`dataflow.xml`_ if the _`/json`_ is not set.  Response will be in json format if the _`/json`_ is set.  Please refer to [here](../../../concepts/data-lineage-format-reference.md) for the json response.&#x20;
+This page indends to describe the structure of the dataflow.xml. DataFlowAnalyzer generates _`dataflow.xml`_ if the _`/json`_ is not set. Response will be in json format if the _`/json`_ is set. Please refer to [here](../../../concepts/data-lineage-format-reference.md) for the json response.
 
 ### Root elements
 
@@ -64,64 +64,15 @@ This page indends to describe the structure of the dataflow.xml. DataFlowAnalyze
     Errors during the analysis
 
     Belongs to the Error Structure
-*   orientation&#x20;
+*   orientation
 
-    UI graph orientation.&#x20;
+    UI graph orientation.
 
     Enumeration, types are: _`LEFT_TO_RIGHT、RIGHT_TO_LEFT、TOP_TO_BOTTOM、BOTTOM_TO_TOP`_
 
 ### Table Structure
 
-*   id
-
-    table id
-*   server
-
-    db server to which the table belongs
-*   database
-
-    database to which the table belongs
-* schema
-  * table schema
-*   name
-
-    table name, _`database.schema.table`_ for example. if there's no database the name would be _`schema.table`_. If there's no schema the name will be _`database.table`_
-*   alias
-
-    alias name
-*   uri
-
-    mapped url when table type is _`file, path, stage`_ or _`stream`_
-*   type
-
-    table type
-*   subType
-
-    subtype of the type
-*   processIds
-
-    linked process Ids
-*   fileType
-
-    mapped file type if the table type is _stage_
-*   fileFormat
-
-    mapped file format if table type is ``` `_`file, path, stage`_ or _`stream`_
-*   location
-
-    location url if the table type is _`stage` or `datasource`_
-*   isTarget
-
-    if display in UI&#x20;
-*   coordinate
-
-    element coordinate
-*   parent
-
-    storage process of the table
-*   more
-
-    if collaspe in the UI
+* TODO
 
 Subnode in Table structure:
 
@@ -131,41 +82,11 @@ Subnode in Table structure:
 
 ### Column Structure
 
-* id
-  * column id
-* name
-  * column name
-* coordinate
-  * column coordinate
-*   source
-
-    column source. will not be dispalyed If source is _`system`_&#x20;
-* qualifiedTable
-  * Field which is used to distinguish the column when there are columns under the same name such as: table1.a, table2.a
+* TODO
 
 ### OraclePackage Structure
 
-*   id
-
-    package id
-*   server
-
-    db server to which the package belongs
-*   database
-
-    database to which the package belongs
-*   schema
-
-    schema to which the package belongs
-*   name
-
-    package name: _`database.schema.package`_ The name would be : _`schema.package`_ If there's no database . The name would be _`database.package`_ if there 's no schema.
-*   type
-
-    package type
-*   coordinate
-
-    package coordinate&#x20;
+* TODO
 
 Subnode in OraclePackage structure:
 
@@ -175,29 +96,7 @@ Subnode in OraclePackage structure:
 
 ### Procedure Structure
 
-*   id
-
-    procedure id
-*   server
-
-    db server to which the procedure belongs
-*   database
-
-    database to which the procedure belongs
-*   schema
-
-    schema to which the procedure belongs
-*   name
-
-    procedure name: _`database.schema.procedure`_ The name would be : _`schema.procedure`_ If there's no database . The name would be _`database.procedure`_ if there 's no schema
-
-    if the procedure belongs to package, full name will also contain package segment
-*   type
-
-    procedure type, could be _`procedure`_, _`function`_, _`trigger`_
-*   coordinate
-
-    procedure coordinate&#x20;
+* TODO
 
 Subnode in procedure structure:
 
@@ -207,61 +106,15 @@ Subnode in procedure structure:
 
 ### Argument Structure
 
-Argument is to describe the parameters during the storage process
-
-*   id
-
-    argument id
-*   name
-
-    argument name
-*   coordinate
-
-    argument coordinate
-*   datatype
-
-    argument data type
-*   inout
-
-    in or out type
+* TODO
 
 ### Process Structure
 
-Process will be generated when data flow moves from one table to another
-
-* id
-  * process id
-*   server
-
-    db server to which the process belongs
-*   database
-
-    database to which the process belongs
-*   schema
-
-    schema to which the process belongs
-*   name
-
-    process name, different process can have the same name
-*   procedureName
-
-    procedure to which the process belongs
-*   procedureId
-
-    procedure id to which the process belongs
-*   queryHashId
-
-    statement hashcode to which the process belongs
-*   type
-
-    process type
-*   coordinate
-
-    process coordinate
+TODO
 
 ### Relationship Structure
 
-Relationship will tell the data lineage relationship. It can be on table level and column level.&#x20;
+Relationship will tell the data lineage relationship. It can be on table level and column level.
 
 Table level can be: table --> process --> table
 
@@ -296,7 +149,7 @@ Column level can be: column --> column
     statement hash of the relationship
 *   sqlComment
 
-    statement comment of the relationship, which is used to get extra information&#x20;
+    statement comment of the relationship, which is used to get extra information
 *   condition
 
     join condtion clause when the relationship type is _`join`_
@@ -333,16 +186,16 @@ Subnode in the Relationship:
 ### TargetColumn Structure
 
 {% content-ref url="../../../concepts/sqlflow-data-reference.md#target-fields-data" %}
-[sqlflow-data-reference.md](../../../concepts/sqlflow-data-reference.md#target-fields-data)
+[#target-fields-data](../../../concepts/sqlflow-data-reference.md#target-fields-data)
 {% endcontent-ref %}
 
 ### SourceColumn Structure
 
 {% content-ref url="../../../concepts/sqlflow-data-reference.md#sourcecolumn-structure" %}
-[sqlflow-data-reference.md](../../../concepts/sqlflow-data-reference.md#sourcecolumn-structure)
+[#sourcecolumn-structure](../../../concepts/sqlflow-data-reference.md#sourcecolumn-structure)
 {% endcontent-ref %}
 
-subnode in the SourceColumn&#x20;
+subnode in the SourceColumn
 
 *   transforms
 
@@ -351,7 +204,7 @@ subnode in the SourceColumn&#x20;
 ### Transform Structure
 
 {% content-ref url="../../../concepts/sqlflow-data-reference.md#transform-fields-data" %}
-[sqlflow-data-reference.md](../../../concepts/sqlflow-data-reference.md#transform-fields-data)
+[#transform-fields-data](../../../concepts/sqlflow-data-reference.md#transform-fields-data)
 {% endcontent-ref %}
 
 ### Error Structure
