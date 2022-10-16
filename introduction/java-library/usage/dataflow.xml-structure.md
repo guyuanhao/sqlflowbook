@@ -338,42 +338,9 @@ Subnode in the Relationship:
 
 ### SourceColumn Structure
 
-*   id
-
-    source column Id
-*   name
-
-    caller name if the Relationship type is _`call`_
-* column
-  * source column name
-*   source\_id
-
-    source id when the source is not on column level
-*   source\_name
-
-    source name when the source is not on column level
-*   column\_type
-
-    column type
-*   parent\_id
-
-    source parent node id&#x20;
-*   parent\_name
-
-    source parent node name
-*   parent\_alias
-
-    source parent node alias
-* coordinate
-*   clauseType
-
-    source clause type
-*   source
-
-    will be filtered out on UI if the source is from system
-*   type
-
-    type of the storage process if the Relationship type is _`call`_. could be: _`procedure`_, _`function`_, _`trigger`_, _`macro`_
+{% content-ref url="../../../concepts/sqlflow-data-reference.md" %}
+[sqlflow-data-reference.md](../../../concepts/sqlflow-data-reference.md#sourcecolumn-structure)
+{% endcontent-ref %}
 
 subnode in the SourceColumn&#x20;
 
