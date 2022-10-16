@@ -38,7 +38,7 @@
   * [Aggregate function and Dataflow](concepts/data-lineage/aggregate-function-and-dataflow.md)
   * [Dataflow chain](concepts/data-lineage/dataflow-chain.md)
 * [Data Lineage Format Reference](concepts/data-lineage-format-reference.md)
-* [SQLFlow Data Reference](concepts/sqlflow-data-reference.md)
+* [Data Lineage Elements](concepts/sqlflow-data-reference.md)
 
 ## ARCHITECTURE
 
