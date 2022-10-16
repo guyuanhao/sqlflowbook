@@ -350,15 +350,9 @@ subnode in the SourceColumn&#x20;
 
 ### Transform Structure
 
-Describe how the Relationship is generated
-
-*   type
-
-    type, could be: _`simple`_, _`function`_, _`expression`_, _`constant`_, _`case`_ or _`subquery`_
-* coordinate
-*   code
-
-    code expression
+{% content-ref url="../../../concepts/sqlflow-data-reference.md#transform-fields-data" %}
+[sqlflow-data-reference.md](../../../concepts/sqlflow-data-reference.md#transform-fields-data)
+{% endcontent-ref %}
 
 ### Error Structure
 
