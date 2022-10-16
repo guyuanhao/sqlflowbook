@@ -299,11 +299,16 @@ A relation includes the `type`, `target`, `sources` and other attributes.
 * type
 * coordinates
 
+Check here for more details
+{% content-ref url="../../../concepts/sqlflow-data-reference.md#target-fields-data" %}
+[sqlflow-data-reference.md](../../../concepts/sqlflow-data-reference.md#target-fields-data)
+{% endcontent-ref %}
+
 #### Transform&#x20;
 
-* type
-* code
-* coordinates
+{% content-ref url="../../../concepts/sqlflow-data-reference.md#transform-fields-data" %}
+[sqlflow-data-reference.md](../../../concepts/sqlflow-data-reference.md#transform-fields-data)
+{% endcontent-ref %}
 
 ### 6. Graph payload
 
