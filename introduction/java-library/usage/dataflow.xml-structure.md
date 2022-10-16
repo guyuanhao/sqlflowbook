@@ -332,13 +332,13 @@ Subnode in the Relationship:
 
 ### TargetColumn Structure
 
-{% content-ref url="../../../concepts/sqlflow-data-reference.md" %}
+{% content-ref url="../../../concepts/sqlflow-data-reference.md#target-fields-data" %}
 [sqlflow-data-reference.md](../../../concepts/sqlflow-data-reference.md#target-fields-data)
 {% endcontent-ref %}
 
 ### SourceColumn Structure
 
-{% content-ref url="../../../concepts/sqlflow-data-reference.md" %}
+{% content-ref url="../../../concepts/sqlflow-data-reference.md#sourcecolumn-structure" %}
 [sqlflow-data-reference.md](../../../concepts/sqlflow-data-reference.md#sourcecolumn-structure)
 {% endcontent-ref %}
 
