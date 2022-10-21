@@ -53,6 +53,7 @@
   * [Generation Interface](api-docs/sqlflow-rest-api-reference/generation-interface/README.md)
     * [/sqlflow/generation/sqlflow](api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md)
     * [/sqlflow/generation/sqlflow/exportLineageAsCsv](api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md)
+    * [/sqlflow/generation/sqlflow/selectedgraph/table\_level\_lineage](api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-selectedgraph-table\_level\_lineage.md)
   * [Job Interface](api-docs/sqlflow-rest-api-reference/job-interface/README.md)
     * [/sqlflow/job/submitUserJob](api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-submituserjob.md)
     * [/sqlflow/job/displayUserJobSummary](api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-displayuserjobsummary.md)
@@ -61,6 +62,7 @@
     * [/sqlflow/job/exportFullLineageAsCsv](api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-exportfulllineageascsv.md)
     * [/sqlflow/job/exportLineageAsGraphml](api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-exportlineageasgraphml.md)
     * [/sqlflow/job/submitPersistJob](api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-submitpersistjob.md)
+    * [/gspLive\_backend/sqlflow/job/displayUserLatestJobTableLevelLineage](api-docs/sqlflow-rest-api-reference/job-interface/gsplive\_backend-sqlflow-job-displayuserlatestjobtablelevellineage.md)
 * [Swagger UI](api-docs/swagger-ui.md)
 * [Export the data lineage result](api-docs/export-the-data-lineage-result.md)
 
