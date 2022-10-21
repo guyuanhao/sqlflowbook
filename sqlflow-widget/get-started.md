@@ -5,7 +5,16 @@ description: >-
 
 # Get started
 
-WIP\
+SQLFlow Widget is a javascript library that lets your web page visualize the data lineage instantly.
+
+<figure><img src="../.gitbook/assets/SQL-Metadata-Sources_700_988_white-600x847.png" alt=""><figcaption></figcaption></figure>
+
+* Visualize the lineage of the SQL queries.
+* Show specific table/column lineage graphics on the web page.
+* Package the data lineage into a standalone web app.
+* Shipped together with the [SQLFlow On-Premise](https://www.gudusoft.com/sqlflow-on-premise-version/) version.
+
+\
 \
 **Files**
 
