@@ -8,7 +8,7 @@ from emp, dept
 where emp.deptid = dept.id
 ```
 
-Column `ename` in the first line is not qualified by table name `emp`, so it’s ambiguous to know which table this column belongs to?
+Column `ename` in the first line is not qualified by table name `emp` and how can we know which table this column belongs to?
 
 #### Solution 1:  table DDL
 
