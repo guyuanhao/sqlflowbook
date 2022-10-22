@@ -24,6 +24,7 @@ Both Simple Job and Regular Job support reading large amounts of SQL files or an
 
 * Possible to add some configs. Once submitted, the configs cannot be changed
 * Result will be persisted in the file system as files
+* Possible to do the Left Most analysis (Left Most: given a->b->c, show a->c )
 
 #### Regular Job
 
