@@ -18,7 +18,7 @@ There are two job types:
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Both Simple Job and Regular Job support reading large amounts of SQL files or analysis through DB directly. There are some differences between Simple Job and Regular Job.
+Both Simple Job and Regular Job support reading large amounts of SQL files or analysis through DB directly. There are some differences between Simple Job and Regular Job.&#x20;
 
 #### Simple Job
 
@@ -26,6 +26,22 @@ Both Simple Job and Regular Job support reading large amounts of SQL files or an
 * Result will be persisted in the file system as files
 * Possible to do the Left Most analysis (Left Most: given a->b->c, show a->c )
 * Data lineage result is saved in dataflow.xml file
+
+```
+dataflowOfAggregateFunction: direct (Configurable Parameter)
+ignoreFunction：true (Configurable Parameter)
+ignoreRecordSet：true (Configurable Parameter)
+showConstantTable：(Configurable Parameter)
+showRelationType：fdd (Configurable Parameter)
+showTransform: false (Configurable Parameter)
+
+simpleOutput: false (Not configurable)
+hideColumn: false (Frontend UI doesn't support)
+normalizeIdentifier：true (Not configurable)
+showLinkOnly：true (Not configurable)
+```
+
+Configurable Parameter:  Parameters can be set before the job creation. There's no way to change such parameters once the job is created. You have to create a new job with the updated parameter if needed.
 
 #### Regular Job
 
@@ -35,6 +51,23 @@ Both Simple Job and Regular Job support reading large amounts of SQL files or an
 * Possible to do the Left Most analysis (Left Most: given a->b->c, show a->c )
 * Possible to do the Upstream and Downstream analysis (given a->b->c, Upstream: a->b, Downstream: b->c)
 * Data lineage result is saved in database
+
+```
+default distance：(The parameter can be modified even after the job is created)
+showConstantTable：(Configurable Parameter)
+dataflowOfAggregateFunction: direct (Not configurable)
+ignoreFunction：true (Not configurable)
+ignoreRecordSet：true (Not configurable)
+showRelationType：fdd (Not configurable)
+showTransform: false (Not configurable)
+
+hideColumn: false (Frontend UI doesn't support)
+normalizeIdentifier：true (Not configurable)
+showLinkOnly：true (Not configurable)
+simpleOutput: false (Not configurable)
+```
+
+Configurable Parameter:  Parameters can be set before the job creation. There's no way to change such parameters once the job is created. You have to create a new job with the updated parameter if needed.
 
 ### Summary Result
 
