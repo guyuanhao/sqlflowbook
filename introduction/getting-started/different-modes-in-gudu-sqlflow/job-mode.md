@@ -41,7 +41,7 @@ normalizeIdentifier：true (Not configurable)
 showLinkOnly：true (Not configurable)
 ```
 
-Configurable Parameter:  Parameters can be set before the job creation. There's no way to change such parameters once the job is created. You have to create a new job with the updated parameter if needed.
+Configurable Parameter:  The parameters which can be set before the job creation. There's no way to change such parameters once the job is created. You have to create a new job with the new parameter value if needed.
 
 #### Regular Job
 
@@ -67,7 +67,7 @@ showLinkOnly：true (Not configurable)
 simpleOutput: false (Not configurable)
 ```
 
-Configurable Parameter:  Parameters can be set before the job creation. There's no way to change such parameters once the job is created. You have to create a new job with the updated parameter if needed.
+Configurable Parameter:  The parameters which can be set before the job creation. There's no way to change such parameters once the job is created. You have to create a new job with the new parameter value if needed.
 
 ### Summary Result
 
