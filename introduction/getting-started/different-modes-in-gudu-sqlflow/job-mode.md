@@ -25,6 +25,7 @@ Both Simple Job and Regular Job support reading large amounts of SQL files or an
 * Possible to add some configs. Once submitted, the configs cannot be changed
 * Result will be persisted in the file system as files
 * Possible to do the Left Most analysis (Left Most: given a->b->c, show a->c )
+* Data lineage result is saved in dataflow.xml file
 
 #### Regular Job
 
@@ -33,6 +34,7 @@ Both Simple Job and Regular Job support reading large amounts of SQL files or an
 * Support whether incremental, possible to anaylze SQL scripts or database in batches
 * Possible to do the Left Most analysis (Left Most: given a->b->c, show a->c )
 * Possible to do the Upstream and Downstream analysis (given a->b->c, Upstream: a->b, Downstream: b->c)
+* Data lineage result is saved in database
 
 ### Summary Result
 
