@@ -69,6 +69,20 @@ simpleOutput: false (Not configurable)
 
 Configurable Parameter:  The parameters which can be set before the job creation. There's no way to change such parameters once the job is created. You have to create a new job with the new parameter value if needed.
 
+Some of the above parameters cover the parameters in [UI Settings section](../../ui/settings.md)
+
+<figure><img src="../../../.gitbook/assets/12321.png" alt=""><figcaption></figcaption></figure>
+
+_`showConstantTable`_ has the same effect as _`show constant`_
+
+**ignoreFunction**：true has the same effect as _`show constant`_
+
+_`showConstantTable`_ has the same effect as _`show constant`_
+
+_`showConstantTable`_ has the same effect as _`show constant`_
+
+_`showConstantTable`_ has the same effect as _`show constant`_
+
 ### Summary Result
 
 When using [SQLFlow Front UI](../../ui/), all data lineage will be returned if the number is less than 2,000. However, only database, schema, table, view data and the number of above DB units will be returned if the number is more than 2,000. No field data will be returned in the case and this is called **Summary result**.
