@@ -69,19 +69,21 @@ simpleOutput: false (Not configurable)
 
 Configurable Parameter:  The parameters which can be set before the job creation. There's no way to change such parameters once the job is created. You have to create a new job with the new parameter value if needed.
 
+### Job parameters and UI Settings parameters
+
 Some of the above parameters cover the parameters in [UI Settings section](../../ui/settings.md)
 
 <figure><img src="../../../.gitbook/assets/12321.png" alt=""><figcaption></figcaption></figure>
 
 _`showConstantTable`_ has the same effect as _`show constant`_
 
-**ignoreFunction**：true has the same effect as _`show constant`_
+_`ignoreFunction`_ has the same effect as _`show function`_
 
-_`showConstantTable`_ has the same effect as _`show constant`_
+_`ignoreRecordSet`_ has the same effect as _`show intermediate recordset`_
 
-_`showConstantTable`_ has the same effect as _`show constant`_
+_`showTransform`_ has the same effect as _`show transform`_
 
-_`showConstantTable`_ has the same effect as _`show constant`_
+_`dataflowOfAggregateFunction`_ has the similar effect as _`dataflow of count function`_
 
 ### Summary Result
 
