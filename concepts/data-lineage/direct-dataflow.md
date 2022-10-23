@@ -15,7 +15,7 @@ FROM scott.emp a
 Where sal > 1000
 ```
 
-the data of target column `"eName"` comes from `scott.emp.empName` , so we have a direct dataflow like this:
+the data of target column `"eName"` comes from `scott.emp.empName`  so we have a direct dataflow like this:
 
 ```
 scott.emp.empName -> direct -> RS-1."eName"
