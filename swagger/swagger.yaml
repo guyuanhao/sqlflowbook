@@ -2234,6 +2234,16 @@ paths:
         description: column
         schema:
           type: string
+      - name: table
+        in: query
+        description: table
+        schema:
+          type: string
+      - name: schema
+        in: query
+        description: schema
+        schema:
+          type: string
       - name: database
         in: query
         description: database
@@ -2241,7 +2251,7 @@ paths:
           type: string
       - name: dbvendor
         in: query
-        description: db vendor
+        description: database vendor
         required: true
         schema:
           type: string
@@ -2271,34 +2281,26 @@ paths:
           - dbvvertica
       - name: ignoreSelfLineage
         in: query
-        description: ignoreSelfLineage
+        description: whether ignore self lineage
         schema:
           type: boolean
           default: true
       - name: jobId
         in: query
-        description: jobId
+        description: give the job Id if need to use the job settings and display the
+          job graph
         schema:
           type: string
       - name: normalizeIdentifier
         in: query
-        description: normalizeIdentifier
+        description: whether normalize the identifier
         schema:
           type: boolean
           default: true
-      - name: schema
-        in: query
-        description: schema
-        schema:
-          type: string
       - name: sessionId
         in: query
-        description: sessionId
-        schema:
-          type: string
-      - name: table
-        in: query
-        description: table
+        description: session Id
+        required: true
         schema:
           type: string
       - name: token
@@ -2309,7 +2311,7 @@ paths:
           type: string
       - name: userId
         in: query
-        description: user id
+        description: the user id of sqlflow web or client
         required: true
         schema:
           type: string
@@ -2320,6 +2322,148 @@ paths:
             application/json;charset=utf-8:
               schema:
                 type: string
+                example:
+                  code: 200
+                  data:
+                    mode: global
+                    summary:
+                      schema: 0
+                      process: 1
+                      database: 0
+                      view: 0
+                      mostRelationTables:
+                        - table: TBL_TEMP1
+                        - table: TBL_TEMP2
+                      column: 0
+                      relationship: 2
+                      table: 2
+                    sqlflow:
+                      dbvendor: dbvoracle
+                      dbobjs:
+                        - id: '6'
+                          name: QUERY INSERT-1
+                          type: process
+                          coordinates:
+                            - x: 1
+                              'y': 1
+                              hashCode: '0'
+                            - x: 1
+                              'y': 112
+                              hashCode: '0'
+                          queryHashId: 4cc55e0b4d63c3e07927d59f117c8851
+                        - id: '4'
+                          name: TBL_TEMP2
+                          type: table
+                          columns: []
+                          coordinates:
+                            - x: 1
+                              'y': 13
+                              hashCode: '0'
+                            - x: 1
+                              'y': 22
+                              hashCode: '0'
+                        - id: '10'
+                          name: TBL_TEMP1
+                          type: table
+                          columns: []
+                          coordinates:
+                            - x: 1
+                              'y': 67
+                              hashCode: '0'
+                            - x: 1
+                              'y': 76
+                              hashCode: '0'
+                      relationships:
+                        - id: '504'
+                          type: fdd
+                          target:
+                            id: '6'
+                            coordinates: []
+                          sources:
+                            - id: '10'
+                              sourceId: '10'
+                              sourceName: TBL_TEMP1
+                              coordinates: []
+                        - id: '506'
+                          type: fdd
+                          target:
+                            id: '4'
+                            coordinates: []
+                          sources:
+                            - id: '6'
+                              sourceId: '6'
+                              sourceName: QUERY INSERT-1
+                              coordinates: []
+                    graph:
+                      relationshipIdMap:
+                        e0:
+                          - '506'
+                          - fdd
+                        e1:
+                          - '504'
+                          - fdd
+                      elements:
+                        tables:
+                          - columns: []
+                            height: 25.96875
+                            id: n0
+                            label:
+                              content: Query Insert-1
+                              fontFamily: Segoe UI Symbol
+                              fontSize: '12'
+                              height: 17.96875
+                              width: 162
+                              x: 0
+                              'y': 0
+                            width: 162
+                            x: 212
+                            'y': -35.9689
+                          - columns: []
+                            height: 25.96875
+                            id: n1
+                            label:
+                              content: tbl_temp2
+                              fontFamily: Segoe UI Symbol
+                              fontSize: '12'
+                              height: 17.96875
+                              width: 162
+                              x: 0
+                              'y': 0
+                            width: 162
+                            x: 424
+                            'y': -35.9689
+                          - columns: []
+                            height: 25.96875
+                            id: n2
+                            label:
+                              content: tbl_temp1
+                              fontFamily: Segoe UI Symbol
+                              fontSize: '12'
+                              height: 17.96875
+                              width: 162
+                              x: 0
+                              'y': 0
+                            width: 162
+                            x: 0
+                            'y': -35.9689
+                        edges:
+                          - id: e0
+                            sourceId: n0
+                            targetId: n1
+                          - id: e1
+                            sourceId: n2
+                            targetId: n0
+                      tooltip: {}
+                      listIdMap:
+                        n0:
+                          - '6'
+                        n1:
+                          - '4'
+                        n2:
+                          - '10'
+                  sessionId: 98f82119a46175bb8e4ed971133f2953ea66556107e438030df2a3217bb67baa_1666495937504
+                  
+
         201:
           description: Created
           content: {}
@@ -3554,7 +3698,7 @@ paths:
       parameters:
       - name: ignoreSelfLineage
         in: query
-        description: ignoreSelfLineage
+        description: whether ingore self lineage
         schema:
           type: boolean
           default: true
@@ -3577,6 +3721,109 @@ paths:
             application/json;charset=utf-8:
               schema:
                 type: string
+                example: 
+                  jobId: 939fdbbaf52b45139b86c0761d6036b0
+                  code: 200
+                  data:
+                    mode: global
+                    summary:
+                      schema: 0
+                      process: 1
+                      database: 0
+                      view: 0
+                      mostRelationTables: []
+                      column: 3
+                      relationship: 0
+                      table: 1
+                    sqlflow:
+                      dbvendor: dbvoracle
+                      relationships: []
+                      dbobjs:
+                        - queryHashId: 04ebc5aec1a07e1db80b0bc798742875
+                          name: QUERY INSERT-1
+                          coordinates:
+                            - hashCode: '0'
+                              x: 1
+                              'y': 1
+                            - hashCode: '0'
+                              x: 1
+                              'y': 73
+                          id: '8'
+                          type: process
+                        - columns:
+                            - name: ID
+                              coordinates:
+                                - hashCode: '0'
+                                  x: 1
+                                  'y': 28
+                                - hashCode: '0'
+                                  x: 1
+                                  'y': 30
+                              id: '5'
+                            - name: FIRST_NAME
+                              coordinates:
+                                - hashCode: '0'
+                                  x: 1
+                                  'y': 32
+                                - hashCode: '0'
+                                  x: 1
+                                  'y': 42
+                              id: '6'
+                            - name: LAST_NAME
+                              coordinates:
+                                - hashCode: '0'
+                                  x: 1
+                                  'y': 44
+                                - hashCode: '0'
+                                  x: 1
+                                  'y': 53
+                              id: '7'
+                          name: RAW_CUSTOMERS
+                          coordinates:
+                            - hashCode: '0'
+                              x: 1
+                              'y': 13
+                            - hashCode: '0'
+                              x: 1
+                              'y': 26
+                          id: '4'
+                          type: table
+                    graph:
+                      relationshipIdMap: {}
+                      elements:
+                        tables: []
+                        edges: []
+                      tooltip: {}
+                      listIdMap: {}
+                  sessionId: 24a4455c71fa35c0393d5747f9c23a9d99f32fa4c130a6b8da8d6a7db8d157ae_1664880305725
+                  job:
+                    ignoreFunction: true
+                    lastExecuteTime: '2022-10-04 10:45:05'
+                    schedulable: false
+                    parallel: false
+                    ignoreRecordSet: true
+                    userEmail: guyuanhao@foxmail.com
+                    persist: false
+                    executeTimeMillis: 0
+                    jobName: yuanhao1
+                    dataflowOfAggregateFunction: direct
+                    showTransform: false
+                    sessionId: 24a4455c71fa35c0393d5747f9c23a9d99f32fa4c130a6b8da8d6a7db8d157ae_1664880305725
+                    incremental: false
+                    showConstantTable: false
+                    userId: auth0|6326be4047c1dfdd3bf553d0
+                    showRelationType: fdd
+                    subJobs: []
+                    version: 5.2.0
+                    jobId: 939fdbbaf52b45139b86c0761d6036b0
+                    createTime: '2022-10-04 10:45:04'
+                    onTop: false
+                    cancelSchedule: false
+                    dbVendor: dbvoracle
+                    fileNames:
+                      - test.sql
+                    status: success
+                    executeTime: 0min 1sec
         201:
           description: Created
           content: {}
