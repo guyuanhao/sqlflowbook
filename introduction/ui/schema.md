@@ -5,7 +5,7 @@ description: >-
 
 # Schema
 
-<figure><img src="../../.gitbook/assets/185734174-6d507fb8-2cb3-4a75-a5b7-4ab70ba8addd.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-25 23-53-00.png" alt=""><figcaption></figcaption></figure>
 
 Visualize SQL schema by choosing any elements:
 
