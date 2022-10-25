@@ -17,9 +17,7 @@ There are three modes(the mode field in json) to display the response returned b
 * summay
 * ignore record
 
-<figure><img src="../../.gitbook/assets/185738177-a7b66a2f-9532-4669-87b8-d6284d4bf03b.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-26 00-07-41.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-26 00-10-45.png" alt=""><figcaption></figcaption></figure>
 
 The green icons of ANALYTICS and ENTITY indicat that the mode is _global_;&#x20;
 
