@@ -28,3 +28,5 @@ The gray icons of other nodes indicat that the nodes are not visualized.
 ### View DDL(Data Definition Language)
 
 <figure><img src="../../.gitbook/assets/show_DDL.gif" alt=""><figcaption></figcaption></figure>
+
+### Schema Structure&#x20;
