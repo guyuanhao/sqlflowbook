@@ -25,6 +25,6 @@ The black icons of DATAMART indicat that the mode is _summary_;&#x20;
 
 The gray icons of other nodes indicat that the nodes are not visualized.
 
-### View DDL(Data Definition Language))
+### View DDL(Data Definition Language)
 
-<figure><img src="../../.gitbook/assets/185738579-962c06d1-80c0-4b61-8251-f5541d0564d3.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/show_DDL.gif" alt=""><figcaption></figcaption></figure>
