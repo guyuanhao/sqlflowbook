@@ -9,7 +9,7 @@ description: >-
 
 Visualize SQL schema by choosing any elements:
 
-<figure><img src="../../.gitbook/assets/185738098-7ebe1e25-816e-4178-8f60-220d02c17b00.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/show_green_mode.gif" alt=""><figcaption></figcaption></figure>
 
 There are three modes(the mode field in json) to display the response returned by graph AP which are represented by three different colors:
 
