@@ -30,3 +30,15 @@ The gray icons of other nodes indicat that the nodes are not visualized.
 <figure><img src="../../.gitbook/assets/show_DDL.gif" alt=""><figcaption></figcaption></figure>
 
 ### Schema Structure&#x20;
+
+The tree structure in schema section may differ from the database types (check [here](../../sqlflow-ingester/understanding-the-format-of-exported-data.md) to find why it can be different). Same as the database, the tree strecture also has tree different cases.
+
+#### Sample schema for Database who has the _database_ layer and the _schema_ layer (SQL Server for example)
+
+
+
+#### Sample schema for Database who has the _database_ layer only (MYSQL for example)
+
+
+
+#### Sample schema for Database who has the schema layer only (Oracle for example)
