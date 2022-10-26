@@ -35,10 +35,18 @@ The tree structure in schema section may differ from the database types (check [
 
 #### Sample schema for Database who has the _database_ layer and the _schema_ layer (SQL Server for example)
 
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-27 00-27-54.png" alt=""><figcaption></figcaption></figure>
 
+For MSSQL, we have Database layer as well as Schema layer. The two layers will be both displayed on the schema UI.
 
 #### Sample schema for Database who has the _database_ layer only (MYSQL for example)
 
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-27 00-30-27.png" alt=""><figcaption></figcaption></figure>
 
+For MYSQL, we have Database layer but we do not have Schema layer. Schema is same as Database for MYSQL. Only Database layer is displayed on the schema UI.
 
 #### Sample schema for Database who has the schema layer only (Oracle for example)
+
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-27 00-32-45.png" alt=""><figcaption></figcaption></figure>
+
+For ORACLE, we have Schema layer but there is no Database layer for ORACLE. Only Schema layer is displayed on the schema UI.
