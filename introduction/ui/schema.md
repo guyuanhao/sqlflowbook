@@ -31,7 +31,7 @@ The gray icons of other nodes indicat that the nodes are not visualized.
 
 You may find following elements when right click on the database/schema/table/column elements in the schema explorer:
 
-<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 00-47-20.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 01-24-42.png" alt=""><figcaption></figcaption></figure>
 
 _`visualize`_: Generate the selected db elements(could be a database/schema/table/column etc) data lineage.
 
@@ -43,7 +43,7 @@ _`visualize with cloumns`_: Generate the selected db elements(could be a databas
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 01-01-50.png" alt=""><figcaption></figcaption></figure>
 
-_`to left most`_: Generate the selected db elements(could be a database/schema/table/column etc) data lineage without the record set.
+_`to left most`_: Generate the selected db elements(could be a database/schema/table/column etc) data lineage without the record set. (given a->b->c, show a->c )
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 01-08-06.png" alt=""><figcaption></figcaption></figure>
 
@@ -52,6 +52,12 @@ _`to left most with columns`_: Generate the selected db elements(could be a data
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 01-10-25.png" alt=""><figcaption></figcaption></figure>
 
 _`copy`_: copy the element name so that we can quickly search the elements with the similar name.
+
+
+
+_`to upstream`_/_`to downstream`_: When going through lineage detail for a [regular job](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#regular-job), we also have the choice to display the selected element in Upstream and Downstream analysis.(given a->b->c, Upstream: a->b, Downstream: b->c)
+
+
 
 ### View DDL(Data Definition Language)
 
