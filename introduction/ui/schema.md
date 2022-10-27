@@ -27,7 +27,7 @@ The black icons of DATAMART indicat that the mode is _summary_;&#x20;
 
 The gray icons of other nodes indicat that the nodes are not visualized.
 
-### Explorer Filter
+### Visualization Control
 
 You may find following elements when right click on the database/schema/table/column elements in the schema explorer:
 
