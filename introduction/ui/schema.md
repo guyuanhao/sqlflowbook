@@ -5,9 +5,11 @@ description: >-
 
 # Schema
 
+### Schema Explorer Basic
+
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-25 23-53-00.png" alt=""><figcaption></figcaption></figure>
 
-Visualize SQL schema by choosing any elements:
+Visualize SQL schema by choosing any elements
 
 <figure><img src="../../.gitbook/assets/show_green_mode.gif" alt=""><figcaption></figcaption></figure>
 
@@ -24,6 +26,32 @@ The green icons of ANALYTICS and ENTITY indicat that the mode is _global_;&#x20;
 The black icons of DATAMART indicat that the mode is _summary_;&#x20;
 
 The gray icons of other nodes indicat that the nodes are not visualized.
+
+### Explorer Filter
+
+You may find following elements when right click on the database/schema/table/column elements in the schema explorer:
+
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 00-47-20.png" alt=""><figcaption></figcaption></figure>
+
+_`visualize`_: Generate the selected db elements(could be a database/schema/table/column etc) data lineage.
+
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 00-52-43.png" alt=""><figcaption></figcaption></figure>
+
+In above screenshot only the selected _`customer_id`_ column related data lineage is displayed.
+
+_`visualize with cloumns`_: Generate the selected db elements(could be a database/schema/table etc) data lineage with column details.
+
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 01-01-50.png" alt=""><figcaption></figcaption></figure>
+
+_`to left most`_: Generate the selected db elements(could be a database/schema/table/column etc) data lineage without the record set.
+
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 01-08-06.png" alt=""><figcaption></figcaption></figure>
+
+_`to left most with columns`_: Generate the selected db elements(could be a database/schema/table/column etc) data lineage with the column details but without the record set.
+
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 01-10-25.png" alt=""><figcaption></figcaption></figure>
+
+_`copy`_: copy the element name so that we can quickly search the elements with the similar name.
 
 ### View DDL(Data Definition Language)
 
