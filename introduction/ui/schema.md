@@ -15,9 +15,9 @@ Visualize SQL schema by choosing any elements
 
 There are three modes(the mode field in json) to display the response returned by graph AP which are represented by three different colors:
 
-* global
-* summay
-* ignore record
+* global: Display the selected item data lineage. (default mode. You can also select an unit and right click the_`visualize`_ / _`visualize with columns`_ to start this mode)
+* summay: Only database, schema, table, view data and the number of above DB units will be returned if the number is more than 2,000. (check more details [here](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#summary-result))
+* ignore record: Ignore the record set. Given a->b->c, show a->c. Choose _`to left most`_ or _`to left most with columns`_ to use this mode.
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-26 00-10-45.png" alt=""><figcaption></figcaption></figure>
 
