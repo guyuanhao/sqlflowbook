@@ -7,7 +7,7 @@ description: >-
 
 ### Schema Explorer Basic
 
-<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-25 23-53-00.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 22-16-57.png" alt=""><figcaption></figcaption></figure>
 
 Visualize SQL schema by choosing any elements
 
@@ -65,7 +65,7 @@ _`to upstream`_/_`to downstream`_: When going through lineage detail for a [regu
 
 ### Different Schema Structures&#x20;
 
-The tree structure in schema section may differ from the database types (check [here](../../sqlflow-ingester/understanding-the-format-of-exported-data.md) to find why it can be different). Same as the database, the tree strecture also has tree different cases.
+The tree structure in schema section may differ from the database types (check [here](../../sqlflow-ingester/understanding-the-format-of-exported-data.md) to find why it can be different). Same as the database, the tree strecture also has three different cases.
 
 #### Sample schema for Database who has the _database_ layer and the _schema_ layer (SQL Server for example)
 
