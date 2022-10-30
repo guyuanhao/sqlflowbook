@@ -27,14 +27,14 @@ SQLFlow-Ingester has three different parts:
 
 Read more details for the above Ingester components:
 
-{% content-ref url="exporter.md" %}
-[exporter.md](exporter.md)
+{% content-ref url="sqlflow-exporter/" %}
+[sqlflow-exporter](sqlflow-exporter/)
 {% endcontent-ref %}
 
-{% content-ref url="extractor.md" %}
-[extractor.md](extractor.md)
+{% content-ref url="sqlflow-extractor.md" %}
+[sqlflow-extractor.md](sqlflow-extractor.md)
 {% endcontent-ref %}
 
-{% content-ref url="submitter.md" %}
-[submitter.md](submitter.md)
+{% content-ref url="sqlflow-submitter.md" %}
+[sqlflow-submitter.md](sqlflow-submitter.md)
 {% endcontent-ref %}
