@@ -36,17 +36,17 @@ exporter metadata success: <-save>/metadata.json
 
 ### Parameters
 
-`-dbVendor`: Database type, Check [here](../../list-of-supported-dbvendors.md) for a full list of the supported databases. Use colon to split dbVendor and version if specific version is required. (\<dbVendor>:\<version>, such as dbvmysql:5.7) \
+`-dbVendor`: Database type, Check [here](../list-of-supported-dbvendors.md) for a full list of the supported databases. Use colon to split dbVendor and version if specific version is required. (\<dbVendor>:\<version>, such as dbvmysql:5.7) \
 `-host`: Database host name (ip address or domain name) \
 `-port`: Port number\
 `-db`: Database name\
 `-user`: User name \
 `-pwd`: User password \
 \-save: Destination folder path where we put the exported metadata json file. The exported file will be in name as `metadata.json`. \
-`-extractedDbsSchemas`: Export metadata under the specific schema. Use comma to split if multiple schema required (such as \<schema1>,\<schema2>). We can use this flag to [improve the export performance](./#undefined).\
-`-excludedDbsSchemas`:  Exclude metadata under the specific schema during the export. Use comma to split if multiple schema required (such as \<schema1>,\<schema2>). We can use this flag to [improve the export performance](./#undefined).\
-`-extractedViews`: Export metadata under the specific view. Use comma to split if multiple views required (such as \<view1>,\<view2>). We can use this flag to [improve the export performance](./#undefined). \
-`-merge`: Merge the metadata results which are exported in different process. Use comma to split files to merge. Check [here](./#undefined) for more details.
+`-extractedDbsSchemas`: Export metadata under the specific schema. Use comma to split if multiple schema required (such as \<schema1>,\<schema2>). We can use this flag to [improve the export performance](sqlflow-exporter.md#improve-export-performance).\
+`-excludedDbsSchemas`:  Exclude metadata under the specific schema during the export. Use comma to split if multiple schema required (such as \<schema1>,\<schema2>). We can use this flag to [improve the export performance](sqlflow-exporter.md#improve-export-performance).\
+`-extractedViews`: Export metadata under the specific view. Use comma to split if multiple views required (such as \<view1>,\<view2>). We can use this flag to [improve the export performance](sqlflow-exporter.md#improve-export-performance). \
+`-merge`: Merge the metadata results which are exported in different process. Use comma to split files to merge. Check [here](sqlflow-exporter.md#improve-export-performance) for more details.
 
 ### Improve export performance
 
