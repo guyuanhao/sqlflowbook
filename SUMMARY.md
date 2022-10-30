@@ -87,7 +87,7 @@
   * [SQLFlow-Extractor](sqlflow-ingester/introduction/sqlflow-extractor.md)
   * [SQLFlow-Submitter](sqlflow-ingester/introduction/sqlflow-submitter.md)
 * [SQLFlow-Ingester Java API Usage](sqlflow-ingester/sqlflow-ingester-java-api-usage.md)
-* [Understanding the format of exported data](sqlflow-ingester/understanding-the-format-of-exported-data.md)
+* [Understand the format of exported data](sqlflow-ingester/understanding-the-format-of-exported-data.md)
 * [List of Supported dbVendors](sqlflow-ingester/list-of-supported-dbvendors.md)
 * [Git Repo](sqlflow-ingester/git-repo.md)
 
