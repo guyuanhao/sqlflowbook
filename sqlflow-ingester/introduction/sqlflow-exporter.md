@@ -48,7 +48,7 @@ exporter metadata success: <-save>/metadata.json
 `-extractedViews`: Export metadata under the specific view. Use comma to split if multiple views required (such as \<view1>,\<view2>). We can use this flag to [improve the export performance](sqlflow-exporter.md#improve-export-performance). \
 `-merge`: Merge the metadata results which are exported in different process. Use comma to split files to merge. Check [here](sqlflow-exporter.md#improve-export-performance) for more details.
 
-### Improve export performance
+### Improve Export Performance
 
 Time consumed during the export from database could be very long if the data volume is huge. Following actions are made to improve the Ingester export performance:
 
