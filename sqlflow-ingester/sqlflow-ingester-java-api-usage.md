@@ -31,6 +31,7 @@ source.setPassword("123456");
 DbVendor dbVendor = new DbVendor("dbvmysql", "5.7");
 source.setDbVendor(dbVendor);
 //Export the metadata, the result can be in object/json string.
+//执行导出元数据，支持返回对象和json字符串两种形式
 SqlflowExporter exec = new SqlflowExporter();
 //Take the result in SQLFLow object
 Result<SQLFlow> result1 = exec.exporterMetadata(source);
