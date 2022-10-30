@@ -1,3 +1,7 @@
+---
+description: https://e.gitee.com/gudusoft/docs/1006527/file/2767137?sub_id=5768619
+---
+
 # SQLFlow-Exporter
 
 SQLFlow-exporter is the main functionality of the SQLFlow-Ingester. It is used to getting the metadata from different databases.
@@ -41,4 +45,4 @@ exporter metadata success: <-save>/metadata.json
 \-save: Destination folder path where we put the exported metadata json file. The exported file will be in name as `metadata.json`. \
 \-extractedDbsSchemas: Export metadata under the specific schema. Use comma to split if multiple schema required (such as \<schema1>,\<schema2>). We can use this flag to [improve the export performance](improve-export-performance.md).\
 \-excludedDbsSchemas:  Exclude metadata under the specific schema during the export. Use comma to split if multiple schema required (such as \<schema1>,\<schema2>). We can use this flag to [improve the export performance](improve-export-performance.md).\
-\-extractedViews: Export metadata under the specific view. Use comma to split if multiple view required (such as \<view1>,\<view2>). We can use this flag to [improve the export performance](improve-export-performance.md).&#x20;
+\-extractedViews: Export metadata under the specific view. Use comma to split if multiple views required (such as \<view1>,\<view2>). We can use this flag to [improve the export performance](improve-export-performance.md).&#x20;
