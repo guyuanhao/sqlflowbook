@@ -16,23 +16,25 @@ import com.gudu.sqlflow.ingester.library.result.Result;
 
 //2.Give the database parameters before invoking the Ingester
 DataSource source = new DataSource();
-//数据库主机（ip地址或域名）
+//database host name (ip address or domain name) 
 source.setHostname("localhost");
-//端口
+//port
 source.setPort("3306");
-//数据库名称
+//database name
 source.setDatabase("test");
-//数据库登录用户名
+//user namer
 source.setAccount("root");
-//数据库登录密码
+//database password
 source.setPassword("123456");
-//数据库类型，详见：支持的dbVendor列表,第二个参数是数据库版本，可以为空。 
+//Database type and version number, Check "List of Supported dbVerdors" section for a full list of the supported databases.
+//The second parameter can be null if no specific version need to be provided
 DbVendor dbVendor = new DbVendor("dbvmysql", "5.7");
 source.setDbVendor(dbVendor);
+//Export the metadata, the result can be in object/json string.
 //执行导出元数据，支持返回对象和json字符串两种形式
 SqlflowExporter exec = new SqlflowExporter();
-//返回对象
+//Take the result in SQLFLow object
 Result<SQLFlow> result1 = exec.exporterMetadata(source);
-//返回json字符串
+//Take the result in json string
 Result<String> result2 = exec.exporterMetadataString(source);
 ```
