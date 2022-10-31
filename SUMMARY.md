@@ -54,6 +54,7 @@
     * [/sqlflow/generation/sqlflow](api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md)
     * [/sqlflow/generation/sqlflow/exportLineageAsCsv](api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md)
     * [/sqlflow/generation/sqlflow/selectedgraph/table\_level\_lineage](api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-selectedgraph-table\_level\_lineage.md)
+    * [/sqlflow/generation/sqlflow/graph](api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-graph.md)
   * [Job Interface](api-docs/sqlflow-rest-api-reference/job-interface/README.md)
     * [/sqlflow/job/submitUserJob](api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-submituserjob.md)
     * [/sqlflow/job/displayUserJobSummary](api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-displayuserjobsummary.md)

@@ -1218,7 +1218,7 @@ paths:
           type: string
       - name: dbvendor
         in: query
-        description: db vendor
+        description: database vendor
         required: true
         schema:
           type: string
@@ -1248,7 +1248,7 @@ paths:
           - dbvvertica
       - name: hideColumn
         in: query
-        description: hide column
+        description: whether hide column
         schema:
           type: boolean
           default: false
@@ -1260,33 +1260,42 @@ paths:
           type: boolean
           default: false
         example: false
+      - name: simpleOutput
+        in: query
+        description: simple output, ignore the intermediate results, defualt is false.
+        schema:
+          type: boolean
+          default: false
+        example: false
       - name: ignoreRecordSet
         in: query
-        description: ignore record set
+        description: same as simpleOutput, but will keep output of the top level select
+          list, default is false.
         schema:
           type: boolean
           default: false
         example: false
       - name: jobId
         in: query
-        description: jobId
+        description: give the job Id if need to use the job settings and display the
+          job graph
         schema:
           type: string
       - name: normalizeIdentifier
         in: query
-        description: normalizeIdentifier
+        description: whether normalize the Identifier
         schema:
           type: boolean
           default: true
       - name: showConstantTable
         in: query
-        description: showConstantTable
+        description: whether show constant table
         schema:
           type: boolean
           default: false
       - name: showLinkOnly
         in: query
-        description: show link only
+        description: whether show link only
         schema:
           type: boolean
           default: true
@@ -1304,20 +1313,13 @@ paths:
           default: fdd
       - name: showTransform
         in: query
-        description: showTransform
+        description: whether show transform
         schema:
           type: boolean
           default: false
-      - name: simpleOutput
-        in: query
-        description: simple output, ignore the intermediate results, defualt is false.
-        schema:
-          type: boolean
-          default: false
-        example: false
       - name: sqltext
         in: query
-        description: sql text
+        description: sql text from which to generate the sqlflow model
         schema:
           type: string
       - name: token
@@ -1334,7 +1336,7 @@ paths:
           default: false
       - name: userId
         in: query
-        description: user id
+        description: the user id of sqlflow web or client
         required: true
         schema:
           type: string
