@@ -68,7 +68,8 @@
 
 ## SQLFlow Widget
 
-* [Online Demo](sqlflow-widget/online-demo.md)
+* [Online Demo](sqlflow-widget/online-demo/README.md)
+  * [Page 1](sqlflow-widget/online-demo/page-1.md)
 * [Get started](sqlflow-widget/get-started.md)
 * [Instance API](sqlflow-widget/instance-api.md)
 * [SQLFlow Widget](sqlflow-widget/sqlflow-widget.md)
