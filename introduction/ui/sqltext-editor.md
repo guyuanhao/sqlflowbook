@@ -4,23 +4,9 @@ Enter your SQL code in the live editor. You can choose the database under the se
 
 <figure><img src="../../.gitbook/assets/185734862-10a41894-eeb8-4331-a25f-1c764ae0ebc0.gif" alt=""><figcaption></figcaption></figure>
 
-When clicking _`visualize`_, we are using the following input paramaters to request the graph API:
+When clicking _`visualize`_, a sqlflow model will be generated and the UI will display the data lineage based on the sqlflow model response. A request to [/sqlflow/generation/sqlflow/](../../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) will be made with `fdd` as the value of the field `showRelationType` and `true` in `ignoreFunction`.&#x20;
 
-| Parameter        | Value                                                              |
-| ---------------- | ------------------------------------------------------------------ |
-| sqltext          | SQL code in the left live editor, for example `select * from a;`   |
-| dbvendor         | database selected under the dbvendor section such as _`dbvoracle`_ |
-| showRelationType | fdd                                                                |
-| ignoreFunction   | true                                                               |
-
-When clicking _`visualize join`_, we are using the following input paramaters to request the graph API:
-
-| Parameter        | Value                                                              |
-| ---------------- | ------------------------------------------------------------------ |
-| sqltext          | SQL code in the left live editor, for example `select * from a;`   |
-| dbvendor         | database selected under the dbvendor section such as _`dbvoracle`_ |
-| showRelationType | join                                                               |
-| ignoreFunction   | true                                                               |
+When clicking _`visualize join`_, same endpoint ([/sqlflow/generation/sqlflow/](../../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md)) will be invoked as above. With `join` as the value of the field `showRelationType` and `true` in `ignoreFunction`.&#x20;
 
 ### Switch sample SQL
 
