@@ -53,11 +53,13 @@ _`to left most with columns`_: Generate the selected db elements(could be a data
 
 _`copy`_: copy the element name so that we can quickly search the elements with the similar name.
 
-
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-31 18-20-24.png" alt=""><figcaption></figcaption></figure>
 
 _`to upstream`_/_`to downstream`_: When going through lineage detail for a [regular job](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#regular-job), we also have the choice to display the selected element in Upstream and Downstream analysis.(given a->b->c, Upstream: a->b, Downstream: b->c)
 
-_`to upstream`_/_`to downstream step by step`_: show the intermediate detail steps when processing _`to upstream`_/_`to downstream`_.
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-31 18-21-18.png" alt=""><figcaption></figcaption></figure>
+
+_`to upstream`_/_`to downstream step by step`_: Enable collaspe/expend function of the intermediate detail steps when processing _`to upstream`_/_`to downstream`_ so user can get a more clear view for the complex data lineage.
 
 ### View DDL(Data Definition Language)
 
