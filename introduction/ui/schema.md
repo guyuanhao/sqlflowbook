@@ -5,7 +5,7 @@ description: >-
 
 # Schema Explorer
 
-### Schema Explorer Basic
+## Schema Explorer Basic
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 22-16-57.png" alt=""><figcaption></figcaption></figure>
 
@@ -27,15 +27,19 @@ The black icons of DATAMART indicat that the mode is _summary_;&#x20;
 
 The gray icons of other nodes indicat that the nodes are not visualized.
 
-### Visualization Control
+## Visualization Control
 
 You may find following elements when right click on the database/schema/table/column elements in the schema explorer:
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 01-24-42.png" alt=""><figcaption></figcaption></figure>
 
+### visualize
+
 _`visualize`_: Generate the selected db elements(could be a database/schema/table/column etc) data lineage.
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 00-52-43.png" alt=""><figcaption></figcaption></figure>
+
+### visualize with cloumns
 
 In above screenshot only the selected _`customer_id`_ column related data lineage is displayed.
 
@@ -43,29 +47,39 @@ _`visualize with cloumns`_: Generate the selected db elements(could be a databas
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 01-01-50.png" alt=""><figcaption></figcaption></figure>
 
+### to left most
+
 _`to left most`_: Generate the selected db elements(could be a database/schema/table/column etc) data lineage without the record set. (given a->b->c, show a->c )
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 01-08-06.png" alt=""><figcaption></figcaption></figure>
+
+### to left most with columns
 
 _`to left most with columns`_: Generate the selected db elements(could be a database/schema/table/column etc) data lineage with the column details but without the record set.
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 01-10-25.png" alt=""><figcaption></figcaption></figure>
 
+### copy
+
 _`copy`_: copy the element name so that we can quickly search the elements with the similar name.
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-31 18-20-24.png" alt=""><figcaption></figcaption></figure>
+
+### to upstream/to downstream
 
 _`to upstream`_/_`to downstream`_: When going through lineage detail for a [regular job](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#regular-job), we also have the choice to display the selected element in Upstream and Downstream analysis.(given a->b->c, Upstream: a->b, Downstream: b->c)
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-31 18-21-18.png" alt=""><figcaption></figcaption></figure>
 
+### to upstream/to downstream step by step
+
 _`to upstream`_/_`to downstream step by step`_: Enable collaspe/expend function of the intermediate detail steps when processing _`to upstream`_/_`to downstream`_ so user can get a more clear view for the complex data lineage.
 
-### View DDL(Data Definition Language)
+## View DDL(Data Definition Language)
 
 <figure><img src="../../.gitbook/assets/show_DDL.gif" alt=""><figcaption></figcaption></figure>
 
-### Different Schema Structures&#x20;
+## Different Schema Structures&#x20;
 
 The tree structure in schema section may differ from the database types (check [here](../../sqlflow-ingester/understanding-the-format-of-exported-data.md) to find why it can be different). Same as the database, the tree strecture also has three different cases.
 
