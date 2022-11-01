@@ -46,7 +46,7 @@ sqlserver,mysql,netezza,odbc,openedge,oracle,postgresql,postgres,redshift,snowfl
 sybase,teradata,soql,vertica
 ```
 
-* [Analyze data linege from SQL files](analyze-data-linege-from-a-database.md)
-* [Analyze data linege from a database](analyze-data-linege-from-sql-files.md)
+* [Analyze data linege from SQL files](analyze-data-linege-from-sql-files.md)
+* [Analyze data linege from a database](analyze-data-linege-from-a-database.md)
 * [Resolve the ambiguous columns in SQL query](usage/resolve-the-ambiguous-columns-in-sql-query.md)
 * [Map the DataFlowAnalyzer and the settings on SQLFlow UI](usage/parameters-mapping-between-dataflowanalyzer-and-the-settings-in-sqlflow-ui.md)
