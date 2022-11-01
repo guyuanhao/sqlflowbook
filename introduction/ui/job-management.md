@@ -25,6 +25,10 @@ Job source can be from one of the following sources
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-01-59.png" alt=""><figcaption></figcaption></figure>
 
+Give the default value for server/database/schema when there's no metadata
+
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-22-38.png" alt=""><figcaption></figcaption></figure>
+
 Choose the Job type when creating the Job
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-04-21.png" alt=""><figcaption></figcaption></figure>
