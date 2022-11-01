@@ -21,7 +21,7 @@ Enter the Job creation parameters&#x20;
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-00-58.png" alt=""><figcaption></figcaption></figure>
 
-Job source can be one of the following source
+Job source can be from one of the following sources
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-01-59.png" alt=""><figcaption></figcaption></figure>
 
@@ -29,11 +29,11 @@ Choose the Job type when creating the Job
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-04-21.png" alt=""><figcaption></figcaption></figure>
 
-Customized the extraction/exclusion under the `advanced` section
+Customize the extraction/exclusion content under the `advanced` section
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-06-07.png" alt=""><figcaption></figcaption></figure>
 
-Give the configurable parameters under the `setting` section
+Give the configurable parameters under the `setting` section. Check [here](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#simple-job) to get more details for these parameters.
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-08-42.png" alt=""><figcaption></figcaption></figure>
 
