@@ -25,7 +25,7 @@ Job source can be from one of the following sources
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-01-59.png" alt=""><figcaption></figcaption></figure>
 
-Give the default value for server/database/schema when there's no metadata
+Give the default value for server/database/schema when there's no related metadata to the database units(such as table,view etc...). If the default values are given here, will use the given values. Otherwise will use `default` as the value for server/database/schema if the default server/database/schema is not set.
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-22-38.png" alt=""><figcaption></figcaption></figure>
 
