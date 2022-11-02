@@ -13,13 +13,15 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/185737736-814ae584-ab72-4be6-a4f6-6393607d385f.gif" alt=""><figcaption></figcaption></figure>
 
-Click the Job Creation button in the Job List Section
+### Click the Job Creation button in the Job List Section
 
 <figure><img src="../../.gitbook/assets/20221101205559.png" alt=""><figcaption></figcaption></figure>
 
-Enter the Job creation parameters&#x20;
+### Enter the Job creation parameters&#x20;
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-00-58.png" alt=""><figcaption></figcaption></figure>
+
+### Job sources
 
 Job source can be from one of the following sources:
 
@@ -33,25 +35,38 @@ Job source can be from one of the following sources:
 
 `redshift log`: Read from your redshift log.
 
-`snowflake query history`: Read from your snowflake query history.
+`snowflake query history`: Read from your snowflake query history. Check here for the query history parameter details.\
+
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-01-59.png" alt=""><figcaption></figcaption></figure>
+
+### Default server/database/schema
 
 Give the default value for server/database/schema when there's no related metadata to the database units(such as table,view etc...). If the default values are given here, will use the given values. Otherwise will use `default` as the value for server/database/schema if the default server/database/schema is not set.
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-22-38.png" alt=""><figcaption></figcaption></figure>
 
-Choose the Job type when creating the Job
+### Job Type
+
+Choose the Job type when creating the Job. Read more on the [Job type](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md).
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-04-21.png" alt=""><figcaption></figcaption></figure>
+
+### Advanced
 
 Customize the extraction/exclusion content under the `advanced` section
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-06-07.png" alt=""><figcaption></figcaption></figure>
 
+### configurable parameters
+
 Give the configurable parameters under the `setting` section. Check [here](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#simple-job) to get more details for these parameters.
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-08-42.png" alt=""><figcaption></figcaption></figure>
+
+### Snowflake query history
+
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-11-03 00-30-54.png" alt=""><figcaption></figcaption></figure>
 
 ## Backwards in code
 
