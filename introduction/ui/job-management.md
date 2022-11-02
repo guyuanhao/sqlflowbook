@@ -58,7 +58,7 @@ Customize the extraction/exclusion content under the `advanced` section
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-06-07.png" alt=""><figcaption></figcaption></figure>
 
-### configurable parameters
+### Configurable parameters
 
 Give the configurable parameters under the `setting` section. Check [here](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#simple-job) to get more details for these parameters.
 
@@ -67,6 +67,18 @@ Give the configurable parameters under the `setting` section. Check [here](../ge
 ### Snowflake query history
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-03 00-30-54.png" alt=""><figcaption></figcaption></figure>
+
+`enableQueryHistory`: Fetch SQL queries from the query history if set to `true`.
+
+`blockOfTimeInMinutes`: When `enableQueryHistory`is set to true, the interval at which the SQL query was extracted in the query History.
+
+`queryHistorySqlType`: Specify what's kind of SQL statements need to be sent to the SQLFlow for furhter processing after fetch the queries from the Snowflake query history. If `queryHistorySqlType` is specified, will only pickup those SQL statement type and send it the SQLFlow for furhter processing. This can be useful when you only need to discover lineage from a specific type of SQL statements. If `queryHistorySqlType` is empty, all queries fetched from the query history will be sent to the SQLFlow server.
+
+`excludedHistoryDbsSchemas`: List of databases and schemas to exclude from extraction, separated by commas `database1.schema1,database2`.
+
+`duplicateQueryHistory`: Whether filter out the duplicate query history.
+
+`snowflakeDefaultRole`: This value represents the role of the snowflake database. Please note that you must define a role that has access to the SNOWFLAKE database and assign WAREHOUSE permission to this role.
 
 ## Backwards in code
 
