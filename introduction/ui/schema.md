@@ -83,19 +83,19 @@ _`to upstream`_/_`to downstream step by step`_: Enable collaspe/expend function 
 
 The tree structure in schema section may differ from the database types (check [here](../../sqlflow-ingester/understanding-the-format-of-exported-data.md) to find why it can be different). Same as the database, the tree strecture also has three different cases.
 
-#### Sample schema for Database who has the _database_ layer and the _schema_ layer (SQL Server for example)
+### Database containing _database_ layer and the _schema_ layer (SQL Server for example)
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-27 00-27-54.png" alt=""><figcaption></figcaption></figure>
 
 For MSSQL, we have Database layer as well as Schema layer. The two layers will be both displayed on the schema UI.
 
-#### Sample schema for Database who has the _database_ layer only (MYSQL for example)
+### Database containing _database_ layer only (MYSQL for example)
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-27 00-30-27.png" alt=""><figcaption></figcaption></figure>
 
 For MYSQL, we have Database layer but we do not have Schema layer. Schema is same as Database for MYSQL. Only Database layer is displayed on the schema UI.
 
-#### Sample schema for Database who has the schema layer only (Oracle for example)
+### Database containing the schema layer only (Oracle for example)
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-27 00-32-45.png" alt=""><figcaption></figcaption></figure>
 
