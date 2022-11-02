@@ -21,7 +21,19 @@ Enter the Job creation parameters&#x20;
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-00-58.png" alt=""><figcaption></figcaption></figure>
 
-Job source can be from one of the following sources
+Job source can be from one of the following sources:
+
+`upload file`: The data lineage will be generated from the sql meta file you upload(DDL file for an example). Check our [Ingester tool](broken-reference) if you want use this way but don't have compatible sql metadata file.
+
+`from database`: Directly connect to a database server to retrieve the data lineage. You need to give the connection paramters in this mode.
+
+`upload file + database metadata`: Use the above two methods to create the Job together. You may need to use this mode when your data are distracted in different systems.
+
+`dbt`: Read from dbt, the manifest.json and the catalog.json will be required.
+
+`redshift log`: Read from your redshift log.
+
+`snowflake query history`: Read from your snowflake query history.
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-01-59.png" alt=""><figcaption></figcaption></figure>
 
