@@ -4,7 +4,7 @@ Enter your SQL code in the live editor. You can choose the database under the se
 
 <figure><img src="../../.gitbook/assets/185734862-10a41894-eeb8-4331-a25f-1c764ae0ebc0.gif" alt=""><figcaption></figcaption></figure>
 
-Click Table Lineage to show only table level lineage. UI invokes [/sqlflow/graph/table\_level\_lineage](../../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-graph-table\_level\_lineage.md) to get the table level lineage result.
+Click Table Lineage to show only table level lineage. UI invokes [/sqlflow/graph/table\_level\_lineage](../../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-graph-table\_level\_lineage.md) to get the table level lineage result. The [/sqlflow/graph/table\_level\_lineage](../../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-graph-table\_level\_lineage.md) returns the simplified data lineage result with only table level information.
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 00-02-24.png" alt=""><figcaption><p>table level lineage</p></figcaption></figure>
 
