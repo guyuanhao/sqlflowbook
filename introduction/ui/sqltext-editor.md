@@ -8,6 +8,8 @@ Click Table Lineage to show only table level lineage.
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 00-02-24.png" alt=""><figcaption><p>table level lineage</p></figcaption></figure>
 
+Select an element and click the `Table Level Linegage` will return the selected tables lineage.
+
 When clicking _`visualize`_, a sqlflow model will be generated and the UI will display the data lineage based on the sqlflow model response. A request to [/sqlflow/generation/sqlflow/graph](../../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-graph.md) will be made with `fdd` as the value of the field `showRelationType` and `true` in `ignoreFunction`.&#x20;
 
 When clicking _`visualize join`_, same endpoint ([/sqlflow/generation/sqlflow/graph](../../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-graph.md)) will be invoked as above. We will have `join` as the value of the field `showRelationType` and `true` for `ignoreFunction` in the request.&#x20;
