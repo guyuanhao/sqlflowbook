@@ -4,13 +4,17 @@ Job source can be from one of the following sources:
 
 ### Upload file
 
-`upload file`: The data lineage will be generated from the sql meta file you upload(DDL file for an example). Check our [Ingester tool](broken-reference) if you want use this way but don't have compatible sql metadata file.
+`upload file`: The data lineage will be generated from your sql meta file(DDL file for an example). Check our [Ingester tool](broken-reference) if you would like to take this approach but don't have any compatible sql metadata file.
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-04 21-56-01.png" alt=""><figcaption></figcaption></figure>
 
+Read more about the `setting` section [here](./#configurable-parameters).
+
 ### From database
 
-`from database`: SQLFLow is able to read information directly from the database server and analyze the data lineage. You need to give the connection paramters in this mode.
+`from database`: SQLFLow is able to directly read information from the database server and analyze your data lineage. Connection information is required in this mode.
+
+<figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-04 22-09-25.png" alt=""><figcaption></figcaption></figure>
 
 ### Upload file + database metadata
 
