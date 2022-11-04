@@ -35,7 +35,7 @@ Job source can be from one of the following sources:
 
 `redshift log`: Read from your redshift log.
 
-`snowflake query history`: Read from your snowflake query history. Check here for the query history parameter details.\
+`snowflake query history`: Read from your snowflake query history. Check [here](job-management.md#snowflake-query-history) for the query history parameter details.\
 
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-01-59.png" alt=""><figcaption></figcaption></figure>
