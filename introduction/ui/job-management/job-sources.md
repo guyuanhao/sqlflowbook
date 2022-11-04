@@ -2,6 +2,10 @@
 
 Job source can be from one of the following sources:
 
+​
+
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FHPaNIbjpxIoccnaNkyJQ%2Fuploads%2FnX8sMhZRLCVRfX9zdFtN%2FScreenshot%20from%202022-11-01%2021-01-59.png?alt=media&#x26;token=e8f65227-8a3e-4243-8794-f90f3b80343b" alt=""><figcaption></figcaption></figure>
+
 ### Upload file
 
 `upload file`: The data lineage will be generated from your sql meta file(DDL file for an example). Check our [Ingester tool](broken-reference) if you would like to take this approach but don't have any compatible sql metadata file.
@@ -16,17 +20,31 @@ Read more about the `setting` section [here](./#configurable-parameters).
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-04 22-09-25.png" alt=""><figcaption></figcaption></figure>
 
+Read more about the `setting` section [here](./#configurable-parameters).
+
+Read more about the `advanced` section [here](./#advanced).
+
 ### Upload file + database metadata
 
 `upload file + database metadata`: Use the above two methods to create the Job together. You may need to use this mode when your data are distracted in different systems.
 
+<figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-04 22-16-24.png" alt=""><figcaption></figcaption></figure>
+
+Read more about the `setting` section [here](./#configurable-parameters).
+
+Read more about the `advanced` section [here](./#advanced).
+
 ### Dbt
 
-`dbt`: Read from dbt, the manifest.json and the catalog.json will be required.
+`dbt`: Read data lineage from your dbt. The `manifest.json` and the `catalog.json` will be required.
+
+<figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-04 22-20-25.png" alt=""><figcaption></figcaption></figure>
 
 ### RedShift log
 
-`redshift log`: Read from your redshift log.
+`redshift log`: Read from your redshift log. You should give your redshift log and the file should be in `.gz` or `.zip` format. You can also give your `metadata.json` as a supplementary source.
+
+<figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-04 22-25-54.png" alt=""><figcaption></figcaption></figure>
 
 ### Snowflake query history
 
@@ -47,9 +65,5 @@ Read more about the `setting` section [here](./#configurable-parameters).
 `duplicateQueryHistory`: Whether filter out the duplicate query history.
 
 `snowflakeDefaultRole`: This value represents the role of the snowflake database. Please note that you must define a role that has access to the SNOWFLAKE database and assign WAREHOUSE permission to this role.
-
-
-
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FHPaNIbjpxIoccnaNkyJQ%2Fuploads%2FnX8sMhZRLCVRfX9zdFtN%2FScreenshot%20from%202022-11-01%2021-01-59.png?alt=media&#x26;token=e8f65227-8a3e-4243-8794-f90f3b80343b" alt=""><figcaption></figcaption></figure>
 
 #### &#x20;  <a href="#default-server-database-schema" id="default-server-database-schema"></a>
