@@ -51,12 +51,6 @@ Give the configurable parameters under the `setting` section. Check [here](../..
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-01 21-08-42.png" alt=""><figcaption></figcaption></figure>
 
-### Snowflake query history
-
-<figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-03 00-30-54.png" alt=""><figcaption></figcaption></figure>
-
-``
-
 ## Backwards in code
 
 <figure><img src="../../../.gitbook/assets/185738467-b8485e3c-cbc4-4ceb-ab20-5e869908551b.gif" alt=""><figcaption></figcaption></figure>
