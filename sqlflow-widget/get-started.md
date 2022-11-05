@@ -91,7 +91,9 @@ $(async () => {
 });
 ```
 
-You can find the execution result here: [demo：visualize sqltext](http://101.43.8.206/widget/1/#/)
+With the above code we will have a result:
+
+<figure><img src="../.gitbook/assets/Screenshot from 2022-10-31 18-50-46.png" alt=""><figcaption></figcaption></figure>
 
 #### Parameter
 
