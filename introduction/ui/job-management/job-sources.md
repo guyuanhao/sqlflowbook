@@ -26,7 +26,7 @@ Read more about the `advanced` section [here](./#advanced).
 
 ### Upload file + database metadata
 
-`upload file + database metadata`: Use the above two methods to create the Job together. You may need to use this mode when your data are distracted in different systems.
+`upload file + database metadata`: Use the above two methods to create the Job together. The database metadata will be only used to resolve the ambiguities in the uploaded file (Check [here](../../java-library/usage/resolve-the-ambiguous-columns-in-sql-query.md) for more details about the ambiguity in the data lineage). Queries in the database metadata are currently not analyzed but we may add this feature in future release.
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-04 22-16-24.png" alt=""><figcaption></figcaption></figure>
 
