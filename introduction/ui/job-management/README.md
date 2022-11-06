@@ -11,6 +11,8 @@ description: >-
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-06 16-29-30.png" alt=""><figcaption></figcaption></figure>
 
+Note that `Lineage Overview` can not be applied on[ regular job](../../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#regular-job) cause process data are needed but we don't have that in the database.
+
 ## Create a job
 
 <figure><img src="../../../.gitbook/assets/185737736-814ae584-ab72-4be6-a4f6-6393607d385f.gif" alt=""><figcaption></figcaption></figure>
