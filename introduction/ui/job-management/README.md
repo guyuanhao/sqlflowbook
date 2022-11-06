@@ -11,16 +11,6 @@ description: >-
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-06 16-29-30.png" alt=""><figcaption></figcaption></figure>
 
-`Lineage Overview`: Show lineage overview information. The table level lineage will be displayed. Regular Job does not have table level lineage data cause process info is needed but we don't have that data in Database.
-
-Lineage Detail:
-
-Job Info:
-
-Delete Job:
-
-More Actions:
-
 ## Create a job
 
 <figure><img src="../../../.gitbook/assets/185737736-814ae584-ab72-4be6-a4f6-6393607d385f.gif" alt=""><figcaption></figcaption></figure>

@@ -46,8 +46,9 @@ Configurable Parameter:  The parameters which can be set before the job creation
 #### Regular Job
 
 * Unable to set any data lineage configs
+* Unable to show table level lineage
 * Result will be in database
-* Support whether incremental, possible to anaylze SQL scripts or database in batches
+* Support if incremental, possible to anaylze SQL scripts or database in batches
 * Possible to do the Left Most analysis (Left Most: given a->b->c, show a->c )
 * Possible to do the Upstream and Downstream analysis (given a->b->c, Upstream: a->b, Downstream: b->c)
 * Data lineage result is saved in database
