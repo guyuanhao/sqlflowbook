@@ -41,4 +41,4 @@ You may want read more about the [job type](../../introduction/getting-started/d
 
 <figure><img src="../../.gitbook/assets/4_20221107234639.png" alt=""><figcaption></figcaption></figure>
 
-Check the lineage overview/detail once the job finished.
+Check the lineage overview/detail once the job is finished.
