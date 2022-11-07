@@ -44,6 +44,6 @@ description: https://github.com/sqlparser/sqlflow_public#how-to-use-sqlflow
 [roadmap.md](../../other/roadmap.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../other/faq.md" %}
-[faq.md](../../other/faq.md)
+{% content-ref url="../../other/faq/" %}
+[faq](../../other/faq/)
 {% endcontent-ref %}

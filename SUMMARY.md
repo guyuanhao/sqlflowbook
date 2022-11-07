@@ -94,5 +94,6 @@
 
 ## OTHER
 
-* [FAQ](other/faq.md)
+* [FAQ](other/faq/README.md)
+  * [Deal with internal database](other/faq/deal-with-internal-database.md)
 * [Roadmap](other/roadmap.md)
