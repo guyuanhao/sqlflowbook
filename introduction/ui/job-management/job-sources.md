@@ -14,7 +14,7 @@ Job source can be from one of the following sources:
 
 Read more about the `setting` section [here](./#configurable-parameters).
 
-**Note: The uploaded file must be minior than 200MB**
+**Note: The uploaded file must be less than 200MB**
 
 ### From database
 
