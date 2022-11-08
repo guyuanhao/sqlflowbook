@@ -15,6 +15,6 @@ Check [deal with internal database](handling-internal-database.md) for more deta
 
 ### Q2: Can I delete my account?
 
-Yes, you can delete your account. Check here for how to do that.
+Yes, you can delete your account. Check [here](delete-your-account.md) for how to do that.
 
 **Note: your data will be deleted with your account together**
