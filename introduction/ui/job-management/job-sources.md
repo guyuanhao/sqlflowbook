@@ -40,19 +40,21 @@ Read more about the `advanced` section [here](./#advanced).
 
 ### Dbt
 
-`dbt`: Read data lineage from your dbt. The `manifest.json` and the `catalog.json` will be required.
+`dbt`: Read data lineage from your dbt. _**dbt**_ is an ETL tool for data transformation. Data lineage can be retrieved from _**dbt**_ data.
+
+The `manifest.json` and the `catalog.json` will be required. Both files can be found under the `target` folder of your dbt tranformation project.
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-04 22-20-25.png" alt=""><figcaption></figcaption></figure>
 
 ### RedShift log
 
-`redshift log`: Read from your redshift log. You should give your redshift log and the file should be in `.gz` or `.zip` format. You can also give your `metadata.json` as a supplementary source.
+`redshift log`: Read from your redshift log. Amazon Redshift is a cloud data warehouse. You should give your redshift log and the file should be in `.gz` or `.zip` format. You may compress multiple `.gz` files into one `.zip` file and folder nesting structure is supported in the `.zip` file. You can also give your database's `metadata.json` as a supplementary source.
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-04 22-25-54.png" alt=""><figcaption></figcaption></figure>
 
 ### Snowflake query history
 
-`snowflake query history`: Read from your snowflake query history.&#x20;
+`snowflake query history`: Read from your snowflake query history. _**Snowflake**_ is a SaaS platform database. We can get the data lineage from your snowflake query history. However, the query history continues to grow with the use of the database so it would be better to check your query history data regularly. You can use `enableQueryHistory` flag to choose werther fetch from the query history.
 
 
 
@@ -60,7 +62,7 @@ Read more about the `advanced` section [here](./#advanced).
 
 `enableQueryHistory`: Fetch SQL queries from the query history if set to `true`.
 
-`blockOfTimeInMinutes`: When `enableQueryHistory`is set to true, the interval at which the SQL query was extracted in the query History.
+`blockOfTimeInMinutes`: When `enableQueryHistory`is set to true, the interval at which the SQL query was extracted in the query History. Default is 30 mins.
 
 `queryHistorySqlType`: Specify what's kind of SQL statements need to be sent to the SQLFlow for furhter processing after fetch the queries from the Snowflake query history. If `queryHistorySqlType` is specified, will only pickup those SQL statement type and send it the SQLFlow for furhter processing. This can be useful when you only need to discover lineage from a specific type of SQL statements. If `queryHistorySqlType` is empty, all queries fetched from the query history will be sent to the SQLFlow server.
 
@@ -68,6 +70,6 @@ Read more about the `advanced` section [here](./#advanced).
 
 `duplicateQueryHistory`: Whether filter out the duplicate query history.
 
-`snowflakeDefaultRole`: This value represents the role of the snowflake database. Please note that you must define a role that has access to the SNOWFLAKE database and assign WAREHOUSE permission to this role.
+`snowflakeDefaultRole`: The role of the snowflake database. You must define a role that has access to the SNOWFLAKE database and assign WAREHOUSE permission to this role.
 
 #### &#x20;  <a href="#default-server-database-schema" id="default-server-database-schema"></a>
