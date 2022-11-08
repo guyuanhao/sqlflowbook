@@ -13,3 +13,8 @@ If your database is deployed in an internal network which is not accessable for 
 
 Check [deal with internal database](handling-internal-database.md) for more details.
 
+### Q2: Can I delete my account?
+
+Yes, you can delete your account. Check here for how to do that.
+
+**Note: your data will be deleted with your account together**

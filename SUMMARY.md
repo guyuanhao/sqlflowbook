@@ -96,4 +96,5 @@
 
 * [FAQ](other/faq/README.md)
   * [Handling Internal Database](other/faq/handling-internal-database.md)
+  * [Delete Your Account](other/faq/delete-your-account.md)
 * [Roadmap](other/roadmap.md)
