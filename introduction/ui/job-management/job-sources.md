@@ -14,6 +14,8 @@ Job source can be from one of the following sources:
 
 Read more about the `setting` section [here](./#configurable-parameters).
 
+**Note: The uploaded file must be minior than 200MB**
+
 ### From database
 
 `from database`: SQLFLow is able to directly read information from the database server and analyze your data lineage. Connection information is required in this mode.
