@@ -1,5 +1,9 @@
 # Handling Internal Database
 
+If your database is deployed in an internal network which is not accessable for external connection request, you may not be able to read your internal database directly from SQLFlow UI.&#x20;
+
+You can use [SQLFlow on-premise version](https://www.gudusoft.com/sqlflow-on-premise-version/) to connect your database(Read [here](../../introduction/installation/) for how to install) or you can try with the belowing approach:
+
 ### Use [sqlflow-ingester](broken-reference) to export the database metadata file.
 
 ```bash
