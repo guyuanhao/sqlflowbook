@@ -70,6 +70,6 @@ The `manifest.json` and the `catalog.json` will be required. Both files can be f
 
 `duplicateQueryHistory`: Whether filter out the duplicate query history.
 
-`snowflakeDefaultRole`: The role of the snowflake database. You must define a role that has access to the SNOWFLAKE database and assign WAREHOUSE permission to this role.
+`snowflakeDefaultRole`: The role when connecting the snowflake database. You must define a role that has access to the SNOWFLAKE database and assign WAREHOUSE permission to this role.
 
 #### &#x20;  <a href="#default-server-database-schema" id="default-server-database-schema"></a>
