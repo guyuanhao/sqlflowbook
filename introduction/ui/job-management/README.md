@@ -45,13 +45,13 @@ Choose the Job type when creating the Job. Read more on the [Job type](../../get
 
 ### Advanced
 
-Customize the extraction/exclusion content under the `advanced` section
+Customized the extraction/exclusion content under the `advanced` section
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-01 21-06-07.png" alt=""><figcaption></figcaption></figure>
 
 ### Configurable parameters
 
-Give the configurable parameters under the `setting` section. Check [here](../../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#simple-job) to get more details for these parameters.
+You can give the configurable parameters under the `setting` section. Check [here](../../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#simple-job) to get more details for these parameters.
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-01 21-08-42.png" alt=""><figcaption></figcaption></figure>
 
