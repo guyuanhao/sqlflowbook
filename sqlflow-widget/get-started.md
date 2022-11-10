@@ -9,6 +9,10 @@ The SQLFlow widget is a Javascript library that enables instantaneous data linea
 
 The SQLFlow widet must work together with the Gudu SQLFlow backend in order to visualize the data lineage and provides an actionable diagram.
 
+The SQLFlow widget is shipped together with [the SQLFlow On-Premise version](https://www.gudusoft.com/sqlflow-on-premise-version/).&#x20;
+
+Once the SQLFlow widget is installed on your server, you can access the SQLFlow widget with the url such as: [https://127.0.0.1/widget](https://127.0.0.1/widget). Currently there are no online demos available.
+
 <figure><img src="../.gitbook/assets/SQL-Metadata-Sources_700_988_white-600x847.png" alt=""><figcaption></figcaption></figure>
 
 * Visualize the lineage of the SQL queries.
@@ -87,7 +91,9 @@ $(async () => {
 });
 ```
 
-You can find the execution result here: [demo：visualize sqltext](http://101.43.8.206/widget/1/#/)
+With the above code we will have a result:
+
+<figure><img src="../.gitbook/assets/Screenshot from 2022-10-31 18-50-46.png" alt=""><figcaption></figcaption></figure>
 
 #### Parameter
 

@@ -1662,7 +1662,7 @@ paths:
       parameters:
       - name: dbvendor
         in: query
-        description: db vendor
+        description: database vendor
         required: true
         schema:
           type: string
@@ -1692,24 +1692,25 @@ paths:
           - dbvvertica
       - name: ignoreSelfLineage
         in: query
-        description: ignoreSelfLineage
+        description: whether ignore self lineage
         schema:
           type: boolean
           default: true
       - name: jobId
         in: query
-        description: jobId
+        description: give the job Id if need to use the job settings and display the
+          job graph
         schema:
           type: string
       - name: normalizeIdentifier
         in: query
-        description: normalizeIdentifier
+        description: whether normalize the Identifier
         schema:
           type: boolean
           default: true
       - name: sqltext
         in: query
-        description: sql text
+        description: sql text from which to generate the sqlflow model
         schema:
           type: string
       - name: token
@@ -1732,7 +1733,7 @@ paths:
               properties:
                 sqlfile:
                   type: string
-                  description: sqlfile
+                  description: sql file from which to generate the sqlflow model
                   format: binary
       responses:
         200:
@@ -1741,6 +1742,119 @@ paths:
             application/json;charset=utf-8:
               schema:
                 type: string
+                example:
+                  code: 200
+                  data:
+                    mode: global
+                    summary:
+                      schema: 0
+                      process: 0
+                      database: 0
+                      view: 0
+                      mostRelationTables: []
+                      column: 4
+                      relationship: 0
+                      table: 3
+                    sqlflow:
+                      dbvendor: dbvoracle
+                      dbobjs:
+                        - id: '4'
+                          name: EMP
+                          type: table
+                          columns:
+                            - id: '5'
+                              name: DEPTID
+                              coordinates:
+                                - x: 1
+                                  'y': 35
+                                  hashCode: '0'
+                                - x: 1
+                                  'y': 45
+                                  hashCode: '0'
+                            - id: '17'
+                              name: ENAME
+                              coordinates:
+                                - x: 1
+                                  'y': 8
+                                  hashCode: '0'
+                                - x: 1
+                                  'y': 13
+                                  hashCode: '0'
+                          coordinates:
+                            - x: 1
+                              'y': 19
+                              hashCode: '0'
+                            - x: 1
+                              'y': 22
+                              hashCode: '0'
+                        - id: '9'
+                          name: DEPT
+                          type: table
+                          columns:
+                            - id: '10'
+                              name: ID
+                              coordinates:
+                                - x: 1
+                                  'y': 48
+                                  hashCode: '0'
+                                - x: 1
+                                  'y': 55
+                                  hashCode: '0'
+                          coordinates:
+                            - x: 1
+                              'y': 24
+                              hashCode: '0'
+                            - x: 1
+                              'y': 28
+                              hashCode: '0'
+                        - id: '15'
+                          name: PSEUDO_TABLE_INCLUDE_ORPHAN_COLUMN
+                          type: pseudoTable
+                          columns:
+                            - id: '16'
+                              name: ENAME
+                              coordinates:
+                                - x: 1
+                                  'y': 8
+                                  hashCode: '0'
+                                - x: 1
+                                  'y': 13
+                                  hashCode: '0'
+                          coordinates:
+                            - x: 1
+                              'y': 1
+                              hashCode: '0'
+                            - x: 1
+                              'y': 35
+                              hashCode: '0'
+                      relationships: []
+                      errors:
+                        - errorMessage: 'find orphan column(10500) near: ename(1,8)'
+                          errorType: SyntaxHint
+                          coordinates:
+                            - x: 1
+                              'y': 8
+                              hashCode: '0'
+                            - x: 1
+                              'y': 13
+                              hashCode: '0'
+                        - errorMessage: Link orphan column [ename] to the first table [emp]
+                          errorType: LinkOrphanColumn
+                          coordinates:
+                            - x: 1
+                              'y': 8
+                              hashCode: '0'
+                            - x: 1
+                              'y': 13
+                              hashCode: '0'
+                    graph:
+                      relationshipIdMap: {}
+                      elements:
+                        tables: []
+                        edges: []
+                      tooltip: {}
+                      listIdMap: {}
+                  sessionId: 1491a5d5071c220ab993aa4d8a2e0e477d83abe4dd976a0c5c56c69e886a9481_1667481872808
         201:
           description: Created
           content: {}
@@ -2612,142 +2726,113 @@ paths:
                     mode: global
                     summary:
                       schema: 0
-                      process: 1
+                      process: 0
                       database: 0
                       view: 0
-                      mostRelationTables:
-                        - table: TBL_TEMP1
-                        - table: TBL_TEMP2
-                      column: 0
-                      relationship: 2
-                      table: 2
+                      mostRelationTables: []
+                      column: 4
+                      relationship: 0
+                      table: 3
                     sqlflow:
                       dbvendor: dbvoracle
                       dbobjs:
-                        - id: '6'
-                          name: QUERY INSERT-1
-                          type: process
+                        - id: '4'
+                          name: EMP
+                          type: table
+                          columns:
+                            - id: '5'
+                              name: DEPTID
+                              coordinates:
+                                - x: 1
+                                  'y': 35
+                                  hashCode: '0'
+                                - x: 1
+                                  'y': 45
+                                  hashCode: '0'
+                            - id: '17'
+                              name: ENAME
+                              coordinates:
+                                - x: 1
+                                  'y': 8
+                                  hashCode: '0'
+                                - x: 1
+                                  'y': 13
+                                  hashCode: '0'
+                          coordinates:
+                            - x: 1
+                              'y': 19
+                              hashCode: '0'
+                            - x: 1
+                              'y': 22
+                              hashCode: '0'
+                        - id: '9'
+                          name: DEPT
+                          type: table
+                          columns:
+                            - id: '10'
+                              name: ID
+                              coordinates:
+                                - x: 1
+                                  'y': 48
+                                  hashCode: '0'
+                                - x: 1
+                                  'y': 55
+                                  hashCode: '0'
+                          coordinates:
+                            - x: 1
+                              'y': 24
+                              hashCode: '0'
+                            - x: 1
+                              'y': 28
+                              hashCode: '0'
+                        - id: '15'
+                          name: PSEUDO_TABLE_INCLUDE_ORPHAN_COLUMN
+                          type: pseudoTable
+                          columns:
+                            - id: '16'
+                              name: ENAME
+                              coordinates:
+                                - x: 1
+                                  'y': 8
+                                  hashCode: '0'
+                                - x: 1
+                                  'y': 13
+                                  hashCode: '0'
                           coordinates:
                             - x: 1
                               'y': 1
                               hashCode: '0'
                             - x: 1
-                              'y': 112
+                              'y': 35
                               hashCode: '0'
-                          queryHashId: 4cc55e0b4d63c3e07927d59f117c8851
-                        - id: '4'
-                          name: TBL_TEMP2
-                          type: table
-                          columns: []
+                      relationships: []
+                      errors:
+                        - errorMessage: 'find orphan column(10500) near: ename(1,8)'
+                          errorType: SyntaxHint
                           coordinates:
+                            - x: 1
+                              'y': 8
+                              hashCode: '0'
                             - x: 1
                               'y': 13
                               hashCode: '0'
-                            - x: 1
-                              'y': 22
-                              hashCode: '0'
-                        - id: '10'
-                          name: TBL_TEMP1
-                          type: table
-                          columns: []
+                        - errorMessage: Link orphan column [ename] to the first table [emp]
+                          errorType: LinkOrphanColumn
                           coordinates:
                             - x: 1
-                              'y': 67
+                              'y': 8
                               hashCode: '0'
                             - x: 1
-                              'y': 76
+                              'y': 13
                               hashCode: '0'
-                      relationships:
-                        - id: '504'
-                          type: fdd
-                          target:
-                            id: '6'
-                            coordinates: []
-                          sources:
-                            - id: '10'
-                              sourceId: '10'
-                              sourceName: TBL_TEMP1
-                              coordinates: []
-                        - id: '506'
-                          type: fdd
-                          target:
-                            id: '4'
-                            coordinates: []
-                          sources:
-                            - id: '6'
-                              sourceId: '6'
-                              sourceName: QUERY INSERT-1
-                              coordinates: []
                     graph:
-                      relationshipIdMap:
-                        e0:
-                          - '506'
-                          - fdd
-                        e1:
-                          - '504'
-                          - fdd
+                      relationshipIdMap: {}
                       elements:
-                        tables:
-                          - columns: []
-                            height: 25.96875
-                            id: n0
-                            label:
-                              content: Query Insert-1
-                              fontFamily: Segoe UI Symbol
-                              fontSize: '12'
-                              height: 17.96875
-                              width: 162
-                              x: 0
-                              'y': 0
-                            width: 162
-                            x: 212
-                            'y': -35.9689
-                          - columns: []
-                            height: 25.96875
-                            id: n1
-                            label:
-                              content: tbl_temp2
-                              fontFamily: Segoe UI Symbol
-                              fontSize: '12'
-                              height: 17.96875
-                              width: 162
-                              x: 0
-                              'y': 0
-                            width: 162
-                            x: 424
-                            'y': -35.9689
-                          - columns: []
-                            height: 25.96875
-                            id: n2
-                            label:
-                              content: tbl_temp1
-                              fontFamily: Segoe UI Symbol
-                              fontSize: '12'
-                              height: 17.96875
-                              width: 162
-                              x: 0
-                              'y': 0
-                            width: 162
-                            x: 0
-                            'y': -35.9689
-                        edges:
-                          - id: e0
-                            sourceId: n0
-                            targetId: n1
-                          - id: e1
-                            sourceId: n2
-                            targetId: n0
+                        tables: []
+                        edges: []
                       tooltip: {}
-                      listIdMap:
-                        n0:
-                          - '6'
-                        n1:
-                          - '4'
-                        n2:
-                          - '10'
-                  sessionId: 98f82119a46175bb8e4ed971133f2953ea66556107e438030df2a3217bb67baa_1666495937504
-                  
-
+                      listIdMap: {}
+                  sessionId: 1491a5d5071c220ab993aa4d8a2e0e477d83abe4dd976a0c5c56c69e886a9481_1667481872808
         201:
           description: Created
           content: {}

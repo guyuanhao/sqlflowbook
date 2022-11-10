@@ -23,5 +23,5 @@ Read more about the SQLFlow frontend:
 
 * [SQLText Editor](sqltext-editor.md)
 * [Settings](settings.md)
-* [Job Management](job-management.md)
+* [Job Management](job-management/)
 * [Schema](schema.md)
