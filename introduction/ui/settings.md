@@ -24,6 +24,12 @@ We can observe the changes on parameters when switching different modes:
 
 You will be able to set the config when creating data lineage with the SQL Edior as well as giving the configurable parameters under the `setting` section during the job creation.&#x20;
 
+Customizing parameters when visualizing your SQL:
+
+<figure><img src="../../.gitbook/assets/33_20221110205211.png" alt=""><figcaption></figcaption></figure>
+
+Giving the configurable parameters under the `setting` section during the job creation:
+
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 21-08-42.png" alt=""><figcaption></figcaption></figure>
 
 | Parameter                   | Possible Values | Description                                                                      |
@@ -43,7 +49,7 @@ SELECT count(sal) totalNum, sum(sal) totalSal
 FROM   scott.emp 
 ```
 
-When we set all values as `On` when create the job, we will get following data lineage
+When we set all values as `On` and `direct` as the value in _dataflow of count function_ when creating the job/visualizing the SQL, we will get following data lineage
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-10 20-40-51.png" alt=""><figcaption></figcaption></figure>
 
