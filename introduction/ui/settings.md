@@ -49,9 +49,17 @@ SELECT count(sal) totalNum, sum(sal) totalSal
 FROM   scott.emp 
 ```
 
-When we set all values as `On` and `direct` as the value in _dataflow of count function_ when creating the job/visualizing the SQL, we will get following data lineage
+When we set all values as `On` and `direct` as the value in _dataflow of count function_ when creating the job/visualizing the SQL, we will get following data lineage:
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-10 20-40-51.png" alt=""><figcaption></figcaption></figure>
+
+All direct dataflows and indirect dataflows are present in above data lineage. We show the functions in the sql and intermediate recordSets are shown.
+
+The indirect dataflows will not be present if we turn `Off`  _indirect dataflow_:
+
+<figure><img src="../../.gitbook/assets/Screenshot from 2022-11-10 20-57-40.png" alt=""><figcaption></figcaption></figure>
+
+You can read more theory about what is [direct dataflow](../../concepts/data-lineage/direct-dataflow.md)/[indirect dataflow](../../concepts/data-lineage/indirect-dataflow.md) and why [aggrect function COUNT](../../concepts/data-lineage/aggregate-function-and-dataflow.md) is different.
 
 ### Show function
 
