@@ -51,7 +51,7 @@ Customized the extraction/exclusion content under the `advanced` section
 
 ### Configurable parameters
 
-You can give the configurable parameters under the `setting` section. Check [here](../settings.md#configurable-parameters-when-creating-jobs) to get more details about these parameters.
+You can give the configurable parameters under the `setting` section. Check [here](../settings.md#configurable-parameters-when-creating-jobs-or-visualizing-the-sql-in-sql-editor) to get more details about these parameters.
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-01 21-08-42.png" alt=""><figcaption></figcaption></figure>
 
