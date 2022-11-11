@@ -10,6 +10,7 @@
   * [Different modes in Gudu SQLFlow](introduction/getting-started/different-modes-in-gudu-sqlflow/README.md)
     * [Query mode](introduction/getting-started/different-modes-in-gudu-sqlflow/query-mode.md)
     * [Job mode](introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
+  * [Usage](introduction/getting-started/usage.md)
 * [Installation](introduction/installation/README.md)
   * [Linux](introduction/installation/linux.md)
   * [MacOS](introduction/installation/macos.md)
