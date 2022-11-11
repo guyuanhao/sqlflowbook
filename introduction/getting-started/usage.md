@@ -20,11 +20,13 @@ You can also read data lineage from your SQL files and you will need to create a
 
 You may want directly connect to your database and generate data lineage. You can find more details about how to do that [here](../ui/job-management/job-sources.md#from-database).
 
-## Share the data lineage
+## Share the data lineagege
 
-<figure><img src="../../.gitbook/assets/sqlflow-team-manager.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/share2.gif" alt=""><figcaption></figcaption></figure>
 
-Read more on team management [here](sign-up-a-new-account/team-management.md).
+<figure><img src="../../.gitbook/assets/share_data1.gif" alt=""><figcaption></figcaption></figure>
+
+You can share your data lineage schema by simply right click the data unit and click the share button. A url will be generated so that you can share the schema to others&#x20;
 
 ## Visualize JOIN
 
