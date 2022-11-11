@@ -1,4 +1,4 @@
-# Usage
+# Basic Usage
 
 This page gives a breif introduction on the main functions of SQLFlow UI. Details will be given in the page link.
 
@@ -21,6 +21,10 @@ You can also read data lineage from your SQL files and you will need to create a
 You may want directly connect to your database and generate data lineage. You can find more details about how to do that [here](../ui/job-management/job-sources.md#from-database).
 
 ## Share the data lineage
+
+<figure><img src="../../.gitbook/assets/sqlflow-team-manager.png" alt=""><figcaption></figcaption></figure>
+
+Read more on team management [here](sign-up-a-new-account/team-management.md).
 
 ## Visualize JOIN
 
