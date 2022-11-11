@@ -30,8 +30,8 @@ Number of the members which can be added into this team.
 
 #### Expired date
 
-The team license will be expired after this date.
+The expiration date for the team license.
 
 #### Team member
 
-Team member have the read access for the jobs submitted by memebers in the same team.
+Team member have the read access for the jobs submitted by other memebers in the same team.
