@@ -24,4 +24,6 @@ You may want directly connect to your database and generate data lineage. You ca
 
 ## Visualize JOIN
 
+<figure><img src="../../.gitbook/assets/visualize_JOIN.gif" alt=""><figcaption></figcaption></figure>
+
 ## Upstream and Downstream data lineage
