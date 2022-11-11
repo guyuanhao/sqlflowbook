@@ -40,7 +40,7 @@ Through Gudu SQLFlow, we can visualize the above data lineage as:
 
 ### What's next?
 
-* [Sign up a new Gudu account](sign-up-a-new-account.md)
+* [Sign up a new Gudu account](sign-up-a-new-account/)
 * Read more about [Gudu SQLFlow UI ](../ui/)
 * Install a [SQLFlow Server](../installation/)
 * Use [SQLFlow Java Library](../java-library/)
