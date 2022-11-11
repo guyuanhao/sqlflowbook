@@ -26,4 +26,10 @@ You may want directly connect to your database and generate data lineage. You ca
 
 <figure><img src="../../.gitbook/assets/visualize_JOIN.gif" alt=""><figcaption></figcaption></figure>
 
+Understand more on `JOIN` [here](../../concepts/data-lineage/dataflow.md#1.2-dataflow-type).
+
 ## Upstream and Downstream data lineage
+
+<figure><img src="../../.gitbook/assets/downstream_upstream.gif" alt=""><figcaption></figcaption></figure>
+
+`to upstream/to downstream` simplifies the data lineage so that you can have a straightforward view on the relationships. Read more about this feature [here](../ui/schema.md#to-upstream-to-downstream).
