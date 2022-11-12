@@ -79,7 +79,7 @@ _`to upstream`_/_`to downstream step by step`_: Enable collaspe/expend function 
 
 <figure><img src="../../.gitbook/assets/show_DDL.gif" alt=""><figcaption></figcaption></figure>
 
-Note: we currently are unable to have `visualize` and `view ddl` in stored _procedures_ for the regular jobs who fails in retrieving metadata. Check following captures:
+**Note**: we currently are unable to have `visualize` and `view ddl` in stored _procedures_ for the regular jobs who fails in retrieving metadata. Check following captures:
 
 <figure><img src="../../.gitbook/assets/1112_2.png" alt=""><figcaption></figcaption></figure>
 
