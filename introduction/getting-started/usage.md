@@ -16,7 +16,7 @@ You can also get the data lineage by analyzing your SQL files and you will need 
 
 ## Visualize database
 
-You may want directly connect to your database and generate data lineage. You can find more details about how to do that [here](../ui/job-management/job-sources.md#from-database).
+You may want directly connecting to your database and generate data lineage. You can find more details about how to do that [here](../ui/job-management/job-sources.md#from-database).
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-04 22-09-25.png" alt=""><figcaption></figcaption></figure>
 
