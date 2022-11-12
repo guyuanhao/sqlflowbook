@@ -81,11 +81,11 @@ You can check the DDL for `packages` and `procedures` by right clicking on the c
 
 <figure><img src="../../.gitbook/assets/show_DDL.gif" alt=""><figcaption></figcaption></figure>
 
-**Note**: we are currently unable to have `visualize` and `view ddl` in stored _procedures_ for the regular jobs who fails in retrieving metadata. Check following captures:
+**Note**: we are currently unable to have `visualize` and `view DDL` in stored _procedures_ for the regular jobs who fails in retrieving metadata. Check following captures:
 
 <figure><img src="../../.gitbook/assets/1112_2.png" alt=""><figcaption></figcaption></figure>
 
-While you should be able to have `visualize`/`view ddl`/`share` under stored procedures unit in other cases.
+While you should be able to have `visualize`/`view DDL`/`share` under stored procedures unit in other cases.
 
 <figure><img src="../../.gitbook/assets/1112_1.png" alt=""><figcaption></figcaption></figure>
 
