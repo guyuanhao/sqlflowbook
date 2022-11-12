@@ -79,6 +79,14 @@ _`to upstream`_/_`to downstream step by step`_: Enable collaspe/expend function 
 
 <figure><img src="../../.gitbook/assets/show_DDL.gif" alt=""><figcaption></figcaption></figure>
 
+Note: we currently are unable to have `visualize` and `view ddl` in stored _procedures_ for the regular jobs who fails in retrieving metadata. Check following captures:
+
+<figure><img src="../../.gitbook/assets/1112_2.png" alt=""><figcaption></figcaption></figure>
+
+While you should be able to have `visualize`/`view ddl`/`share` under stored procedures unit in other cases.
+
+<figure><img src="../../.gitbook/assets/1112_1.png" alt=""><figcaption></figcaption></figure>
+
 ## Different Schema Structures&#x20;
 
 The tree structure in schema section may differ from the database types (check [here](../../sqlflow-ingester/understanding-the-format-of-exported-data.md) to find why it can be different). Same as the database, the tree strecture also has three different cases.
