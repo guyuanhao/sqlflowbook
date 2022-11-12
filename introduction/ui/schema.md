@@ -77,6 +77,8 @@ _`to upstream`_/_`to downstream step by step`_: Enable collaspe/expend function 
 
 ## View DDL(Data Definition Language)
 
+You can check the DDL for `packages` and `procedures` by right clicking on the correspondant object and choose `view DDL`.
+
 <figure><img src="../../.gitbook/assets/show_DDL.gif" alt=""><figcaption></figcaption></figure>
 
 **Note**: we currently are unable to have `visualize` and `view ddl` in stored _procedures_ for the regular jobs who fails in retrieving metadata. Check following captures:
