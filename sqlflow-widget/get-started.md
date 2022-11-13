@@ -18,11 +18,10 @@ Once the SQLFlow widget is installed on your server, you can access the SQLFlow 
 * Visualize the lineage of the SQL queries.
 * Show specific table/column lineage graphics on the web page.
 * Package the data lineage into a standalone web app.
-* Shipped together with the [SQLFlow On-Premise](https://www.gudusoft.com/sqlflow-on-premise-version/) version.
+* Shipped together with the [SQLFlow On-Premise](https://www.gudusoft.com/sqlflow-on-premise-version/) version.\
 
-\
-\
-**Files**
+
+## **Files**
 
 ```
 ├── index.html
@@ -35,7 +34,7 @@ Once the SQLFlow widget is installed on your server, you can access the SQLFlow 
 
 Add `sqlflow.widget.2.4.9.js` in index.html, during the execution of the JS, a new iframe will be created, and the css from js will be embedded into the iframe, no additional css is needed.
 
-jquery is optional, and is inlcuded for the demostration only.
+jquery is optional and is inlcuded for the demostration purpose only.
 
 ```html
 <!DOCTYPE html>
@@ -95,7 +94,7 @@ With the above code we will have a result:
 
 <figure><img src="../.gitbook/assets/Screenshot from 2022-10-31 18-50-46.png" alt=""><figcaption></figcaption></figure>
 
-#### Parameter
+## Parameter
 
 | name      | detail                                                                             | type             | optional |
 | --------- | ---------------------------------------------------------------------------------- | ---------------- | -------- |
