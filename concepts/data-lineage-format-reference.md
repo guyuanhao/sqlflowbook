@@ -90,7 +90,39 @@ sqlflow payload contains two nodes. dbojbs and relationship.
 
 ```json
 {
-    "servers": [
+    "servers": [{
+            "dbVendor": "dbvoracle",
+            "name": "\"ORCLPDB1.LOCALDOMAIN\"",
+            "supportsCatalogs": false,
+            "supportsSchemas": true,
+            "schemas": [{
+                "name": "OE",
+                "tables": [{
+                    "columns": [{
+                        "name": "ORDER_ID",
+                        "id": "57"
+                    }],
+                    "id": "56",
+                    "name": "ORDERS",
+                    "type": "table"
+                }],
+                "packages": [{
+                    "id": "26",
+                    "name": "package1",
+                    "procedures": [{
+                        "name": "procedure1",
+                        "type": "procedure"
+                    }]
+                }, {
+                    "id": "42",
+                    "name": "package2",
+                    "procedures": [{
+                        "name": "procedure1",
+                        "type": "procedure"
+                    }]
+                }]
+            }]
+        },
         {
             "name": "default_server",
             "dbVendor": "dbvmysql",
@@ -137,39 +169,7 @@ sqlflow payload contains two nodes. dbojbs and relationship.
                     }]
                 }]
             }]
-        }, {
-            "dbVendor": "dbvsupportschemaonly",
-            "name": "DB_SERVER_SCHEMA_ONLY",
-            "supportsCatalogs": false,
-            "supportsSchemas": true,
-            "schemas": [{
-                "name": "OE",
-                "tables": [{
-                    "columns": [{
-                        "name": "ORDER_ID",
-                        "id": "57"
-                    }],
-                    "id": "56",
-                    "name": "ORDERS",
-                    "type": "table"
-                }],
-                "packages": [{
-                    "id": "26",
-                    "name": "package1",
-                    "procedures": [{
-                        "name": "procedure1",
-                        "type": "procedure"
-                    }]
-                }, {
-                    "id": "42",
-                    "name": "package2",
-                    "procedures": [{
-                        "name": "procedure1",
-                        "type": "procedure"
-                    }]
-                }]
-            }]
-        }, 
+        }
     ]
 }
 ```
