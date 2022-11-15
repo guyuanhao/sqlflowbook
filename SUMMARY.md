@@ -90,7 +90,11 @@
   * [SQLFlow-Extractor](sqlflow-ingester/introduction/sqlflow-extractor.md)
   * [SQLFlow-Submitter](sqlflow-ingester/introduction/sqlflow-submitter.md)
 * [SQLFlow-Ingester Java API Usage](sqlflow-ingester/sqlflow-ingester-java-api-usage.md)
-* [Understand the format of exported data](sqlflow-ingester/understanding-the-format-of-exported-data.md)
+* [Understand the format of exported data](sqlflow-ingester/understanding-the-format-of-exported-data/README.md)
+  * [Oracle](sqlflow-ingester/understanding-the-format-of-exported-data/oracle.md)
+  * [Microsoft SQL Server](sqlflow-ingester/understanding-the-format-of-exported-data/microsoft-sql-server.md)
+  * [MySQL](sqlflow-ingester/understanding-the-format-of-exported-data/mysql.md)
+  * [PostgreSQL](sqlflow-ingester/understanding-the-format-of-exported-data/postgresql.md)
 * [List of Supported dbVendors](sqlflow-ingester/list-of-supported-dbvendors.md)
 * [Git Repo](sqlflow-ingester/git-repo.md)
 

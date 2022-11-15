@@ -91,7 +91,7 @@ While you should be able to have `visualize`/`view DDL`/`share` under stored pro
 
 ## Different Schema Structures&#x20;
 
-The tree structure in schema section may differ from the database types (check [here](../../sqlflow-ingester/understanding-the-format-of-exported-data.md) to find why it can be different). Same as the database, the tree strecture also has three different cases.
+The tree structure in schema section may differ from the database types (check [here](../../sqlflow-ingester/understanding-the-format-of-exported-data/) to find why it can be different). Same as the database, the tree strecture also has three different cases.
 
 ### database.schema.table
 

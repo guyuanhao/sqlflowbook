@@ -579,7 +579,7 @@ The database doesn't have the _**database**_ layer(or no actual database layer) 
 
 ### Database list
 
-Check [here](list-of-supported-dbvendors.md) to get a full database list and the type details.
+Check [here](../list-of-supported-dbvendors.md) to get a full database list and the type details.
 
 ### Other clarifications on the json fields:
 
