@@ -45,3 +45,4 @@ Through Gudu SQLFlow, we can visualize the above data lineage as:
 * Install a [SQLFlow Server](../installation/)
 * Use [SQLFlow Java Library](../java-library/)
 * Analyze your data through [Rest API ](broken-reference)
+* [Understand the format of exported data](../../sqlflow-ingester/understanding-the-format-of-exported-data/) as well as check our[ sample data](../../sqlflow-ingester/understanding-the-format-of-exported-data/oracle.md)

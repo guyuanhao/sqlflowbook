@@ -2,6 +2,8 @@
 
 This page gives a sample metadata for **Oracle**.
 
+## Sample
+
 ```json
 {
     "servers": [
@@ -469,6 +471,8 @@ This page gives a sample metadata for **Oracle**.
 }
 ```
 
+## Sample Indication
+
 The above sample has the same structure as
 
 ```json
@@ -619,5 +623,7 @@ The above sample has the same structure as
     ]
   }
 ```
+
+## Get More Details
 
 You can refer to [this section](../../introduction/java-library/usage/dataflow.xml-structure.md) to understand more about what does each field mean.
