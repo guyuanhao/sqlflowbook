@@ -7,7 +7,7 @@ description: >-
 
 This page gives a detail reference of the data lineage response format which is returned on [SQLFlow UI](../introduction/ui/). The SQLFlow UI gets result from the /sqlflow/generation/sqlflow/graph endpoint. The /sqlflow/generation/sqlflow/graph endpoint has nearly the same input and output field data as [/sqlflow/generation/sqlflow](../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) and the only difference is that [/sqlflow/generation/sqlflow](../api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) does not contain [graph payload](data-lineage-format-reference.md#6.-graph-payload). Let's get into details and check the data lineage json resposne:
 
-### 1. Top level elements
+## 1. Top level elements
 
 ```json
 {
@@ -39,7 +39,7 @@ This page gives a detail reference of the data lineage response format which is 
 * jobId: job id, used to get the cache informaion in [Job mode](../introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
 * error: contains error messages if the status code is not 200
 
-### 2. Summary payload
+## 2. Summary payload
 
 ```json
 "summary": {
@@ -69,7 +69,7 @@ This page gives a detail reference of the data lineage response format which is 
 * process: process number
 * mostRelationTables: the top three tables which contain the most relationships
 
-### 3. Sqlflow payload
+## 3. Sqlflow payload
 
 ```json
 "sqlflow": {
@@ -86,7 +86,7 @@ sqlflow payload contains two nodes. dbojbs and relationship.
 * [dbojbs](data-lineage-format-reference.md#4.-dbobjs-payload): metadata, contains information of instance, db, schema, table, view, storage procedure, function, trigger, dblink, sequence, ddl etc..
 * [relationships](data-lineage-format-reference.md#3.-relationship-payload): relationships after analyzing sql
 
-### 4. Dbobjs payload
+## 4. Dbobjs payload
 
 ```json
 {
@@ -181,10 +181,12 @@ The top element of the dbobjs payload is an array and the array representing dif
 3. supportsCatalogs: whether support database (check [here](https://docs.gudusoft.com/sqlflow-ingester/understanding-the-format-of-exported-data#database-who-has-the-database-layer-and-the-schema-layer-sql-server-for-example) for more details on this flag)
 4. supportsSchemas: whether support schema (check [here](https://docs.gudusoft.com/sqlflow-ingester/understanding-the-format-of-exported-data#database-who-has-the-database-layer-and-the-schema-layer-sql-server-for-example) for more details on this flag)
 5. databases: present if support database
-6. schemas: present if database is not supported and only schema is supported. Type of the schema could be _`oracle`_ or _`db2`_
+6. schemas: present if database is not supported and only schema is supported.&#x20;
 7. dbLinks: dbLinks will be present if the resposne json is generated from metadata. Will not be present If the response json is generated from dataflow
 8. queries: present if the response json is generated from metadata
 9. tables, columns, package, prcedure, argument, process: check [here](sqlflow-data-reference.md#table-structure) for more details
+
+### DB Server Type
 
 There are tree types for the server instance (same logic [here](../sqlflow-ingester/understanding-the-format-of-exported-data.md)):
 
@@ -194,6 +196,10 @@ There are tree types for the server instance (same logic [here](../sqlflow-inges
    * server-->database-->tables/views/others/packages/procedures/functions/triggers
 3. if supportsCatalogs = false, supportsSchemas = true:
    * server --> schema --> tables/views/others/packages/procedures/functions/triggers
+
+Check [here](../sqlflow-ingester/list-of-supported-dbvendors.md) to get a full database list and the type details.
+
+### Procedure, Trigger and Function
 
 Database node and Schema node may contain other information indicating the data of _`procedure`_, _`trigger`_, _`function`_
 
@@ -225,7 +231,7 @@ Database node and Schema node may contain other information indicating the data 
     ]
 ```
 
-### 5. Relationship payload
+## 5. Relationship payload
 
 Relationship is the atom unit of the data lineage. Relationship builds a link between the source and target column (column-level lineage).
 
@@ -310,7 +316,7 @@ Check here for more details
 [#transform-fields-data](sqlflow-data-reference.md#transform-fields-data)
 {% endcontent-ref %}
 
-### 6. Graph payload
+## 6. Graph payload
 
 ```json
 "graph": {
@@ -383,7 +389,7 @@ Check here for more details
     * sourceId: source column id
     * targetId: target column id
 
-### Dataflow.xml Structure
+## Dataflow.xml Structure
 
 {% content-ref url="../introduction/java-library/usage/dataflow.xml-structure.md" %}
 [dataflow.xml-structure.md](../introduction/java-library/usage/dataflow.xml-structure.md)
