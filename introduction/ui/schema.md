@@ -111,7 +111,7 @@ For MYSQL, we have Database layer but we do not have Schema layer. Schema is sam
 
 ### schema.table
 
-For the databases who contain the Schema layer only. Currently we don't have any databases who belong to this type on [our support list](../../sqlflow-ingester/list-of-supported-dbvendors.md). If in future we have such kind of database, the structure would only contain `server` and `schema`
+For the databases who contain the Schema layer only. Currently we don't have any databases which belong to this type on [our support list](../../sqlflow-ingester/list-of-supported-dbvendors.md). If in future we have such kind of database, the structure would only contain `server` and `schema`
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-27 00-32-45.png" alt=""><figcaption></figcaption></figure>
 
