@@ -101,7 +101,7 @@ For the databases which contain _database_ layer and the _schema_ layer (SQL Ser
 
 For MSSQL, we have Database layer as well as Schema layer. The two layers will be both displayed on the schema UI.
 
-### schema.table
+### database.table
 
 For the databases which contain _database_ layer only (MYSQL for example)
 
@@ -109,10 +109,10 @@ For the databases which contain _database_ layer only (MYSQL for example)
 
 For MYSQL, we have Database layer but we do not have Schema layer. Schema is same as Database for MYSQL. Only Database layer is displayed on the schema UI.
 
-### database.table
+### schema.table
 
-For the databases which contain the schema layer only (Oracle for example)
+For the databases who contain the Schema layer only. Currently we don't have any databases who belong to this type on [our support list](../../sqlflow-ingester/list-of-supported-dbvendors.md). If in future we have such kind of database, the structure would only contain `server` and `schema`
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-27 00-32-45.png" alt=""><figcaption></figcaption></figure>
 
-For ORACLE, we have Schema layer but there is no Database layer for ORACLE. Only Schema layer is displayed on the schema UI.
+We would have Schema layer but there is no Database layer for this kind of DB. Only Schema layer is displayed on the schema UI.
