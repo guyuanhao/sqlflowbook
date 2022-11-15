@@ -1,6 +1,6 @@
 # List of Supported dbVendors
 
-| dbVendor      | Database   | Type                                                                                              |
+| dbVendor      | Database   | Layer Type                                                                                        |
 | ------------- | ---------- | ------------------------------------------------------------------------------------------------- |
 | dbvoracle     | oracle     | <p>database layer &#x26; schema layer<br><br>supportsCatalogs=true</p><p>supportsSchemas=true</p> |
 | dbvredshift   | redshift   | <p>database layer &#x26; schema layer<br><br>supportsCatalogs=true</p><p>supportsSchemas=true</p> |
