@@ -427,7 +427,7 @@ The database has the _**database**_ layer but doesn't have the _**schema**_ laye
   }
 ```
 
-### Database who has the schema layer only
+### Database who has the schema layer only (Currently no supported database belongs to this type)
 
 The database doesn't have the _**database**_ layer(or no actual database layer) but has the _**schema**_ layer only. `supportsCatalogs` will be false and `supportsSchemas` will be true.  No _**`databases`**_ list under the `servers` list and no extra db unit list. An extra _**`schemas`**_ list will be present directly under the `servers` list.
 
