@@ -395,7 +395,7 @@ This page gives a sample metadata for **Oracle**.
                     ]
                 }
             ],
-            "supportsCatalogs": false,
+            "supportsCatalogs": true,
             "supportsSchemas": true
         }
     ]

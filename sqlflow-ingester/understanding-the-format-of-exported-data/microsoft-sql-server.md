@@ -4,466 +4,369 @@ This page gives a sample metadata for **Microsoft SQL Server**.
 
 ```json
 {
+    "createTime": "2022-11-16 21:05:32",
+    "createdBy": "sqlflow-ingester v1.1.7",
+    "physicalInstance": "115.159.xx.xx",
     "servers": [
         {
-            "name": "DEFAULT_SERVER",
-            "dbVendor": "dbvmssql",
-            "supportsCatalogs": true,
-            "supportsSchemas": true,
             "databases": [
                 {
-                    "name": "DEFAULT",
+                    "name": "HR",
                     "schemas": [
                         {
-                            "name": "DEFAULT",
-                            "views": [
+                            "name": "[dbo]",
+                            "synonyms": [
                                 {
-                                    "id": "35",
-                                    "name": "vsal",
-                                    "displayName": "vsal",
-                                    "type": "view",
-                                    "columns": [
-                                        {
-                                            "id": "37",
-                                            "name": "\"Department\"",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 3,
-                                                    "y": 36
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 3,
-                                                    "y": 48
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "38",
-                                            "name": "\"Employees\"",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 4,
-                                                    "y": 36
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 4,
-                                                    "y": 47
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "39",
-                                            "name": "\"Salary\"",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 5,
-                                                    "y": 36
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 5,
-                                                    "y": 44
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "34",
-                                            "name": "RelationRows",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 1,
-                                                    "y": 13
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 1,
-                                                    "y": 17
-                                                }
-                                            ],
-                                            "source": "system",
-                                            "uiVisible": false
-                                        }
-                                    ],
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 1,
-                                            "y": 13
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 1,
-                                            "y": 17
-                                        }
-                                    ]
+                                    "database": "[HR]",
+                                    "name": "OFFICES",
+                                    "schema": "[dbo]",
+                                    "sourceDbLinkName": "HR",
+                                    "sourceName": "LOCATIONS",
+                                    "sourceSchema": "DBO"
                                 }
                             ],
-                            "others": [
-                                {
-                                    "id": "2",
-                                    "name": "RESULT_OF_A-1",
-                                    "displayName": "RESULT_OF_A-1",
-                                    "type": "select_list",
-                                    "columns": [
-                                        {
-                                            "id": "1",
-                                            "name": "RelationRows",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 11,
-                                                    "y": 29
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 11,
-                                                    "y": 30
-                                                }
-                                            ],
-                                            "source": "system",
-                                            "uiVisible": false
-                                        },
-                                        {
-                                            "id": "10",
-                                            "name": "deptno",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 6,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 6,
-                                                    "y": 24
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "11",
-                                            "name": "num_emp",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 7,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 7,
-                                                    "y": 34
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "15",
-                                            "name": "sal_sum",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 8,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 8,
-                                                    "y": 34
-                                                }
-                                            ]
-                                        }
-                                    ],
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 11,
-                                            "y": 29
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 11,
-                                            "y": 30
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "20",
-                                    "name": "RESULT_OF_B-1",
-                                    "displayName": "RESULT_OF_B-1",
-                                    "type": "select_list",
-                                    "columns": [
-                                        {
-                                            "id": "19",
-                                            "name": "RelationRows",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 15,
-                                                    "y": 32
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 15,
-                                                    "y": 33
-                                                }
-                                            ],
-                                            "source": "system",
-                                            "uiVisible": false
-                                        },
-                                        {
-                                            "id": "21",
-                                            "name": "total_count",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 12,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 12,
-                                                    "y": 38
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "25",
-                                            "name": "total_sal",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 13,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 13,
-                                                    "y": 36
-                                                }
-                                            ]
-                                        }
-                                    ],
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 15,
-                                            "y": 32
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 15,
-                                            "y": 33
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "30",
-                                    "name": "RS-1",
-                                    "displayName": "RS-1",
-                                    "type": "select_list",
-                                    "columns": [
-                                        {
-                                            "id": "31",
-                                            "name": "\"Department\"",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 3,
-                                                    "y": 10
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 3,
-                                                    "y": 48
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "32",
-                                            "name": "\"Employees\"",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 4,
-                                                    "y": 10
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 4,
-                                                    "y": 47
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "33",
-                                            "name": "\"Salary\"",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 5,
-                                                    "y": 10
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 5,
-                                                    "y": 44
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "29",
-                                            "name": "RelationRows",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 3,
-                                                    "y": 10
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 5,
-                                                    "y": 44
-                                                }
-                                            ],
-                                            "source": "system",
-                                            "uiVisible": false
-                                        }
-                                    ],
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 3,
-                                            "y": 10
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 5,
-                                            "y": 44
-                                        }
-                                    ]
-                                }
-                            ],
-                            "processes": [
-                                {
-                                    "id": "36",
-                                    "name": "Query Create View-1",
-                                    "procedureName": "batchQueries",
-                                    "queryHashId": "4ef278b9a7850f717990e96aae7a3f43",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 1,
-                                            "y": 1
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 16,
-                                            "y": 2
-                                        }
-                                    ],
-                                    "uiVisible": false
-                                }
-                            ]
-                        },
-                        {
-                            "name": "scott",
                             "tables": [
                                 {
-                                    "id": "6",
-                                    "name": "emp",
-                                    "displayName": "scott.emp",
-                                    "type": "table",
                                     "columns": [
                                         {
-                                            "id": "5",
-                                            "name": "RelationRows",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 9,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 9,
-                                                    "y": 27
-                                                }
-                                            ],
-                                            "source": "system",
-                                            "uiVisible": false
+                                            "comment": "",
+                                            "dataType": "char(2)",
+                                            "name": "COUNTRY_ID"
                                         },
                                         {
-                                            "id": "9",
-                                            "name": "city",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 10,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 10,
-                                                    "y": 22
-                                                }
-                                            ]
+                                            "comment": "",
+                                            "dataType": "varchar(40)",
+                                            "name": "COUNTRY_NAME"
                                         },
                                         {
-                                            "id": "7",
-                                            "name": "deptno",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 6,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 6,
-                                                    "y": 24
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "8",
-                                            "name": "sal",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 8,
-                                                    "y": 22
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 8,
-                                                    "y": 25
-                                                }
-                                            ]
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "REGION_ID"
                                         }
                                     ],
-                                    "coordinates": [
+                                    "databaseName": "[HR]",
+                                    "name": "COUNTRIES",
+                                    "schemaName": "[dbo]",
+                                    "type": "table"
+                                },
+                                {
+                                    "columns": [
                                         {
-                                            "hashCode": "0",
-                                            "x": 9,
-                                            "y": 18
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "DEPARTMENT_ID"
                                         },
                                         {
-                                            "hashCode": "0",
-                                            "x": 9,
-                                            "y": 27
+                                            "comment": "",
+                                            "dataType": "varchar(30)",
+                                            "name": "DEPARTMENT_NAME"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "MANAGER_ID"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "LOCATION_ID"
                                         }
-                                    ]
+                                    ],
+                                    "databaseName": "[HR]",
+                                    "name": "DEPARTMENTS",
+                                    "schemaName": "[dbo]",
+                                    "type": "table"
+                                },
+                                {
+                                    "columns": [
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "EMPLOYEE_ID"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(20)",
+                                            "name": "FIRST_NAME"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(25)",
+                                            "name": "LAST_NAME"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(25)",
+                                            "name": "EMAIL"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(20)",
+                                            "name": "PHONE_INT"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "date",
+                                            "name": "HIRE_DATE"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(10)",
+                                            "name": "JOB_ID"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "SALARY"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "COMMISSION_PCT"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "MANAGER_ID"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "DEPARTMENT_ID"
+                                        }
+                                    ],
+                                    "databaseName": "[HR]",
+                                    "name": "EMPLOYEES",
+                                    "schemaName": "[dbo]",
+                                    "type": "table"
+                                },
+                                {
+                                    "columns": [
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "EMPLOYEE_ID"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "date",
+                                            "name": "START_DATE"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "date",
+                                            "name": "END_DATE"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(10)",
+                                            "name": "JOB_ID"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "DEPARTMENT_ID"
+                                        }
+                                    ],
+                                    "databaseName": "[HR]",
+                                    "name": "JOB_HISTORY",
+                                    "schemaName": "[dbo]",
+                                    "type": "table"
+                                },
+                                {
+                                    "columns": [
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(10)",
+                                            "name": "JOB_ID"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(35)",
+                                            "name": "JOB_TITLE"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "MIN_SALARY"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "MAX_SALARY"
+                                        }
+                                    ],
+                                    "databaseName": "[HR]",
+                                    "name": "JOBS",
+                                    "schemaName": "[dbo]",
+                                    "type": "table"
+                                },
+                                {
+                                    "columns": [
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "LOCATION_ID"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(40)",
+                                            "name": "STREET_ADDRESS"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(12)",
+                                            "name": "POSTAL_CODE"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(30)",
+                                            "name": "CITY"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(25)",
+                                            "name": "STATE_PROVINCE"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "char(2)",
+                                            "name": "COUNTRY_ID"
+                                        }
+                                    ],
+                                    "databaseName": "[HR]",
+                                    "name": "LOCATIONS",
+                                    "schemaName": "[dbo]",
+                                    "type": "table"
+                                },
+                                {
+                                    "columns": [
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "REGION_ID"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(25)",
+                                            "name": "REGION_NAME"
+                                        }
+                                    ],
+                                    "databaseName": "[HR]",
+                                    "name": "REGIONS",
+                                    "schemaName": "[dbo]",
+                                    "type": "table"
+                                }
+                            ],
+                            "views": [
+                                {
+                                    "columns": [
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "[employee_id]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(10)",
+                                            "name": "[job_id]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "[manager_id]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "[department_id]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "[location_id]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "char(2)",
+                                            "name": "[country_id]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(20)",
+                                            "name": "[first_name]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(25)",
+                                            "name": "[last_name]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "[salary]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "int",
+                                            "name": "[commission_pct]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(30)",
+                                            "name": "[department_name]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(35)",
+                                            "name": "[job_title]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(30)",
+                                            "name": "[city]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(25)",
+                                            "name": "[state_province]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(40)",
+                                            "name": "[country_name]"
+                                        },
+                                        {
+                                            "comment": "",
+                                            "dataType": "varchar(25)",
+                                            "name": "[region_name]"
+                                        }
+                                    ],
+                                    "databaseName": "[HR]",
+                                    "name": "[EMP_DETAILS_VIEW]",
+                                    "schemaName": "[dbo]",
+                                    "type": "view"
                                 }
                             ]
                         }
                     ]
                 }
-            ]
+            ],
+            "dbLinks": [],
+            "dbVendor": "dbvmssql",
+            "name": "115.159.xx.xx",
+            "queries": [
+                {
+                    "database": "DWDB",
+                    "groupName": "",
+                    "name": "SPREPORTER_COMPARE_OVERVIEW_BATCHUNIQUEHASHINFO",
+                    "schema": "READTRACE",
+                    "sourceCode": "\r\ncreate procedure ReadTrace.spReporter_Compare_Overview_BatchUniqueHashInfo\r\nas\r\nbegin\r\n\tset nocount on\r\n\r\n\tselect 'Matching' as [Desc],\r\n\t\t\tcount_big(*) as [Count]\r\n\t\t\tfrom ReadTrace.tblUniqueBatches b\r\n\t\t\tinner join ReadTraceCompare.tblUniqueBatches c\r\n\t\t\t\ton b.HashID = c.HashID\r\n\t\r\n\tunion all\r\n\t\tselect 'BO' as [Desc],\r\n\t\t\t\tcount_big(*) \r\n\t\t\t\tfrom ReadTrace.tblUniqueBatches b\r\n\t\t\t\tleft outer join ReadTraceCompare.tblUniqueBatches c\r\n\t\t\t\t\ton b.HashID = c.HashID\r\n\t\t\t\twhere c.HashID is NULL\r\n\r\n\tunion all\r\n\t\tselect 'CO' as [Desc],\r\n\t\t\t\tcount_big(*) \r\n\t\t\t\tfrom ReadTrace.tblUniqueBatches b\r\n\t\t\t\tright outer join ReadTraceCompare.tblUniqueBatches c\r\n\t\t\t\t\ton b.HashID = c.HashID\r\n\t\t\t\twhere b.HashID is NULL\r\n\torder by [Desc]\r\nend ",
+                    "type": "procedure"
+                }
+            ],
+            "supportsCatalogs": true,
+            "supportsSchemas": true
         }
     ]
 }
