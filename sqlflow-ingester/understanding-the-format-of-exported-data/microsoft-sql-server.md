@@ -2,7 +2,7 @@
 
 This page gives a sample metadata for **Microsoft SQL Server**.
 
-```
+```json
 {
     "servers": [
         {
@@ -468,3 +468,160 @@ This page gives a sample metadata for **Microsoft SQL Server**.
     ]
 }
 ```
+
+## Sample Indication
+
+The above sample has the same structure as
+
+```json
+{
+    "createTime":"", //export time
+    "createdBy":"sqlflow-exporter",//name of the export tool
+    "physicalInstance":"",//server address
+    "servers":[
+        {
+            "name":"",//server name
+            "dbVendor":"",//database type，possible values are: dbvathena,dbvazuresql,dbvbigquery,dbvcouchbase,dbvdb2,dbvgreenplum,dbvhana,dbvhive,dbvimpala,dbvinformix,dbvmdx,dbvmysqldbvnetezza,dbvopenedge,dbvoracle,dbvpostgresql,dbvpresto,dbvredshift,dbvsnowflake,dbvsparksql,dbvmssql,dbvsybase,dbvteradata,dbvvertica
+            "supportsCatalogs":true,// has database layer
+            "supportsSchemas":true,// has schema layer
+            "databases":[ // No extra db unit field outside the database list because all units belong to the specific schema and database.
+                {
+                    "name":"",//database name
+                    "schemas":[
+                        {
+                            "name":"",//schema name
+                            "synonyms":[
+                                {
+                                    "name":"",
+                                    "sourceName":"",
+                                    "sourceSchema":"",
+                                    "sourceDbLinkName":""
+                                }
+                            ],
+                            "sequences":[
+                                {
+                                    "name":"",
+                                    "incrementBy":""
+                                }
+                            ],
+                            "tables":[
+                                {
+                                    "name":"",//table name 
+                                    "columns":[
+                                        {
+                                            "dataType":"",//column data type
+                                            "name":"",//column name
+                                            "comment":""//column comment
+                                        }
+                                    ]
+                                }
+                            ],
+                            "views":[ 
+                              {
+                                    "name":"",//view name
+                                    "columns":[
+                                        {
+                                            "dataType":"",
+                                            "name":"",
+                                            "comment":""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "others":[//others, including resultset, variable, path etc 
+                                {
+                                    "name":"",
+                                    "columns":[
+                                        {
+                                            "dataType":"",
+                                            "name":"",
+                                            "comment":""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "packages":[
+                                {
+                                    "name":"",//package name 
+                                    "procedures":[//prcedures in the package
+                                    ],
+                                    "functions":[//functions in the package
+                                    ],
+                                    "triggers":[//triggers in the package
+                                    ]
+                                }
+                            ],
+                            "procedures":[
+                                {
+                                    "name":"",
+                                    "type":"",
+                                    "arguments":[
+                                        {
+                                            "name":"",
+                                            "dataType":"",
+                                            "inout":""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "functions":[
+                                {
+                                    "name":"",
+                                    "type":"",
+                                    "arguments":[
+                                        {
+                                            "name":"",
+                                            "dataType":"",
+                                            "inout":""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "triggers":[
+                                {
+                                    "name":"",
+                                    "type":"",
+                                    "arguments":[
+                                        {
+                                            "name":"",
+                                            "dataType":"",
+                                            "inout":""
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+            "dbLinks":[
+                {
+                    "owner":"",
+                    "name":"",
+                    "userName":"",
+                    "host":""
+                }
+            ],
+            "queries":[//DDL scripts in database
+                {
+                    "database":"",
+                    "schema":"",
+                    "name":"",
+                    "type":"",
+                    "sourceCode":"",
+                    "groupName":""
+                }
+            ]
+        }
+    ],
+    "errorMessages":[//errors during the exporting 
+        {
+            "errorMessage":"",
+            "errorType":"",
+            "file":""
+        }
+    ]
+  }
+```
+
+## Get More Details
+
+You can refer to [this section](../../introduction/java-library/usage/dataflow.xml-structure.md) to understand more about what does each field mean.

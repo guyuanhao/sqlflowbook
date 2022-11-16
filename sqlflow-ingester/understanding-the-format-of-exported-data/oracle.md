@@ -6,466 +6,397 @@ This page gives a sample metadata for **Oracle**.
 
 ```json
 {
+    "createTime": "2022-11-07 23:30:12",
+    "createdBy": "sqlflow-ingester v1.1.7",
+    "physicalInstance": "106.54.xx.xx",
     "servers": [
         {
-            "name": "DEFAULT_SERVER",
+            "dbLinks": [],
             "dbVendor": "dbvoracle",
-            "supportsCatalogs": true,
-            "supportsSchemas": true,
-            "databases": [
+            "name": "106.54.xx.xx",
+            "queries": [
                 {
-                    "name": "DEFAULT",
-                    "schemas": [
+                    "database": "",
+                    "groupName": "\"SH\".\"FWEEK_PSCAT_SALES_MV\"",
+                    "name": "FWEEK_PSCAT_SALES_MV",
+                    "schema": "SH",
+                    "sourceCode": "CREATE MATERIALIZED VIEW \"SH\".\"FWEEK_PSCAT_SALES_MV\" as SELECT   t.week_ending_day\n  ,        p.prod_subcategory\n  ,        sum(s.amount_sold) AS dollars\n  ,        s.channel_id\n  ,        s.promo_id\n  FROM     sales s\n  ,        times t\n  ,        products p\n  WHERE    s.time_id = t.time_id\n  AND      s.prod_id = p.prod_id\n  GROUP BY t.week_ending_day\n  ,        p.prod_subcategory\n  ,        s.channel_id\n  ,        s.promo_id",
+                    "type": "materialized view"
+                }
+            ],
+            "schemas": [
+                {
+                    "functions": [
                         {
-                            "name": "DEFAULT",
-                            "views": [
+                            "arguments": [
                                 {
-                                    "id": "35",
-                                    "name": "vsal",
-                                    "displayName": "vsal",
-                                    "type": "view",
-                                    "columns": [
-                                        {
-                                            "id": "37",
-                                            "name": "\"Department\"",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 3,
-                                                    "y": 36
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 3,
-                                                    "y": 48
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "38",
-                                            "name": "\"Employees\"",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 4,
-                                                    "y": 36
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 4,
-                                                    "y": 47
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "39",
-                                            "name": "\"Salary\"",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 5,
-                                                    "y": 36
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 5,
-                                                    "y": 44
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "34",
-                                            "name": "RelationRows",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 1,
-                                                    "y": 13
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 1,
-                                                    "y": 17
-                                                }
-                                            ],
-                                            "source": "system",
-                                            "uiVisible": false
-                                        }
-                                    ],
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 1,
-                                            "y": 13
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 1,
-                                            "y": 17
-                                        }
-                                    ]
+                                    "dataType": "VARRAY",
+                                    "name": "P_PHONELIST"
                                 }
                             ],
-                            "others": [
-                                {
-                                    "id": "2",
-                                    "name": "RESULT_OF_A-1",
-                                    "displayName": "RESULT_OF_A-1",
-                                    "type": "select_list",
-                                    "columns": [
-                                        {
-                                            "id": "1",
-                                            "name": "RelationRows",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 11,
-                                                    "y": 29
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 11,
-                                                    "y": 30
-                                                }
-                                            ],
-                                            "source": "system",
-                                            "uiVisible": false
-                                        },
-                                        {
-                                            "id": "10",
-                                            "name": "deptno",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 6,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 6,
-                                                    "y": 24
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "11",
-                                            "name": "num_emp",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 7,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 7,
-                                                    "y": 34
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "15",
-                                            "name": "sal_sum",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 8,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 8,
-                                                    "y": 34
-                                                }
-                                            ]
-                                        }
-                                    ],
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 11,
-                                            "y": 29
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 11,
-                                            "y": 30
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "20",
-                                    "name": "RESULT_OF_B-1",
-                                    "displayName": "RESULT_OF_B-1",
-                                    "type": "select_list",
-                                    "columns": [
-                                        {
-                                            "id": "19",
-                                            "name": "RelationRows",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 15,
-                                                    "y": 32
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 15,
-                                                    "y": 33
-                                                }
-                                            ],
-                                            "source": "system",
-                                            "uiVisible": false
-                                        },
-                                        {
-                                            "id": "21",
-                                            "name": "total_count",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 12,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 12,
-                                                    "y": 38
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "25",
-                                            "name": "total_sal",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 13,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 13,
-                                                    "y": 36
-                                                }
-                                            ]
-                                        }
-                                    ],
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 15,
-                                            "y": 32
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 15,
-                                            "y": 33
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "30",
-                                    "name": "RS-1",
-                                    "displayName": "RS-1",
-                                    "type": "select_list",
-                                    "columns": [
-                                        {
-                                            "id": "31",
-                                            "name": "\"Department\"",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 3,
-                                                    "y": 10
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 3,
-                                                    "y": 48
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "32",
-                                            "name": "\"Employees\"",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 4,
-                                                    "y": 10
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 4,
-                                                    "y": 47
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "33",
-                                            "name": "\"Salary\"",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 5,
-                                                    "y": 10
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 5,
-                                                    "y": 44
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "29",
-                                            "name": "RelationRows",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 3,
-                                                    "y": 10
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 5,
-                                                    "y": 44
-                                                }
-                                            ],
-                                            "source": "system",
-                                            "uiVisible": false
-                                        }
-                                    ],
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 3,
-                                            "y": 10
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 5,
-                                            "y": 44
-                                        }
-                                    ]
-                                }
-                            ],
-                            "processes": [
-                                {
-                                    "id": "36",
-                                    "name": "Query Create View-1",
-                                    "procedureName": "batchQueries",
-                                    "queryHashId": "4ef278b9a7850f717990e96aae7a3f43",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 1,
-                                            "y": 1
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 16,
-                                            "y": 2
-                                        }
-                                    ],
-                                    "uiVisible": false
-                                }
-                            ]
+                            "database": "",
+                            "name": "GET_PHONE_NUMBER_F",
+                            "schema": "\"OE\""
+                        }
+                    ],
+                    "name": "\"OE\"",
+                    "sequences": [
+                        {
+                            "database": "",
+                            "incrementBy": "1",
+                            "name": "ORDERS_SEQ",
+                            "schema": "\"OE\""
+                        }
+                    ],
+                    "synonyms": [
+                        {
+                            "database": "",
+                            "name": "COUNTRIES",
+                            "schema": "\"OE\"",
+                            "sourceDbLinkName": "",
+                            "sourceName": "COUNTRIES",
+                            "sourceSchema": "HR"
                         },
                         {
-                            "name": "scott",
-                            "tables": [
+                            "database": "",
+                            "name": "LOCATIONS",
+                            "schema": "\"OE\"",
+                            "sourceDbLinkName": "",
+                            "sourceName": "LOCATIONS",
+                            "sourceSchema": "HR"
+                        },
+                        {
+                            "database": "",
+                            "name": "DEPARTMENTS",
+                            "schema": "\"OE\"",
+                            "sourceDbLinkName": "",
+                            "sourceName": "DEPARTMENTS",
+                            "sourceSchema": "HR"
+                        },
+                        {
+                            "database": "",
+                            "name": "JOBS",
+                            "schema": "\"OE\"",
+                            "sourceDbLinkName": "",
+                            "sourceName": "JOBS",
+                            "sourceSchema": "HR"
+                        },
+                        {
+                            "database": "",
+                            "name": "EMPLOYEES",
+                            "schema": "\"OE\"",
+                            "sourceDbLinkName": "",
+                            "sourceName": "EMPLOYEES",
+                            "sourceSchema": "HR"
+                        },
+                        {
+                            "database": "",
+                            "name": "JOB_HISTORY",
+                            "schema": "\"OE\"",
+                            "sourceDbLinkName": "",
+                            "sourceName": "JOB_HISTORY",
+                            "sourceSchema": "HR"
+                        }
+                    ],
+                    "tables": [
+                        {
+                            "columns": [
                                 {
-                                    "id": "6",
-                                    "name": "emp",
-                                    "displayName": "scott.emp",
-                                    "type": "table",
-                                    "columns": [
-                                        {
-                                            "id": "5",
-                                            "name": "RelationRows",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 9,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 9,
-                                                    "y": 27
-                                                }
-                                            ],
-                                            "source": "system",
-                                            "uiVisible": false
-                                        },
-                                        {
-                                            "id": "9",
-                                            "name": "city",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 10,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 10,
-                                                    "y": 22
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "7",
-                                            "name": "deptno",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 6,
-                                                    "y": 18
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 6,
-                                                    "y": 24
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "8",
-                                            "name": "sal",
-                                            "coordinates": [
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 8,
-                                                    "y": 22
-                                                },
-                                                {
-                                                    "hashCode": "0",
-                                                    "x": 8,
-                                                    "y": 25
-                                                }
-                                            ]
-                                        }
-                                    ],
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 9,
-                                            "y": 18
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 9,
-                                            "y": 27
-                                        }
-                                    ]
+                                    "comment": "",
+                                    "dataType": "VARCHAR2(50 byte)",
+                                    "name": "CATEGORY_NAME"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "VARCHAR2(1000 byte)",
+                                    "name": "CATEGORY_DESCRIPTION"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "NUMBER(2)",
+                                    "name": "CATEGORY_ID"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "NUMBER(2)",
+                                    "name": "PARENT_CATEGORY_ID"
                                 }
-                            ]
+                            ],
+                            "databaseName": "",
+                            "name": "CATEGORIES_TAB",
+                            "schemaName": "\"OE\"",
+                            "type": "table"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "comment": "Part of concatenated primary key, references product_information.product_id.",
+                                    "dataType": "NUMBER(6)",
+                                    "name": "PRODUCT_ID"
+                                },
+                                {
+                                    "comment": "Part of concatenated primary key, references warehouses.warehouse_id.",
+                                    "dataType": "NUMBER(3)",
+                                    "name": "WAREHOUSE_ID"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "NUMBER(8)",
+                                    "name": "QUANTITY_ON_HAND"
+                                }
+                            ],
+                            "databaseName": "",
+                            "name": "INVENTORIES",
+                            "schemaName": "\"OE\"",
+                            "type": "table"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "comment": "PRIMARY KEY column.",
+                                    "dataType": "NUMBER(12)",
+                                    "name": "ORDER_ID"
+                                },
+                                {
+                                    "comment": "TIMESTAMP WITH LOCAL TIME ZONE column, NOT NULL constraint.",
+                                    "dataType": "TIMESTAMP(6) WITH LOCAL TIME ZONE(38,6)",
+                                    "name": "ORDER_DATE"
+                                },
+                                {
+                                    "comment": "CHECK constraint.",
+                                    "dataType": "VARCHAR2(8 byte)",
+                                    "name": "ORDER_MODE"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "NUMBER(6)",
+                                    "name": "CUSTOMER_ID"
+                                },
+                                {
+                                    "comment": "0: Not fully entered, 1: Entered, 2: Canceled - bad credit, -\n3: Canceled - by customer, 4: Shipped - whole order, -\n5: Shipped - replacement items, 6: Shipped - backlog on items, -\n7: Shipped - special delivery, 8: Shipped - billed, 9: Shipped - payment plan,-\n10: Shipped - paid",
+                                    "dataType": "NUMBER(2)",
+                                    "name": "ORDER_STATUS"
+                                },
+                                {
+                                    "comment": "CHECK constraint.",
+                                    "dataType": "NUMBER(8,2)",
+                                    "name": "ORDER_TOTAL"
+                                },
+                                {
+                                    "comment": "References hr.employees.employee_id.",
+                                    "dataType": "NUMBER(6)",
+                                    "name": "SALES_REP_ID"
+                                },
+                                {
+                                    "comment": "Sales promotion ID. Used in SH schema",
+                                    "dataType": "NUMBER(6)",
+                                    "name": "PROMOTION_ID"
+                                }
+                            ],
+                            "databaseName": "",
+                            "name": "ORDERS",
+                            "schemaName": "\"OE\"",
+                            "type": "table"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "comment": "Part of concatenated primary key, references orders.order_id.",
+                                    "dataType": "NUMBER(12)",
+                                    "name": "ORDER_ID"
+                                },
+                                {
+                                    "comment": "Part of concatenated primary key.",
+                                    "dataType": "NUMBER(3)",
+                                    "name": "LINE_ITEM_ID"
+                                },
+                                {
+                                    "comment": "References product_information.product_id.",
+                                    "dataType": "NUMBER(6)",
+                                    "name": "PRODUCT_ID"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "NUMBER(8,2)",
+                                    "name": "UNIT_PRICE"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "NUMBER(8)",
+                                    "name": "QUANTITY"
+                                }
+                            ],
+                            "databaseName": "",
+                            "name": "ORDER_ITEMS",
+                            "schemaName": "\"OE\"",
+                            "type": "table"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "comment": "Primary key column.",
+                                    "dataType": "NUMBER(6)",
+                                    "name": "PRODUCT_ID"
+                                },
+                                {
+                                    "comment": "Primary key column.",
+                                    "dataType": "VARCHAR2(3 byte)",
+                                    "name": "LANGUAGE_ID"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "NVARCHAR2(50 char)",
+                                    "name": "TRANSLATED_NAME"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "NVARCHAR2(2000 char)",
+                                    "name": "TRANSLATED_DESCRIPTION"
+                                }
+                            ],
+                            "databaseName": "",
+                            "name": "PRODUCT_DESCRIPTIONS",
+                            "schemaName": "\"OE\"",
+                            "type": "table"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "comment": "Primary key column.",
+                                    "dataType": "NUMBER(6)",
+                                    "name": "PRODUCT_ID"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "VARCHAR2(50 byte)",
+                                    "name": "PRODUCT_NAME"
+                                },
+                                {
+                                    "comment": "Primary language description corresponding to translated_description in\noe.product_descriptions, added to provide non-NLS text columns for OC views\nto accss.",
+                                    "dataType": "VARCHAR2(2000 byte)",
+                                    "name": "PRODUCT_DESCRIPTION"
+                                },
+                                {
+                                    "comment": "Low cardinality column, can be used for bitmap index.\nSchema SH uses it as foreign key",
+                                    "dataType": "NUMBER(2)",
+                                    "name": "CATEGORY_ID"
+                                },
+                                {
+                                    "comment": "Low cardinality column, can be used for bitmap index.",
+                                    "dataType": "NUMBER(1)",
+                                    "name": "WEIGHT_CLASS"
+                                },
+                                {
+                                    "comment": "INTERVAL YEAER TO MONTH column, low cardinality, can be used for bitmap\nindex.",
+                                    "dataType": "INTERVAL YEAR(2) TO MONTH(2)",
+                                    "name": "WARRANTY_PERIOD"
+                                },
+                                {
+                                    "comment": "Offers possibility of extensions outside Common Schema.",
+                                    "dataType": "NUMBER(6)",
+                                    "name": "SUPPLIER_ID"
+                                },
+                                {
+                                    "comment": "Check constraint. Appropriate for complex rules, such as \"All products in\nstatus PRODUCTION must have at least one inventory entry.\" Also appropriate\nfor a trigger auditing status change.",
+                                    "dataType": "VARCHAR2(20 byte)",
+                                    "name": "PRODUCT_STATUS"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "NUMBER(8,2)",
+                                    "name": "LIST_PRICE"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "NUMBER(8,2)",
+                                    "name": "MIN_PRICE"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "VARCHAR2(50 byte)",
+                                    "name": "CATALOG_URL"
+                                }
+                            ],
+                            "databaseName": "",
+                            "name": "PRODUCT_INFORMATION",
+                            "schemaName": "\"OE\"",
+                            "type": "table"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "comment": "",
+                                    "dataType": "NUMBER(6)",
+                                    "name": "PROMO_ID"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "VARCHAR2(20 byte)",
+                                    "name": "PROMO_NAME"
+                                }
+                            ],
+                            "databaseName": "",
+                            "name": "PROMOTIONS",
+                            "schemaName": "\"OE\"",
+                            "type": "table"
+                        }
+                    ],
+                    "triggers": [
+                        {
+                            "database": "",
+                            "name": "INSERT_ORD_LINE",
+                            "schema": "\"OE\""
+                        },
+                        {
+                            "database": "",
+                            "name": "ORDERS_ITEMS_TRG",
+                            "schema": "\"OE\""
+                        },
+                        {
+                            "database": "",
+                            "name": "ORDERS_TRG",
+                            "schema": "\"OE\""
+                        }
+                    ],
+                    "views": [
+                        {
+                            "columns": [
+                                {
+                                    "comment": "",
+                                    "dataType": "UNDEFINED",
+                                    "name": "\"ACCT_MGR\""
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "UNDEFINED",
+                                    "name": "\"REGION\""
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "UNDEFINED",
+                                    "name": "\"COUNTRY\""
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "UNDEFINED",
+                                    "name": "\"PROVINCE\""
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "UNDEFINED",
+                                    "name": "\"NUM_CUSTOMERS\""
+                                }
+                            ],
+                            "databaseName": "",
+                            "name": "\"ACCOUNT_MANAGERS\"",
+                            "schemaName": "\"OE\"",
+                            "type": "view"
                         }
                     ]
                 }
-            ]
+            ],
+            "supportsCatalogs": false,
+            "supportsSchemas": true
         }
     ]
 }

@@ -6,461 +6,104 @@ This page gives a sample metadata for **MySQL**.
 
 ```json
 {
+    "createTime": "2022-11-16 21:01:50",
+    "createdBy": "sqlflow-ingester v1.1.7",
+    "physicalInstance": "115.159.xx.xx",
     "servers": [
         {
-            "name": "DEFAULT_SERVER",
-            "dbVendor": "dbvmysql",
-            "supportsCatalogs": true,
-            "supportsSchemas": false,
             "databases": [
                 {
-                    "name": "DEFAULT",
-                    "views": [
-                        {
-                            "id": "35",
-                            "name": "vsal",
-                            "displayName": "vsal",
-                            "type": "view",
-                            "columns": [
-                                {
-                                    "id": "37",
-                                    "name": "\"Department\"",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 3,
-                                            "y": 36
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 3,
-                                            "y": 48
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "38",
-                                    "name": "\"Employees\"",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 4,
-                                            "y": 36
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 4,
-                                            "y": 47
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "39",
-                                    "name": "\"Salary\"",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 5,
-                                            "y": 36
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 5,
-                                            "y": 44
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "34",
-                                    "name": "RelationRows",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 1,
-                                            "y": 13
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 1,
-                                            "y": 17
-                                        }
-                                    ],
-                                    "source": "system",
-                                    "uiVisible": false
-                                }
-                            ],
-                            "coordinates": [
-                                {
-                                    "hashCode": "0",
-                                    "x": 1,
-                                    "y": 13
-                                },
-                                {
-                                    "hashCode": "0",
-                                    "x": 1,
-                                    "y": 17
-                                }
-                            ]
-                        }
-                    ],
-                    "others": [
-                        {
-                            "id": "2",
-                            "name": "RESULT_OF_A-1",
-                            "displayName": "RESULT_OF_A-1",
-                            "type": "select_list",
-                            "columns": [
-                                {
-                                    "id": "1",
-                                    "name": "RelationRows",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 11,
-                                            "y": 29
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 11,
-                                            "y": 30
-                                        }
-                                    ],
-                                    "source": "system",
-                                    "uiVisible": false
-                                },
-                                {
-                                    "id": "10",
-                                    "name": "deptno",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 6,
-                                            "y": 18
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 6,
-                                            "y": 24
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "11",
-                                    "name": "num_emp",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 7,
-                                            "y": 18
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 7,
-                                            "y": 34
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "15",
-                                    "name": "sal_sum",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 8,
-                                            "y": 18
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 8,
-                                            "y": 34
-                                        }
-                                    ]
-                                }
-                            ],
-                            "coordinates": [
-                                {
-                                    "hashCode": "0",
-                                    "x": 11,
-                                    "y": 29
-                                },
-                                {
-                                    "hashCode": "0",
-                                    "x": 11,
-                                    "y": 30
-                                }
-                            ]
-                        },
-                        {
-                            "id": "20",
-                            "name": "RESULT_OF_B-1",
-                            "displayName": "RESULT_OF_B-1",
-                            "type": "select_list",
-                            "columns": [
-                                {
-                                    "id": "19",
-                                    "name": "RelationRows",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 15,
-                                            "y": 32
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 15,
-                                            "y": 33
-                                        }
-                                    ],
-                                    "source": "system",
-                                    "uiVisible": false
-                                },
-                                {
-                                    "id": "21",
-                                    "name": "total_count",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 12,
-                                            "y": 18
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 12,
-                                            "y": 38
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "25",
-                                    "name": "total_sal",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 13,
-                                            "y": 18
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 13,
-                                            "y": 36
-                                        }
-                                    ]
-                                }
-                            ],
-                            "coordinates": [
-                                {
-                                    "hashCode": "0",
-                                    "x": 15,
-                                    "y": 32
-                                },
-                                {
-                                    "hashCode": "0",
-                                    "x": 15,
-                                    "y": 33
-                                }
-                            ]
-                        },
-                        {
-                            "id": "30",
-                            "name": "RS-1",
-                            "displayName": "RS-1",
-                            "type": "select_list",
-                            "columns": [
-                                {
-                                    "id": "31",
-                                    "name": "\"Department\"",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 3,
-                                            "y": 10
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 3,
-                                            "y": 48
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "32",
-                                    "name": "\"Employees\"",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 4,
-                                            "y": 10
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 4,
-                                            "y": 47
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "33",
-                                    "name": "\"Salary\"",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 5,
-                                            "y": 10
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 5,
-                                            "y": 44
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "29",
-                                    "name": "RelationRows",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 3,
-                                            "y": 10
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 5,
-                                            "y": 44
-                                        }
-                                    ],
-                                    "source": "system",
-                                    "uiVisible": false
-                                }
-                            ],
-                            "coordinates": [
-                                {
-                                    "hashCode": "0",
-                                    "x": 3,
-                                    "y": 10
-                                },
-                                {
-                                    "hashCode": "0",
-                                    "x": 5,
-                                    "y": 44
-                                }
-                            ]
-                        }
-                    ],
-                    "processes": [
-                        {
-                            "id": "36",
-                            "name": "Query Create View-1",
-                            "procedureName": "batchQueries",
-                            "queryHashId": "4ef278b9a7850f717990e96aae7a3f43",
-                            "coordinates": [
-                                {
-                                    "hashCode": "0",
-                                    "x": 1,
-                                    "y": 1
-                                },
-                                {
-                                    "hashCode": "0",
-                                    "x": 16,
-                                    "y": 2
-                                }
-                            ],
-                            "uiVisible": false
-                        }
-                    ]
-                },
-                {
-                    "name": "scott",
+                    "name": "SQLFlowDB1",
                     "tables": [
                         {
-                            "id": "6",
-                            "name": "emp",
-                            "displayName": "scott.emp",
-                            "type": "table",
                             "columns": [
                                 {
-                                    "id": "5",
-                                    "name": "RelationRows",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 9,
-                                            "y": 18
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 9,
-                                            "y": 27
-                                        }
-                                    ],
-                                    "source": "system",
-                                    "uiVisible": false
-                                },
-                                {
-                                    "id": "9",
-                                    "name": "city",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 10,
-                                            "y": 18
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 10,
-                                            "y": 22
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "7",
-                                    "name": "deptno",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 6,
-                                            "y": 18
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 6,
-                                            "y": 24
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "8",
-                                    "name": "sal",
-                                    "coordinates": [
-                                        {
-                                            "hashCode": "0",
-                                            "x": 8,
-                                            "y": 22
-                                        },
-                                        {
-                                            "hashCode": "0",
-                                            "x": 8,
-                                            "y": 25
-                                        }
-                                    ]
+                                    "comment": "",
+                                    "dataType": "int",
+                                    "name": "ID"
                                 }
                             ],
-                            "coordinates": [
+                            "databaseName": "`SQLFlowDB1`",
+                            "name": "ABC",
+                            "schemaName": "",
+                            "type": "table"
+                        },
+                        {
+                            "columns": [
                                 {
-                                    "hashCode": "0",
-                                    "x": 9,
-                                    "y": 18
+                                    "comment": "",
+                                    "dataType": "int",
+                                    "name": "ID"
+                                }
+                            ],
+                            "databaseName": "`SQLFlowDB1`",
+                            "name": "BCD",
+                            "schemaName": "",
+                            "type": "table"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "comment": "",
+                                    "dataType": "int",
+                                    "name": "ID"
                                 },
                                 {
-                                    "hashCode": "0",
-                                    "x": 9,
-                                    "y": 27
+                                    "comment": "",
+                                    "dataType": "varchar",
+                                    "name": "NAME"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "varchar",
+                                    "name": "COMMITSTR"
                                 }
-                            ]
+                            ],
+                            "databaseName": "`SQLFlowDB1`",
+                            "name": "TABLEA",
+                            "schemaName": "",
+                            "type": "table"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "comment": "",
+                                    "dataType": "int",
+                                    "name": "ID"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "varchar",
+                                    "name": "NAME"
+                                },
+                                {
+                                    "comment": "",
+                                    "dataType": "varchar",
+                                    "name": "COMMITSTR"
+                                }
+                            ],
+                            "databaseName": "`SQLFlowDB1`",
+                            "name": "TABLEB",
+                            "schemaName": "",
+                            "type": "table"
                         }
                     ]
                 }
-            ]
+            ],
+            "dbLinks": [],
+            "dbVendor": "dbvmysql",
+            "name": "115.159.xx.xx",
+            "queries": [
+                {
+                    "database": "employees",
+                    "groupName": "",
+                    "name": "DEPT_EMP_LATEST_DATE",
+                    "sourceCode": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`58.56.46.106` SQL SECURITY DEFINER VIEW `dept_emp_latest_date` AS select `dept_emp`.`emp_no` AS `emp_no`,max(`dept_emp`.`from_date`) AS `from_date`,max(`dept_emp`.`to_date`) AS `to_date` from `dept_emp` group by `dept_emp`.`emp_no`",
+                    "type": "view"
+                }
+            ],
+            "supportsCatalogs": true,
+            "supportsSchemas": false
         }
     ]
 }
