@@ -2,8 +2,6 @@
 
 This page gives a sample metadata for **Microsoft SQL Server**.
 
-## Sample
-
 ```json
 {
     "createTime": "2022-11-16 21:05:32",
