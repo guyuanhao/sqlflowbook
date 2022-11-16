@@ -186,7 +186,7 @@ The top element of the dbobjs payload is an array and the array representing dif
 8. queries: present if the response json is generated from metadata
 9. tables, columns, package, prcedure, argument, process: check [here](sqlflow-data-reference.md#table-structure) for more details
 
-tips: the above structure is same as the `servers` part of the metadata result from [Dlineage tool](../introduction/java-library/usage/dataflow.xml-structure.md) as well as [Ingester](../sqlflow-ingester/understanding-the-format-of-exported-data/).
+**tips**: the above structure is same as the `servers` part of the metadata result from [Dlineage tool](../introduction/java-library/usage/dataflow.xml-structure.md) as well as [Ingester](../sqlflow-ingester/understanding-the-format-of-exported-data/).
 
 ### DB Server Type
 
