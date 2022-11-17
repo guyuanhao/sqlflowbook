@@ -1,3 +1,9 @@
+---
+description: >-
+  metadata.json exported by ingester has the same structure as the
+  dbobjs.servers part of the Dlineage tool result
+---
+
 # Oracle
 
 This page gives a sample metadata for **Oracle**.

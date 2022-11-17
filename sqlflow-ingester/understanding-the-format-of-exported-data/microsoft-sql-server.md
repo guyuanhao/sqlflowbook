@@ -1,6 +1,14 @@
+---
+description: >-
+  metadata.json exported by ingester has the same structure as the
+  dbobjs.servers part of the Dlineage tool result
+---
+
 # Microsoft SQL Server
 
 This page gives a sample metadata for **Microsoft SQL Server**.
+
+## Sample
 
 ```json
 {
