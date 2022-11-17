@@ -16,6 +16,7 @@
   * [Linux](introduction/installation/linux.md)
   * [MacOS](introduction/installation/macos.md)
   * [Windows](introduction/installation/windows.md)
+  * [Clickhouse Installation](introduction/installation/clickhouse-installation.md)
 * [UI](introduction/ui/README.md)
   * [SQLText Editor](introduction/ui/sqltext-editor.md)
   * [Schema Explorer](introduction/ui/schema.md)
