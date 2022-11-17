@@ -5,3 +5,5 @@ Gudu SQLFow is extremely simple to install and is comprised of two parts: fronte
 * [Linux](linux.md)
 * [MacOS](macos.md)
 * [Windows](windows.md)
+
+If you need to enable regular job features, you will also need to install Clickhouse on your server: [Clickhouse Installation](clickhouse-installation.md).
