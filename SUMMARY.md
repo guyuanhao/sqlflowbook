@@ -17,7 +17,7 @@
   * [MacOS](introduction/installation/macos.md)
   * [Windows](introduction/installation/windows.md)
   * [Clickhouse](introduction/installation/clickhouse/README.md)
-    * [Clickhouse For Centos](introduction/installation/clickhouse/clickhouse-for-centos.md)
+    * [Clickhouse For CentOs](introduction/installation/clickhouse/clickhouse-for-centos.md)
     * [Clickhouse For Ubuntu/Debian](introduction/installation/clickhouse/clickhouse-for-ubuntu-debian.md)
 * [UI](introduction/ui/README.md)
   * [SQLText Editor](introduction/ui/sqltext-editor.md)

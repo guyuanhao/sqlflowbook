@@ -10,36 +10,7 @@ Using JDK 11 as well as enabling _G1 garbage collector_ is recommended. Comparin
 
 ## Clickhouse
 
-### 1. Download&#x20;
-
-```bash
-curl -O "https://packages.clickhouse.com/tgz/stable/clickhouse-common-static-22.2.3.5.tgz"
-curl -O "https://packages.clickhouse.com/tgz/stable/clickhouse-server-22.2.3.5.tgz"
-curl -O "https://packages.clickhouse.com/tgz/stable/clickhouse-client-22.2.3.5.tgz"
-```
-
-<figure><img src="../../../.gitbook/assets/1_20221117204325.png" alt=""><figcaption></figcaption></figure>
-
-### 2. Install
-
-```bash
-# untar the file and execute the shell
-tar -xzvf "clickhouse-common-static-22.2.3.5.tgz"
-# generate the binary file 
-sudo "clickhouse-common-static-22.2.3.5/install/doinst.sh"
-
-tar -xzvf "clickhouse-server-22.2.3.5.tgz"
-# create clickhouse-server soft link and install the default config serice
-# the initial password is sqlflow@gudu. you can config whether remote access is allowed
-sudo "clickhouse-server-22.2.3.5/install/doinst.sh"
-# start the service
-sudo /etc/init.d/clickhouse-server start
-
-tar -xzvf "clickhouse-client-22.2.3.5.tgz"
-# create clickhouse-client soft link and install the client config files
-sudo "clickhouse-client-22.2.3.5/install/doinst.sh"
-
-```
+### 1. Download & Install&#x20;
 
 ```bash
 sudo apt-get install apt-transport-https ca-certificates dirmngr
@@ -49,12 +20,27 @@ echo "deb https://packages.clickhouse.com/deb stable main" | sudo tee /etc/apt/s
 sudo apt-get update
 
 sudo apt-get install -y clickhouse-server clickhouse-client
-
-sudo service clickhouse-server start
-clickhouse-client # or "clickhouse-client --password" if you set up a password.sh
 ```
 
-### 3. Memory Settings
+#### Generate clickhouse-server key & crts
+
+Check your config.xml
+
+```bash
+vim /etc/clickhouse-server/config.xml
+```
+
+find the instruction of openSSL
+
+<figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-18 21-47-37.png" alt=""><figcaption></figcaption></figure>
+
+Run that command
+
+```bash
+sudo openssl req -subj "/CN=localhost" -new -newkey rsa:2048 -days 365 -nodes -x509 -keyout /etc/clickhouse-server/server.key -out /etc/clickhouse-server/server.crt
+```
+
+### 2. Memory Settings
 
 We will need to limit the clickhouse service If the client server has a memory less than 32GB.
 
