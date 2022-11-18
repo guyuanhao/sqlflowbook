@@ -1,4 +1,4 @@
-# Clickhouse Installation
+# Clickhouse For Centos Installation
 
 If you need to enable regular job features, you will also need to install Clickhouse on your server.
 
@@ -16,7 +16,7 @@ curl -O "https://packages.clickhouse.com/tgz/stable/clickhouse-server-22.2.3.5.t
 curl -O "https://packages.clickhouse.com/tgz/stable/clickhouse-client-22.2.3.5.tgz"
 ```
 
-<figure><img src="../../.gitbook/assets/1_20221117204325.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1_20221117204325.png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Install
 
@@ -47,11 +47,11 @@ We will need to limit the clickhouse service If the client server has a memory l
 
 In `/etc/clickhouse-server/config.xml` set `max_server_memory_usage_to_ram_ratio` to 0.125 so that 32G\*0.125 will be 4G
 
-<figure><img src="../../.gitbook/assets/2_20221117204325.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2_20221117204325.png" alt=""><figcaption></figcaption></figure>
 
 Update `/etc/clickhouse-server/users.xml` and set `max_memory_usage` to 4000000000, `max_bytes_before_external_group_by` to 2000000000. You may need to create `max_bytes_before_external_group_by` if it isn't present.
 
-<figure><img src="../../.gitbook/assets/3_20221117204325.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3_20221117204325.png" alt=""><figcaption></figcaption></figure>
 
 Restart the Clickhouse service: `sudo /etc/init.d/clickhouse-server restart`
 
