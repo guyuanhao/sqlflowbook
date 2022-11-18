@@ -1,6 +1,4 @@
-# Clickhouse For Ubuntu Installation
-
-
+# Clickhouse For Centos
 
 If you need to enable regular job features, you will also need to install Clickhouse on your server.
 
@@ -66,19 +64,36 @@ With this config, the Simple mode will use 22G memory and the Rugular mode will 
 elif (( $memory < 32*1024*1024 ));
   then
     heapsize="18g"
+
 ```
 
+### 4. Set Clickhouse default password
 
+set Clickhouse password to [_**sqlflow@gudu**_](https://gitee.com/link?target=mailto:sqlflow@gudu)__
+
+If mistakenly set to another password, you will need:
+
+1. delete `/etc/clickhouse-server/users.d/default-password.xml`
+2. update `/etc/clickhouse-server/users.xml`, set password to [_**sqlflow@gudu**_](https://gitee.com/link?target=mailto:sqlflow@gudu)__
+3. restart Clickhouse, `sudo /etc/init.d/clickhouse-server restart`
+
+### 5. Init Clickhouse
 
 ```bash
-sudo apt-get install apt-transport-https ca-certificates dirmngr
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 8919F6BD2B48D754
-
-echo "deb https://packages.clickhouse.com/deb stable main" | sudo tee /etc/apt/sources.list.d/clickhouse.list
-sudo apt-get update
-
-sudo apt-get install -y clickhouse-server clickhouse-client
-
-sudo service clickhouse-server start
-clickhouse-client # or "clickhouse-client --password" if you set up a password.
+cd /wings/sqlflow/backend
+sh bin/init_regular.sh
 ```
+
+If you got
+
+<figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-18 22-19-02.png" alt=""><figcaption></figcaption></figure>
+
+Then you might need to check for your OS version and the Clickhouse is not properly installed. Check [Ubuntu/Debian Installation](clickhouse-for-ubuntu-debian.md).
+
+### 6. Start SQLFlow
+
+```bash
+cd /wings/sqlflow/backend
+sh bin/backend.sh
+```
+

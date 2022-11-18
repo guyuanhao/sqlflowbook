@@ -1,4 +1,6 @@
-# Clickhouse For Centos Installation
+# Clickhouse For Ubuntu/Debian
+
+
 
 If you need to enable regular job features, you will also need to install Clickhouse on your server.
 
@@ -39,6 +41,19 @@ sudo "clickhouse-client-22.2.3.5/install/doinst.sh"
 
 ```
 
+```bash
+sudo apt-get install apt-transport-https ca-certificates dirmngr
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 8919F6BD2B48D754
+
+echo "deb https://packages.clickhouse.com/deb stable main" | sudo tee /etc/apt/sources.list.d/clickhouse.list
+sudo apt-get update
+
+sudo apt-get install -y clickhouse-server clickhouse-client
+
+sudo service clickhouse-server start
+clickhouse-client # or "clickhouse-client --password" if you set up a password.sh
+```
+
 ### 3. Memory Settings
 
 We will need to limit the clickhouse service If the client server has a memory less than 32GB.
@@ -64,5 +79,19 @@ With this config, the Simple mode will use 22G memory and the Rugular mode will 
 elif (( $memory < 32*1024*1024 ));
   then
     heapsize="18g"
+```
 
+
+
+```bash
+sudo apt-get install apt-transport-https ca-certificates dirmngr
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 8919F6BD2B48D754
+
+echo "deb https://packages.clickhouse.com/deb stable main" | sudo tee /etc/apt/sources.list.d/clickhouse.list
+sudo apt-get update
+
+sudo apt-get install -y clickhouse-server clickhouse-client
+
+sudo service clickhouse-server start
+clickhouse-client # or "clickhouse-client --password" if you set up a password.
 ```
