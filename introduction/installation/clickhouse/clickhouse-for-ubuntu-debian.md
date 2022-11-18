@@ -1,9 +1,5 @@
 # Clickhouse For Ubuntu/Debian
 
-
-
-If you need to enable regular job features, you will also need to install Clickhouse on your server.
-
 ## JDK&#x20;
 
 Using JDK 11 as well as enabling _G1 garbage collector_ is recommended. Comparing to JDK 8, the performance of handling jobs under multi-threads will be improved more than 30%.
@@ -22,6 +18,8 @@ sudo apt-get update
 sudo apt-get install -y clickhouse-server clickhouse-client
 ```
 
+Please set Clickhouse password to [_**sqlflow@gudu**_](https://gitee.com/link?target=mailto:sqlflow@gudu)__
+
 #### Generate clickhouse-server key & crts
 
 Check your config.xml
@@ -30,15 +28,27 @@ Check your config.xml
 vim /etc/clickhouse-server/config.xml
 ```
 
-find the instruction of openSSL
+Find the instruction of openSSL
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-18 21-47-37.png" alt=""><figcaption></figcaption></figure>
 
-Run that command
+Run the above command, in my case it is:
 
 ```bash
 sudo openssl req -subj "/CN=localhost" -new -newkey rsa:2048 -days 365 -nodes -x509 -keyout /etc/clickhouse-server/server.key -out /etc/clickhouse-server/server.crt
 ```
+
+You should have:
+
+<figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-18 22-35-34.png" alt=""><figcaption></figcaption></figure>
+
+If you got
+
+```
+Can't load /home/<user>/.rnd into RNG
+```
+
+Then you can try removing or commenting `RANDFILE = $ENV::HOME/.rnd` line in `/etc/ssl/openssl.cnf`
 
 ### 2. Memory Settings
 
@@ -67,17 +77,28 @@ elif (( $memory < 32*1024*1024 ));
     heapsize="18g"
 ```
 
+### 3. Set Clickhouse default password
 
+Set Clickhouse password to [_**sqlflow@gudu**_](https://gitee.com/link?target=mailto:sqlflow@gudu)__
+
+If mistakenly set to another password, you will need:
+
+1. delete `/etc/clickhouse-server/users.d/default-password.xml`
+2. update `/etc/clickhouse-server/users.xml`, set password to [_**sqlflow@gudu**_](https://gitee.com/link?target=mailto:sqlflow@gudu)__
+3. restart Clickhouse, `sudo /etc/init.d/clickhouse-server restart`
+
+### 4. Init Clickhouse
 
 ```bash
-sudo apt-get install apt-transport-https ca-certificates dirmngr
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 8919F6BD2B48D754
+cd /wings/sqlflow/backend
+sh bin/init_regular.sh
+```
 
-echo "deb https://packages.clickhouse.com/deb stable main" | sudo tee /etc/apt/sources.list.d/clickhouse.list
-sudo apt-get update
+If you got any errors related to Clickhouse, you can check `/var/log/clickhouse-sever` for any error logs.
 
-sudo apt-get install -y clickhouse-server clickhouse-client
+### 5. Start SQLFlow
 
-sudo service clickhouse-server start
-clickhouse-client # or "clickhouse-client --password" if you set up a password.
+```bash
+cd /wings/sqlflow/backend
+sh bin/backend.sh
 ```

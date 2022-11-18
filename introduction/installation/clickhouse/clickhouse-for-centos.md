@@ -1,6 +1,4 @@
-# Clickhouse For Centos
-
-If you need to enable regular job features, you will also need to install Clickhouse on your server.
+# Clickhouse For CentOs
 
 ## JDK&#x20;
 
@@ -69,7 +67,7 @@ elif (( $memory < 32*1024*1024 ));
 
 ### 4. Set Clickhouse default password
 
-set Clickhouse password to [_**sqlflow@gudu**_](https://gitee.com/link?target=mailto:sqlflow@gudu)__
+Set Clickhouse password to [_**sqlflow@gudu**_](https://gitee.com/link?target=mailto:sqlflow@gudu)__
 
 If mistakenly set to another password, you will need:
 
@@ -89,6 +87,8 @@ If you got
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-18 22-19-02.png" alt=""><figcaption></figcaption></figure>
 
 Then you might need to check for your OS version and the Clickhouse is not properly installed. Check [Ubuntu/Debian Installation](clickhouse-for-ubuntu-debian.md).
+
+If your clickhouse is properly installed but you still got errors, please check `/var/log/clickhouse-sever` for error logs.
 
 ### 6. Start SQLFlow
 
