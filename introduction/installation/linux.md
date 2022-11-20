@@ -294,6 +294,16 @@ See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/
 
     * If the code returns **401**, please check the userId is set or the userId is valid.
 
+### Regular Job
+
+If you need enable regular job on your sqlflow on-premiser, you will need to install Clickhouse on your server. Check here for Clickhouse installation:
+
+{% content-ref url="clickhouse/" %}
+[clickhouse](clickhouse/)
+{% endcontent-ref %}
+
+
+
 ### Trouble Shooting
 
 #### 1. Failed to get license info.
