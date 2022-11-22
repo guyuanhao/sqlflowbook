@@ -77,7 +77,7 @@
 ## SQLFlow Widget
 
 * [Get started](sqlflow-widget/get-started.md)
-* [Instance API](sqlflow-widget/instance-api.md)
+* [Usages](sqlflow-widget/instance-api.md)
 * [SQLFlow Widget](sqlflow-widget/sqlflow-widget.md)
 
 ## Databases
