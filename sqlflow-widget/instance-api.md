@@ -13,6 +13,8 @@ All necessary files are under this directory.
 └── 1\
 ```
 
+<figure><img src="../.gitbook/assets/1_20221122211203.png" alt=""><figcaption></figcaption></figure>
+
 ## **Visualize job**
 
 Visualize the data lineage in a [SQLFlow Job](https://docs.gudusoft.com/introduction/getting-started/different-modes-in-gudu-sqlflow). The SQLFlow job must be already created.
