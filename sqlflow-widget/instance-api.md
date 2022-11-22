@@ -42,6 +42,8 @@ $(async () => {
 });
 ```
 
+<figure><img src="../.gitbook/assets/2_20221122211613.png" alt=""><figcaption></figcaption></figure>
+
 ## **Visualize job with hardcoded parameters**
 
 Visualize the data lineage of a specified table or column in a SQLFlow job.
@@ -97,6 +99,8 @@ All necessary files are under this directory.
 └── 4\
 ```
 
+<figure><img src="../.gitbook/assets/3_20221122211546.png" alt=""><figcaption></figcaption></figure>
+
 ## **Set data lineage options of SQL query**
 
 Using the setting to control the output of data lineage of a SQL query.
@@ -145,6 +149,8 @@ All necessary files are under this directory.
 └── 8\
 ```
 
+<figure><img src="../.gitbook/assets/8_20221122211806.png" alt=""><figcaption></figcaption></figure>
+
 ## **Event: add an event listener on field(column) click**
 
 Add an event listener on field(column) click, so you can get detailed information about the field(column) that been clicked.
@@ -154,6 +160,8 @@ All necessary files are under this directory.
 ```
 └── 9\
 ```
+
+<figure><img src="../.gitbook/assets/9_20221122211912.png" alt=""><figcaption></figcaption></figure>
 
 ## **Access data lineage from url**
 
@@ -202,6 +210,8 @@ All necessary files are under this directory.
 └── 13\
 ```
 
+<figure><img src="../.gitbook/assets/13_20221122212229.png" alt=""><figcaption></figcaption></figure>
+
 ## **Visualize the lineage data using Vue**
 
 The SQLFlow provides a Vue library to support Vue framework.
@@ -217,4 +227,6 @@ Add an event listener on table click, so you can get detailed information about 
 ```
 └── 15\
 ```
+
+<figure><img src="../.gitbook/assets/15_20221122212036 (1).png" alt=""><figcaption></figcaption></figure>
 
