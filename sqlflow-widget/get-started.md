@@ -25,9 +25,13 @@ Once the SQLFlow widget is installed on your server, you can access the SQLFlow 
 
 ```
 ├── index.html
-├── index.js
+├── jquery.min.js
 ├── sqlflow.widget.2.4.9.css
 └── sqlflow.widget.2.4.9.js
+└── 1\
+└── 2\
+└── 3\
+└── ...
 ```
 
 > Please note that the version number in the file will changed constantly.
