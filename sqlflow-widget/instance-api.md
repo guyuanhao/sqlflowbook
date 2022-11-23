@@ -330,6 +330,50 @@ All necessary files are under this directory.
 
 <figure><img src="../.gitbook/assets/8_20221122211806.png" alt=""><figcaption></figcaption></figure>
 
+```javascript
+$(async () => {
+    const $sqltext = $('#sqltext');
+    const $visualize = $('#visualize');
+    const $error = $('#error');
+
+    // get a instance of SQLFlow
+    const sqlflow = await SQLFlow.init({
+        container: document.getElementById('sqlflow'),
+        width: 1000,
+        height: 400,
+        apiPrefix: 'http://xxx.cn/api',
+        token: '', // input your token
+    });
+
+    // set dbvendor property
+    sqlflow.vendor.set('oracle');
+
+    const visualize = async () => {
+        // set sql text property
+        sqlflow.sqltext.set($sqltext.val());
+
+        await sqlflow.visualize();
+
+        const error = sqlflow.error.get();
+        if (error && error.length > 0) {
+            console.log(sqlflow.error.get());
+            let text = '';
+            error.forEach(item => {
+                text += `${item.errorType} : ${item.errorMessage}`;
+            });
+            $error.val(text);
+        } else {
+            $error.val('');
+        }
+    };
+
+    visualize();
+
+    $visualize.click(visualize);
+});
+
+```
+
 ## **Event: add an event listener on field(column) click**
 
 Add an event listener on field(column) click, so you can get detailed information about the field(column) that been clicked.
@@ -341,6 +385,46 @@ All necessary files are under this directory.
 ```
 
 <figure><img src="../.gitbook/assets/9_20221122211912.png" alt=""><figcaption></figcaption></figure>
+
+```javascript
+$(async () => {
+    const $sqltext = $('#sqltext');
+    const $visualize = $('#visualize');
+    const $message = $('#message');
+
+    // get a instance of SQLFlow
+    const sqlflow = await SQLFlow.init({
+        container: document.getElementById('sqlflow'),
+        width: 1000,
+        height: 400,
+        apiPrefix: 'http://xxx.cn/api',
+        token: '', // input your token
+    });
+
+    // set dbvendor property
+    sqlflow.vendor.set('oracle');
+
+    // add an event listener on field(column) click
+    sqlflow.addEventListener('onFieldClick', field => {
+        $message.val(JSON.stringify(field));
+
+        // remove all event listeners
+        // sqlflow.removeAllEventListener()
+    });
+
+    const visualize = async () => {
+        // set sql text property
+        sqlflow.sqltext.set($sqltext.val());
+
+        await sqlflow.visualize();
+    };
+
+    visualize();
+
+    $visualize.click(visualize);
+});
+
+```
 
 ## **Access data lineage from url**
 
@@ -391,12 +475,127 @@ All necessary files are under this directory.
 
 <figure><img src="../.gitbook/assets/13_20221122212229.png" alt=""><figcaption></figcaption></figure>
 
+```javascript
+$(async () => {
+    const $sqltext = $('#sqltext');
+    const $dataflow = $('#dataflow');
+    const $impact = $('#impact');
+    const $recordset = $('#recordset');
+    const $function = $('#function');
+    const $visualize = $('#visualize');
+    const $file = $('#file');
+
+    // get a instance of SQLFlow
+    const sqlflow = await SQLFlow.init({
+        container: document.getElementById('sqlflow'),
+        width: 1000,
+        height: 800,
+        apiPrefix: 'http://xxx.cn/api',
+        token: '', // input your token
+    });
+
+    // set dbvendor property
+    sqlflow.vendor.set('oracle');
+
+    const visualize = async () => {
+        // set sql text property
+        sqlflow.sqltext.set($sqltext.val());
+
+        // set default options
+        $recordset.prop('checked', true);
+        $dataflow.prop('checked', true);
+        $impact.prop('checked', false);
+        $function.prop('checked', false);
+
+        sqlflow.visualize();
+    };
+
+    $file.on('change', async e => {
+        const file = $file.prop('files')[0];
+        const content = await file.text();
+        $sqltext.val(content);
+        visualize();
+    });
+
+    $visualize.click(visualize);
+
+    $dataflow.change(() => {
+        const checked = $dataflow.prop('checked');
+        sqlflow.setting.dataflow.set(checked);
+    });
+
+    $impact.change(() => {
+        const checked = $impact.prop('checked');
+        sqlflow.setting.impact.set(checked);
+    });
+
+    $recordset.change(() => {
+        const checked = $recordset.prop('checked');
+        sqlflow.setting.showIntermediateRecordset.set(checked);
+    });
+
+    $function.change(() => {
+        const checked = $function.prop('checked');
+        sqlflow.setting.showFunction.set(checked);
+    });
+});
+
+```
+
 ## **Visualize the lineage data using Vue**
 
 The SQLFlow provides a Vue library to support Vue framework.
 
 ```
 └── 14\
+```
+
+```javascript
+document.addEventListener('DOMContentLoaded', async () => {
+    Vue.component('sqlflow', {
+        template: '<div ref="el"></div>',
+
+        async mounted() {
+            // get a instance of SQLFlow
+            const sqlflow = await SQLFlow.init({
+                container: this.$refs.el, // get element ref from vue
+                width: 1000,
+                height: 315,
+                apiPrefix: 'http://xxx.cn/api',
+                token: '', // input your token
+            });
+
+            // set dbvendor property
+            sqlflow.vendor.set('oracle');
+
+            // set sql text property
+            sqlflow.sqltext.set(`CREATE VIEW vsal
+                    AS
+                      SELECT a.deptno                  "Department",
+                             a.num_emp / b.total_count "Employees",
+                             a.sal_sum / b.total_sal   "Salary"
+                      FROM   (SELECT deptno,
+                                     Count()  num_emp,
+                                     SUM(sal) sal_sum
+                              FROM   scott.emp
+                              WHERE  city = 'NYC'
+                              GROUP  BY deptno) a,
+                             (SELECT Count()  total_count,
+                                     SUM(sal) total_sal
+                              FROM   scott.emp
+                              WHERE  city = 'NYC') b
+                    ;`);
+
+            sqlflow.visualize();
+        },
+    });
+
+    var app = new Vue({
+        el: '#sqlflow',
+        template: '<sqlflow />',
+    });
+});
+
 ```
 
 ## **Event: add an event listener on table click**
@@ -408,4 +607,44 @@ Add an event listener on table click, so you can get detailed information about 
 ```
 
 <figure><img src="../.gitbook/assets/15_20221122212036 (1).png" alt=""><figcaption></figcaption></figure>
+
+```javascript
+$(async () => {
+    const $sqltext = $('#sqltext');
+    const $visualize = $('#visualize');
+    const $message = $('#message');
+
+    // get a instance of SQLFlow
+    const sqlflow = await SQLFlow.init({
+        container: document.getElementById('sqlflow'),
+        width: 1000,
+        height: 400,
+        apiPrefix: 'http://xxx.cn/api',
+        token: '', // input your token
+    });
+
+    // set dbvendor property
+    sqlflow.vendor.set('oracle');
+
+    // add an event listener on table click
+    sqlflow.addEventListener('onTableNameClick', table => {
+        $message.val(JSON.stringify(table));
+
+        // remove all event listeners
+        // sqlflow.removeAllEventListener()
+    });
+
+    const visualize = async () => {
+        // set sql text property
+        sqlflow.sqltext.set($sqltext.val());
+
+        await sqlflow.visualize();
+    };
+
+    visualize();
+
+    $visualize.click(visualize);
+});
+
+```
 
