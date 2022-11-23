@@ -15,6 +15,43 @@ All necessary files are under this directory.
 
 <figure><img src="../.gitbook/assets/1_20221122211203.png" alt=""><figcaption></figcaption></figure>
 
+```javascript
+$(async () => {
+    // get a instance of SQLFlow
+    const sqlflow = await SQLFlow.init({
+        container: document.getElementById('sqlflow'),
+        width: 1000,
+        height: 315,
+        apiPrefix: 'http://xxx.cn/api',
+        token: '', // input your token
+    });
+
+    // set dbvendor property
+    sqlflow.vendor.set('oracle');
+
+    // set sql text property
+    sqlflow.sqltext.set(`CREATE VIEW vsal 
+    AS 
+      SELECT a.deptno                  "Department", 
+             a.num_emp / b.total_count "Employees", 
+             a.sal_sum / b.total_sal   "Salary" 
+      FROM   (SELECT deptno, 
+                     Count()  num_emp, 
+                     SUM(sal) sal_sum 
+              FROM   scott.emp 
+              WHERE  city = 'NYC' 
+              GROUP  BY deptno) a, 
+             (SELECT Count()  total_count, 
+                     SUM(sal) total_sal 
+              FROM   scott.emp 
+              WHERE  city = 'NYC') b 
+    ;`);
+
+    sqlflow.visualize();
+});
+
+```
+
 ## **Visualize job**
 
 Visualize the data lineage in a [SQLFlow Job](https://docs.gudusoft.com/introduction/getting-started/different-modes-in-gudu-sqlflow). The SQLFlow job must be already created.
@@ -34,7 +71,7 @@ $(async () => {
         container: document.getElementById('demo-2'),
         width: 1000,
         height: 800,
-        apiPrefix: 'http://101.43.8.206/api',
+        apiPrefix: 'http://xxx.com/api',
     });
 
     // view job detail by job id, or leave it empty to view the latest job
@@ -67,7 +104,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 700,
-        apiPrefix: 'http://101.43.8.206/api',
+        apiPrefix: 'http://xxx.cn/api',
     });
 
     // view job detail by job id, or leave it empty to view the latest job
@@ -101,6 +138,58 @@ All necessary files are under this directory.
 
 <figure><img src="../.gitbook/assets/3_20221122211546.png" alt=""><figcaption></figcaption></figure>
 
+```javascript
+$(async () => {
+    const $jobid = $('#jobid');
+    const $database = $('#database');
+    const $schema = $('#schema');
+    const $table = $('#table');
+    const $column = $('#column');
+    const $recordset = $('#recordset');
+    const $function = $('#function');
+    const $visualize = $('#visualize');
+
+    const sqlflow = await SQLFlow.init({
+        container: document.getElementById('sqlflow'),
+        width: 1200,
+        height: 800,
+        apiPrefix: 'http://xxx.com/api',
+        token: '', // input your token
+    });
+
+    const visualize = async () => {
+        // reset default option
+        $recordset.prop('checked', false);
+        $function.prop('checked', false);
+
+        // view job detail by job id, or leave it empty to view the latest job
+        await sqlflow.job.lineage.viewDetailById($jobid.val());
+
+        sqlflow.job.lineage.selectGraph({
+            database: $database.val(),
+            schema: $schema.val(),
+            table: $table.val(),
+            column: $column.val(),
+        });
+    };
+
+    visualize();
+
+    $visualize.click(visualize);
+
+    $recordset.change(() => {
+        const checked = $recordset.prop('checked');
+        sqlflow.setting.showIntermediateRecordset.set(checked);
+    });
+
+    $function.change(() => {
+        const checked = $function.prop('checked');
+        sqlflow.setting.showFunction.set(checked);
+    });
+});
+
+```
+
 ## **Set data lineage options of SQL query**
 
 Using the setting to control the output of data lineage of a SQL query.
@@ -109,6 +198,96 @@ All necessary files are under this directory.
 
 ```
 └── 5\
+```
+
+```javascript
+$(async () => {
+    const $sqltext = $('#sqltext');
+    const $dataflow = $('#dataflow');
+    const $impact = $('#impact');
+    const $args = $('#args');
+    const $recordset = $('#recordset');
+    const $function = $('#function');
+    const $constant = $('#constant');
+    const $transform = $('#transform');
+    const $visualize = $('#visualize');
+    const $visualizeTableLevel = $('#visualizeTableLevel');
+
+    // get a instance of SQLFlow
+    const sqlflow = await SQLFlow.init({
+        container: document.getElementById('sqlflow'),
+        width: 1000,
+        height: 800,
+        apiPrefix: 'http://xxx.cn/api',
+        token: '', // input your token
+    });
+
+    // set dbvendor property
+    sqlflow.vendor.set('oracle');
+
+    const visualize = async () => {
+        // set sql text property
+        sqlflow.sqltext.set($sqltext.val());
+
+        // set default options
+        $recordset.prop('checked', true);
+        $dataflow.prop('checked', true);
+        $args.prop('checked', true);
+        $impact.prop('checked', false);
+        $function.prop('checked', false);
+        $constant.prop('checked', true);
+        $transform.prop('checked', false);
+
+        sqlflow.visualize();
+    };
+
+    visualize();
+
+    $visualize.click(visualize);
+
+    const visualizeTableLevel = async () => {
+        // set sql text property
+        sqlflow.sqltext.set($sqltext.val());
+        sqlflow.visualizeTableLevel();
+    };
+
+    $visualizeTableLevel.click(visualizeTableLevel);
+
+    $dataflow.change(() => {
+        const checked = $dataflow.prop('checked');
+        sqlflow.setting.dataflow.set(checked);
+    });
+
+    $impact.change(() => {
+        const checked = $impact.prop('checked');
+        sqlflow.setting.impact.set(checked);
+    });
+
+    $args.change(() => {
+        const checked = $args.prop('checked');
+        sqlflow.setting.dataflowOfAggregateFunction.set(checked);
+    });
+
+    $recordset.change(() => {
+        const checked = $recordset.prop('checked');
+        sqlflow.setting.showIntermediateRecordset.set(checked);
+    });
+
+    $function.change(() => {
+        const checked = $function.prop('checked');
+        sqlflow.setting.showFunction.set(checked);
+    });
+
+    $constant.change(() => {
+        const checked = $constant.prop('checked');
+        sqlflow.setting.showConstant.set(checked);
+    });
+    $transform.change(() => {
+        const checked = $transform.prop('checked');
+        sqlflow.setting.showTransform.set(checked);
+    });
+});
+
 ```
 
 ## **Visualize an embedded json object in html page**
