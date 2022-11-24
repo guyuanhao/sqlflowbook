@@ -34,9 +34,9 @@ Once the SQLFlow widget is installed on your server, you can access the SQLFlow 
 └── ...
 ```
 
-> Please note that the version number in the file will changed constantly.
+> Please note that the version number in the file may change. Folders from number 1 to number 15 are example codes.
 
-Add `sqlflow.widget.2.4.9.js` in index.html, during the execution of the JS, a new iframe will be created, and the css from js will be embedded into the iframe, no additional css is needed.
+Add `sqlflow.widget.2.4.9.js` in index.html. During the execution of the JS, a new iframe will be created. The css from js will be embedded into the iframe and no additional css is needed.
 
 jquery is optional and is inlcuded for the demostration purpose only.
 

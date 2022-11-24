@@ -7,7 +7,7 @@ Visualize the data lineage after analyzing the input SQL query.
 * input: SQL text
 * output: data lineage diagram
 
-All necessary files are under this directory.
+Find the example code under the directory:
 
 ```
 └── 1\
@@ -59,7 +59,7 @@ Visualize the data lineage in a [SQLFlow Job](https://docs.gudusoft.com/introduc
 * input: a SQLFlow job id, or leave it empty to view the latest job
 * output: data lineage diagram
 
-All necessary files are under this directory.
+Find the example code under the directory:
 
 ```
 └── 2\
@@ -92,7 +92,7 @@ Visualize the data lineage of a specified table or column in a SQLFlow job.
   * if the schema, table and column are ommited, return the data lineage for the specified database.
 * output: data lineage diagram
 
-All necessary files are under this directory.
+Find the example code under the directory:
 
 ```
 └── 3\
@@ -130,7 +130,7 @@ Visualize the data lineage of a specified table or column in a SQLFlow job.
   * if the schema, table and column are ommited, return the data lineage for the specified database.
 * output: data lineage diagram
 
-All necessary files are under this directory.
+Find the example code under the directory:
 
 ```
 └── 4\
@@ -194,7 +194,7 @@ $(async () => {
 
 Using the setting to control the output of data lineage of a SQL query.
 
-All necessary files are under this directory.
+Find the example code under the directory:
 
 ```
 └── 5\
@@ -298,7 +298,7 @@ Since all layout data is included in the json file, the SQLFlow widget will draw
 
 So this SQLFlow widget can work without the installation of the Gudu SQLFlow.
 
-All necessary files are under this directory.
+Find the example code under the directory:
 
 ```
 └── 6\
@@ -312,7 +312,7 @@ Since all layout data is included in the json file, the SQLFlow widget will draw
 
 So, this SQLFlow widget can work without the installation of the Gudu SQLFlow.
 
-All necessary files are under this directory.
+Find the example code under the directory:
 
 ```
 └── 7\
@@ -322,7 +322,7 @@ All necessary files are under this directory.
 
 Show how to get error message after processing input SQL qurey.
 
-All necessary files are under this directory.
+Find the example code under the directory:
 
 ```
 └── 8\
@@ -378,7 +378,7 @@ $(async () => {
 
 Add an event listener on field(column) click, so you can get detailed information about the field(column) that been clicked.
 
-All necessary files are under this directory.
+Find the example code under the directory:
 
 ```
 └── 9\
@@ -444,7 +444,7 @@ http://127.0.0.1/widget/12/?type=upstream&table=dbo.emp&column=salary
 
 the table and column name in the url is case insensitive.
 
-All necessary files are under this directory.
+Find the example code under the directory:
 
 ```
 └── 12\
@@ -546,6 +546,8 @@ $(async () => {
 
 The SQLFlow provides a Vue library to support Vue framework.
 
+Find the example code under the directory:
+
 ```
 └── 14\
 ```
@@ -601,6 +603,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 ## **Event: add an event listener on table click**
 
 Add an event listener on table click, so you can get detailed information about the table that been clicked.
+
+Find the example code under the directory:
 
 ```
 └── 15\
