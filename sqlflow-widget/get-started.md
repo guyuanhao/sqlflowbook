@@ -112,7 +112,7 @@ With the above code we will have a result:
 
 <figure><img src="../.gitbook/assets/Screenshot from 2022-10-31 18-50-46.png" alt=""><figcaption></figcaption></figure>
 
-## Parameter
+## Parameters
 
 | name      | detail                                                                             | type             | optional |
 | --------- | ---------------------------------------------------------------------------------- | ---------------- | -------- |
