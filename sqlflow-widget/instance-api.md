@@ -22,7 +22,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 315,
-        apiPrefix: 'http://xxx.com/api',
+        apiPrefix: 'http://xxx.cn/api',
         token: '', // input your token
     });
 
@@ -104,7 +104,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 700,
-        apiPrefix: 'http://xxx.com/api',
+        apiPrefix: 'http://xxx.cn/api',
     });
 
     // view job detail by job id, or leave it empty to view the latest job
@@ -218,7 +218,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 800,
-        apiPrefix: 'http://xxx.com/api',
+        apiPrefix: 'http://xxx.cn/api',
         token: '', // input your token
     });
 
@@ -341,7 +341,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 400,
-        apiPrefix: 'http://xxx.com/api',
+        apiPrefix: 'http://xxx.cn/api',
         token: '', // input your token
     });
 
@@ -397,7 +397,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 400,
-        apiPrefix: 'http://xxx.com/api',
+        apiPrefix: 'http://xxx.cn/api',
         token: '', // input your token
     });
 
@@ -490,7 +490,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 800,
-        apiPrefix: 'http://xxx.com/api',
+        apiPrefix: 'http://xxx.cn/api',
         token: '', // input your token
     });
 
@@ -563,7 +563,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 container: this.$refs.el, // get element ref from vue
                 width: 1000,
                 height: 315,
-                apiPrefix: 'http://xxx.com/api',
+                apiPrefix: 'http://xxx.cn/api',
                 token: '', // input your token
             });
 
@@ -623,7 +623,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 400,
-        apiPrefix: 'http://xxx.com/api',
+        apiPrefix: 'http://xxx.cn/api',
         token: '', // input your token
     });
 

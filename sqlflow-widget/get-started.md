@@ -42,19 +42,31 @@ jquery is optional and is inlcuded for the demostration purpose only.
 
 ```html
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en-us">
     <head>
         <meta charset="UTF-8" />
-        <title>widget</title>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-        <script src="sqlflow.widget.2.4.9.js"></script>
+        <title>demo：visualize sqltext</title>
+        <script src="/widget/jquery.min.js"></script>
+        <script src="/widget/sqlflow.widget.3.0.4.js?t=1667100085601"></script>
         <script src="index.js"></script>
+        <style>
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                margin-top: 20px;
+                font-size: 24px;
+            }
+        </style>
     </head>
 
     <body>
+        <h1>demo：visualize sqltext</h1>
         <div id="sqlflow"></div>
     </body>
 </html>
+
 ```
 
 Insert the following code in index.js:
@@ -66,7 +78,8 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 315,
-        apiPrefix: 'http://101.43.8.206/api',
+        apiPrefix: 'http://xxx.com/api',
+        token: '', // input your token
     });
 
     // set dbvendor property
@@ -92,6 +105,7 @@ $(async () => {
 
     sqlflow.visualize();
 });
+
 ```
 
 With the above code we will have a result:
