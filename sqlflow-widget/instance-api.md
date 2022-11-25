@@ -22,7 +22,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 315,
-        apiPrefix: 'http://xxx.cn/api',
+        apiPrefix: 'http://xxx.com/api',
         token: '', // input your token
     });
 
@@ -104,7 +104,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 700,
-        apiPrefix: 'http://xxx.cn/api',
+        apiPrefix: 'http://xxx.com/api',
     });
 
     // view job detail by job id, or leave it empty to view the latest job
@@ -192,7 +192,7 @@ $(async () => {
 
 ## **5. Set data lineage options of SQL query**
 
-Using the setting to control the output of data lineage of a SQL query.
+Generate the data lineage of a SQL query with different input parameters.
 
 Find the example code under the directory:
 
@@ -218,7 +218,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 800,
-        apiPrefix: 'http://xxx.cn/api',
+        apiPrefix: 'http://xxx.com/api',
         token: '', // input your token
     });
 
@@ -290,7 +290,7 @@ $(async () => {
 
 ```
 
-## **Visualize an embedded json object in html page**
+## **6. Visualize an embedded json object in html page**
 
 SQLFlow will visualize the json object which contains the data lineage information and will show the actionable diagram.
 
@@ -304,13 +304,13 @@ Find the example code under the directory:
 └── 6\
 ```
 
-## **Visualize data lineage in a separate json file**
+## **7. Visualize data lineage in a separate json file**
 
 Read and visualize the data lineage in a json file. This json file should be accessable in the same server as the SQLFlow widget.
 
-Since all layout data is included in the json file, the SQLFlow widget will draw the diagram and needn't to connect to the SQLFlow backend.
+Since all layout data is included in the json file, the SQLFlow widget will generate the diagram and needn't to connect to the SQLFlow backend.
 
-So, this SQLFlow widget can work without the installation of the Gudu SQLFlow.
+This SQLFlow widget can work without the installation of the Gudu SQLFlow.
 
 Find the example code under the directory:
 
@@ -318,9 +318,9 @@ Find the example code under the directory:
 └── 7\
 ```
 
-## **Get error message**
+## **8. Get error message**
 
-Show how to get error message after processing input SQL qurey.
+Getting error message after processing input SQL qurey.
 
 Find the example code under the directory:
 
@@ -341,7 +341,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 400,
-        apiPrefix: 'http://xxx.cn/api',
+        apiPrefix: 'http://xxx.com/api',
         token: '', // input your token
     });
 
@@ -374,9 +374,9 @@ $(async () => {
 
 ```
 
-## **Event: add an event listener on field(column) click**
+## **9. Event: add an event listener on field(column) click**
 
-Add an event listener on field(column) click, so you can get detailed information about the field(column) that been clicked.
+Add an event listener on field(column) click so that you can get detailed information about the field(column) that been clicked.
 
 Find the example code under the directory:
 
@@ -397,7 +397,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 400,
-        apiPrefix: 'http://xxx.cn/api',
+        apiPrefix: 'http://xxx.com/api',
         token: '', // input your token
     });
 
@@ -426,11 +426,11 @@ $(async () => {
 
 ```
 
-## **Access data lineage from url**
+## **12. Access data lineage from url**
 
 User can directly access the data lineage through an url by specifying the data lineage type, table and column.
 
-> All data lineage comes from the default job at the Gudu SQLFlow backend. If no default job is set, lineage data will be retrieved from the latest job.
+> All data lineages come from the default job at the Gudu SQLFlow backend. If no default job is set, the lineage data will be retrieved from the latest job.
 
 ```
 http://127.0.0.1/widget/12/?type=upstream&table=dbo.emp
@@ -450,9 +450,9 @@ Find the example code under the directory:
 └── 12\
 ```
 
-## **Visualize a csv file that includes lineage data**
+## **13. Visualize a csv file that includes lineage data**
 
-The format of the csv
+The format of the csv:
 
 ```csv
 source_db,source_schema,source_table,source_column,target_db,target_schema,target_table,target_column,relation_type,effect_type
@@ -490,7 +490,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 800,
-        apiPrefix: 'http://xxx.cn/api',
+        apiPrefix: 'http://xxx.com/api',
         token: '', // input your token
     });
 
@@ -542,9 +542,9 @@ $(async () => {
 
 ```
 
-## **Visualize the lineage data using Vue**
+## **14. Visualize the lineage data using Vue**
 
-The SQLFlow provides a Vue library to support Vue framework.
+SQLFlow Widget provides a Vue library to support Vue framework.
 
 Find the example code under the directory:
 
@@ -563,7 +563,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 container: this.$refs.el, // get element ref from vue
                 width: 1000,
                 height: 315,
-                apiPrefix: 'http://xxx.cn/api',
+                apiPrefix: 'http://xxx.com/api',
                 token: '', // input your token
             });
 
@@ -600,9 +600,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 ```
 
-## **Event: add an event listener on table click**
+## **15. Event: add an event listener on table click**
 
-Add an event listener on table click, so you can get detailed information about the table that been clicked.
+Add an event listener on table click so that you can get detailed information about the table which is clicked.
 
 Find the example code under the directory:
 
@@ -623,7 +623,7 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 400,
-        apiPrefix: 'http://xxx.cn/api',
+        apiPrefix: 'http://xxx.com/api',
         token: '', // input your token
     });
 
