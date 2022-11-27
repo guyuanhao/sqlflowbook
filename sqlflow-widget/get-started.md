@@ -18,40 +18,55 @@ Once the SQLFlow widget is installed on your server, you can access the SQLFlow 
 * Visualize the lineage of the SQL queries.
 * Show specific table/column lineage graphics on the web page.
 * Package the data lineage into a standalone web app.
-* Shipped together with the [SQLFlow On-Premise](https://www.gudusoft.com/sqlflow-on-premise-version/) version.
+* Shipped together with the [SQLFlow On-Premise](https://www.gudusoft.com/sqlflow-on-premise-version/) version.\
 
-\
-\
-**Files**
+
+## **Files**
 
 ```
 ├── index.html
-├── index.js
+├── jquery.min.js
 ├── sqlflow.widget.2.4.9.css
 └── sqlflow.widget.2.4.9.js
+└── 1\
+└── 2\
+└── 3\
+└── ...
 ```
 
-> Please note that the version number in the file will changed constantly.
+> Please note that the version number in the file may change. Folders from number 1 to number 15 are example codes.
 
-Add `sqlflow.widget.2.4.9.js` in index.html, during the execution of the JS, a new iframe will be created, and the css from js will be embedded into the iframe, no additional css is needed.
+Add `sqlflow.widget.2.4.9.js` in index.html. During the execution of the JS, a new iframe will be created. The css from js will be embedded into the iframe and no additional css is needed.
 
-jquery is optional, and is inlcuded for the demostration only.
+jquery is optional and is inlcuded for the demostration purpose only.
 
 ```html
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en-us">
     <head>
         <meta charset="UTF-8" />
-        <title>widget</title>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-        <script src="sqlflow.widget.2.4.9.js"></script>
+        <title>demo：visualize sqltext</title>
+        <script src="/widget/jquery.min.js"></script>
+        <script src="/widget/sqlflow.widget.3.0.4.js?t=1667100085601"></script>
         <script src="index.js"></script>
+        <style>
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                margin-top: 20px;
+                font-size: 24px;
+            }
+        </style>
     </head>
 
     <body>
+        <h1>demo：visualize sqltext</h1>
         <div id="sqlflow"></div>
     </body>
 </html>
+
 ```
 
 Insert the following code in index.js:
@@ -63,7 +78,8 @@ $(async () => {
         container: document.getElementById('sqlflow'),
         width: 1000,
         height: 315,
-        apiPrefix: 'http://101.43.8.206/api',
+        apiPrefix: 'http://xxx.com/api',
+        token: '', // input your token
     });
 
     // set dbvendor property
@@ -89,13 +105,14 @@ $(async () => {
 
     sqlflow.visualize();
 });
+
 ```
 
 With the above code we will have a result:
 
 <figure><img src="../.gitbook/assets/Screenshot from 2022-10-31 18-50-46.png" alt=""><figcaption></figcaption></figure>
 
-#### Parameter
+## Parameters
 
 | name      | detail                                                                             | type             | optional |
 | --------- | ---------------------------------------------------------------------------------- | ---------------- | -------- |

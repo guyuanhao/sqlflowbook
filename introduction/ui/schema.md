@@ -77,11 +77,21 @@ _`to upstream`_/_`to downstream step by step`_: Enable collaspe/expend function 
 
 ## View DDL(Data Definition Language)
 
+You can check the DDL for `packages` and `procedures` by right clicking on the correspondant object and choose `view DDL`.
+
 <figure><img src="../../.gitbook/assets/show_DDL.gif" alt=""><figcaption></figcaption></figure>
+
+**Note**: we are currently unable to have `visualize` and `view DDL` in stored _procedures_ for the regular jobs who fails in retrieving metadata. Check following captures:
+
+<figure><img src="../../.gitbook/assets/1112_2.png" alt=""><figcaption></figcaption></figure>
+
+While you should be able to have `visualize`/`view DDL`/`share` under stored procedures unit in other cases.
+
+<figure><img src="../../.gitbook/assets/1112_1.png" alt=""><figcaption></figcaption></figure>
 
 ## Different Schema Structures&#x20;
 
-The tree structure in schema section may differ from the database types (check [here](../../sqlflow-ingester/understanding-the-format-of-exported-data.md) to find why it can be different). Same as the database, the tree strecture also has three different cases.
+The tree structure in schema section may differ from the database types (check [here](../../sqlflow-ingester/understanding-the-format-of-exported-data/) to find why it can be different). Same as the database, the tree strecture also has three different cases.
 
 ### database.schema.table
 
@@ -91,7 +101,7 @@ For the databases which contain _database_ layer and the _schema_ layer (SQL Ser
 
 For MSSQL, we have Database layer as well as Schema layer. The two layers will be both displayed on the schema UI.
 
-### schema.table
+### database.table
 
 For the databases which contain _database_ layer only (MYSQL for example)
 
@@ -99,10 +109,10 @@ For the databases which contain _database_ layer only (MYSQL for example)
 
 For MYSQL, we have Database layer but we do not have Schema layer. Schema is same as Database for MYSQL. Only Database layer is displayed on the schema UI.
 
-### database.table
+### schema.table
 
-For the databases which contain the schema layer only (Oracle for example)
+For the databases who contain the Schema layer only. Currently we don't have any databases which belong to this type on [our support list](../../sqlflow-ingester/list-of-supported-dbvendors.md). If in future we have such kind of database, the structure would only contain `server` and `schema`
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-27 00-32-45.png" alt=""><figcaption></figcaption></figure>
 
-For ORACLE, we have Schema layer but there is no Database layer for ORACLE. Only Schema layer is displayed on the schema UI.
+We would have Schema layer but there is no Database layer for this kind of DB. Only Schema layer is displayed on the schema UI.

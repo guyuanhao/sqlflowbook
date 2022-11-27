@@ -269,23 +269,3 @@ See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/
     ```
 
     * If the code returns **401**, please check the userId is set or the userId is valid.
-
-### How to use grabit submit to local SQLFlow
-
-1. Get userId from gudu\_sqlflow.conf
-
-* Open the configration file "/wings/sqlflow/backend/conf/gudu\_sqlflow.conf"
-*   The value of anonymous\_user\_id field is webapi userId
-
-    ```
-    anonymous_user_id=xxx
-    ```
-
-1.  Please Input SqlFlow Connect Information tab
-
-    ```
-    Server: http://yourdomain.com/api  eg: http://localhost/api
-    ServerPort: doesn't need
-    UserId: please see No.1 
-    User Secret: Just fill in any one 
-    ```

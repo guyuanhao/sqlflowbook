@@ -7,13 +7,18 @@
   * [How to use SQLFlow](introduction/what-is-gudu-sqlflow/how-to-use-sqlflow.md)
 * [Getting Started](introduction/getting-started/README.md)
   * [Sign up a new account](introduction/getting-started/sign-up-a-new-account.md)
+    * [Team Management](introduction/getting-started/sign-up-a-new-account/team-management.md)
   * [Different modes in Gudu SQLFlow](introduction/getting-started/different-modes-in-gudu-sqlflow/README.md)
     * [Query mode](introduction/getting-started/different-modes-in-gudu-sqlflow/query-mode.md)
     * [Job mode](introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
+  * [Basic Usage](introduction/getting-started/usage.md)
 * [Installation](introduction/installation/README.md)
   * [Linux](introduction/installation/linux.md)
   * [MacOS](introduction/installation/macos.md)
   * [Windows](introduction/installation/windows.md)
+  * [Clickhouse Installation](introduction/installation/clickhouse-installation/README.md)
+    * [Clickhouse For CentOs](introduction/installation/clickhouse-installation/clickhouse-for-centos.md)
+    * [Clickhouse For Ubuntu/Debian](introduction/installation/clickhouse-installation/clickhouse-for-ubuntu-debian.md)
 * [UI](introduction/ui/README.md)
   * [SQLText Editor](introduction/ui/sqltext-editor.md)
   * [Schema Explorer](introduction/ui/schema.md)
@@ -72,8 +77,8 @@
 ## SQLFlow Widget
 
 * [Get started](sqlflow-widget/get-started.md)
-* [Instance API](sqlflow-widget/instance-api.md)
-* [SQLFlow Widget](sqlflow-widget/sqlflow-widget.md)
+* [Usages](sqlflow-widget/instance-api.md)
+* [Widget API Reference](sqlflow-widget/widget-api-reference.md)
 
 ## Databases
 
@@ -88,7 +93,11 @@
   * [SQLFlow-Extractor](sqlflow-ingester/introduction/sqlflow-extractor.md)
   * [SQLFlow-Submitter](sqlflow-ingester/introduction/sqlflow-submitter.md)
 * [SQLFlow-Ingester Java API Usage](sqlflow-ingester/sqlflow-ingester-java-api-usage.md)
-* [Understand the format of exported data](sqlflow-ingester/understanding-the-format-of-exported-data.md)
+* [Understand the format of exported data](sqlflow-ingester/understanding-the-format-of-exported-data/README.md)
+  * [Oracle](sqlflow-ingester/understanding-the-format-of-exported-data/oracle.md)
+  * [Microsoft SQL Server](sqlflow-ingester/understanding-the-format-of-exported-data/microsoft-sql-server.md)
+  * [MySQL](sqlflow-ingester/understanding-the-format-of-exported-data/mysql.md)
+  * [PostgreSQL](sqlflow-ingester/understanding-the-format-of-exported-data/postgresql.md)
 * [List of Supported dbVendors](sqlflow-ingester/list-of-supported-dbvendors.md)
 * [Git Repo](sqlflow-ingester/git-repo.md)
 

@@ -85,11 +85,10 @@ Please make sure `C:\wings\sqlflow\frontend` is where the SQLFlow frontend is in
 
 ### SQLFlow is ready
 
-Just Open the browser and enter the localhost or IP where the SQLFlow is installed.
+Open the browser and go to localhost or got to the IP where the SQLFlow is installed.
 
-open http://yourIp/ to see the SQLFlow.
-
-open http://yourIp/api/gspLive\_backend/doc.html?lang=en to see the Restful API documention.
+* Open http://yourIp/ to see the SQLFlow.
+* Open http://yourIp/api/gspLive\_backend/doc.html?lang=en to see the Restful API documention.
 
 ### stop the SQLFlow
 

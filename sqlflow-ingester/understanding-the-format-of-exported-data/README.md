@@ -3,7 +3,7 @@ description: >-
   https://e.gitee.com/gudusoft/projects/151613/docs/617965/file/1485427?sub_id=6032663
 ---
 
-# Understanding the format of exported data
+# Understand the format of exported data
 
 This page gives an example and some clarifications on the format of the SQLFlow-Ingester exported data.
 
@@ -427,7 +427,7 @@ The database has the _**database**_ layer but doesn't have the _**schema**_ laye
   }
 ```
 
-### Database who has the schema layer only (Oracle for example)
+### Database who has the schema layer only (Currently no supported database belongs to this type)
 
 The database doesn't have the _**database**_ layer(or no actual database layer) but has the _**schema**_ layer only. `supportsCatalogs` will be false and `supportsSchemas` will be true.  No _**`databases`**_ list under the `servers` list and no extra db unit list. An extra _**`schemas`**_ list will be present directly under the `servers` list.
 
@@ -576,6 +576,10 @@ The database doesn't have the _**database**_ layer(or no actual database layer) 
     ]
   }
 ```
+
+### Database list
+
+Check [here](../list-of-supported-dbvendors.md) to get a full database list and the type details.
 
 ### Other clarifications on the json fields:
 
