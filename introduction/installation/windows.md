@@ -10,7 +10,7 @@
 
 ### unzip SQLFlow file
 
-* create a dirctory: c:\wings\sqlflow
+* create a folder: c:\wings\sqlflow
 * unzip SQLFlow install package to c:\wings\sqlflow, you will get 2 directories like:
   1. c:\wings\sqlflow\backend
   2. c:\wings\sqlflow\frontend
