@@ -39,7 +39,7 @@ There are two different account types:
 * Support to upload SQL files
 * Support Snowflake query history, Redshift log and more
 
-### Getting a free 7-day Premium Account
+### Getting a 3 days Free Premium Account
 
 Visit [this site](https://www.gudusoft.com/request-a-premium-account/) to request for a Premium Account. An email with activation code will be sent within 5 mins. Go to [https://sqlflow.gudusoft.com](https://sqlflow.gudusoft.com), click the icon in the upper right corner and check the following page:
 
