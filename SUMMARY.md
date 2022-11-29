@@ -4,10 +4,10 @@
 
 * [What is Gudu SQLFlow?](README.md)
   * [What SQLFlow can do](1.-introduction/readme/what-sqlflow-can-do.md)
-  * [How to use SQLFlow](1.-introduction/readme/how-to-use-sqlflow.md)
 * [Getting Started](1.-introduction/getting-started/README.md)
   * [Sign up a new account](1.-introduction/getting-started/sign-up-a-new-account/README.md)
     * [Team Management](1.-introduction/getting-started/sign-up-a-new-account/team-management.md)
+  * [How to use SQLFlow](1.-introduction/getting-started/how-to-use-sqlflow.md)
   * [Different modes in Gudu SQLFlow](1.-introduction/getting-started/different-modes-in-gudu-sqlflow/README.md)
     * [Query mode](1.-introduction/getting-started/different-modes-in-gudu-sqlflow/query-mode.md)
     * [Job mode](1.-introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
