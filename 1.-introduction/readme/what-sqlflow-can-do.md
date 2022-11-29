@@ -6,12 +6,23 @@ description: https://github.com/sqlparser/sqlflow_public#what-sqlflow-can-do-for
 
 * Scan your database and discover the data lineage instantly.
 * Automatically collect SQL script from github/bitbucket or local file system.
-* Provide a nice cleam diagram to the end-user to understand the data lineage quickly.
+* Provide a nice and clean diagram to the end-user to understand the data lineage quickly.
 * programmatically using [Restful APIs](https://github.com/sqlparser/sqlflow\_public/blob/master/api) or [SDKs](https://www.gudusoft.com/sqlflow-java-library-2/) to get lineage in CSV, JSON, Graphml format.
 * Incorporate the lineage metadata decoded from the complex SQL script into your own metadata database for further processing.
 * Visualize the metadata already existing in your database to release the power of data.
 * Perform impact analysis and root-cause analysis by tracing lineage backwards or forwards with several mouse click.
 * Able to process SQL script from more than 20 major database vendors.
+
+## Product Features
+
+* It is used via the web as it’s cloud-based or installed on Windows and Linux computers
+* Analyze SQL queries: from a simple SELECT statement to a stored procedure with thousands of lines of code;
+* Connect to the database to analyze the data lineage automatically in real-time;
+* Analyzes different data sources such as Redshift log, Snowflake query history, DBT scripts, etc., and quickly discover the data lineage relationship in the enterprise data platform;
+* Provides a rich Rest API interface to quickly integrate into your data governance platform;
+* Provides Java libraries that deploy to the end customers along with your data governance tools;
+* Provides front-end UI library to quickly provide interactive data lineage relationship display function for your data governance platform;
+* Provides an integrated solution with datahub open source metadata management software;
 
 ### A tool that tracks column-level data lineage
 

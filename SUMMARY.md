@@ -4,6 +4,7 @@
 
 * [What is Gudu SQLFlow?](README.md)
   * [What SQLFlow can do](1.-introduction/readme/what-sqlflow-can-do.md)
+  * [Architecture Overview](1.-introduction/readme/overview.md)
 * [Getting Started](1.-introduction/getting-started/README.md)
   * [Sign up a new account](1.-introduction/getting-started/sign-up-a-new-account/README.md)
     * [Team Management](1.-introduction/getting-started/sign-up-a-new-account/team-management.md)
@@ -45,10 +46,6 @@
   * [Dataflow chain](2.-concepts/data-lineage/dataflow-chain.md)
 * [Data Lineage Format Reference](2.-concepts/data-lineage-format-reference.md)
 * [Data Lineage Elements](2.-concepts/sqlflow-data-reference.md)
-
-## ARCHITECTURE
-
-* [Overview](architecture/overview.md)
 
 ## 3. API Docs
 

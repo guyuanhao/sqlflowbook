@@ -10,6 +10,10 @@ description: https://github.com/sqlparser/sqlflow_public#how-to-use-sqlflow
 
 ### Online Web UI
 
+Visit [SQLFlow Cloud](https://sqlflow.gudusoft.com) with browser
+
+You may paste your SQL script into the SQLFlow web page or upload the SQL file to the site. Select the correct database and then click the visualize button.
+
 {% content-ref url="../ui/" %}
 [ui](../ui/)
 {% endcontent-ref %}
@@ -34,8 +38,8 @@ description: https://github.com/sqlparser/sqlflow_public#how-to-use-sqlflow
 
 ### SQLFlow architecture
 
-{% content-ref url="../../architecture/overview.md" %}
-[overview.md](../../architecture/overview.md)
+{% content-ref url="../readme/overview.md" %}
+[overview.md](../readme/overview.md)
 {% endcontent-ref %}
 
 ### Roadmap and FAQ
