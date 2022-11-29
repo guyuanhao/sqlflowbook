@@ -20,26 +20,38 @@ You may paste your SQL script into the SQLFlow web page or upload the SQL file t
 
 ### Restful APIs
 
-{% content-ref url="../../3.-api-docs/using-the-rest-api.md" %}
-[using-the-rest-api.md](../../3.-api-docs/using-the-rest-api.md)
+SQLFlow provides RESTful API, so your program can transfer data with the SQLFlow backend directly. Sending the SQL to SQLFlow backend and receive a JSON response including the data lineage and diagram model for further processing in your program.
+
+You will need to setup the [SQLFlow on-premise version](how-to-use-sqlflow.md#on-premise-server-installation) on your server to use the API or you can connect to the [SQLFlow Cloud](https://sqlflow.gudusoft.com) to use the RESTFul API
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### On-premise Server installation
+
+Install frontend and backend on your own application/server (SQLFlow on-premise version)
+
+To setup SQLFlow on your server, please [contact us](https://www.gudusoft.com/request-a-quote/) to obtain a commercial license to get all those distribution files of the SQLFlow on-premise version.
 
 {% content-ref url="../installation/" %}
 [installation](../installation/)
 {% endcontent-ref %}
 
-### Java SDK
+### SDK
+
+Integrate the frontend and backend to your data platform
+
+Check our widget tool to onboard the sqlflow on your front application.
+
+For the backend part, you can check the our Dlineage tool.
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
 {% content-ref url="../java-library/" %}
 [java-library](../java-library/)
-{% endcontent-ref %}
-
-### SQLFlow architecture
-
-{% content-ref url="../readme/overview.md" %}
-[overview.md](../readme/overview.md)
 {% endcontent-ref %}
 
 ### Roadmap and FAQ
