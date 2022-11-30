@@ -56,10 +56,10 @@ For the backend part, you can check the our Dlineage tool.
 
 ### Roadmap and FAQ
 
-{% content-ref url="../../7.-other/roadmap.md" %}
-[roadmap.md](../../7.-other/roadmap.md)
+{% content-ref url="../../8.-other/roadmap.md" %}
+[roadmap.md](../../8.-other/roadmap.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../7.-other/faq/" %}
-[faq](../../7.-other/faq/)
+{% content-ref url="../../8.-other/faq/" %}
+[faq](../../8.-other/faq/)
 {% endcontent-ref %}

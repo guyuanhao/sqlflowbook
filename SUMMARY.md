@@ -45,7 +45,6 @@
   * [Aggregate function and Dataflow](2.-concepts/data-lineage/aggregate-function-and-dataflow.md)
   * [Dataflow chain](2.-concepts/data-lineage/dataflow-chain.md)
 * [Data Lineage Format Reference](2.-concepts/data-lineage-format-reference.md)
-* [Data Lineage Elements](2.-concepts/sqlflow-data-reference.md)
 
 ## 3. API Docs
 
@@ -98,9 +97,17 @@
 * [List of Supported dbVendors](6.-sqlflow-ingester/list-of-supported-dbvendors.md)
 * [Git Repo](6.-sqlflow-ingester/git-repo.md)
 
-## 7. OTHER
+## 7. Reference
 
-* [FAQ](7.-other/faq/README.md)
-  * [Handling Internal Database](7.-other/faq/handling-internal-database.md)
-  * [Delete Your Account](7.-other/faq/delete-your-account.md)
-* [Roadmap](7.-other/roadmap.md)
+* [Lineage Model](7.-reference/lineage-model/README.md)
+  * [Json Format Lineage Model](7.-reference/lineage-model/json-format-lineage-model.md)
+  * [XML Format Lineage Model](7.-reference/lineage-model/xml-format-lineage-model.md)
+  * [Data Lineage Elements](7.-reference/lineage-model/sqlflow-data-reference.md)
+* [Database Model](7.-reference/database-model.md)
+
+## 8. other
+
+* [FAQ](8.-other/faq/README.md)
+  * [Handling Internal Database](8.-other/faq/handling-internal-database.md)
+  * [Delete Your Account](8.-other/faq/delete-your-account.md)
+* [Roadmap](8.-other/roadmap.md)

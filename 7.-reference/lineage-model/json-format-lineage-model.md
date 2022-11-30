@@ -1,11 +1,6 @@
----
-description: >-
-  https://e.gitee.com/gudusoft/projects/151613/docs/617965/file/1485427?sub_id=6032659
----
+# Json Format Lineage Model
 
-# Data Lineage Format Reference
-
-This page gives a detail reference of the data lineage response format which is returned on [SQLFlow UI](../1.-introduction/ui/). The SQLFlow UI gets result from the /sqlflow/generation/sqlflow/graph endpoint. The /sqlflow/generation/sqlflow/graph endpoint has nearly the same input and output field data as [/sqlflow/generation/sqlflow](../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) and the only difference is that [/sqlflow/generation/sqlflow](../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) does not contain [graph payload](data-lineage-format-reference.md#6.-graph-payload). Let's get into details and check the data lineage json resposne:
+This page gives a detail reference of the data lineage response in Json format. Json lineage model can be returned by SQLFlow server or Dlineage tool with `/json` flag. The SQLFlow UI gets result from the /sqlflow/generation/sqlflow/graph endpoint. Let's get into details and check the data lineage json resposne:
 
 ## 1. Top level elements
 
@@ -31,12 +26,12 @@ This page gives a detail reference of the data lineage response format which is 
 * data: data payload
   * mode: data mode. Could be _`global`_ or _`summary`_. Will be set to \_ `summary` \_ mode when the relation number exceeds the _`relation_limit`_
     * _`global`_ show all data
-    * _`summary`_ only share the statics information and there's no graph information. No field data in the table and only table info. Users need to invoke [REST Api](../3.-api-docs/sqlflow-rest-api-reference/) to get the field data in detail.
-  * [summary](data-lineage-format-reference.md#2.-summary-payload): payload for statics information in _`summary`_ mode
-  * [sqlflow](data-lineage-format-reference.md#undefined): data model of the analysis result
-  * [graph](data-lineage-format-reference.md#undefined): graph model of the analysis result
-* sessionId: session id, used to get the cache information in [Query mode](../1.-introduction/getting-started/different-modes-in-gudu-sqlflow/query-mode.md)
-* jobId: job id, used to get the cache informaion in [Job mode](../1.-introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
+    * _`summary`_ only share the statics information and there's no graph information. No field data in the table and only table info. Users need to invoke [REST Api](../../3.-api-docs/sqlflow-rest-api-reference/) to get the field data in detail.
+  * [summary](json-format-lineage-model.md#2.-summary-payload): payload for statics information in _`summary`_ mode
+  * [sqlflow](json-format-lineage-model.md#undefined): data model of the analysis result
+  * [graph](json-format-lineage-model.md#undefined): graph model of the analysis result
+* sessionId: session id, used to get the cache information in [Query mode](../../1.-introduction/getting-started/different-modes-in-gudu-sqlflow/query-mode.md)
+* jobId: job id, used to get the cache informaion in [Job mode](../../1.-introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
 * error: contains error messages if the status code is not 200
 
 ## 2. Summary payload
@@ -83,8 +78,8 @@ This page gives a detail reference of the data lineage response format which is 
 
 sqlflow payload contains two nodes. dbojbs and relationship.
 
-* [dbojbs](data-lineage-format-reference.md#4.-dbobjs-payload): metadata, contains information of instance, db, schema, table, view, storage procedure, function, trigger, dblink, sequence, ddl etc..
-* [relationships](data-lineage-format-reference.md#3.-relationship-payload): relationships after analyzing sql
+* [dbojbs](json-format-lineage-model.md#4.-dbobjs-payload): metadata, contains information of instance, db, schema, table, view, storage procedure, function, trigger, dblink, sequence, ddl etc..
+* [relationships](json-format-lineage-model.md#3.-relationship-payload): relationships after analyzing sql
 
 ## 4. Dbobjs payload
 
@@ -184,13 +179,13 @@ The top element of the dbobjs payload is an array and the array representing dif
 6. schemas: present if database is not supported and only schema is supported.&#x20;
 7. dbLinks: dbLinks will be present if the resposne json is generated from metadata. Will not be present If the response json is generated from dataflow
 8. queries: present if the response json is generated from metadata
-9. tables, columns, package, prcedure, argument, process: check [here](../7.-reference/lineage-model/sqlflow-data-reference.md#table-structure) for more details
+9. tables, columns, package, prcedure, argument, process: check [here](sqlflow-data-reference.md#table-structure) for more details
 
-**tips**: the above structure is same as the `servers` part of the metadata result from [Dlineage tool](../1.-introduction/java-library/dataflow.xml-structure.md) as well as [Ingester](../6.-sqlflow-ingester/understanding-the-format-of-exported-data/).
+**tips**: the above structure is same as the `servers` part of the metadata result from [Dlineage tool](../../1.-introduction/java-library/dataflow.xml-structure.md) as well as [Ingester](../../6.-sqlflow-ingester/understanding-the-format-of-exported-data/).
 
 ### DB Server Type
 
-There are tree types for the server instance (same logic [here](../6.-sqlflow-ingester/understanding-the-format-of-exported-data/)):
+There are tree types for the server instance (same logic [here](../../6.-sqlflow-ingester/understanding-the-format-of-exported-data/)):
 
 1. if supportsCatalogs=true,supportsSchemas=true:
    * server-->database-->schema-->tables/views/others/packages/procedures/functions/triggers
@@ -199,7 +194,7 @@ There are tree types for the server instance (same logic [here](../6.-sqlflow-in
 3. if supportsCatalogs = false, supportsSchemas = true:
    * server --> schema --> tables/views/others/packages/procedures/functions/triggers
 
-Check [here](../6.-sqlflow-ingester/list-of-supported-dbvendors.md) to get a full database list and the type details.
+Check [here](../../6.-sqlflow-ingester/list-of-supported-dbvendors.md) to get a full database list and the type details.
 
 ### Procedure, Trigger and Function
 
@@ -282,10 +277,10 @@ A relation includes the `type`, `target`, `sources` and other attributes.
 * type: relation type, could be _`fdd`_, _`fdr`_, _`join`_, or _`call`_
 * function: present if the relationship is about function
 * effectType: effect type of the relation, based on STMT
-* target: relation target, of [RelationshipElement](data-lineage-format-reference.md#relationshipelement) structure
-* sources: relation sources, belongs to [RelationshipElement](data-lineage-format-reference.md#relationshipelement) structure
-* caller: caller if the type is _`call`_, belongs to [RelationshipElement](data-lineage-format-reference.md#relationshipelement) structure
-* callees: callees if the type is _`call`_, is an array of [RelationshipElement](data-lineage-format-reference.md#relationshipelement) objects
+* target: relation target, of [RelationshipElement](json-format-lineage-model.md#relationshipelement) structure
+* sources: relation sources, belongs to [RelationshipElement](json-format-lineage-model.md#relationshipelement) structure
+* caller: caller if the type is _`call`_, belongs to [RelationshipElement](json-format-lineage-model.md#relationshipelement) structure
+* callees: callees if the type is _`call`_, is an array of [RelationshipElement](json-format-lineage-model.md#relationshipelement) objects
 * processId: process id by which the relation is generated
 * timestampMin: the earliest time when the relationship is generated
 * timestampMax: the latest time when the relationship is generated
@@ -298,7 +293,7 @@ A relation includes the `type`, `target`, `sources` and other attributes.
 * columnType
 * sourceId
 * sourceName
-* transforms: array of [Transform](data-lineage-format-reference.md#transform)
+* transforms: array of [Transform](json-format-lineage-model.md#transform)
 * parentId
 * parentName
 * clauseType
@@ -308,14 +303,14 @@ A relation includes the `type`, `target`, `sources` and other attributes.
 
 Check here for more details
 
-{% content-ref url="../7.-reference/lineage-model/sqlflow-data-reference.md#target-fields-data" %}
-[#target-fields-data](../7.-reference/lineage-model/sqlflow-data-reference.md#target-fields-data)
+{% content-ref url="sqlflow-data-reference.md#target-fields-data" %}
+[#target-fields-data](sqlflow-data-reference.md#target-fields-data)
 {% endcontent-ref %}
 
 #### Transform
 
-{% content-ref url="../7.-reference/lineage-model/sqlflow-data-reference.md#transform-fields-data" %}
-[#transform-fields-data](../7.-reference/lineage-model/sqlflow-data-reference.md#transform-fields-data)
+{% content-ref url="sqlflow-data-reference.md#transform-fields-data" %}
+[#transform-fields-data](sqlflow-data-reference.md#transform-fields-data)
 {% endcontent-ref %}
 
 ## 6. Graph payload
@@ -393,6 +388,6 @@ Check here for more details
 
 ## Dataflow.xml Structure
 
-{% content-ref url="../1.-introduction/java-library/dataflow.xml-structure.md" %}
-[dataflow.xml-structure.md](../1.-introduction/java-library/dataflow.xml-structure.md)
+{% content-ref url="../../1.-introduction/java-library/dataflow.xml-structure.md" %}
+[dataflow.xml-structure.md](../../1.-introduction/java-library/dataflow.xml-structure.md)
 {% endcontent-ref %}
