@@ -32,7 +32,7 @@ You will need to setup the [SQLFlow on-premise version](how-to-use-sqlflow.md#on
 
 Install SQLFlow frontend and backend on your own application/server (SQLFlow on-premise version)
 
-To setup SQLFlow on your server, please [contact us](https://www.gudusoft.com/request-a-quote/) to obtain a commercial license to get all those distribution files of the SQLFlow on-premise version.
+To setup SQLFlow on your server, please [contact us](https://www.gudusoft.com/request-a-quote/) and obtain a commercial license to get all those distribution files of the SQLFlow on-premise version.
 
 {% content-ref url="../installation/" %}
 [installation](../installation/)

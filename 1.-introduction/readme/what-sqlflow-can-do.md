@@ -15,7 +15,7 @@ description: https://github.com/sqlparser/sqlflow_public#what-sqlflow-can-do-for
 
 ## Product Features
 
-* It is used via the web as it’s cloud-based or installed on Windows and Linux computers
+* It can be used via browser because it’s cloud-based or it's installed on your own server
 * Analyze SQL queries: from a simple SELECT statement to a stored procedure with thousands of lines of code;
 * Connect to the database to analyze the data lineage automatically in real-time;
 * Analyzes different data sources such as Redshift log, Snowflake query history, DBT scripts, etc., and quickly discover the data lineage relationship in the enterprise data platform;
