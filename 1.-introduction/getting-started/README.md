@@ -41,6 +41,7 @@ Through Gudu SQLFlow, we can visualize the above data lineage as:
 ### What's next?
 
 * [Sign up a new Gudu account](sign-up-a-new-account/)
+* Learn [how to use SQLFlow](how-to-use-sqlflow.md)
 * Read more about [Gudu SQLFlow UI ](../ui/)
 * Install a [SQLFlow Server](../installation/)
 * Use [SQLFlow Java Library](../java-library/)
@@ -50,3 +51,4 @@ Through Gudu SQLFlow, we can visualize the above data lineage as:
   * [MSSQL Sample](../../6.-sqlflow-ingester/understanding-the-format-of-exported-data/microsoft-sql-server.md)
   * [MySQL Sample](../../6.-sqlflow-ingester/understanding-the-format-of-exported-data/mysql.md)
   * [PostgreSQL Sample](../../6.-sqlflow-ingester/understanding-the-format-of-exported-data/postgresql.md)
+* Get more details about the [data model](broken-reference).
