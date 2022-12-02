@@ -1,6 +1,9 @@
 # Json Format Lineage Model
 
-This page gives a detail reference of the data lineage response in Json format. Json lineage model can be returned by SQLFlow server or Dlineage tool with `/json` flag. The SQLFlow UI gets result from the /sqlflow/generation/sqlflow/graph endpoint. Let's get into details and check the data lineage json resposne:
+This page gives a detail reference of the data lineage response in Json format. Json lineage model can be returned by SQLFlow server or Dlineage tool with `/json` flag. The SQLFlow UI gets result from the /sqlflow/generation/sqlflow/graph endpoint. \
+Please refer to [here](xml-format-lineage-model.md) for the XML response.
+
+Let's get into details and check the data lineage json resposne:
 
 ## 1. Top level elements
 

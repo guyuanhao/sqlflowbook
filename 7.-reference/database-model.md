@@ -184,7 +184,7 @@ The database model will be generated when we read data from the database. The da
 }
 ```
 
-The object under the `server` block is same as [Dbobjs](lineage-model/json-format-lineage-model.md#4.-dbobjs-payload) in linage model. Check [Dbobjs](lineage-model/json-format-lineage-model.md#4.-dbobjs-payload) to understand more on this field. Apart from the `server` block, check following table for more details:
+The object under the `server` block is same as [Dbobjs](lineage-model/json-format-lineage-model.md#4.-dbobjs-payload) in lineage model. Check [Dbobjs](lineage-model/json-format-lineage-model.md#4.-dbobjs-payload) to understand more about this field. Apart from the `server` block, check following table for more details:
 
 | Field name       | Description                                                                        |
 | ---------------- | ---------------------------------------------------------------------------------- |

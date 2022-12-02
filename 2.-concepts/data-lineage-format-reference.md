@@ -5,7 +5,9 @@ description: >-
 
 # Data Lineage Format Reference
 
-This page gives a detail reference of the data lineage response format which is returned on [SQLFlow UI](../1.-introduction/ui/). The SQLFlow UI gets result from the /sqlflow/generation/sqlflow/graph endpoint. The /sqlflow/generation/sqlflow/graph endpoint has nearly the same input and output field data as [/sqlflow/generation/sqlflow](../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) and the only difference is that [/sqlflow/generation/sqlflow](../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) does not contain [graph payload](data-lineage-format-reference.md#6.-graph-payload). Let's get into details and check the data lineage json resposne:
+This page gives a detail reference of the data lineage response format which is returned on [SQLFlow UI](../1.-introduction/ui/). The SQLFlow UI gets result from the /sqlflow/generation/sqlflow/graph endpoint. The /sqlflow/generation/sqlflow/graph endpoint has nearly the same input and output field data as [/sqlflow/generation/sqlflow](../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) and the only difference is that [/sqlflow/generation/sqlflow](../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md) does not contain [graph payload](data-lineage-format-reference.md#6.-graph-payload). For&#x20;
+
+Let's get into details and check the data lineage json resposne:
 
 ## 1. Top level elements
 
