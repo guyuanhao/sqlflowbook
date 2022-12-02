@@ -5,7 +5,7 @@ description: >-
 
 # Dataflow.xml structure
 
-This page indends to describe the structure of the dataflow.xml. DataFlowAnalyzer generates _`dataflow.xml`_ if the _`/json`_ is not set. Response will be in json format if the _`/json`_ is set. Please refer to [here](../../2.-concepts/data-lineage-format-reference.md) for the json response.
+This page indends to describe the structure of the dataflow.xml. DataFlowAnalyzer generates _`dataflow.xml`_ if the _`/json`_ is not set. Response will be in json format if the _`/json`_ is set. Please refer to [here](../../7.-reference/lineage-model/json-format-lineage-model.md) for the json response.
 
 ### Root elements
 
