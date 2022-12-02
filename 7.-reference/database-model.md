@@ -184,10 +184,11 @@ The database model will be generated when we read data from the database. The da
 }
 ```
 
-The object under the `server` block is same as [Dbobjs](lineage-model/json-format-lineage-model.md#4.-dbobjs-payload) in linage model. Check [Dbobjs](lineage-model/json-format-lineage-model.md#4.-dbobjs-payload) to understand more on this field. Apart from the server block, we have:
+The object under the `server` block is same as [Dbobjs](lineage-model/json-format-lineage-model.md#4.-dbobjs-payload) in linage model. Check [Dbobjs](lineage-model/json-format-lineage-model.md#4.-dbobjs-payload) to understand more on this field. Apart from the `server` block, check following table for more details:
 
-| Field name | Description |
-| ---------- | ----------- |
-|            |             |
-|            |             |
-|            |             |
+| Field name       | Description                                                                        |
+| ---------------- | ---------------------------------------------------------------------------------- |
+| createTime       | database model export time, usually it can be the time you execute the exportation |
+| createdBy        | <p>name of the export tool<br>sqlflow-ingester v1.1.8 for example</p>              |
+| physicalInstance | <p>your server address,<br>106.54.xx.xx for example</p>                            |
+| errorMessages    | errors during the exporting                                                        |
