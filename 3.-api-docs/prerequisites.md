@@ -27,7 +27,7 @@ Here you can
 
 ### **SQLFlow on-premise version**
 
-Please [check here](../1.-introduction/installation/) to see how to install SQLFlow on-premise version on you own server.
+Please [check here](../1.-introduction/installation/) to see how to install SQLFlow on-premise version on you own server.&#x20;
 
 * User ID
 * Secrete Key
@@ -37,8 +37,8 @@ Always set userId to `gudu|0123456789` and keep `userSecret` empty when connect 
 ### Difference between using SQLFlow Cloud server and SQLFlow on-premise version
 
 1. TOKEN is not needed in the API calls when connect to the SQLFlow on-premise version
-2. userId alwyas set to `gudu|0123456789` and `userSecret` leave empty when connect to the SQLFlow on-premise version.
-3. The server port is 8081 by default for the SQLFlow on-premise version, and There is no need to specify the port when connect to the SQLFlow Cloud server.
+2. `userId` is always set to `gudu|0123456789` and `userSecret` is left empty when connecting to the SQLFlow on-premise version.
+3. The server port is 8081 by default for the SQLFlow on-premise version, and There is no need to specify the port.
 
 Please [check here](../1.-introduction/installation/linux.md#customize-the-port) if you want read more about the server port of the SQLFlow on-premise version.
 
