@@ -52,7 +52,7 @@ exporter metadata success: <-save>/metadata.json
 
 Time consumed during the export from database could be very long if the data volume is huge. Following actions are made to improve the Ingester export performance:
 
-* JDBC `fetchsize` is set to 2000 for table and view. For sql of view and process the `fetchsize` is set to 500. (check this oracle doc for what is jdbc `fetchsize`: [https://docs.oracle.com/middleware/1212/toplink/TLJPA/q\_jdbc\_fetch\_size.htm#TLJPA647](https://docs.oracle.com/middleware/1212/toplink/TLJPA/q\_jdbc\_fetch\_size.htm#TLJPA647))
+* JDBC `fetchsize` is set to 1000 for table and view. For sql of view and process the `fetchsize` is set to 500. (check this oracle doc for what is jdbc `fetchsize`: [https://docs.oracle.com/middleware/1212/toplink/TLJPA/q\_jdbc\_fetch\_size.htm#TLJPA647](https://docs.oracle.com/middleware/1212/toplink/TLJPA/q\_jdbc\_fetch\_size.htm#TLJPA647))
 * Parameters `extractedDbsSchemas`, `excludedDbsSchemas` and `extractedViews` are improved for oracle and postgresql. A plan has already been made to improve the implementation of these parameters for other databases.
 
 `-merge` can be used to merge the metadata results. Use comma to split files to merge. All files under the folder will be merged if the given value is the folder path.
