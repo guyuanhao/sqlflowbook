@@ -46,3 +46,9 @@ You may want read more about the [job type](../../1.-introduction/getting-starte
 <figure><img src="../../.gitbook/assets/4_20221107234639.png" alt=""><figcaption></figcaption></figure>
 
 Check the lineage overview/detail once the job is finished.
+
+## Use SQLFlow On-Premise Version
+
+{% content-ref url="../../1.-introduction/readme/cloud-and-on-premise-version.md" %}
+[cloud-and-on-premise-version.md](../../1.-introduction/readme/cloud-and-on-premise-version.md)
+{% endcontent-ref %}
