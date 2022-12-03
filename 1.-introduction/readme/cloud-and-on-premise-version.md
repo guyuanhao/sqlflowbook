@@ -1,6 +1,6 @@
 # Cloud and On-Premise version
 
-To obtain the data lineage result from rest call, you have two options.
+To obtain the data lineage result from REST call, you have two options.
 
 ## Use our cloud server:
 
