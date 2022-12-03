@@ -5,6 +5,7 @@
 * [What is Gudu SQLFlow?](README.md)
   * [What SQLFlow can do](1.-introduction/readme/what-sqlflow-can-do.md)
   * [Architecture Overview](1.-introduction/readme/overview.md)
+  * [Cloud and On-premise version](1.-introduction/readme/cloud-and-on-premise-version.md)
 * [Getting Started](1.-introduction/getting-started/README.md)
   * [Sign up a new account](1.-introduction/getting-started/sign-up-a-new-account/README.md)
     * [Team Management](1.-introduction/getting-started/sign-up-a-new-account/team-management.md)

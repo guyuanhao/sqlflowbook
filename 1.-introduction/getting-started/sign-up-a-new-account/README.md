@@ -34,10 +34,12 @@ There are two different account types:
 #### Premium Account
 
 * All features in the basic account
-* Unlimited SQL queries
-* Support Rest APIs
+* Up to 10K SQL queries per month
+* Fully Restful API access, up to 10K calls per month
 * Support to upload SQL files
 * Support Snowflake query history, Redshift log and more
+
+Get a premium account [**here**](https://www.gudusoft.com/purchase-premium-account/)!
 
 ### Getting a 3 days Free Premium Account
 
