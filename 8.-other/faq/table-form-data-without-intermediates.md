@@ -79,12 +79,16 @@ If you are trying to export a Job result under CSV format, you can check  [/sqlf
 To remove the intermediates in the result, just set `false` to the request params `showConstantTable` and `showTransform` and set `true` to the params `ignoreRecordSet` and `ignoreFunction`.&#x20;
 
 ```bash
-curl --location --request POST '
-https://api.gudusoft.com/gspLive_backend/sqlflow/generation/sqlflow/exportLineageAsCsv
-?dbvendor=dbvoracle&ignoreFunction=true&ignoreRecordSet=true&showConstantTable=false&showRelationType=fdd&showTransform=false
-&token=xx
-&userId=xx' \
---header 'Content-Type: multipart/form-data' \
---header 'Accept: application/json;charset=utf-8' \
---form 'sqlfile=@"/path/to/file"'
+curl --location --request POST 'https://api.gudusoft.com/gspLive_backend/sqlflow/generation/sqlflow/exportLineageAsCsv?showRelationType=fdd' \
+--header 'Request-Origion: SwaggerBootstrapUi' \
+--header 'accept: application/json;charset=utf-8' \
+--header 'Authorization;' \
+--form 'dbvendor="dbvoracle"' \
+--form 'userId="xx"' \
+--form 'ignoreFunction="true"' \
+--form 'ignoreRecordSet="true"' \
+--form 'showConstantTable="false"' \
+--form 'showTransform="false"' \
+--form 'sqltext="INSERT INTO deptsal (dept_no, dept_name, salary) SELECT d.deptno, d.dname, SUM(e.sal + Nvl(e.comm, 0)) AS sal FROM dept d left join (SELECT * FROM emp WHERE hiredate > DATE '\''1980-01-01'\'') e ON e.deptno = d.deptno GROUP BY d.deptno, d.dname;"' \
+--form 'token="xxx"'
 ```
