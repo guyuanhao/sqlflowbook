@@ -71,3 +71,9 @@ source_db,source_schema,source_table,source_column,target_db,target_schema,targe
 ```
 
 ## REST Call
+
+[/sqlflow/exportLineageAsCsv](../../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md) endpoint is dedicated for CSV export.
+
+If you are trying to export a Job result under CSV format, you can check  [/sqlflow/job/exportFullLineageAsCsv](../../3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-exportfulllineageascsv.md)
+
+To remove the intermediates in the result, just set false to&#x20;
