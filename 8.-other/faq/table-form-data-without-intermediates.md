@@ -77,3 +77,14 @@ source_db,source_schema,source_table,source_column,target_db,target_schema,targe
 If you are trying to export a Job result under CSV format, you can check  [/sqlflow/job/exportFullLineageAsCsv](../../3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-exportfulllineageascsv.md)
 
 To remove the intermediates in the result, just set `false` to the request params `showConstantTable` and `showTransform` and set `true` to the params `ignoreRecordSet` and `ignoreFunction`.
+
+```bash
+curl --location --request POST '
+https://api.gudusoft.com/gspLive_backend/sqlflow/generation/sqlflow/exportLineageAsCsv
+?ignoreFunction=true&ignoreRecordSet=true&showConstantTable=false&showRelationType=fdd&showTransform=false
+&token=xx
+&userId=xx' \
+--header 'Content-Type: multipart/form-data' \
+--header 'Accept: application/json;charset=utf-8' \
+--form 'sqlfile=@"/path/to/file"'
+```
