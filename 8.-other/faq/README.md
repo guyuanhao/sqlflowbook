@@ -19,3 +19,12 @@ Check [deal with internal database](handling-internal-database.md) for more deta
 Yes, you can delete your account. Check [here](delete-your-account.md) for how to do that.
 
 **Note: your data will be deleted with your account together**
+
+### Q3: How to output only the relationships in a table form without temporary intermediates, just column to column relationships between tables?
+
+You can archive this using one of the following two approaches:
+
+* If you are using SQLFlow UI, change the SQLFlow UI settings and download the data lineage as CSV.
+* You can make REST api request to get the desired CSV data.
+
+Check [Table Form Data Without Intermediates](table-form-data-without-intermediates.md) page to get more details.
