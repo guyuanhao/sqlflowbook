@@ -48,9 +48,9 @@ Click the settings button and change the settings
 
 <figure><img src="../../.gitbook/assets/222_20221204172545.png" alt=""><figcaption></figcaption></figure>
 
-Turn off `show intermediate recordset`, `show function`, `show constant` and `show tranform`.
+Turn off `show intermediate recordset`, `show function`, `show constant`, `show tranform` and `indirect dataflow`.
 
-<figure><img src="../../.gitbook/assets/333_20221204172630.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/666_20221204195828.png" alt=""><figcaption></figcaption></figure>
 
 You will then get your lineage without intermediates.
 
@@ -64,15 +64,10 @@ Choose Download as csv and the CSV file will be downloaded. In the CSV file you 
 
 ```csv
 source_db,source_schema,source_table,source_column,target_db,target_schema,target_table,target_column,relation_type,effectType
-"","","EMP","DEPTNO","","","DEPTSAL","RELATIONROWS","fdr","insert"
-"","","DEPT","DEPTNO","","","DEPTSAL","RELATIONROWS","fdr","insert"
-"","","EMP","HIREDATE","","","DEPTSAL","RELATIONROWS","fdr","insert"
 "","","DEPT","DEPTNO","","","DEPTSAL","DEPT_NO","fdd","insert"
 "","","DEPT","DNAME","","","DEPTSAL","DEPT_NAME","fdd","insert"
-"","","DEPT","DEPTNO","","","DEPTSAL","SALARY","fdr","insert"
-"","","DEPT","DNAME","","","DEPTSAL","SALARY","fdr","insert"
-"","","EMP","SAL","","","DEPTSAL","SALARY","fdd","insert"
 "","","EMP","COMM","","","DEPTSAL","SALARY","fdd","insert"
+"","","EMP","SAL","","","DEPTSAL","SALARY","fdd","insert"
 ```
 
 ## REST Call
@@ -81,12 +76,12 @@ source_db,source_schema,source_table,source_column,target_db,target_schema,targe
 
 If you are trying to export a Job result under CSV format, you can check  [/sqlflow/job/exportFullLineageAsCsv](../../3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-exportfulllineageascsv.md)
 
-To remove the intermediates in the result, just set `false` to the request params `showConstantTable` and `showTransform` and set `true` to the params `ignoreRecordSet` and `ignoreFunction`.
+To remove the intermediates in the result, just set `false` to the request params `showConstantTable` and `showTransform` and set `true` to the params `ignoreRecordSet` and `ignoreFunction`.&#x20;
 
 ```bash
 curl --location --request POST '
 https://api.gudusoft.com/gspLive_backend/sqlflow/generation/sqlflow/exportLineageAsCsv
-?ignoreFunction=true&ignoreRecordSet=true&showConstantTable=false&showRelationType=fdd&showTransform=false
+?dbvendor=dbvoracle&ignoreFunction=true&ignoreRecordSet=true&showConstantTable=false&showRelationType=fdd&showTransform=false
 &token=xx
 &userId=xx' \
 --header 'Content-Type: multipart/form-data' \
