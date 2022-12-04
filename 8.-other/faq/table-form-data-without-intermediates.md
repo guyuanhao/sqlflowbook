@@ -39,6 +39,35 @@ The initial status of the lineage contains temporary tables
 
 <figure><img src="../../.gitbook/assets/111_20221204172525.png" alt=""><figcaption></figcaption></figure>
 
+Click the settings button and change the settings
 
+<figure><img src="../../.gitbook/assets/222_20221204172545.png" alt=""><figcaption></figcaption></figure>
+
+Turn off `show intermediate recordset`, `show function`, `show constant` and `show tranform`.
+
+<figure><img src="../../.gitbook/assets/333_20221204172630.png" alt=""><figcaption></figcaption></figure>
+
+You will then get your lineage without intermediates.
+
+<figure><img src="../../.gitbook/assets/444_20221204172643.png" alt=""><figcaption></figcaption></figure>
+
+Right click on the main view area.
+
+<figure><img src="../../.gitbook/assets/555_20221204172724.png" alt=""><figcaption></figcaption></figure>
+
+Choose Download as csv and the CSV file will be downloaded. In the CSV file you can have the above lineage under table form.
+
+```csv
+source_db,source_schema,source_table,source_column,target_db,target_schema,target_table,target_column,relation_type,effectType
+"","","EMP","DEPTNO","","","DEPTSAL","RELATIONROWS","fdr","insert"
+"","","DEPT","DEPTNO","","","DEPTSAL","RELATIONROWS","fdr","insert"
+"","","EMP","HIREDATE","","","DEPTSAL","RELATIONROWS","fdr","insert"
+"","","DEPT","DEPTNO","","","DEPTSAL","DEPT_NO","fdd","insert"
+"","","DEPT","DNAME","","","DEPTSAL","DEPT_NAME","fdd","insert"
+"","","DEPT","DEPTNO","","","DEPTSAL","SALARY","fdr","insert"
+"","","DEPT","DNAME","","","DEPTSAL","SALARY","fdr","insert"
+"","","EMP","SAL","","","DEPTSAL","SALARY","fdd","insert"
+"","","EMP","COMM","","","DEPTSAL","SALARY","fdd","insert"
+```
 
 ## REST Call
