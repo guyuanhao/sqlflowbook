@@ -1,5 +1,7 @@
 # Table Form Data Without  Intermediates
 
+How to output only the relationships in a table form without temporary intermediates, just column to column relationships between tables?
+
 Let's say you have a data lineage like:
 
 ```
@@ -12,7 +14,10 @@ Instead of getting the temp table in the above result, you would prefer to have 
 table1.column -> table2.column
 ```
 
-and if you would like to have the results under table form such as CSV, you can check the following two approaches.&#x20;
+and if you would like to have the results under table form such as CSV, you can archive this using one of the following two approaches:
+
+* If you are using SQLFlow UI, change the SQLFlow UI settings and download the data lineage as CSV.
+* You can make REST api request to get the desired CSV data.
 
 Let's consider this SQL:
 
