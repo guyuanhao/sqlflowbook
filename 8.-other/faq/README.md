@@ -27,4 +27,4 @@ You can archive this using one of the following two approaches:
 * If you are using SQLFlow UI, change the SQLFlow UI settings and download the data lineage as CSV.
 * You can make REST api request to get the desired CSV data.
 
-Check [Table Form Data Without Intermediates](table-form-data-without-intermediates.md) page to get more details.
+Check [Table Form Data Without Intermediates](table-form-data-without-intermediates.md) to get more details.
