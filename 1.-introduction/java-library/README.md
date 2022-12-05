@@ -5,7 +5,7 @@ description: >-
 
 # Dlineage Tool
 
-This Dlineage Java tool illustrates how to use the data lineage analysis features of the Gudu SQLFlow.&#x20;
+The Dlineage tool is wrote in Java and it shows how to use the data lineage analysis features of the Gudu SQLFlow.&#x20;
 
 The data lineage analysis package of the Gudu SQLFlow is a Java library provided in a single jar file: gsp.jar, no other dependencies on any third party libraries.
 
