@@ -38,9 +38,9 @@ Once the SQLFlow widget is installed on your server, you can access the SQLFlow 
 
 ## Setup
 
-Import the `sqlflow.widget.2.4.9.js` in index.html. During the execution of the JS, a new iframe will be created. The css from js will be embedded into the iframe and no additional css is needed.
+Import the `sqlflow.widget.2.4.9.js` in index.html. During the execution of the JS, a new iframe will be created. The `css` is statically imported by `js` and will be embedded into the iframe so no additional css import is required.
 
-jquery is optional and is inlcuded for the demostration purpose only.
+jquery is optional and is inlcuded here only for the demostration purpose.
 
 ```html
 <!DOCTYPE html>
