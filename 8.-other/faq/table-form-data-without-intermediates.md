@@ -5,7 +5,7 @@ How to output only the relationships in a table form without temporary intermedi
 Let's say you have a data lineage like:
 
 ```
-table1.column -> temp.column -> table2.column”
+table1.column -> temp.column -> table2.column
 ```
 
 Instead of getting the temp table in the above result, you would prefer to have directly:&#x20;
