@@ -4,8 +4,6 @@ description: https://github.com/sqlparser/sqlflow_public#how-to-use-sqlflow
 
 # How to use SQLFlow
 
-
-
 * Open [the official website](https://sqlflow.gudusoft.com/) of the SQLFlow and paste your SQL script or metadata to get a nice clean lineage diagram.
 * Call the [Restful API](https://github.com/sqlparser/sqlflow\_public/blob/master/api) of the SQLFlow in your own code to get data lineage metadata decoded by the SQLFlow from the SQL script.
 * The [on-premise version](https://github.com/sqlparser/sqlflow\_public/blob/master/install\_sqlflow.md) of SQLflow enables you to use it on your own server to keep the data safer.
@@ -26,8 +24,10 @@ SQLFlow provides RESTful API, so your program can transfer data with the SQLFlow
 
 You will need to setup the [SQLFlow on-premise version](how-to-use-sqlflow.md#on-premise-server-installation) on your server to use the API or you can connect to the [SQLFlow Cloud](https://sqlflow.gudusoft.com) to use the RESTFul API.
 
+[test.](../../3.-api-docs/using-the-rest-api.md)
+
 {% content-ref url="../../3.-api-docs/using-the-rest-api.md" %}
-[Using the rest api](../../3.-api-docs/using-the-rest-api.md)
+[using-the-rest-api.md](../../3.-api-docs/using-the-rest-api.md)
 {% endcontent-ref %}
 
 ### On-premise Server installation
@@ -48,8 +48,8 @@ Check our widget tool to onboard the sqlflow on your front application.
 
 For the backend part, you can check the our Dlineage tool.
 
-{% content-ref url="../../4.-sqlflow-widget/get-started.md" %}
-[sqlflow-widget](../../4.-sqlflow-widget/get-started.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="../java-library/" %}
