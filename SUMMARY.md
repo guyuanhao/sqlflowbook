@@ -73,7 +73,7 @@
 
 ## 4. SQLFlow Widget
 
-* [Get started](4.-sqlflow-widget/get-started.md)
+* [Widget Get started](4.-sqlflow-widget/get-started.md)
 * [Usages](4.-sqlflow-widget/instance-api.md)
 * [Widget API Reference](4.-sqlflow-widget/widget-api-reference.md)
 
@@ -111,5 +111,5 @@
 * [FAQ](8.-other/faq/README.md)
   * [Handling Internal Database](8.-other/faq/handling-internal-database.md)
   * [Delete Your Account](8.-other/faq/delete-your-account.md)
-  * [Table Form Data Without  Intermediates](8.-other/faq/table-form-data-without-intermediates.md)
+  * [Table Form Data Without Intermediates](8.-other/faq/table-form-data-without-intermediates.md)
 * [Roadmap](8.-other/roadmap.md)
