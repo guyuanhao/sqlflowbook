@@ -46,7 +46,7 @@ Check our widget tool to onboard the sqlflow on your front application.
 
 For the backend part, you can check the our Dlineage tool.
 
-{% content-ref url="../../4.-sqlflow-widget" %}
+{% content-ref url="../../4.-sqlflow-widget/get-started.md" %}
 [sqlflow-widget](../../4.-sqlflow-widget/get-started.md)
 {% endcontent-ref %}
 
