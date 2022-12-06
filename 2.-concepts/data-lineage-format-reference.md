@@ -7,6 +7,6 @@ description: >-
 
 Please check the Reference section:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../7.-reference/lineage-model" %}
+[7.-reference](../7.-reference/lineage-model/README.md)
 {% endcontent-ref %}
