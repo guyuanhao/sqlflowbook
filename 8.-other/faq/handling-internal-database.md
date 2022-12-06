@@ -4,7 +4,7 @@ If your database is deployed in an internal network which is not accessable for 
 
 You can use [SQLFlow on-premise version](https://www.gudusoft.com/sqlflow-on-premise-version/) to connect your database(Read [here](../../1.-introduction/installation/) for how to install) or you can try with the belowing approach:
 
-### Use [sqlflow-ingester](broken-reference) to export the database metadata file.
+### Use [sqlflow-ingester](../../6.-sqlflow-ingester/introduction/README.md) to export the database metadata file.
 
 ```bash
 sudo bash exporter.sh 
