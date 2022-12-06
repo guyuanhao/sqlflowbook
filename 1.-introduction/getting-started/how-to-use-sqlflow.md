@@ -24,7 +24,9 @@ You may paste your SQL script into the SQLFlow web page or upload the SQL file t
 
 SQLFlow provides RESTful API, so your program can transfer data with the SQLFlow backend directly. Sending the SQL to SQLFlow backend and receive a JSON response including the data lineage and diagram model for further processing in your program.
 
-You will need to setup the [SQLFlow on-premise version](how-to-use-sqlflow.md#on-premise-server-installation) on your server to use the API or you can connect to the [SQLFlow Cloud](https://sqlflow.gudusoft.com) to use the RESTFul API
+You will need to setup the [SQLFlow on-premise version](how-to-use-sqlflow.md#on-premise-server-installation) on your server to use the API or you can connect to the [SQLFlow Cloud](https://sqlflow.gudusoft.com) to use the RESTFul API.
+
+Check this [section](broken-reference) for more details.
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
