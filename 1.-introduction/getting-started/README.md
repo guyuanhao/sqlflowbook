@@ -45,10 +45,10 @@ Through Gudu SQLFlow, we can visualize the above data lineage as:
 * Read more about [Gudu SQLFlow UI ](../ui/)
 * Install a [SQLFlow Server](../installation/)
 * Use [SQLFlow Java Library](../java-library/)
-* Analyze your data through [Rest API ](broken-reference)
+* Analyze your data through [Rest API ](../../3.-api-docs/using-the-rest-api.md)
 * [Understand the format of exported data](../../6.-sqlflow-ingester/understanding-the-format-of-exported-data/) as well as check our sample data:
   * [Oracle Sample](../../6.-sqlflow-ingester/understanding-the-format-of-exported-data/oracle.md)
   * [MSSQL Sample](../../6.-sqlflow-ingester/understanding-the-format-of-exported-data/microsoft-sql-server.md)
   * [MySQL Sample](../../6.-sqlflow-ingester/understanding-the-format-of-exported-data/mysql.md)
   * [PostgreSQL Sample](../../6.-sqlflow-ingester/understanding-the-format-of-exported-data/postgresql.md)
-* Get more details about the [data model](broken-reference).
+* Get more details about the [data model](../../7.-reference/lineage-model/README.md).

@@ -11,7 +11,7 @@ The data of SQLFlow frontend are mainly from **/sqlflow/generation/sqlflow/graph
 
 Corresponding graphs and links are made based on the analysis. When clicking different buttons or making different settings on UI, we are actually giving different inputs to the request of the interface so that we are able to visualize the data lineage.
 
-Read more about the SQLFlow API [here](broken-reference).
+Read more about the SQLFlow API [here](../../3.-api-docs/using-the-rest-api.md).
 
 ### Overview
 

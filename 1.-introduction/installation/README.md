@@ -8,4 +8,4 @@ Gudu SQLFow is extremely simple to install and is comprised of two parts: fronte
 
 If you need to enable regular job features, you will also need to install Clickhouse on your server: [Clickhouse Installation](clickhouse-installation/clickhouse-for-centos.md).
 
-You can check for [SQLFlow Widget](broken-reference) once you have your SQLFlow on-premise Installed on your server and Widget will read the data from the SQLFlow on your server.
+You can check for [SQLFlow Widget](../../4.-sqlflow-widget/get-started.md) once you have your SQLFlow on-premise Installed on your server and Widget will read the data from the SQLFlow on your server.
