@@ -24,8 +24,6 @@ SQLFlow provides RESTful API, so your program can transfer data with the SQLFlow
 
 You will need to setup the [SQLFlow on-premise version](how-to-use-sqlflow.md#on-premise-server-installation) on your server to use the API or you can connect to the [SQLFlow Cloud](https://sqlflow.gudusoft.com) to use the RESTFul API.
 
-[test.](broken-reference)
-
 {% content-ref url="../../3.-api-docs/using-the-rest-api.md" %}
 [using-the-rest-api.md](../../3.-api-docs/using-the-rest-api.md)
 {% endcontent-ref %}
@@ -48,8 +46,8 @@ Check our widget tool to onboard the sqlflow on your front application.
 
 For the backend part, you can check the our Dlineage tool.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../../4.-sqlflow-widget" %}
+[sqlflow-widget](../../4.-sqlflow-widget/get-started.md)
 {% endcontent-ref %}
 
 {% content-ref url="../java-library/" %}
