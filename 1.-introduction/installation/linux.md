@@ -195,7 +195,7 @@ Change the default gspLive port from `8081` to `9001`(or any port you like).&#x2
 start service in background:
 
 ```bash
-  sudo /wings/sqlflow/backend/bin/backend.sh
+sudo /wings/sqlflow/backend/bin/backend.sh
 ```
 
 please allow 3-5 minutes to start the service.
