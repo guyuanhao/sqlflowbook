@@ -142,7 +142,7 @@ server {
 }
 ```
 
-note that `8081` in `proxy_pass http://127.0.0.1:8081/` should be the same as gspLive.jar's port.
+note that `8081` in `proxy_pass http://127.0.0.1:8081/` should be same as gspLive.jar's port.
 
 `/api` is mapped to `http://127.0.0.1:8081` in the above configration. This is useful if you company doesn't allow access `8081` port from the external.
 
