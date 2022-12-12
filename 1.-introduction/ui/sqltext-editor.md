@@ -4,11 +4,31 @@ Enter your SQL code in the live editor. You can choose the database under the se
 
 <figure><img src="../../.gitbook/assets/185734862-10a41894-eeb8-4331-a25f-1c764ae0ebc0.gif" alt=""><figcaption></figcaption></figure>
 
-Click `Table Lineage` to show only table level lineage. UI invokes [/sqlflow/graph/table\_level\_lineage](../../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-graph-table\_level\_lineage.md) to get the table level lineage result. The [/sqlflow/graph/table\_level\_lineage](../../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-graph-table\_level\_lineage.md) returns the simplified data lineage result with only table level information.
+### Table level lineage
+
+Click `Table Lineage` to show only table level lineage. UI invokes [/sqlflow/graph/table\_level\_lineage](../../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-graph-table\_level\_lineage.md) to get the table level lineage result. The [/sqlflow/graph/table\_level\_lineage](../../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-graph-table\_level\_lineage.md) returns the simplified data lineage result with only table level information.&#x20;
+
+Table level lineage has almost the same structure as column level lineage. The only difference is instead of pointing to _table_, the _source_ block or the _target_ block will point to _process_.&#x20;
+
+Example:
+
+```
+relation(process E), column A.b --> column C.d
+```
+
+will become&#x20;
+
+```
+table A ---> process E --> table C
+```
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 00-02-24.png" alt=""><figcaption><p>table level lineage</p></figcaption></figure>
 
+### Check source sql code under table level lineage
 
+<figure><img src="../../.gitbook/assets/1cd24b1d_2068361.gif" alt=""><figcaption></figcaption></figure>
+
+### Visualize join
 
 When clicking _`visualize`_, a sqlflow model will be generated and the UI will display the data lineage based on the sqlflow model response. A request to [/sqlflow/generation/sqlflow/graph](../../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-graph.md) will be made with `fdd` as the value of the field `showRelationType` and `true` in `ignoreFunction`.&#x20;
 
@@ -19,10 +39,6 @@ When clicking _`visualize join`_, same endpoint ([/sqlflow/generation/sqlflow/gr
 Click the dbvendor menu and select the database. Click sample _`SQL`_ to get the sample sql corresponding to this dbvendor in the live editing box.
 
 <figure><img src="../../.gitbook/assets/185735004-847cdb63-88a4-49db-8482-8820920daded.gif" alt=""><figcaption></figcaption></figure>
-
-### Check source sql code under table level lineage
-
-<figure><img src="../../.gitbook/assets/1cd24b1d_2068361.gif" alt=""><figcaption></figcaption></figure>
 
 ### Visualize a column or table by dropdown menu
 
