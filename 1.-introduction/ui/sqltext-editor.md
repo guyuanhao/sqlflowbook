@@ -20,6 +20,10 @@ Click the dbvendor menu and select the database. Click sample _`SQL`_ to get the
 
 <figure><img src="../../.gitbook/assets/185735004-847cdb63-88a4-49db-8482-8820920daded.gif" alt=""><figcaption></figcaption></figure>
 
+### Check source sql code under table level lineage
+
+<figure><img src="../../.gitbook/assets/1cd24b1d_2068361.gif" alt=""><figcaption></figcaption></figure>
+
 ### Visualize a column or table by dropdown menu
 
 <figure><img src="../../.gitbook/assets/185736807-21bb3f70-3fb2-47d6-a97d-c910b139fcbc.gif" alt=""><figcaption></figcaption></figure>

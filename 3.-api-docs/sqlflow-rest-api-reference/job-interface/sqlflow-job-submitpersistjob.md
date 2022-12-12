@@ -1,9 +1,9 @@
-# /sqlflow/job/submitPersistJob
+# /submitPersistJob
 
 #### **Submit a regular job**
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/submitPersistJob" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
+{% swagger src="../../../swagger/swagger.yaml" path="/sqlflow/job/submitPersistJob" method="post" %}
+[swagger.yaml](../../../swagger/swagger.yaml)
 {% endswagger %}
 
 Sample response:

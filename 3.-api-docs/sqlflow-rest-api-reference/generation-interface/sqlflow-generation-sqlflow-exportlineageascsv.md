@@ -1,9 +1,9 @@
-# /sqlflow/generation/sqlflow/exportLineageAsCsv
+# /sqlflow/exportLineageAsCsv
 
 #### Export lineage as CSV
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow/exportLineageAsCsv" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
+{% swagger src="../../../swagger/swagger.yaml" path="/sqlflow/generation/sqlflow/exportLineageAsCsv" method="post" %}
+[swagger.yaml](../../../swagger/swagger.yaml)
 {% endswagger %}
 
 Sample resposne:

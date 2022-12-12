@@ -1,7 +1,7 @@
-# /gspLive\_backend/sqlflow/job/displayUserLatestJobTableLevelLineage
+# /displayUserLatestJobTableLevelLineage
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/displayUserLatestJobTableLevelLineage" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
+{% swagger src="../../../swagger/swagger.yaml" path="/sqlflow/job/displayUserLatestJobTableLevelLineage" method="post" %}
+[swagger.yaml](../../../swagger/swagger.yaml)
 {% endswagger %}
 
 Sample response:

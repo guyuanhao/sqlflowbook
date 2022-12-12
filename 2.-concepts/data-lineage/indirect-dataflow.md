@@ -30,7 +30,7 @@ The total number of rows of the select list is impacted by the value of column `
 scott.emp.sal -> indirect -> RS-1.RelationRows
 ```
 
-<figure><img src="../../.gitbook/assets/68747470733a2f2f696d616765732e67697465652e636f6d2f75706c6f6164732f696d616765732f323032312f313230362f3132303232385f63303837633534325f383133363830392e706e67.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/68747470733a2f2f696d616765732e67697465652e636f6d2f75706c6f6164732f696d616765732f323032312f313230362f3132303232385f63303837633534325f383133363830392e706e67 (1).webp" alt=""><figcaption></figcaption></figure>
 
 ### 2 RelationRows in source relation
 
@@ -114,7 +114,7 @@ The total number of rows of the select list is impacted by the value of column `
 scott.emp.sal -> indirect -> RS-1.RelationRows
 ```
 
-<figure><img src="../../.gitbook/assets/68747470733a2f2f696d616765732e67697465652e636f6d2f75706c6f6164732f696d616765732f323032312f313230362f3132303232385f63303837633534325f383133363830392e706e67 (1).webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/68747470733a2f2f696d616765732e67697465652e636f6d2f75706c6f6164732f696d616765732f323032312f313230362f3132303232385f63303837633534325f383133363830392e706e67.webp" alt=""><figcaption></figcaption></figure>
 
 ### 2. COUNT()
 
