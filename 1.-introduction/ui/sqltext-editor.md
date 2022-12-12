@@ -22,6 +22,8 @@ will become&#x20;
 table A ---> process E --> table C
 ```
 
+You can read more about relationship, source, target [here](../../7.-reference/lineage-model/json-format-lineage-model.md#5.-relationship-payload).
+
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-01 00-02-24.png" alt=""><figcaption><p>table level lineage</p></figcaption></figure>
 
 ### Check source sql code under table level lineage
