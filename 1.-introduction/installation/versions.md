@@ -7,7 +7,7 @@ Gudu SQLFlow On-Premise has two different versions:
 
 ## Simple Version
 
-The simple version of Gudu SQLFlow On-Premise contains all basic features of Gudu SQLFlow. You will be able to generate data lineage from different SQL sources(SQL script or different db vendors), visualize the data lineage and create [Simple Job](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#simple-job) on your server. However, [Regular Job](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#regular-job) cannot be created under the simple version of On-Premise.
+The simple version of Gudu SQLFlow On-Premise contains all basic features of Gudu SQLFlow. You will be able to generate data lineage from different SQL sources(SQL script or different db vendors), to visualize the data lineage and to create [Simple Job](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#simple-job) on your server. However, [Regular Job](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#regular-job) cannot be created under the simple version of On-Premise.
 
 ## Regular Version
 
