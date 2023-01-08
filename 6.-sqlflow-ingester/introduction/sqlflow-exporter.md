@@ -23,7 +23,7 @@ exporter.bat -host 127.0.0.1 -port 1521 -db orcl -user scott -pwd tiger -save c:
 Or you can directly execute the .jar package, the jar packages are under the `./lib` folder:&#x20;
 
 ```
-java -jar sqlflow-exporter-1.0.jar  -host 106.54.134.160 -port 1521 -db orcl -user bigking -pwd Cat_12345 -save d:/ -dbVendor dbvoracle
+java -jar sqlflow-exporter-1.0.jar  -host 106.54.xx.xx -port 1521 -db orcl -user username -pwd password -save d:/ -dbVendor dbvoracle
 ```
 
 A metadata.json file will be generated after successfully export metadta from the database.&#x20;
