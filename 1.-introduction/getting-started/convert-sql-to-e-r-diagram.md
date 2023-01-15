@@ -17,9 +17,9 @@ description: https://blog.sqlflow.cn/gudu-sqlflow-er-diagram/
 
 ## Three Ways to Visualize ER Model
 
-Let's now take a look on how exactly to use Gudu SQLFlow.&#x20;
+Let's now take a look on how exactly to use [Gudu SQLFlow](https://sqlflow.gudusoft.com/#/).&#x20;
 
-Gudu SQLFlow provides three ways:
+[Gudu SQLFlow](https://sqlflow.gudusoft.com/#/) provides three ways:
 
 ### 1. Paste SQL Statements into the SQLText Editor
 
@@ -83,10 +83,6 @@ The following capture is the ER diagram of [Northwind database](https://github.c
 
     <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-The following ER diagram is a [simple help-desk tickets system](https://github.com/thekordy/ticketit) generate by SQLFlow from [SQL file](https://e.gitee.com/gudusoft/repos/gudusoft/sqldepot/blob/master/sql2er/drawsql/ticketit.sql) .
+The following ER diagram is a [simple help-desk tickets system](https://github.com/thekordy/ticketit) generate by [Gudu SQLFlow](https://sqlflow.gudusoft.com/#/) from [SQL file](https://e.gitee.com/gudusoft/repos/gudusoft/sqldepot/blob/master/sql2er/drawsql/ticketit.sql) .
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
-
-## Get Started
-
-Check [Gudu SQLFLow](https://sqlflow.gudusoft.com/#/) and automatically generate your own ER diagram today.
