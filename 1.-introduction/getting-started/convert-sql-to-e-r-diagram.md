@@ -27,7 +27,7 @@ Directly paste your SQL statements into the SQLText Editor
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-Click the icon of the ER model and you will have the correspond E-R Digram instantly.
+Click the icon of the ER model and you will have the correspond ER diagram instantly.
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
