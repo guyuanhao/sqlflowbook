@@ -47,7 +47,7 @@ Choose the job in the job list panel when it is complete.
 
 Click `show ER diagram` in the schema explorer and check the result.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Connect to DB
 
