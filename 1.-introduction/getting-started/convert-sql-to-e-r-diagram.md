@@ -17,7 +17,7 @@ description: https://blog.sqlflow.cn/gudu-sqlflow-er-diagram/
 
 ## Three Ways to Visualize ER Model
 
-Let's now take a look on how exactly to use Gudu SQLFlow to do that.&#x20;
+Let's now take a look on how exactly to use Gudu SQLFlow.&#x20;
 
 Gudu SQLFlow provides three ways:
 
