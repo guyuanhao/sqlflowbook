@@ -20,9 +20,13 @@ Team manager can add member to the team. They can change the team name. After [l
 
 <figure><img src="../../../.gitbook/assets/sqlflow-team-menu.png" alt=""><figcaption></figcaption></figure>
 
-Add memeber:
+Adding members:
 
 <figure><img src="../../../.gitbook/assets/sqlflow-team-manager.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+The team member can be added into the group before they signup on [SQLFlow](https://sqlflow.gudusoft.com/#/) or they can signup on the site first and be added into the group later.  However, team member must use the email registered by the team manager to signup SQLFlow.&#x20;
 
 #### Team quote
 
@@ -34,4 +38,4 @@ The expiration date for the team license.
 
 #### Team member
 
-Team member have the read access for the jobs submitted by other memebers in the same team.
+Team member have the read access for the jobs submitted by other members in the same team.&#x20;
