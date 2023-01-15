@@ -47,6 +47,8 @@ Choose the job in the job list panel when it is complete.
 
 Click `show ER diagram` in the schema explorer and check the result.
 
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 ### 3. Connect to DB
 
 Connect to your database for the ER diagram:
@@ -58,6 +60,8 @@ Choose the job in the job list panel when it is complete.
 <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 Click `show ER diagram` in the schema explorer and check the result.
+
+
 
 ## E-R Diagram
 
@@ -71,7 +75,7 @@ The following capture is the ER diagram of [Northwind database](https://github.c
 
 
 
-    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 *   Unique key
 
 
