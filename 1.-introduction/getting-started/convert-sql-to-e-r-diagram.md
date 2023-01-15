@@ -25,9 +25,27 @@ Gudu SQLFlow provides three ways:
 
 Directly Paste your SQL statements into the SQLText Editor
 
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
+Click the icon of the ER model and you will have the correspond E-R Digram instantly.
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Upload SQL files
+
+Click `upload sql`
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+Choose `upload file` as the job source and choose the SQL type in the `dbvendor`. Upload file and create the [Job](../ui/job-management/).
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+Choose the job in the job list panel when it is complete.
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+Click `show ER diagram` in the schema explorer and check the result.
 
 ### 3. Connect to DB
 
