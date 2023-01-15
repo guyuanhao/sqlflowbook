@@ -23,7 +23,7 @@ Gudu SQLFlow provides three ways:
 
 ### 1. Paste SQL Statements into the SQLText Editor
 
-Directly Paste your SQL statements into the SQLText Editor
+Directly paste your SQL statements into the SQLText Editor
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
