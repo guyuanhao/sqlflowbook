@@ -69,24 +69,105 @@ The following capture is the ER diagram of [Northwind database](https://github.c
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-### Different key icons
+## SQL Required to Create ER Diagram
 
-*   Primary key
+In order to create ER diagram, foreign keys should be included in the provided SQL files. Other keys such as primary key, index key or unique key are not mandatory.
 
+### **A) Foreign key**
 
+Foreign key is to build ER relations between different tables. Statements such as `create table` and `alter table` usually contain this information.
 
-    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-*   Unique key
+#### 1. **Foreign key in create table**
 
+```sql
+CREATE TABLE SCOTT.EMP 
+   (	
+	EMPNO NUMBER(4,0), 
+	ENAME VARCHAR2(10), 
 
+	DEPTNO NUMBER(2,0), 
+	 CONSTRAINT PK_EMP PRIMARY KEY (EMPNO),
+	 FOREIGN KEY(DEPTNO) REFERENCES SCOTT.DEPT(DEPTNO)
+   );
+```
 
-    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-*   Index key
+#### 2. **Foreign key in alter table**
 
+```sql
+ALTER TABLE SCOTT.EMP ADD CONSTRAINT FK_DEPTNO FOREIGN KEY ("DEPTNO")
+	  REFERENCES SCOTT.DEPT ("DEPTNO") ENABLE;
+```
 
+**B) Primary key, index key, unique key**
 
-    <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+#### 1. P**rimary key**
 
-The following ER diagram is a [simple help-desk tickets system](https://github.com/thekordy/ticketit) generate by [Gudu SQLFlow](https://sqlflow.gudusoft.com/#/) from [SQL file](https://e.gitee.com/gudusoft/repos/gudusoft/sqldepot/blob/master/sql2er/drawsql/ticketit.sql) .
+Primary key can be specified in `create table` and `alter table` statement.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+```sql
+CREATE TABLE SCOTT.EMP 
+   (	
+	EMPNO NUMBER(4,0), 
+	ENAME VARCHAR2(10), 
+
+	DEPTNO NUMBER(2,0), 
+	 CONSTRAINT PK_EMP PRIMARY KEY (EMPNO),
+	 FOREIGN KEY(DEPTNO) REFERENCES SCOTT.DEPT(DEPTNO)
+   );
+```
+
+```sql
+ALTER TABLE SCOTT.DEPT
+ADD CONSTRAINT dept_pk PRIMARY KEY (DEPTNO);
+```
+
+Icon of **primary key in ER diagram**
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+**2. Unique key**
+
+Unique key can be specified in `create table` and `alter table` statement.
+
+```sql
+CREATE TABLE SCOTT.DEPT 
+   (
+    DEPTNO NUMBER(2,0), 
+	DNAME VARCHAR2(14), 
+	LOC VARCHAR2(13),
+	CONSTRAINT constraint_name UNIQUE (DEPTNO)
+   ) ;
+```
+
+```sql
+ALTER TABLE SCOTT.DEPT 
+ADD CONSTRAINT constraint_name UNIQUE (DEPTNO);  
+```
+
+Icon of **unique key in ER diagram**
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+#### 3. I**ndex key**
+
+Index key can be specified using `create index` statement.
+
+```sql
+-- Oracle
+CREATE INDEX SCOTT.DEPT_INDEX 
+ON SCOTT.DEPT (LOC);
+```
+
+Or alter table add index
+
+```sql
+-- MySQL
+ALTER TABLE
+    `ticketit` ADD INDEX `ticketit_subject_index`(`subject`);
+```
+
+Icon of **index key in ER diagram**
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+###
