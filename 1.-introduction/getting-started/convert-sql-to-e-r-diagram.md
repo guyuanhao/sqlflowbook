@@ -10,7 +10,7 @@ description: https://blog.sqlflow.cn/gudu-sqlflow-er-diagram/
 
 *   From SQL Script
 
-    SQLFlow can analyze Database creation SQL script and visualize the provided scripts which include statements such as `create table` or `alter table` into ER Model.&#x20;
+    SQLFlow can analyze Database creation SQL script and visualize the provided scripts. In order to create ER diagram, user need to provide SQL statements such as `create table` or `alter table` and include foreign keys.&#x20;
 *   From Database
 
     You can simply make SQLFlow connect to your database for the ER diagram. SQLFlow will automatically retrieve metadata from the database and generate the ER diagram.
