@@ -5796,6 +5796,12 @@ paths:
         schema:
           type: boolean
           default: true
+      - name: ignoreTemplateTable
+        in: query
+        description: whether ignore temproray table (ignoring the template table starting with "#" in sqlserver is a mandatory behavior, and currently it cannot be ignored)
+        schema:
+          type: boolean
+          default: true
       - name: jobName
         in: query
         description: jobName
