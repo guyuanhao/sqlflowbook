@@ -142,7 +142,7 @@ server {
 }
 ```
 
-note that `8081` in `proxy_pass http://127.0.0.1:8081/` should be the same as gspLive.jar's port.
+note that `8081` in `proxy_pass http://127.0.0.1:8081/` should be consistent to gspLive.jar's port.
 
 `/api` is mapped to `http://127.0.0.1:8081` in the above configration. This is useful if you company doesn't allow access `8081` port from the external.
 
@@ -195,7 +195,7 @@ Change the default gspLive port from `8081` to `9001`(or any port you like).&#x2
 start service in background:
 
 ```bash
-  sudo /wings/sqlflow/backend/bin/backend.sh
+sudo /wings/sqlflow/backend/bin/backend.sh
 ```
 
 please allow 3-5 minutes to start the service.
