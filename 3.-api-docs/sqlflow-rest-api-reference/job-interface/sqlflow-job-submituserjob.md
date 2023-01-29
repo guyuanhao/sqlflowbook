@@ -30,4 +30,4 @@ Sample response:
 
 
 
-**hint**: Ignoring the temporary table starting with "#" in _sqlserver_ is a mandatory behavior therefore currently it cannot be changed.
+hint: Ignoring the temporary table starting with "#" in sqlserver is a mandatory behavior therefore currently it cannot be ignored
