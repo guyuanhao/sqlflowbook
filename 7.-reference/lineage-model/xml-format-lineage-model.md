@@ -67,9 +67,7 @@ This page indends to describe the structure of the **dataflow.xml**. Dlineage to
 
 ### Table Structure
 
-{% content-ref url="sqlflow-data-reference.md#table-structure" %}
 [#table-structure](sqlflow-data-reference.md#table-structure)
-{% endcontent-ref %}
 
 Subnode in Table structure:
 
@@ -79,15 +77,11 @@ Subnode in Table structure:
 
 ### Column Structure
 
-{% content-ref url="sqlflow-data-reference.md#column-structure" %}
 [#column-structure](sqlflow-data-reference.md#column-structure)
-{% endcontent-ref %}
 
 ### OraclePackage Structure
 
-{% content-ref url="sqlflow-data-reference.md#oraclepackage-structure" %}
 [#oraclepackage-structure](sqlflow-data-reference.md#oraclepackage-structure)
-{% endcontent-ref %}
 
 Subnode in OraclePackage structure:
 
@@ -97,9 +91,7 @@ Subnode in OraclePackage structure:
 
 ### Procedure Structure
 
-{% content-ref url="sqlflow-data-reference.md#procedure-structure" %}
 [#procedure-structure](sqlflow-data-reference.md#procedure-structure)
-{% endcontent-ref %}
 
 Subnode in procedure structure:
 
@@ -109,15 +101,11 @@ Subnode in procedure structure:
 
 ### Argument Structure
 
-{% content-ref url="sqlflow-data-reference.md#argument-structure" %}
 [#argument-structure](sqlflow-data-reference.md#argument-structure)
-{% endcontent-ref %}
 
 ### Process Structure
 
-{% content-ref url="sqlflow-data-reference.md#process-structure" %}
 [#process-structure](sqlflow-data-reference.md#process-structure)
-{% endcontent-ref %}
 
 ### Relationship Structure
 
@@ -192,15 +180,11 @@ Subnode in the Relationship:
 
 ### TargetColumn Structure
 
-{% content-ref url="sqlflow-data-reference.md#target-fields-data" %}
 [#target-fields-data](sqlflow-data-reference.md#target-fields-data)
-{% endcontent-ref %}
 
 ### SourceColumn Structure
 
-{% content-ref url="sqlflow-data-reference.md#sourcecolumn-structure" %}
 [#sourcecolumn-structure](sqlflow-data-reference.md#sourcecolumn-structure)
-{% endcontent-ref %}
 
 subnode in the SourceColumn
 
@@ -210,9 +194,7 @@ subnode in the SourceColumn
 
 ### Transform Structure
 
-{% content-ref url="sqlflow-data-reference.md#transform-fields-data" %}
 [#transform-fields-data](sqlflow-data-reference.md#transform-fields-data)
-{% endcontent-ref %}
 
 ### Error Structure
 

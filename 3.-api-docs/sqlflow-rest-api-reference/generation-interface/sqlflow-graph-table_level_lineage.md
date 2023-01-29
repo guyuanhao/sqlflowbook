@@ -1,8 +1,5 @@
 # /sqlflow/graph/table\_level\_lineage
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow/graph/table_level_lineage" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
-{% endswagger %}
 
 ```json
 {

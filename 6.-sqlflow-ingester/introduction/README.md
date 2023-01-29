@@ -27,14 +27,8 @@ SQLFlow-Ingester has three different parts:
 
 Read more details for the above Ingester components:
 
-{% content-ref url="sqlflow-exporter.md" %}
 [sqlflow-exporter.md](sqlflow-exporter.md)
-{% endcontent-ref %}
 
-{% content-ref url="sqlflow-extractor.md" %}
 [sqlflow-extractor.md](sqlflow-extractor.md)
-{% endcontent-ref %}
 
-{% content-ref url="sqlflow-submitter.md" %}
 [sqlflow-submitter.md](sqlflow-submitter.md)
-{% endcontent-ref %}

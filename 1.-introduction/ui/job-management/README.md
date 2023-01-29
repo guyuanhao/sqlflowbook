@@ -27,9 +27,7 @@ Note that `Lineage Overview` can not be applied on[ regular job](../../getting-s
 
 ### Job sources
 
-{% content-ref url="job-sources.md" %}
 [job-sources.md](job-sources.md)
-{% endcontent-ref %}
 
 ### Default server/database/schema
 

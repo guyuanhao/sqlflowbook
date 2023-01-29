@@ -7,6 +7,4 @@ description: >-
 
 Please check the Reference section:
 
-{% content-ref url="../7.-reference/lineage-model" %}
 [7.-reference](../7.-reference/lineage-model/README.md)
-{% endcontent-ref %}

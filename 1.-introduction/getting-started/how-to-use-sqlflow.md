@@ -14,9 +14,7 @@ Visit [SQLFlow Cloud.](https://sqlflow.gudusoft.com)
 
 You may paste your SQL script into the SQLFlow web page or upload the SQL file to the site. Select the correct database and then click the visualize button.
 
-{% content-ref url="../ui/" %}
-[ui](../ui/)
-{% endcontent-ref %}
+[ui](../ui/README.md)
 
 ### Restful APIs
 
@@ -24,9 +22,7 @@ SQLFlow provides RESTful API, so your program can transfer data with the SQLFlow
 
 You will need to setup the [SQLFlow on-premise version](how-to-use-sqlflow.md#on-premise-server-installation) on your server to use the API or you can connect to the [SQLFlow Cloud](https://sqlflow.gudusoft.com) to use the RESTFul API.
 
-{% content-ref url="../../3.-api-docs/using-the-rest-api.md" %}
 [using-the-rest-api.md](../../3.-api-docs/using-the-rest-api.md)
-{% endcontent-ref %}
 
 ### On-premise Server installation
 
@@ -34,9 +30,8 @@ Install SQLFlow frontend and backend on your own application/server (SQLFlow on-
 
 To setup SQLFlow on your server, [purchase](https://www.gudusoft.com/sqlflow-on-premise-version/) and obtain a commercial license to get all those distribution files of the SQLFlow on-premise version.
 
-{% content-ref url="../installation/" %}
-[installation](../installation/)
-{% endcontent-ref %}
+
+[installation](../installation/linux.md)
 
 ### SDK
 
@@ -46,20 +41,12 @@ Check our widget tool to onboard the sqlflow on your front application.
 
 For the backend part, you can check the our Dlineage tool.
 
-{% content-ref url="../../4.-sqlflow-widget/get-started.md" %}
 [sqlflow-widget](../../4.-sqlflow-widget/get-started.md)
-{% endcontent-ref %}
 
-{% content-ref url="../java-library/" %}
-[java-library](../java-library/)
-{% endcontent-ref %}
+[java-library](../java-library/README.md)
 
 ### Roadmap and FAQ
 
-{% content-ref url="../../8.-other/roadmap.md" %}
 [roadmap.md](../../8.-other/roadmap.md)
-{% endcontent-ref %}
 
-{% content-ref url="../../8.-other/faq/" %}
-[faq](../../8.-other/faq/)
-{% endcontent-ref %}
+[faq](../../8.-other/faq/README.md)

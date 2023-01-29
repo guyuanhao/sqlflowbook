@@ -1,8 +1,5 @@
 # /gspLive\_backend/sqlflow/job/displayUserLatestJobTableLevelLineage
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/displayUserLatestJobTableLevelLineage" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
-{% endswagger %}
 
 Sample response:
 

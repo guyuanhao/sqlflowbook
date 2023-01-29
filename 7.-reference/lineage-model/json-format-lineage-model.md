@@ -306,15 +306,11 @@ A relation includes the `type`, `target`, `sources` and other attributes.
 
 Check here for more details
 
-{% content-ref url="sqlflow-data-reference.md#target-fields-data" %}
 [#target-fields-data](sqlflow-data-reference.md#target-fields-data)
-{% endcontent-ref %}
 
 #### Transform
 
-{% content-ref url="sqlflow-data-reference.md#transform-fields-data" %}
 [#transform-fields-data](sqlflow-data-reference.md#transform-fields-data)
-{% endcontent-ref %}
 
 ## 6. Graph payload
 
@@ -391,6 +387,4 @@ Check here for more details
 
 ## Dataflow.xml Structure
 
-{% content-ref url="../../1.-introduction/java-library/dataflow.xml-structure.md" %}
 [dataflow.xml-structure.md](../../1.-introduction/java-library/dataflow.xml-structure.md)
-{% endcontent-ref %}

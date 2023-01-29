@@ -2,10 +2,6 @@
 
 #### Get the specific user job status and summary
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/displayUserJobSummary" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
-{% endswagger %}
-
 Sample response:
 
 ```json

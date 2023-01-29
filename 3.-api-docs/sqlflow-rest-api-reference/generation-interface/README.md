@@ -17,9 +17,6 @@ Send the SQL query and get the data lineage result.
 /gspLive_backend/sqlflow/generation/sqlflow
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
-{% endswagger %}
 
 * **SQLFlow Cloud Server**
 
@@ -41,9 +38,6 @@ Send the SQL file and get the csv result which includes the data lineage.
 /gspLive_backend/sqlflow/generation/sqlflow/exportLineageAsCsv
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow/exportLineageAsCsv" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
-{% endswagger %}
 
 ```
 curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/generation/sqlflow/exportLineageAsCsv" -H  "accept:application/json;charset=utf-8" -H  "Content-Type:multipart/form-data" -F "userId=YOUR USER ID HERE" -F "token=YOUR TOKEN HERE" -F "dbvendor=dbvoracle" -F "showRelationType=fdd" -F "sqlfile=@YOUR UPLOAD FILE PATH HERE" --output YOUR DOWNLOAD FILE PATH HERE

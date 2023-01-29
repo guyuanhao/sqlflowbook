@@ -25,9 +25,6 @@ Example in `Curl`
 curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/job/submitUserJob" -H "accept:application/json;charset=utf-8" -H "Content-Type:multipart/form-data" -F "userId=YOUR USER ID HERE" -F "token=YOUR TOKEN HERE" -F "sqlfiles=@FIRST FILE PATH" -F "sqlfiles=@SECOND FILE PATH" -F "dbvendor=dbvmssql" -F "jobName=job1"
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/submitUserJob" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
-{% endswagger %}
 
 **Note:**
 
@@ -72,10 +69,6 @@ Example in `Curl`
 curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/job/displayUserJobSummary" -F "jobId=c359aef4bd9641d697732422debd8055" -F "userId=YOUR USER ID HERE" -F "token=YOUR TOKEN HERE"
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/displayUserJobSummary" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
-{% endswagger %}
-
 Sample response:
 
 ```json
@@ -108,10 +101,6 @@ Example in `Curl`
 ```json
 curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/job/displayUserJobsSummary" -F "userId=YOUR USER ID HERE" -F "token=YOUR TOKEN HERE"
 ```
-
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/displayUserJobsSummary" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
-{% endswagger %}
 
 Sample Response:
 
@@ -207,10 +196,6 @@ Example in `Curl`
 ```
 curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/job/exportLineageAsJson" -F "userId=YOUR USER ID HERE" -F "token=YOUR TOKEN HERE" -F "jobId=c359aef4bd9641d697732422debd8055" --output lineage.json
 ```
-
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/exportLineageAsJson" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
-{% endswagger %}
 
 **Note:**
 
@@ -351,10 +336,6 @@ Example in `Curl`
 curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/job/exportFullLineageAsCsv" -F "userId=YOUR USER ID HERE" -F "token=YOUR TOKEN HERE" -F "jobId=c359aef4bd9641d697732422debd8055" --output lineage.csv
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/exportFullLineageAsCsv" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
-{% endswagger %}
-
 **Note:**
 
 > If you want to get table to table relation, please add option -F "tableToTable=true"
@@ -372,10 +353,6 @@ Example in `Curl`
 ```
 curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/job/exportLineageAsGraphml" -F "userId=YOUR USER ID HERE" -F "token=YOUR TOKEN HERE" -F "jobId=c359aef4bd9641d697732422debd8055" --output lineage.graphml
 ```
-
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/exportLineageAsGraphml" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
-{% endswagger %}
 
 **Note:**
 
@@ -395,10 +372,6 @@ Set incremental=true If the job is incremental.&#x20;
 ```
 /gspLive_backend/sqlflow/job/submitPersistJob
 ```
-
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/submitPersistJob" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
-{% endswagger %}
 
 Example in `Curl`
 

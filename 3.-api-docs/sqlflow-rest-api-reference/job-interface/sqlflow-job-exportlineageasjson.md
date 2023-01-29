@@ -2,10 +2,6 @@
 
 #### Export data lineage in json format
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/exportLineageAsJson" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
-{% endswagger %}
-
 Sample Response is a file in Json format:
 
 ```json

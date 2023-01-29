@@ -298,9 +298,7 @@ See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/
 
 If you need to enable regular job feature on your sqlflow on-premiser, you will also need to install Clickhouse on your server. Check here for Clickhouse installation:
 
-{% content-ref url="clickhouse-installation/" %}
 [clickhouse-installation](clickhouse-installation/)
-{% endcontent-ref %}
 
 
 
