@@ -33,4 +33,4 @@ In Dlineage tool we can display temporary tables by adding `/withTemporaryTable`
 java -jar gudusoft.dlineage.jar /t mssql /f path_to_sql_file /withTemporaryTable
 ```
 
-Please be aware that ignoring the temporary table starting with "#" in _sqlserver_ is a mandatory behavior, therefore it cannot be displayed even with the `/withTemporaryTable` flag.
+Please be aware that ignoring the temporary table starting with "`#`" in _sqlserver_ is a mandatory behavior, therefore it cannot be displayed even with the `/withTemporaryTable` flag.
