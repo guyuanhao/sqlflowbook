@@ -320,5 +320,5 @@ The meaning of the letter in fdd, fdr. f: dataflow, d: data value, r: record set
 
 The first letter is always f，the second letter represents the source column，the third letter represents the target column, the fourth is reserved.
 
-* fdd: data of the source column will used in the target column
+* fdd: data of the source column will be used in the target column
 * fdr: data of the source column will impact the number of the resultset in the select list, or will impact the result value of an anggreate function.
