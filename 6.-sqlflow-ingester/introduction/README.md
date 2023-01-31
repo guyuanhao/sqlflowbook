@@ -23,7 +23,7 @@ SQLFlow-Ingester has three different parts:
 
 * sqlflow-exporter: getting metadata from database
 * sqlflow-extractor: processing raw data files such as log files, various script files (from which SQL statements and metadata to be processed are extracted), CSV files containing SQL statements, etc.
-* sqlflow-submitter: submitting sql and metadata to the sqlflow server, creating jobs, generating data lineage, and creating the results in the UI.
+* sqlflow-submitter: submitting sql and metadata to the sqlflow server, creating jobs, generating data lineage, and having the results in the UI.
 
 Read more details for the above Ingester components:
 
