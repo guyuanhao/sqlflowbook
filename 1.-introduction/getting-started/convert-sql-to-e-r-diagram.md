@@ -45,11 +45,11 @@ Choose `upload file` as the job source and choose the SQL type in the `dbvendor`
 
 Choose the job in the job list panel when it is complete.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 Click `show ER diagram` in the schema explorer and check the result.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Connect to DB
 
@@ -59,11 +59,11 @@ Connect to your database for the ER diagram:
 
 Choose the job in the job list panel when it is complete.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 Click `show ER diagram` in the schema explorer and check the result.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## E-R Diagram
 
@@ -127,7 +127,7 @@ ADD CONSTRAINT dept_pk PRIMARY KEY (DEPTNO);
 
 Icon of **primary key in ER diagram**
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2. Unique key**
 

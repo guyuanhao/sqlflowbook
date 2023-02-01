@@ -610,7 +610,7 @@ Find the example code under the directory:
 └── 15\
 ```
 
-<figure><img src="../.gitbook/assets/15_20221122212036.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/15_20221122212036 (1).png" alt=""><figcaption></figcaption></figure>
 
 ```javascript
 $(async () => {

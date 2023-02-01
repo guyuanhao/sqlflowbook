@@ -14,7 +14,7 @@ If you want to connect to [the SQLFlow Cloud Server](https://sqlflow.gudusoft.co
 
 Once getting the premium account, please click the icon at the right top of the screen:
 
-<figure><img src="../.gitbook/assets/sqlflow-userid-secret-step1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/sqlflow_userid_secret_step1.png" alt=""><figcaption></figcaption></figure>
 
 Click the `Account` menu item to see:
 

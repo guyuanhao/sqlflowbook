@@ -46,7 +46,7 @@ Read more about the `advanced` section [here](./#advanced).
 
 The `manifest.json` and the `catalog.json` will be required. Both files can be found under the `target` folder of your dbt tranformation project.
 
-<figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-04 22-20-25 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-04 22-20-25.png" alt=""><figcaption></figcaption></figure>
 
 ### RedShift log
 
