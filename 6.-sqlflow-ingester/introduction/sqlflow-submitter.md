@@ -76,7 +76,7 @@ The logs of the submitter are persisted under `log` folder.
 
 <figure><img src="../../.gitbook/assets/微信图片_20230202230033.png" alt=""><figcaption></figcaption></figure>
 
-### **Common Log Description**
+### **Common Logs**
 
 * file is not a valid file.
 
