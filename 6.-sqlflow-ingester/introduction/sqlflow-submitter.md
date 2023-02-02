@@ -14,7 +14,7 @@ With SQLFlow-Submitter, you will be able to submit SQL and metadata to the SQLFl
     Download our latest SQFlow-Ingester package [here](https://github.com/sqlparser/sqlflow\_public/releases).
 * Java 8 or higher version must be installed and configured correctly.
 
-## Install
+## Installation
 
 ```
 unzip sqlflow-ingesterx.x.x.zip -d <ingester_folder>
@@ -177,3 +177,46 @@ job id from sqlflow , log in to the SQLFlow website to view the newly analyzed r
 * The number of relationships in this task is too large to export this file, please check blood relationships on SQLFlow platform.
 
 When the task uploaded to SQLFlow is too large or the number of rolls parsed by SQLFlow is too large, SQLFlow-Submitter cannot obtain CSV files from it.
+
+## Configuration File
+
+Configuration sample:
+
+```json
+{
+	"databaseServer":{
+		"hostname":"DESKTOP-MLUR76N\\SQLEXPRESS",
+		"port":"1443",
+		"database":"master",
+		"extractedDbsSchemas":"",
+	        "excludedDbsSchemas":"",
+	        "extractedStoredProcedures":"",
+	        "extractedViews":"",
+		"enableQueryHistory":false,
+		"queryHistoryBlockOfTimeInMinutes":0,
+		"sqlsourceTableName":"",
+		"sqlsourceColumnQuerySource":"",
+		"sqlsourceColumnQueryName":"",
+		"authentication":"windowsuser"
+	},
+	"sqlFlowServer":{
+		"server":"http://sqlflow.cn",
+		"serverPort":"8081",
+		"userId":"gudu|0123456789",
+		"userSecret":""
+	},
+	"sqlScriptSource":"database",
+	"lineageReturnFormat":"json",
+	"lineageReturnOutputFile":"",
+	"databaseType":"mssql",
+	"taskName": "sumitterTest",
+	"jobNameToId": 1,
+	"jobType":"regular"
+}
+```
+
+| Field Name     | Description                                          | Sample Value |
+| -------------- | ---------------------------------------------------- | ------------ |
+| databaseServer | Contains the DB information and DB related settings  | N/A, Object  |
+|                |                                                      |              |
+|                |                                                      |              |
