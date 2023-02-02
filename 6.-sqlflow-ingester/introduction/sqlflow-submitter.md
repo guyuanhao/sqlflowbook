@@ -73,3 +73,107 @@ Please check [this document](https://phoenixnap.com/kb/set-up-cron-job-linux) fo
 ## SQLFlow-Submitter Log
 
 The logs of the submitter are persisted under `log` folder.
+
+<figure><img src="../../.gitbook/assets/微信图片_20230202230033.png" alt=""><figcaption></figcaption></figure>
+
+### **Common Log Description**
+
+* file is not a valid file.
+
+The file does not exist or the file address cannot be found.
+
+* sqlScriptSource is valid, support source are database,gitserver,singleFile,directory
+
+The `sqlScriptSource` parameter is incorrectly set. Data sources are only supported from databases, remote repositories, and files and directories
+
+* lineageReturnFormat is valid, support types are json,csv,graphml
+
+Parameter `lineageReturnFormat` is incorrectly set. The data lineage result obtained can only be in JSON, CSV, and GraphML formats
+
+* export metadata in json successful. the resulting metadata is as follows
+
+Exporting metadata from the specified database succeeded.
+
+* This database is not currently supported
+
+Parameter `databaseType` set error, at present only support access, bigquery, couchbase, dax, db2, greenplum, hana, hive, impala, informix, mdx, mssql,sqlserver,mysql,netezza,odbc,openedge,oracle,postgresql,postgres,redshift,snowflake,sybase,teradata,soql,vertica,azure
+
+* db connect failed
+
+The metadata fails to be exported from the specified database. If the metadata fails to be exported, check whether the database connection information in the `dataServer` object is correct
+
+* export metadata in json failed
+
+Failed to export metadata from the specified database. Check whether the user who logs in to the database has the permission to obtain metadata
+
+* metadata is empty
+
+Exporting metadata from specified database is empty, please contact me for processing
+
+* remote warehouse url cannot be empty
+
+The URL in the gitServer parameter cannot be empty
+
+* remote warehouse pull failed
+
+Failed to connect to the remote warehouse. Check whether the remote warehouse connection information is correct
+
+* connection failed，repourl is the ssh URL
+
+The remote repository address is incorrect. Please check whether it is a Git address
+
+* remote warehouse file to zip successful. path is：xx
+
+Pull to a local storage address from a remote repository
+
+* get token from sqlflow failed
+
+Failed to connect to SQLFlow. Check whether connection parameters of `sqlflowServer` are correct
+
+* submit job to sqlflow failed, please input https with url
+
+Failed to submit the SQLFlow task. Check whether the URL and port of the `sqlflowServer` are correct
+
+* submit job to sqlflow failed
+
+Failed to submit the SQLFLOW task. Check whether the sqlFLOW background service is started properly
+
+* get job to status failed
+
+After a job is submitted to SQLFLOW, SQLFlow fails to execute the job
+
+* export json result failed
+
+Description Failed to export Data Lineage in JSON format from SQLflow
+
+* export csv result failed
+
+Description Failed to export Data Lineage in csv format from SQLflow
+
+* export diagram result failed
+
+Description Failed to export Data Lineage in diagram format from SQLflow
+
+* submit job to sqlflow successful
+
+The job is successfully submitted to SQLFlow, and the basic information about the submitted job is displayed
+
+* \[database: 0 table: 0 view: 0 procedure: 0 column: 0 synonym: 0]
+
+Statistics the amount of metadata exported from the specified database
+
+* the time taken to export : 0ms
+
+Time, in milliseconds, to export metadata from the specified database
+
+* download success, path: xxx
+
+Local storage address of Data Lineage returned after successfully submitting a job to SQLFlow
+
+* job id is : xxxx
+
+job id from sqlflow , log in to the SQLFlow website to view the newly analyzed results. In the `Job List`, you can view the analysis results of the currently submitted tasks.
+
+* The number of relationships in this task is too large to export this file, please check blood relationships on SQLFlow platform.
+
+When the task uploaded to SQLFlow is too large or the number of rolls parsed by SQLFlow is too large, SQLFlow-Submitter cannot obtain CSV files from it.
