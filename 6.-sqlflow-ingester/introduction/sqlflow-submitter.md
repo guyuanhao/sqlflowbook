@@ -212,8 +212,7 @@ Configuration sample:
 	"taskName": "sumitterTest",
 	"jobNameToId": 1,
 	"jobType":"regular",
-	"donotConnectToSQLFlowServer": 1,
-	"optionType":0,
+	"donotConnectToSQLFlowServer": 1
 }
 ```
 
@@ -299,4 +298,4 @@ In the above sample:
 "sqlsourceColumnQueryName":"query_name"
 ```
 
-This parameter is optional, you don't need to speicify a query name column if it doesn't exist in the table.
+This parameter is optional, you don't need to specify a query name column if it doesn't exist in the table.
