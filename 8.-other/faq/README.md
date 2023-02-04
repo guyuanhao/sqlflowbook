@@ -28,3 +28,11 @@ You can archive this using one of the following two approaches:
 * You can make REST api request to get the desired CSV data.
 
 Check [Table Form Data Without Intermediates](table-form-data-without-intermediates.md) to get more details.
+
+### Q4: In Dlinage Tool/DataFlowAnalyzer, how to set default database and schema?
+
+```java
+DataFlowAnalyzer dlineage = new DataFlowAnalyzer(sql, vendor, simpleMode);
+dlineage.getOption().setDefaultDatabase("PRD");
+dlineage.getOption().setDefaultSchema("apps");
+```
