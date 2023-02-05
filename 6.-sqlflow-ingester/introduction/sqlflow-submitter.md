@@ -22,7 +22,7 @@ unzip sqlflow-ingesterx.x.x.zip -d <ingester_folder>
 cd <ingester_folder>
 ```
 
-* **Linux & mac open permissions**
+* **Under Linux & Mac to add permissions**
 
 ```
 chmod 777 *.sh
@@ -34,13 +34,13 @@ chmod 777 *.sh
 
 After decompressing the package, you will find `submitter.bat` for Windows and `submitter.sh` for Linux & Mac.&#x20;
 
-* Windows&#x20;
+### Windows&#x20;
 
 ```
 submitter.bat -f D:/mssql-winuser-config.json
 ```
 
-* Linux & Mac
+### Linux & Mac
 
 ```bash
 bash submitter.sh -f <path_to_config_file>  
@@ -188,7 +188,7 @@ When the task uploaded to SQLFlow is too large or the number of rolls parsed by 
 
 ## Configuration File
 
-Configuration sample:
+### Configuration sample
 
 ```json
 {
@@ -223,6 +223,8 @@ Configuration sample:
 	"donotConnectToSQLFlowServer": 1
 }
 ```
+
+### Configuration Fields
 
 | Field Name                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Sample Value                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
