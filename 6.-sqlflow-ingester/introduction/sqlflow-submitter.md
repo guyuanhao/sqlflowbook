@@ -66,7 +66,7 @@ If you are on Linux or Mac, you can schedule the submitter with `crontab` to cre
 crontab -e
 ```
 
-In the editor, let's say now we want schedule a daily cron job add the following code
+In the editor opend by the above command, let's say now we want to schedule a daily cron job, add the following code
 
 ```bash
 0 0 * * * bash submitter.sh -f <path_to_config_file> <lib_path>
@@ -76,7 +76,7 @@ note:
     lib_path: lib directory absolute path
 ```
 
-Please check [this document](https://phoenixnap.com/kb/set-up-cron-job-linux) for more information about cron.
+Please check [this document](https://phoenixnap.com/kb/set-up-cron-job-linux) for more information about `cron` and you can learn the `cron` grammar with [Wikipedia](https://en.wikipedia.org/wiki/Cron).
 
 ## SQLFlow-Submitter Log
 
