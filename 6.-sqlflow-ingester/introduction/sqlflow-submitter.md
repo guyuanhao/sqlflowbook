@@ -5,7 +5,7 @@ description: >-
 
 # SQLFlow-Submitter
 
-With SQLFlow-Submitter, you will be able to submit SQL and metadata to the SQLFlow server, to create jobs as well as to generate data lineage.
+With SQLFlow-Submitter, you will be able to submit SQL and metadata to the SQLFlow server, to create [SQLFlow Jobs](../../1.-introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md) as well as to generate data lineage.
 
 ## Prerequisites
 
@@ -66,7 +66,7 @@ If you are on Linux or Mac, you can schedule the submitter with `crontab` to cre
 crontab -e
 ```
 
-In the editor opend by the above command, let's say now we want to schedule a daily cron job, add the following code
+In the editor opened by the above command, let's say now we want to schedule a daily cron job, add the following code
 
 ```bash
 0 0 * * * bash submitter.sh -f <path_to_config_file> <lib_path>
