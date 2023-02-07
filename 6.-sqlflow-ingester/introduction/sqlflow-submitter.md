@@ -224,6 +224,20 @@ When the task uploaded to SQLFlow is too large or the number of rolls parsed by 
 }
 ```
 
+### Snowflake query history
+
+For the query history of Snowflake, we will need the following settings:
+
+```json
+"databaseServer"."enableQueryHistory"=true //enable query history
+"databaseType":"snowflake", //set the DB type as Snowflake
+"taskName": "snowflakeSumitterTest", //job name
+"jobNameToId": 1, //when setting this value to 1, we can create an incremental job  
+"jobType":"regular" //job type, regular job
+```
+
+For more details, check [configuration table](sqlflow-submitter.md#configuration-fields).
+
 ### Configuration Fields
 
 | Field Name                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Sample Value                                                                                                                                                                                                                                                                                                                                            |

@@ -4,9 +4,9 @@ description: https://e.gitee.com/gudusoft/docs/1006527/file/2767137?sub_id=76879
 
 # SQL Server
 
-Please ensure you have the prerequisites and the package listed in [this page](../introduction/sqlflow-submitter.md#prerequisites) before start creating the [SQLFlow Job](../../1.-introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md) and connecting SQLFlow server.
+Please ensure you have the prerequisites and the package listed in [this page](../introduction/sqlflow-submitter.md#prerequisites) before start creating the [SQLFlow Job](../../1.-introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md) and connecting to the SQLFlow server.
 
-This page provides detailed conguration steps to submit Job for **SQL Server**.
+This page provides detailed configuration steps to submit Job for **SQL Server**.
 
 ## Command
 
@@ -47,7 +47,7 @@ e.g.
 		"sqlsourceTableName":"",
 		"sqlsourceColumnQuerySource":"",
 		"sqlsourceColumnQueryName":"",
-		"authentication":"windowsuser"
+		"authentication":"windowsuser" //this is for windows user only
 	},
 	"sqlFlowServer":{
 		"server":"http://sqlflow.cn",
