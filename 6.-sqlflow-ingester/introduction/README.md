@@ -6,7 +6,7 @@ description: https://e.gitee.com/gudusoft/docs/1006527/file/2767137?sub_id=57381
 
 ### Why we need SQLFlow-Ingester?
 
-SQLFlow actually supports two kinds of file as the input:
+SQLFlow supports two kinds of file as the input:
 
 * SQL file, including comments. DDL file for an example, sql such as create table can be used as metadata.
 * Json files which contain the database metadata
