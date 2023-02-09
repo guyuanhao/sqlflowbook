@@ -15,7 +15,7 @@ All other kinds of the input will be no longer supported and users shall convert
 
 ### SQLFlow-Ingester Basic
 
-SQLFlow-Ingester is a tool helps you to extract metadata from various database. The metadata file can be later used by [dlineage tool](../../1.-introduction/java-library/) to generate data lineage.
+SQLFlow-Ingester is a tool that helps you to extract metadata from various databases and create SQLFlow job based on your database. The extracted metadata file can also be used by [dlineage tool](../../1.-introduction/java-library/) to generate data lineage.
 
 SQLFlow-Ingester download address: [https://github.com/sqlparser/sqlflow\_public/releases](https://github.com/sqlparser/sqlflow\_public/releases)
 
