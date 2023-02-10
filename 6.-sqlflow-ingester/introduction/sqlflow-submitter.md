@@ -54,7 +54,7 @@ eg:
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2023-02-05 10-01-15.png" alt=""><figcaption></figcaption></figure>
 
-After successfully excuting the Submitter, check the Job list on UI and you will find the job submitted by the Submitter, with the Job name configued in the configuration file.
+After successfully executing the Submitter, check the Job list on UI and you will find the job submitted by the Submitter, with the Job name configured in the configuration file.
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2023-02-05 10-05-13.png" alt=""><figcaption></figcaption></figure>
 
