@@ -53,7 +53,16 @@ Click `show ER diagram` in the schema explorer and check the result.
 
 ### 3. Connect to DB
 
-Connect to your database for the ER diagram:
+Connect to your database for the ER diagram, check following table for the supported database types and the permissions/roles needed:
+
+| Database Type | Permissions/Roles required | Comment                                                                                                             |
+| ------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| MySQL         | SELECT                     | ER Diagram needs DB user to have SELECT permission                                                                  |
+| PostgreSQL    | SELECT                     | ER Diagram needs DB user to have SELECT permission                                                                  |
+| SQL Server    | SELECT                     | ER Diagram needs DB user to have SELECT permission                                                                  |
+| Oracle        | DBA                        | To generate ER Diagram from Oracle database, input user must has DBA role. Otherwise, `ORA-01031` will be returned. |
+
+_Hint: Other databases are not in current version's support list and will be supported in the future release_
 
 <figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
