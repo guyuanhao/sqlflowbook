@@ -60,7 +60,7 @@ Connect to your database for the ER diagram, check following table for the suppo
 | MySQL         | SELECT                     | ER Diagram needs DB user to have SELECT permission                                                                  |
 | PostgreSQL    | SELECT                     | ER Diagram needs DB user to have SELECT permission                                                                  |
 | SQL Server    | SELECT                     | ER Diagram needs DB user to have SELECT permission                                                                  |
-| Oracle        | DBA                        | To generate ER Diagram from Oracle database, input user must has DBA role. Otherwise, `ORA-01031` will be returned. |
+| Oracle        | DBA                        | To generate ER Diagram from Oracle database, input user must has DBA role , otherwise `ORA-01031` will be returned. |
 
 _Hint: Other databases are not in current version's support list and will be supported in our future release_
 
