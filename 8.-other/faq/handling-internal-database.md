@@ -1,6 +1,6 @@
 # Handling Internal Database
 
-If your database is deployed in an internal network which is not accessible for external connection, you may not be able to read your internal database directly from the public SQLFlow server.
+If your database is deployed in an internal network and is not accessible for external connection, you may not be able to read your internal database directly from the public SQLFlow server.
 
 You can use [SQLFlow on-premise version](https://www.gudusoft.com/sqlflow-on-premise-version/) to connect your database(Read [here](../../1.-introduction/installation/) for how to install) or you can try with the belowing approach:
 
