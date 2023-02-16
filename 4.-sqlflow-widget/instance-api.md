@@ -474,11 +474,21 @@ we cannot use `mio.public.usecase_na_mio004_infohub.？` to match because `?` in
 
 **Use Regex Expression in stopat:**
 
-[http://datalineage.xxxx.org/](https://gitee.com/link?target=http%3A%2F%2Fdatalineage.syngentaaws.org%2F)[widget/12/?type=downstream&\&table=MIO.PUBLIC.MIO004\_T\_NET\_SALES\_FACT&\&column=fact\_guid](https://gitee.com/link?target=http%3A%2F%2Fhdp02.sqlflow.cn%2Fwidget%2F12%2F%3Ftype%3Ddownstream%26table%3DMIO.PUBLIC.MIO004\_T\_NET\_SALES\_FACT%26column%3Dfact\_guid)
+```
+
+http://127.0.0.1/widget/12/?type=downstream&&table=MIO.PUBLIC.MIO004_T_NET_SALES_FACT&&column=fact_guid
+
+```
 
 ![输入图片说明](https://foruda.gitee.com/images/1676425852929575342/93398702\_1228015.png)
 
 [http://datalineage.xxxx.org](https://gitee.com/link?target=http%3A%2F%2Fdatalineage.syngentaaws.org%2F)[/widget/12/?type=downstream\&table=MIO.PUBLIC.MIO004\_T\_NET\_SALES\_FACT\&column=fact\_guid\&stopat=mio.public.usecase](https://gitee.com/link?target=http%3A%2F%2Fhdp02.sqlflow.cn%2Fwidget%2F12%2F%3Ftype%3Ddownstream%26table%3DMIO.PUBLIC.MIO004\_T\_NET\_SALES\_FACT%26column%3Dfact\_guid%26stopat%3Dmio.public.usecase).\*
+
+```
+
+http://127.0.0.1/widget/12/?type=downstream&table=MIO.PUBLIC.MIO004_T_NET_SALES_FACT&column=fact_guid&stopat=mio.public.usecase
+.*
+```
 
 ![输入图片说明](https://foruda.gitee.com/images/1676425874088611615/04f3c17e\_1228015.png)
 
