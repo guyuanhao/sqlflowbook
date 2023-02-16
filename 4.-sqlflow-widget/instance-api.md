@@ -464,13 +464,13 @@ To match `mio.public.usecase_na_mio004_infohubview006` with base string `mio.pub
 
 The regex expression should be: `mio.public.usecase_na_mio004_infohub.*`
 
-![输入图片说明](https://foruda.gitee.com/images/1676387254568489058/34f24b0f\_1228015.png)
+![](https://foruda.gitee.com/images/1676387254568489058/34f24b0f\_1228015.png)
 
 `.` matches any single character, \* matches the preceding element zero or more times(in this case, it can be any character).
 
 we cannot use `mio.public.usecase_na_mio004_infohub.？` to match because `?` indicates only zero or one occurrences of the preceding element, it is not a exact match:
 
-![输入图片说明](https://foruda.gitee.com/images/1676387786494834978/5084551f\_1228015.png)
+![](https://foruda.gitee.com/images/1676387786494834978/5084551f\_1228015.png)
 
 **Use Regex Expression in stopat:**
 
@@ -480,9 +480,7 @@ http://127.0.0.1/widget/12/?type=downstream&&table=MIO.PUBLIC.MIO004_T_NET_SALES
 
 ```
 
-![输入图片说明](https://foruda.gitee.com/images/1676425852929575342/93398702\_1228015.png)
-
-[http://datalineage.xxxx.org](https://gitee.com/link?target=http%3A%2F%2Fdatalineage.syngentaaws.org%2F)[/widget/12/?type=downstream\&table=MIO.PUBLIC.MIO004\_T\_NET\_SALES\_FACT\&column=fact\_guid\&stopat=mio.public.usecase](https://gitee.com/link?target=http%3A%2F%2Fhdp02.sqlflow.cn%2Fwidget%2F12%2F%3Ftype%3Ddownstream%26table%3DMIO.PUBLIC.MIO004\_T\_NET\_SALES\_FACT%26column%3Dfact\_guid%26stopat%3Dmio.public.usecase).\*
+![](https://foruda.gitee.com/images/1676425852929575342/93398702\_1228015.png)
 
 ```
 
@@ -490,7 +488,7 @@ http://127.0.0.1/widget/12/?type=downstream&table=MIO.PUBLIC.MIO004_T_NET_SALES_
 .*
 ```
 
-![输入图片说明](https://foruda.gitee.com/images/1676425874088611615/04f3c17e\_1228015.png)
+![](https://foruda.gitee.com/images/1676425874088611615/04f3c17e\_1228015.png)
 
 Find the example code under the directory:
 
