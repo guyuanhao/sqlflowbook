@@ -30,7 +30,7 @@ chmod 777 *.sh
 
 ## Usage
 
-<figure><img src="../../.gitbook/assets/图片 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
 
 After decompressing the package, you will find `submitter.bat` for Windows and `submitter.sh` for Linux & Mac.&#x20;
 
@@ -40,9 +40,7 @@ After decompressing the package, you will find `submitter.bat` for Windows and `
 submitter.bat -f D:/mssql-winuser-config.json
 ```
 
-If you are using mssql with windows user authorization, you will need to copy `mssql-jdbc_auth-9.2.0.x64.dll` to `C:\Windows\System32` folder.
-
-<figure><img src="../../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Linux & Mac
 
