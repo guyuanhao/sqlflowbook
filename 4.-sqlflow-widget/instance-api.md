@@ -474,21 +474,13 @@ we cannot use `mio.public.usecase_na_mio004_infohub.？` to match because `?` in
 
 **Use Regex Expression in stopat:**
 
-```
+http://127.0.0.1/widget/12/?type=downstream&\&table=MIO.PUBLIC.XXX&\&column=fact\_guid
 
-http://127.0.0.1/widget/12/?type=downstream&&table=MIO.PUBLIC.MIO004_T_NET_SALES_FACT&&column=fact_guid
+<figure><img src="../.gitbook/assets/微信截图_20230218223016.png" alt=""><figcaption></figcaption></figure>
 
-```
+http://127.0.0.1/widget/12/?type=downstream\&table=MIO.PUBLIC.XXX\&column=fact\_guid\&stopat=mio.public.usecase.\*
 
-![](https://foruda.gitee.com/images/1676425852929575342/93398702\_1228015.png)
-
-```
-
-http://127.0.0.1/widget/12/?type=downstream&table=MIO.PUBLIC.MIO004_T_NET_SALES_FACT&column=fact_guid&stopat=mio.public.usecase
-.*
-```
-
-![](https://foruda.gitee.com/images/1676425874088611615/04f3c17e\_1228015.png)
+<figure><img src="../.gitbook/assets/微信截图_20230218222916.png" alt=""><figcaption></figcaption></figure>
 
 Find the example code under the directory:
 
