@@ -1,10 +1,10 @@
 # Handling Internal Database
 
-If your database is deployed in an internal network which is not accessable for external connection, you may not be able to read your internal database directly from SQLFlow UI.&#x20;
+If your database is deployed in an internal network and is not accessible for external connection, you may not be able to read your internal database directly from the public SQLFlow server.
 
 You can use [SQLFlow on-premise version](https://www.gudusoft.com/sqlflow-on-premise-version/) to connect your database(Read [here](../../1.-introduction/installation/) for how to install) or you can try with the belowing approach:
 
-### Use [sqlflow-ingester](../../6.-sqlflow-ingester/introduction/README.md) to export the database metadata file.
+### Use [sqlflow-ingester](../../6.-sqlflow-ingester/introduction/) to export the database metadata file.
 
 ```bash
 sudo bash exporter.sh 
@@ -31,7 +31,7 @@ Check your output folder and you shall find your `metadata.json`:
 
 <figure><img src="../../.gitbook/assets/2_20221107233843.png" alt=""><figcaption></figcaption></figure>
 
-### Create sqlflow job by [uploading that metadata file on our SQLFlow UI](../../1.-introduction/ui/job-management/job-sources.md#upload-file).&#x20;
+### Create sqlflow job by [uploading that metadata file on our SQLFlow UI](../../1.-introduction/ui/job-management/job-sources.md#upload-file).
 
 With the exported `metadata.json`, we are now ready to retrieve data lineage.
 

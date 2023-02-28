@@ -38,6 +38,7 @@
     * [Map the DataFlowAnalyzer and the settings on SQLFlow UI](1.-introduction/java-library/usage/parameters-mapping-between-dataflowanalyzer-and-the-settings-in-sqlflow-ui.md)
     * [Settings](1.-introduction/java-library/usage/settings.md)
   * [Dataflow.xml structure](1.-introduction/java-library/dataflow.xml-structure.md)
+  * [FAQ](1.-introduction/java-library/faq.md)
 
 ## 2. CONCEPTS
 
@@ -92,6 +93,8 @@
   * [SQLFlow-Exporter](6.-sqlflow-ingester/introduction/sqlflow-exporter.md)
   * [SQLFlow-Extractor](6.-sqlflow-ingester/introduction/sqlflow-extractor.md)
   * [SQLFlow-Submitter](6.-sqlflow-ingester/introduction/sqlflow-submitter.md)
+* [Get Started](6.-sqlflow-ingester/get-started/README.md)
+  * [SQL Server](6.-sqlflow-ingester/get-started/sql-server.md)
 * [SQLFlow-Ingester Java API Usage](6.-sqlflow-ingester/sqlflow-ingester-java-api-usage.md)
 * [Understand the format of exported data](6.-sqlflow-ingester/understanding-the-format-of-exported-data/README.md)
   * [Oracle](6.-sqlflow-ingester/understanding-the-format-of-exported-data/oracle.md)

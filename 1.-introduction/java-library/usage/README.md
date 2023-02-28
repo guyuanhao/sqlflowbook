@@ -36,6 +36,7 @@ System.out.println("/coor: Optional, output the relation transform coordinate, b
 System.out.println("/defaultDatabase: Optional, specify the default schema.");
 System.out.println("/defaultSchema: Optional, specify the default schema.");
 System.out.println("/showImplicitSchema: Optional, show implicit schema.");
+System.out.println("/withTemporaryTable: Optional, simple output with the temporary tables.");
 ```
 
 Here is the list of available database after /t option:

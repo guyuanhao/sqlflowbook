@@ -2,8 +2,8 @@
 
 #### Get all jobs (include history jobs) status and summary
 
-{% swagger src="../../../swagger/swagger.yaml" path="/sqlflow/job/displayUserJobsSummary" method="post" %}
-[swagger.yaml](../../../swagger/swagger.yaml)
+{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/displayUserJobsSummary" method="post" %}
+[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
 {% endswagger %}
 
 Sample response

@@ -5796,12 +5796,6 @@ paths:
         schema:
           type: boolean
           default: true
-      - name: ignoreTemporaryTable
-        in: query
-        description: whether ignore temporary table (ignoring the temporary table starting with "#" in sqlserver is a mandatory behavior, and currently it cannot be ignored)
-        schema:
-          type: boolean
-          default: true
       - name: jobName
         in: query
         description: jobName

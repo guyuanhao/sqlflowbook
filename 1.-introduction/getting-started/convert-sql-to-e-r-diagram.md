@@ -45,25 +45,34 @@ Choose `upload file` as the job source and choose the SQL type in the `dbvendor`
 
 Choose the job in the job list panel when it is complete.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
-
-Click `show ER diagram` in the schema explorer and check the result.
-
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-### 3. Connect to DB
-
-Connect to your database for the ER diagram:
-
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
-
-Choose the job in the job list panel when it is complete.
-
 <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 Click `show ER diagram` in the schema explorer and check the result.
 
 <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### 3. Connect to DB
+
+Connect to your database for the ER diagram, check following table for the supported database types and the permissions/roles needed:
+
+| Database Type | Permissions/Roles required | Comment                                                                                                             |
+| ------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| MySQL         | SELECT                     | ER Diagram needs DB user to have SELECT permission                                                                  |
+| PostgreSQL    | SELECT                     | ER Diagram needs DB user to have SELECT permission                                                                  |
+| SQL Server    | SELECT                     | ER Diagram needs DB user to have SELECT permission                                                                  |
+| Oracle        | DBA                        | To generate ER Diagram from Oracle database, input user must has DBA role , otherwise `ORA-01031` will be returned. |
+
+_Hint: Other databases are not in current version's support list and will be supported in our future release_
+
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+Choose the job in the job list panel when it is complete.
+
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+Click `show ER diagram` in the schema explorer and check the result.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## E-R Diagram
 
@@ -127,7 +136,7 @@ ADD CONSTRAINT dept_pk PRIMARY KEY (DEPTNO);
 
 Icon of **primary key in ER diagram**
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2. Unique key**
 

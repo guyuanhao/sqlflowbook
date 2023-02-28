@@ -1,31 +1,36 @@
 # Settings
 
-Simple mode is enabled when `/s` flag is added to the command:
+**Simple mode** is enabled by default or in the cases when `/s` flag is added to the command:
 
 ```bash
 java -jar gudusoft.dlineage.jar /t mssql /f path_to_sql_file /s
 ```
 
-simple mode 最主要的特点就是忽略中间结果集，缺省情况下，只显示fdd关系。
+```
+java -jar gudusoft.dlineage.jar /t mssql /f path_to_sql_file
+```
 
-simple mode的显示结果受option的影响，option包含两个选项 setSimpleShowTopSelectResultSet，setSimpleShowFunction
+In Simple mode, the intermediate results will not be displayed and only [fdd relationships](../../../2.-concepts/data-lineage/dataflow/relations-generated-by-sqlflow.md#the-meaning-of-the-letter-in-fdd-fdr) are present. The Simple mode is related to two options: `setSimpleShowTopSelectResultSet` and `setSimpleShowFunction`.
 
-setSimpleShowTopSelectResultSet：是否显示top select resulset，默认false
+* setSimpleShowTopSelectResultSet: whether display the select result set on the top, default value is false.
+* setSimpleShowFunction: whether display function, default value is false.
 
-setSimpleShowFunction：是否显示function, 默认 false
+_**dataflowAnalyzer**_ is in Simple mode by default so there's no select result set on the top nethier no function displayed. Sqlflow UI will always have setSimpleShowTopSelectResultSet as true because the select query must be displayed on the top.
 
-既缺省情况下，是不会显示top select resultset和function的，但是可以通过选项来控制，而sqlflow因为UI显示的原因，setSimpleShowTopSelectResultSet是强制为true的，一定会显示顶级select语句的结果集。
+_**dataflowAnalyzer**_ has a function to deal with the dataflow in regular mode and customize the analysis type for the relations. The function can analysize [fdd](../../../2.-concepts/data-lineage/dataflow/relations-generated-by-sqlflow.md#the-meaning-of-the-letter-in-fdd-fdr) and [fdr](../../../2.-concepts/data-lineage/dataflow/relations-generated-by-sqlflow.md#the-meaning-of-the-letter-in-fdd-fdr) relations.
 
-另外 dataflowAnalyzer 提供了一个方法 dataflow getSimpleDataflow(dataflow instance, boolean simpleOutput, List `<String>` types)，可以对非simple模式的dataflow进行处理，并且可以指定处理的关系类型，该方法可以处理fdr关系，既同时也对fdr关系进行追踪，而不仅仅是fdd关系。
+```java
+Dataflow getSimpleDataflow(Dataflow instance, boolean simpleOutput, List <String> types)
+```
 
-dataflow getSimpleDataflow(dataflow instance, boolean simpleOutput, List `<String>` types)
+* instance: dataflow in regular mode&#x20;
+* simpleOutput: `false` when `showTopSelectResultSet` is set to `true`. `true` when `showTopSelectResultSet` is set to `false`.
+* types: List of relation types, may include values as `fdd` or `fdr`. Will analysize `fdr` when the list contains `fdr`.
 
-参数：
+In Dlineage tool we can display temporary tables by adding `/withTemporaryTable` flag:
 
-* dataflow：非simple模式的dataflow
-* simpleOutput
-  * false showTopSelectResultSet为true
-  * true showTopSelectResultSet为false
-* types：关系类型列表，可以为fdd, fdr，当包含fdr时，也会对fdr关系进行追踪
+```shell
+java -jar gudusoft.dlineage.jar /t mssql /f path_to_sql_file /withTemporaryTable
+```
 
-In Simple mode, the intermediate results will not be displayed&#x20;
+Please be aware that ignoring the temporary table starting with "`#`" in _sqlserver_ is a mandatory behavior, therefore it cannot be displayed even with the `/withTemporaryTable` flag.

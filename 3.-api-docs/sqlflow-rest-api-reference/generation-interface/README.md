@@ -17,8 +17,8 @@ Send the SQL query and get the data lineage result.
 /gspLive_backend/sqlflow/generation/sqlflow
 ```
 
-{% swagger src="../../../swagger/swagger.yaml" path="/sqlflow/generation/sqlflow" method="post" %}
-[swagger.yaml](../../../swagger/swagger.yaml)
+{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow" method="post" %}
+[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
 {% endswagger %}
 
 * **SQLFlow Cloud Server**
@@ -41,8 +41,8 @@ Send the SQL file and get the csv result which includes the data lineage.
 /gspLive_backend/sqlflow/generation/sqlflow/exportLineageAsCsv
 ```
 
-{% swagger src="../../../swagger/swagger.yaml" path="/sqlflow/generation/sqlflow/exportLineageAsCsv" method="post" %}
-[swagger.yaml](../../../swagger/swagger.yaml)
+{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow/exportLineageAsCsv" method="post" %}
+[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
 {% endswagger %}
 
 ```

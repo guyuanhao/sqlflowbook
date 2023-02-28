@@ -4,7 +4,7 @@ description: https://e.gitee.com/gudusoft/docs/1006527/file/2767137?sub_id=57686
 
 # SQLFlow-Exporter
 
-SQLFlow-exporter is the main functionality of the SQLFlow-Ingester. It is used to getting the metadata from different databases.
+SQLFlow-exporter is the main functionality of the SQLFlow-Ingester. It can be used to get the metadata from different databases.
 
 ### SQLFlow-Exporter Usage
 

@@ -2,11 +2,11 @@
 
 #### Submit a simple sqlflow job. Send the SQL files and get the data lineage result. SQLFlow job supports both of multiple files and zip archive file.
 
-{% swagger src="../../../swagger/swagger.yaml" path="/sqlflow/job/submitUserJob" method="post" %}
-[swagger.yaml](../../../swagger/swagger.yaml)
+{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/submitUserJob" method="post" %}
+[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
 {% endswagger %}
 
-Sample resposne:
+Sample response:
 
 ```json
 {
@@ -27,3 +27,7 @@ Sample resposne:
 ```
 
 [**Try it out!**](../../swagger-ui.md)****
+
+
+
+**hint**: Ignoring the temporary table starting with "#" in _sqlserver_ is a mandatory behavior, therefore it cannot be changed.

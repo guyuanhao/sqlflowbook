@@ -45,6 +45,6 @@ Get a premium account [**here**](https://www.gudusoft.com/purchase-premium-accou
 
 Visit [this site](https://www.gudusoft.com/request-a-premium-account/) to request for a Premium Account. An email with activation code will be sent within 5 mins. Go to [https://sqlflow.gudusoft.com](https://sqlflow.gudusoft.com), click the icon in the upper right corner and check the following page:
 
-<figure><img src="../../../.gitbook/assets/sqlflow_userid_secret_step1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/sqlflow-userid-secret-step1.png" alt=""><figcaption></figcaption></figure>
 
 Click the _Account_ menu item, chose "_activate by entering a coupon_" and enter the activation code.
