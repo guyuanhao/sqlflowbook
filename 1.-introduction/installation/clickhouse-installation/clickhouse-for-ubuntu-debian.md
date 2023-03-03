@@ -128,7 +128,7 @@ cd /wings/sqlflow/backend
 sh bin/init_regular.sh
 ```
 
-If you got any errors related to Clickhouse, you can check `/var/log/clickhouse-sever` for any error logs and ensure that you have finished the steps of [key generation](clickhouse-for-ubuntu-debian.md#generate-clickhouse-server-key-and-crts) and [IPv6 configuration](clickhouse-for-ubuntu-debian.md#replace-ipv6-config).
+If you got any errors related to Clickhouse, you can check `/var/log/clickhouse-sever` for the error logs and please ensure that you have finished the steps of [key generation](clickhouse-for-ubuntu-debian.md#generate-clickhouse-server-key-and-crts) and [IPv6 configuration](clickhouse-for-ubuntu-debian.md#replace-ipv6-config).
 
 ### 5. Start SQLFlow
 
