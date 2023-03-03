@@ -80,9 +80,9 @@ to
 
 **Hint**: Do not change the same field value in `/etc/clickhouse-server/config.xml`
 
-If you meet the following error after configuring the `listen.xml`:
+Simply [re-generate clickhouse-server key & crts](clickhouse-for-ubuntu-debian.md#generate-clickhouse-server-key-and-crts) if you meet the following error after configuring the `listen.xml`:
 
-
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Memory Settings
 
