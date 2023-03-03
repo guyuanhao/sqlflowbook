@@ -78,7 +78,7 @@ to
 <listen_host>0.0.0.0</listen_host>
 ```
 
-**Hint**: **Do not** change the same field value in `/etc/clickhouse-server/config.xml`
+**Hint**: **Do not** change the same field value in `/etc/clickhouse-server/config.xml`, if the field is changed in config.xml, please restore the field back to the original value.
 
 
 
