@@ -86,7 +86,7 @@ If you got
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-18 22-19-02.png" alt=""><figcaption></figcaption></figure>
 
-Then you might need to check for your OS version and the Clickhouse is not properly installed. Check [Ubuntu/Debian Installation](clickhouse-for-ubuntu-debian.md).
+Then you might need to check for your OS version and the Clickhouse is not properly installed. Check [Ubuntu/Debian/RHEL Installation](clickhouse-for-ubuntu-debian.md).
 
 If your clickhouse is properly installed but you still got errors, please check `/var/log/clickhouse-sever` for error logs.
 
