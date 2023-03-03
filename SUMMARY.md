@@ -22,7 +22,7 @@
   * [Windows](1.-introduction/installation/windows.md)
   * [Clickhouse Installation](1.-introduction/installation/clickhouse-installation/README.md)
     * [Clickhouse For CentOs](1.-introduction/installation/clickhouse-installation/clickhouse-for-centos.md)
-    * [Clickhouse For Ubuntu/Debian](1.-introduction/installation/clickhouse-installation/clickhouse-for-ubuntu-debian.md)
+    * [Clickhouse For Ubuntu/Debian/RHEL](1.-introduction/installation/clickhouse-installation/clickhouse-for-ubuntu-debian.md)
 * [UI](1.-introduction/ui/README.md)
   * [SQLText Editor](1.-introduction/ui/sqltext-editor.md)
   * [Schema Explorer](1.-introduction/ui/schema.md)

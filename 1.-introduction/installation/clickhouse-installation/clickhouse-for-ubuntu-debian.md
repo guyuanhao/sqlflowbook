@@ -1,4 +1,4 @@
-# Clickhouse For Ubuntu/Debian
+# Clickhouse For Ubuntu/Debian/RHEL
 
 ## JDK&#x20;
 
@@ -49,6 +49,40 @@ Can't load /home/<user>/.rnd into RNG
 ```
 
 Then you can try removing or commenting `RANDFILE = $ENV::HOME/.rnd` line in `/etc/ssl/openssl.cnf`
+
+#### Replace IPv6 config
+
+If your server is not enabled with IPV6, you will have following errors when trying to start the clickhouse server:
+
+```log
+{} <Error> Application: DB::Exception: Listen [::]:8123 failed: Poco::Exception. Code: 1000, e.code() = 0, DNS error: EAI: Address family for hostname not supported (version 22.2.3.1)
+```
+
+This is because the clickhouse server uses IPV6 syntax by default. We need to replace the IPV6 syntax by IPV4 compatible syntax.
+
+Edit the `listen.xml`:
+
+```
+/etc/clickhouse-server/config.d/listen.xml
+```
+
+Replace the line
+
+```xml
+<listen_host>::</listen_host>
+```
+
+to
+
+```xml
+<listen_host>0.0.0.0</listen_host>
+```
+
+**Hint**: Do not change the same field value in `/etc/clickhouse-server/config.xml`
+
+If you meet the following error after configuring the `listen.xml`:
+
+
 
 ### 2. Memory Settings
 
