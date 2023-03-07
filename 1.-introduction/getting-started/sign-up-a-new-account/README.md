@@ -4,7 +4,7 @@ description: https://www.sqlflow.cn/936-2/
 
 # Sign up a new account
 
-* A **valid email address** is required and it will be used to activate the account. You will not be able to login again if the account is not activated.
+* A **valid email address** is required and it will be used to activate the account. You **will not be able to login again if the account is not activated**.
 * Set a strong password with at least 8 characters.&#x20;
 * A confirmation request will be sent to your email **after 30 minutes**. You are free to use SQLFlow without activating your account immediately. However, you need to click _Confirm_ in the confirmation request to activate your account before you login again.
 
