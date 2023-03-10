@@ -125,6 +125,8 @@ If mistakenly set to another password, you will need:
 
 ### 4. Init Clickhouse
 
+Run following commands:
+
 ```bash
 cd /wings/sqlflow/backend
 sh bin/init_regular.sh
