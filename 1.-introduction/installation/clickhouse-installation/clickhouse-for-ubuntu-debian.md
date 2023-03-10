@@ -1,4 +1,4 @@
-# Clickhouse For Ubuntu/Debian
+# Clickhouse For Ubuntu/Debian/RHEL
 
 ## JDK&#x20;
 
@@ -50,6 +50,42 @@ Can't load /home/<user>/.rnd into RNG
 
 Then you can try removing or commenting `RANDFILE = $ENV::HOME/.rnd` line in `/etc/ssl/openssl.cnf`
 
+#### Replace IPv6 config
+
+If your server is not enabled with IPV6, you will have following errors when trying to start the clickhouse server:
+
+```log
+{} <Error> Application: DB::Exception: Listen [::]:8123 failed: Poco::Exception. Code: 1000, e.code() = 0, DNS error: EAI: Address family for hostname not supported (version 22.2.3.1)
+```
+
+This is because the clickhouse server uses IPV6 syntax by default. We need to replace the IPV6 syntax by IPV4 compatible syntax.
+
+Edit the `listen.xml`:
+
+```
+/etc/clickhouse-server/config.d/listen.xml
+```
+
+Replace the line
+
+```xml
+<listen_host>::</listen_host>
+```
+
+to
+
+```xml
+<listen_host>0.0.0.0</listen_host>
+```
+
+**Hint**: **Do not** change the same field value in `/etc/clickhouse-server/config.xml`, if the field is changed in config.xml, please restore the field back to the original value.
+
+
+
+Re-[generate clickhouse-server key & crts](clickhouse-for-ubuntu-debian.md#generate-clickhouse-server-key-and-crts) if you meet the following error after properly configuring the `listen.xml`:
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ### 2. Memory Settings
 
 We will need to limit the clickhouse service If the client server has a memory less than 32GB.
@@ -94,7 +130,7 @@ cd /wings/sqlflow/backend
 sh bin/init_regular.sh
 ```
 
-If you got any errors related to Clickhouse, you can check `/var/log/clickhouse-sever` for any error logs.
+If you got any errors related to Clickhouse, you can check `/var/log/clickhouse-sever` for the error logs and please ensure that you have finished the steps of [key generation](clickhouse-for-ubuntu-debian.md#generate-clickhouse-server-key-and-crts) and [IPv6 configuration](clickhouse-for-ubuntu-debian.md#replace-ipv6-config).
 
 ### 5. Start SQLFlow
 

@@ -4,8 +4,6 @@ description: https://blog.sqlflow.cn/gudu-sqlflow-er-diagram/
 
 # Convert SQL to E-R Diagram
 
-
-
 [Gudu SQLFlow](https://sqlflow.gudusoft.com/#/) is capable to convert **SQL to Entity-Relation(ER) Diagram** as well as to visualize the relations between tables and fields so that you can quickly understand the design model of the database and conduct efficient team communication.
 
 ## Two Sources of Visualization ER Model
@@ -72,7 +70,7 @@ Choose the job in the job list panel when it is complete.
 
 Click `show ER diagram` in the schema explorer and check the result.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## E-R Diagram
 
@@ -84,7 +82,7 @@ The following ER diagram is a [simple help-desk tickets system](https://github.c
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-## SQL Required to Create ER Diagram
+## SQL Requirements to Create ER Diagram
 
 In order to create ER diagram, foreign keys should be included in the provided SQL files. Other keys such as primary key, index key or unique key are not mandatory.
 
