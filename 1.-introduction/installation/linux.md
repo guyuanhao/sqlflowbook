@@ -1,5 +1,9 @@
 # Linux
 
+{% embed url="https://www.youtube.com/watch?t=23s&v=dZsNRWHAPo4" %}
+Installation Guide - Linux
+{% endembed %}
+
 ### Prerequisites
 
 * [SQLFlow on-premise version](https://www.gudusoft.com/sqlflow-on-premise-version/)
