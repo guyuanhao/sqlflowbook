@@ -1,16 +1,18 @@
 # Troubleshooting
 
+1. [Failed to get license info.](troubleshooting.md#1.-failed-to-get-license-info.)
+2. [Config nginx on RHEL: Redhat linux](troubleshooting.md#2.-config-nginx-on-rhel-redhat-linux)
+3. [Get license fail: 502 Bad Gateway](troubleshooting.md#3.-get-license-fail-502-bad-gateway)
 
-
-#### 1. Failed to get license info.
+### 1. Failed to get license info.
 
 If you see this error, just wait another 3-5 minutes to wait the backend service startup successfully and refresh the web page.
 
-Or, this issue may caused by the browser cache, just use `Incognito mode` to access the Sqlflow page and clear the cache.
+This issue may also be caused by the browser cache, just use `Incognito mode` to access the Sqlflow page and clear the cache.
 
-<figure><img src="../../.gitbook/assets/sqlflow-install-failed-to-get-license-info.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sqlflow-install-failed-to-get-license-info (1).png" alt=""><figcaption></figcaption></figure>
 
-#### 2. Config nginx on RHEL: Redhat linux
+### 2. Config nginx on RHEL: Redhat linux
 
 a) check `/etc/nginx/nginx.conf` and change the server section of the `conf` file with below configurations:
 
@@ -94,9 +96,9 @@ b) Configure selinux to permission:&#x20;
 
 `vi /etc/selinux/configure`, set _**SELinux status**_ to `permissive`
 
-#### 3. Get license fail: 502 Bad Gateway
+### 3. Get license fail: 502 Bad Gateway
 
-<figure><img src="../../.gitbook/assets/sqlflow-install-502-bad-gateway.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sqlflow-install-502-bad-gateway (1).png" alt=""><figcaption></figcaption></figure>
 
 This error is because the port that is needed by the SQLFlow is already used by another application, please configure the SQLFlow to [use another port](linux.md#customize-the-port).
 
