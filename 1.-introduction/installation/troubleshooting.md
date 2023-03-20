@@ -100,6 +100,6 @@ b) Configure selinux to permission:&#x20;
 
 <figure><img src="../../.gitbook/assets/sqlflow-install-502-bad-gateway (1).png" alt=""><figcaption></figcaption></figure>
 
-This error is because the port that is needed by the SQLFlow is already used by another application, please configure the SQLFlow to [use another port](linux.md#customize-the-port).
+This error is because the port that is needed by the SQLFlow is already used by another application, please configure the SQLFlow to [use other port](linux.md#customize-the-port).
 
 It could also be caused by the fact that you haven't started the Gudu SQLFlow backend service. Please check [how to start the backend and verify the status](linux.md#start-backend-services).
