@@ -103,3 +103,15 @@ b. Configure selinux permission:&#x20;
 This error is because the port that is needed by the SQLFlow is already used by another application, please configure the SQLFlow to [use other port](linux.md#customize-the-port).
 
 It could also be caused by the fact that you haven't started the Gudu SQLFlow backend service. Please check [how to start the backend and verify the status](linux.md#start-backend-services).
+
+### 4. Code: 102. DB::NetException: Unexpected packet from server locahost:9000
+
+if you got:
+
+```
+Code: 102. DB::NetException: Unexpected packet from server locahost:9000
+```
+
+<figure><img src="../../.gitbook/assets/图片 (4).png" alt=""><figcaption></figcaption></figure>
+
+Please check doc [here](clickhouse-installation/clickhouse-for-ubuntu-debian.md#generate-clickhouse-server-key-and-crts).
