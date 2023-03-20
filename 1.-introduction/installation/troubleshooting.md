@@ -14,7 +14,7 @@ This issue may also be caused by the browser cache, just use `Incognito mode` to
 
 ### 2. Config nginx on RHEL: Redhat linux
 
-a) check `/etc/nginx/nginx.conf` and change the server section of the `conf` file with below configurations:
+a. check `/etc/nginx/nginx.conf` and change the server section:
 
 ```
 server {
@@ -92,7 +92,7 @@ server {
 }
 ```
 
-b) Configure selinux to permission:&#x20;
+b. Configure selinux permission:&#x20;
 
 `vi /etc/selinux/configure`, set _**SELinux status**_ to `permissive`
 
