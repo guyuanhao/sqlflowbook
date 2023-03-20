@@ -312,7 +312,7 @@ If you need to enable regular job feature on your sqlflow on-premiser, you will 
 
 #### 1. Failed to get license info.
 
-<figure><img src="../../.gitbook/assets/sqlflow-install-failed-to-get-license-info.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sqlflow-install-failed-to-get-license-info (1).png" alt=""><figcaption></figcaption></figure>
 
 If you see this error, just wait another 3-5 minutes to wait the backend service startup successfully and refresh the web page.
 
@@ -402,7 +402,7 @@ b) Configure selinux to permission by going to: vi /etc/selinux/configure --> SE
 
 #### 3. Get license fail: 502 Bad Gateway
 
-<figure><img src="../../.gitbook/assets/sqlflow-install-502-bad-gateway.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sqlflow-install-502-bad-gateway (1).png" alt=""><figcaption></figcaption></figure>
 
 If you find this error, this is because the port that is needed by the SQLFlow is already used by another application, please configure the SQLFlow to use another port.
 
