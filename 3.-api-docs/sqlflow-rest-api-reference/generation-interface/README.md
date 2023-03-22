@@ -62,7 +62,7 @@ curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/generation/sqlflo
 * \--output is required.
 * Optional, if you just want to fetch table to table relations, please add **-F "tableToTable=true"**
 
-#### Generate the data lineage image&#x20;
+#### [Generate the data lineage image](sqlflow-generation-sqlflow-selectedgraph-image.md)&#x20;
 
 Send the SQL file and get the image result of the data lineage.
 
