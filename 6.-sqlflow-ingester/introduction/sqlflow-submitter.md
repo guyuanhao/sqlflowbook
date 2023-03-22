@@ -54,7 +54,7 @@ eg:
     bash submitter.sh -f /home/workspace/gudu_ingester/submitter_config.json
 ```
 
-<figure><img src="../../.gitbook/assets/Screenshot from 2023-02-05 10-01-15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot from 2023-02-05 10-01-15.png" alt=""><figcaption></figcaption></figure>
 
 After successfully executing the Submitter, check the Job list on UI and you will find the job submitted by the Submitter, with the Job name configured in the configuration file.
 
