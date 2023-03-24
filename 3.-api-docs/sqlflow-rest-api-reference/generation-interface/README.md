@@ -75,11 +75,11 @@ Send the SQL file and get the image result of the data lineage.
 {% endswagger %}
 
 ```bash
-curl -X 'POST' \
-  'https://api.gudusoft.com/gspLive_backend/sqlflow/generation/sqlflow/graph/image?dbvendor=dbvoracle&hideColumn=false&ignoreFunction=false&simpleOutput=false&ignoreRecordSet=false&normalizeIdentifier=true&showConstantTable=false&showLinkOnly=true&showRelationType=fdd&showTransform=false&treatArgumentsInCountFunctionAsDirectDataflow=false&userId=gudu%7C0123456789' \
-  -H 'accept: image/*' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'sqlfile=@test.sql;type=application/sql'
+curl --location --request POST 'https://api.gudusoft.com/gspLive_backend/sqlflow/generation/sqlflow/graph/image' \
+    --header 'accept: image/*' \
+    --form 'sqlfile=@"/home/test.sql"' \
+    --form 'dbvendor="dbvoracle"' \
+    --form 'userId="gudu|0123456789"'
 ```
 
 Sample result:
