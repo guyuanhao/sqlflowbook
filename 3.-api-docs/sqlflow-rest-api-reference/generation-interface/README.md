@@ -61,3 +61,27 @@ curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/generation/sqlflo
 * Add **@** before the upload file path
 * \--output is required.
 * Optional, if you just want to fetch table to table relations, please add **-F "tableToTable=true"**
+
+#### [Generate the data lineage image](sqlflow-generation-sqlflow-selectedgraph-image.md)&#x20;
+
+Send the SQL file and get the image result of the data lineage.
+
+```
+/sqlflow/generation/sqlflow/graph/image
+```
+
+{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow/graph/image" method="post" %}
+[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
+{% endswagger %}
+
+```bash
+curl --location --request POST 'https://api.gudusoft.com/gspLive_backend/sqlflow/generation/sqlflow/graph/image' \
+    --header 'accept: image/*' \
+    --form 'sqlfile=@"/home/test.sql"' \
+    --form 'dbvendor="dbvoracle"' \
+    --form 'userId="gudu|0123456789"'
+```
+
+Sample result:
+
+<figure><img src="../../../.gitbook/assets/微信截图_20230322234254.png" alt=""><figcaption></figcaption></figure>

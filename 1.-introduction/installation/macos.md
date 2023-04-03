@@ -1,5 +1,9 @@
 # MacOS
 
+{% embed url="https://www.youtube.com/watch?list=PLuBlTRb3VEyZoFB-dEsUOBH1KmxvsQ9Au&v=h8vKpxyyQWs" %}
+Installation Guide - MacOS
+{% endembed %}
+
 ### Prerequisites
 
 * [SQLFlow on-premise version](https://www.gudusoft.com/sqlflow-on-premise-version/)
