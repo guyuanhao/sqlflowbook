@@ -20,7 +20,7 @@ You may want directly connecting to your database and generate data lineage. You
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-11-04 22-09-25.png" alt=""><figcaption></figcaption></figure>
 
-## Share the data lineagege
+## Share the data lineage
 
 You can share your data lineage schema by simply right click the data unit and click the share button. A url will be generated so that you can share the schema to others&#x20;
 
