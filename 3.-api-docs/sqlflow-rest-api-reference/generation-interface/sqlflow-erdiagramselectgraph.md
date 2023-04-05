@@ -1,6 +1,6 @@
 # /sqlflow/erdiagramSelectGraph
 
-Show the E-R Diagram based on the given source (sqltext/sessionId). Check [here](../../../1.-introduction/getting-started/convert-sql-to-e-r-diagram.md) for more information about this feature.
+Show the E-R Diagram based on the given source (sqltext/sessionId). Check [here](../../../1.-introduction/getting-started/convert-sql-to-e-r-diagram.md) for more information about this feature in SQLFlow UI.
 
 ### Retrieve E-R Diagram in Json
 
