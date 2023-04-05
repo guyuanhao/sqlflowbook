@@ -40,4 +40,4 @@ DEFAULT,DEFAULT,CUSTOMERS,CUST_EMAIL,DEFAULT,DEFAULT,SPECIAL_ORDERS,CEM,fdd,inse
 DEFAULT,SCOTT,EMP,DEPTNO,DEFAULT,DEFAULT,VSAL,Department,fdd,create_view
 ```
 
-[**Try it out!**](../../swagger-ui.md)****
+[**Try it out!**](../../swagger-ui.md)

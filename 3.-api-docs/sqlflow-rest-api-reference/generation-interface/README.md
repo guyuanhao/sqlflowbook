@@ -9,7 +9,7 @@ description: https://github.com/sqlparser/sqlflow_public/tree/master/api
 * Export lineage as CSV
   * [/sqlflow/generation/sqlflow/exportLineageAsCsv](sqlflow-generation-sqlflow-exportlineageascsv.md#export-lineage-as-csv)
 
-#### ****[**Generate the data lineage**](sqlflow-generation-sqlflow.md)
+#### [**Generate the data lineage**](sqlflow-generation-sqlflow.md)
 
 Send the SQL query and get the data lineage result.
 
@@ -33,7 +33,7 @@ curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/generation/sqlflo
 curl -X POST "http://127.0.0.1:8081/gspLive_backend/sqlflow/generation/sqlflow?showRelationType=fdd"    -H  "Request-Origion:testClientDemo" -H  "accept:application/json;charset=utf-8" -H  "Content-Type:multipart/form-data" -F "sqlfile=" -F "dbvendor=dbvoracle" -F "ignoreRecordSet=false" -F "simpleOutput=false" -F "sqltext=CREATE VIEW vsal  as select * from emp" -F "userId=gudu|0123456789" 
 ```
 
-#### ****[**Export the data lineage in csv format**](sqlflow-generation-sqlflow-exportlineageascsv.md)****
+#### [**Export the data lineage in csv format**](sqlflow-generation-sqlflow-exportlineageascsv.md)
 
 Send the SQL file and get the csv result which includes the data lineage.
 
@@ -62,7 +62,7 @@ curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/generation/sqlflo
 * \--output is required.
 * Optional, if you just want to fetch table to table relations, please add **-F "tableToTable=true"**
 
-#### [Generate the data lineage image](sqlflow-generation-sqlflow-selectedgraph-image.md)&#x20;
+#### [Generate the data lineage image](sqlflow-selectedgraph-image.md)&#x20;
 
 Send the SQL file and get the image result of the data lineage.
 

@@ -792,12 +792,12 @@ paths:
           default: false
       - name: tableColumn
         in: query
-        description: tableColumn
+        description: target table column
         schema:
           type: string
       - name: tableNamePattern
         in: query
-        description: tableNamePattern
+        description: target table name, supports regex expression
         schema:
           type: string
           default: .*
@@ -931,12 +931,12 @@ paths:
           default: false
       - name: tableColumn
         in: query
-        description: tableColumn
+        description: target table column
         schema:
           type: string
       - name: tableNamePattern
         in: query
-        description: tableNamePattern
+        description: target table name, supports regex expression
         schema:
           type: string
           default: .*
@@ -977,6 +977,159 @@ paths:
           description: Not Found
           content: {}
       deprecated: false
+  /sqlflow/generation/sqlflow/downstreamGraph/image:
+    post:
+      tags:
+      - Sqlflow Generation Interface
+      summary: generate downstream Graph image
+      description: generate downstream Graph image
+      operationId: generateDownSteamGraphImageUsingPOST
+      parameters:
+      - name: dbvendor
+        in: query
+        description: dbvendor
+        schema:
+          type: string
+      - name: distance
+        in: query
+        description: distance
+        schema:
+          type: integer
+          format: int32
+      - name: hideColumn
+        in: query
+        description: hideColumn
+        schema:
+          type: boolean
+          default: false
+      - name: ignoreFunction
+        in: query
+        description: ignoreFunction
+        schema:
+          type: boolean
+          default: false
+      - name: ignoreRecordSet
+        in: query
+        description: ignoreRecordSet
+        schema:
+          type: boolean
+          default: false
+      - name: isReturnModel
+        in: query
+        description: isReturnModel
+        schema:
+          type: boolean
+          default: true
+      - name: jobId
+        in: query
+        description: jobId
+        schema:
+          type: string
+      - name: normalizeIdentifier
+        in: query
+        description: whether normalize Identifier
+        schema:
+          type: boolean
+          default: true
+      - name: sessionId
+        in: query
+        description: sessionId
+        schema:
+          type: string
+      - name: showConstantTable
+        in: query
+        description: showConstantTable
+        schema:
+          type: boolean
+          default: false
+      - name: showLinkOnly
+        in: query
+        description: showLinkOnly
+        schema:
+          type: boolean
+          default: true
+      - name: showRelationType
+        in: query
+        description: showRelationType
+        schema:
+          type: string
+          default: fdd
+      - name: showTransform
+        in: query
+        description: showTransform
+        schema:
+          type: boolean
+          default: false
+      - name: simpleOutput
+        in: query
+        description: simpleOutput
+        schema:
+          type: boolean
+          default: false
+      - name: stopat
+        in: query
+        description: stopat
+        schema:
+          type: string
+      - name: tableColumn
+        in: query
+        description: target table column
+        schema:
+          type: string
+      - name: tableNamePattern
+        in: query
+        description: target table name, supports regex expression
+        schema:
+          type: string
+          default: .*
+      - name: token
+        in: query
+        description: token
+        schema:
+          type: string
+      - name: treatArgumentsInCountFunctionAsDirectDataflow
+        in: query
+        description: treatArgumentsInCountFunctionAsDirectDataflow
+        schema:
+          type: boolean
+          default: false
+      - name: userId
+        in: query
+        description: userId
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            image/png:
+              schema:
+                type: string
+                format: byte
+            image/jpeg:
+              schema:
+                type: string
+                format: byte
+            image/gif:
+              schema:
+                type: string
+                format: byte
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      security:
+      - Authorization:
+        - global
   /sqlflow/generation/sqlflow/exportLineageAsCsv:
     post:
       tags:
@@ -1807,7 +1960,6 @@ paths:
                 schema: 
                   type: string
                   format: binary
-                  
         201:
           description: Created
           content: {}
@@ -2135,12 +2287,12 @@ paths:
           default: false
       - name: tableColumn
         in: query
-        description: tableColumn
+        description: target table column
         schema:
           type: string
       - name: tableNamePattern
         in: query
-        description: tableNamePattern
+        description: tableNatarget table name, supports regex expressionmePattern
         schema:
           type: string
           default: .*
@@ -2182,6 +2334,162 @@ paths:
           description: Not Found
           content: {}
       deprecated: false
+  /sqlflow/generation/sqlflow/leftMostSourceTableGraph/image:
+    post:
+      tags:
+      - Sqlflow Generation Interface
+      summary: generate left-most source table graph image
+      description: generate left-most source table graph image
+      operationId: generateLeftMostSourceTableGraphImageUsingPOST
+      parameters:
+      - name: columnLevel
+        in: query
+        description: columnLevel
+        schema:
+          type: string
+      - name: dbvendor
+        in: query
+        description: dbvendor
+        required: true
+        schema:
+          type: string
+      - name: hideColumn
+        in: query
+        description: hideColumn
+        schema:
+          type: boolean
+          default: false
+      - name: ignoreFunction
+        in: query
+        description: ignoreFunction
+        schema:
+          type: boolean
+          default: false
+      - name: ignoreRecordSet
+        in: query
+        description: ignoreRecordSet
+        schema:
+          type: boolean
+          default: false
+      - name: isReturnModel
+        in: query
+        description: isReturnModel
+        schema:
+          type: boolean
+          default: true
+      - name: jobId
+        in: query
+        description: jobId
+        schema:
+          type: string
+      - name: normalizeIdentifier
+        in: query
+        description: normalizeIdentifier
+        schema:
+          type: boolean
+          default: true
+      - name: sessionId
+        in: query
+        description: sessionId
+        required: true
+        schema:
+          type: string
+      - name: share
+        in: query
+        description: share
+        schema:
+          type: boolean
+          default: false
+      - name: showConstantTable
+        in: query
+        description: showConstantTable
+        schema:
+          type: boolean
+          default: false
+      - name: showLinkOnly
+        in: query
+        description: showLinkOnly
+        schema:
+          type: boolean
+          default: true
+      - name: showRelationType
+        in: query
+        description: showRelationType
+        schema:
+          type: string
+          default: fdd
+      - name: showTransform
+        in: query
+        description: showTransform
+        schema:
+          type: boolean
+          default: false
+      - name: simpleOutput
+        in: query
+        description: simpleOutput
+        schema:
+          type: boolean
+          default: false
+      - name: tableColumn
+        in: query
+        description: target table column
+        schema:
+          type: string
+      - name: tableNamePattern
+        in: query
+        description: target table name, supports regex expression
+        schema:
+          type: string
+          default: .*
+      - name: token
+        in: query
+        description: token
+        schema:
+          type: string
+      - name: treatArgumentsInCountFunctionAsDirectDataflow
+        in: query
+        description: treatArgumentsInCountFunctionAsDirectDataflow
+        schema:
+          type: boolean
+          default: false
+      - name: userId
+        in: query
+        description: userId
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            image/png:
+              schema:
+                type: string
+                format: byte
+            image/jpeg:
+              schema:
+                type: string
+                format: byte
+            image/gif:
+              schema:
+                type: string
+                format: byte
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      security:
+      - Authorization:
+        - global
   /sqlflow/generation/sqlflow/listTableColumns:
     post:
       tags:
@@ -2431,6 +2739,245 @@ paths:
           description: Not Found
           content: {}
       deprecated: false
+  /sqlflow/generation/sqlflow/erdiagramSelectGraph:
+    post:
+      tags:
+      - Sqlflow Generation Interface
+      summary: generate ER-Diagram Graph
+      description: generate ER-Diagram Graph
+      operationId: generateSqlflowERDiagramGraphUsingPOST
+      parameters:
+      - name: database
+        in: query
+        description: database
+        schema:
+          type: string
+      - name: dbvendor
+        in: query
+        description: dbvendor
+        schema:
+          type: string
+      - name: defaultDatabase
+        in: query
+        description: defaultDatabase
+        schema:
+          type: string
+      - name: defaultSchema
+        in: query
+        description: defaultSchema
+        schema:
+          type: string
+      - name: defaultServer
+        in: query
+        description: defaultServer
+        schema:
+          type: string
+      - name: jobId
+        in: query
+        description: jobId
+        schema:
+          type: string
+      - name: normalizeIdentifier
+        in: query
+        description: normalizeIdentifier
+        schema:
+          type: boolean
+          default: true
+      - name: schema
+        in: query
+        description: schema
+        schema:
+          type: string
+      - name: server
+        in: query
+        description: server
+        schema:
+          type: string
+      - name: sessionId
+        in: query
+        description: sessionId
+        schema:
+          type: string
+      - name: share
+        in: query
+        description: share
+        schema:
+          type: boolean
+          default: false
+      - name: sqltext
+        in: query
+        description: sqltext
+        schema:
+          type: string
+      - name: table
+        in: query
+        description: table
+        schema:
+          type: string
+      - name: token
+        in: query
+        description: token
+        schema:
+          type: string
+      - name: userId
+        in: query
+        description: userId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              properties:
+                sqlfile:
+                  type: string
+                  description: sqlfile
+                  format: binary
+      responses:
+        200:
+          description: OK
+          content:
+            application/json;charset=utf-8:
+              schema:
+                type: string
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      security:
+      - Authorization:
+        - global
+  /sqlflow/generation/sqlflow/erdiagramSelectGraph/image:
+    post:
+      tags:
+      - Sqlflow Generation Interface
+      summary: generate ER-Diagram Graph image
+      description: generate ER-Diagram Graph image
+      operationId: generateSqlflowERDiagramGraphImageUsingPOST
+      parameters:
+      - name: database
+        in: query
+        description: database
+        schema:
+          type: string
+      - name: dbvendor
+        in: query
+        description: dbvendor
+        schema:
+          type: string
+      - name: defaultDatabase
+        in: query
+        description: defaultDatabase
+        schema:
+          type: string
+      - name: defaultSchema
+        in: query
+        description: defaultSchema
+        schema:
+          type: string
+      - name: defaultServer
+        in: query
+        description: defaultServer
+        schema:
+          type: string
+      - name: jobId
+        in: query
+        description: jobId
+        schema:
+          type: string
+      - name: normalizeIdentifier
+        in: query
+        description: normalizeIdentifier
+        schema:
+          type: boolean
+          default: true
+      - name: schema
+        in: query
+        description: schema
+        schema:
+          type: string
+      - name: server
+        in: query
+        description: server
+        schema:
+          type: string
+      - name: sessionId
+        in: query
+        description: sessionId
+        schema:
+          type: string
+      - name: sqltext
+        in: query
+        description: sqltext
+        schema:
+          type: string
+      - name: table
+        in: query
+        description: table
+        schema:
+          type: string
+      - name: token
+        in: query
+        description: token
+        schema:
+          type: string
+      - name: userId
+        in: query
+        description: userId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              properties:
+                sqlfile:
+                  type: string
+                  description: sqlfile
+                  format: binary
+      responses:
+        200:
+          description: OK
+          content:
+            image/png:
+              schema:
+                type: string
+                format: byte
+            image/jpeg:
+              schema:
+                type: string
+                format: byte
+            image/gif:
+              schema:
+                type: string
+                format: byte
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      security:
+      - Authorization:
+        - global
   /sqlflow/generation/sqlflow/selected_dbobject/exportLineageAsCsv:
     post:
       tags:
@@ -3294,12 +3841,12 @@ paths:
           default: false
       - name: tableColumn
         in: query
-        description: tableColumn
+        description: target table column
         schema:
           type: string
       - name: tableNamePattern
         in: query
-        description: tableNamePattern
+        description: target table name, supports regex expression
         schema:
           type: string
           default: .*
@@ -3433,12 +3980,12 @@ paths:
           default: false
       - name: tableColumn
         in: query
-        description: tableColumn
+        description: target table column
         schema:
           type: string
       - name: tableNamePattern
         in: query
-        description: tableNamePattern
+        description: target table name, supports regex expression
         schema:
           type: string
           default: .*
@@ -3479,6 +4026,159 @@ paths:
           description: Not Found
           content: {}
       deprecated: false
+  /sqlflow/generation/sqlflow/upstreamGraph/image:
+    post:
+      tags:
+      - Sqlflow Generation Interface
+      summary: generate upstream Graph image
+      description: generate upstream Graph image
+      operationId: generateUpSteamGraphImageUsingPOST
+      parameters:
+      - name: dbvendor
+        in: query
+        description: dbvendor
+        schema:
+          type: string
+      - name: distance
+        in: query
+        description: distance
+        schema:
+          type: integer
+          format: int32
+      - name: hideColumn
+        in: query
+        description: hideColumn
+        schema:
+          type: boolean
+          default: false
+      - name: ignoreFunction
+        in: query
+        description: ignoreFunction
+        schema:
+          type: boolean
+          default: false
+      - name: ignoreRecordSet
+        in: query
+        description: ignoreRecordSet
+        schema:
+          type: boolean
+          default: false
+      - name: isReturnModel
+        in: query
+        description: isReturnModel
+        schema:
+          type: boolean
+          default: true
+      - name: jobId
+        in: query
+        description: jobId
+        schema:
+          type: string
+      - name: normalizeIdentifier
+        in: query
+        description: normalizeIdentifier
+        schema:
+          type: boolean
+          default: true
+      - name: sessionId
+        in: query
+        description: sessionId
+        schema:
+          type: string
+      - name: showConstantTable
+        in: query
+        description: showConstantTable
+        schema:
+          type: boolean
+          default: false
+      - name: showLinkOnly
+        in: query
+        description: showLinkOnly
+        schema:
+          type: boolean
+          default: true
+      - name: showRelationType
+        in: query
+        description: showRelationType
+        schema:
+          type: string
+          default: fdd
+      - name: showTransform
+        in: query
+        description: showTransform
+        schema:
+          type: boolean
+          default: false
+      - name: simpleOutput
+        in: query
+        description: simpleOutput
+        schema:
+          type: boolean
+          default: false
+      - name: stopat
+        in: query
+        description: stopat
+        schema:
+          type: string
+      - name: tableColumn
+        in: query
+        description: target table column
+        schema:
+          type: string
+      - name: tableNamePattern
+        in: query
+        description: target table name, supports regex expression
+        schema:
+          type: string
+          default: .*
+      - name: token
+        in: query
+        description: token
+        schema:
+          type: string
+      - name: treatArgumentsInCountFunctionAsDirectDataflow
+        in: query
+        description: treatArgumentsInCountFunctionAsDirectDataflow
+        schema:
+          type: boolean
+          default: false
+      - name: userId
+        in: query
+        description: userId
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            image/png:
+              schema:
+                type: string
+                format: byte
+            image/jpeg:
+              schema:
+                type: string
+                format: byte
+            image/gif:
+              schema:
+                type: string
+                format: byte
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      security:
+      - Authorization:
+        - global
   /sqlflow/generation/submitUserSchema:
     post:
       tags:
@@ -4361,12 +5061,12 @@ paths:
         example: false
       - name: tableColumn
         in: query
-        description: tableColumn
+        description: target table column
         schema:
           type: string
       - name: tableNamePattern
         in: query
-        description: tableNamePattern
+        description: target table name, supports regex expression
         schema:
           type: string
           default: .*

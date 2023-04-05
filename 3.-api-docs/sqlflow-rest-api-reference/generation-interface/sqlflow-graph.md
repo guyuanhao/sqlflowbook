@@ -1,5 +1,11 @@
 # /sqlflow/graph
 
+### Get data lineage in Json
+
+```
+/sqlflow/generation/sqlflow/graph
+```
+
 {% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow/graph" method="post" %}
 [swagger.yaml](../../../.gitbook/assets/swagger.yaml)
 {% endswagger %}
@@ -453,3 +459,21 @@
   "sessionId": "1491a5d5071c220ab993aa4d8a2e0e477d83abe4dd976a0c5c56c69e886a9481_1667231780609"
 }
 ```
+
+### Get data lineage image
+
+```
+/sqlflow/generation/sqlflow/graph/image
+```
+
+Return the data lineage image file for the given SQL file.
+
+{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow/graph/image" method="post" %}
+[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
+{% endswagger %}
+
+Sample response:
+
+<figure><img src="../../../.gitbook/assets/微信截图_20230322234254.png" alt=""><figcaption></figcaption></figure>
+
+Check our blog [https://www.dpriver.com/blog/2023/03/23/visualize-your-data-with-sqlflow-rest-api/](https://www.dpriver.com/blog/2023/03/23/visualize-your-data-with-sqlflow-rest-api/) for more details about this endpoint.
