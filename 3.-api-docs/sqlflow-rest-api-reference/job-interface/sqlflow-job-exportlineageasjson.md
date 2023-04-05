@@ -129,4 +129,4 @@ Sample Response is a file in Json format:
 }
 ```
 
-[**Try it out!**](../../swagger-ui.md)****
+[**Try it out!**](../../swagger-ui.md)

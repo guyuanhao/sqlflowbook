@@ -6,7 +6,7 @@ You may also want to directly interact with our online API using [Swagger UI](sw
 
 ### **1. Generate a token**
 
-Once you have the `userid` and `secret key`, the first API need to be **** called is:
+Once you have the `userid` and `secret key`, the first API need to be called is:
 
 ```
 /gspLive_backend/user/generateToken

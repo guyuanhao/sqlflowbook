@@ -6,4 +6,4 @@
 [swagger.yaml](../../../.gitbook/assets/swagger.yaml)
 {% endswagger %}
 
-[**Try it out!**](../../swagger-ui.md)****
+[**Try it out!**](../../swagger-ui.md)

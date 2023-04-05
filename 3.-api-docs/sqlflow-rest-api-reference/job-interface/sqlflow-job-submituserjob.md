@@ -26,7 +26,7 @@ Sample response:
 }
 ```
 
-[**Try it out!**](../../swagger-ui.md)****
+[**Try it out!**](../../swagger-ui.md)
 
 
 

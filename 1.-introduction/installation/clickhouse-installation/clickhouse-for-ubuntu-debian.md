@@ -18,7 +18,7 @@ sudo apt-get update
 sudo apt-get install -y clickhouse-server clickhouse-client
 ```
 
-Please set Clickhouse password to [_**sqlflow@gudu**_](https://gitee.com/link?target=mailto:sqlflow@gudu)__
+Please set Clickhouse password to [_**sqlflow@gudu**_](https://gitee.com/link?target=mailto:sqlflow@gudu)
 
 #### Generate clickhouse-server key & crts
 
@@ -115,12 +115,12 @@ elif (( $memory < 32*1024*1024 ));
 
 ### 3. Set Clickhouse default password
 
-Set Clickhouse password to [_**sqlflow@gudu**_](https://gitee.com/link?target=mailto:sqlflow@gudu)__
+Set Clickhouse password to [_**sqlflow@gudu**_](https://gitee.com/link?target=mailto:sqlflow@gudu)
 
 If mistakenly set to another password, you will need:
 
 1. delete `/etc/clickhouse-server/users.d/default-password.xml`
-2. update `/etc/clickhouse-server/users.xml`, set password to [_**sqlflow@gudu**_](https://gitee.com/link?target=mailto:sqlflow@gudu)__
+2. update `/etc/clickhouse-server/users.xml`, set password to [_**sqlflow@gudu**_](https://gitee.com/link?target=mailto:sqlflow@gudu)
 3. restart Clickhouse, `sudo /etc/init.d/clickhouse-server restart`
 
 ### 4. Init Clickhouse
