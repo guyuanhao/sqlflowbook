@@ -68,6 +68,7 @@
     * [/sqlflow/graph/image](3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-graph-image.md)
     * [/sqlflow/downstreamGraph](3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-downstreamgraph.md)
     * [/sqlflow/upstreamGraph](3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-upstreamgraph.md)
+    * [/sqlflow/erdiagramSelectGraph](3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-erdiagramselectgraph.md)
   * [Job Interface](3.-api-docs/sqlflow-rest-api-reference/job-interface/README.md)
     * [/submitUserJob](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-submituserjob.md)
     * [/displayUserJobSummary](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-displayuserjobsummary.md)

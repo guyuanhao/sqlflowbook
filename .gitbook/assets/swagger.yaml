@@ -2396,7 +2396,7 @@ paths:
           type: string
       - name: share
         in: query
-        description: share
+        description: whether generate the sharable URL for the result
         schema:
           type: boolean
           default: false
@@ -2800,7 +2800,7 @@ paths:
           type: string
       - name: share
         in: query
-        description: share
+        description: whether generate the sharable URL for the result
         schema:
           type: boolean
           default: false
