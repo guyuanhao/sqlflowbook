@@ -79,6 +79,7 @@
     * [/exportLineageAsGraphml](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-exportlineageasgraphml.md)
     * [/submitPersistJob](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-submitpersistjob.md)
     * [/displayUserLatestJobTableLevelLineage](3.-api-docs/sqlflow-rest-api-reference/job-interface/displayuserlatestjobtablelevellineage.md)
+  * [Export Image](3.-api-docs/sqlflow-rest-api-reference/export-image.md)
 * [Swagger UI](3.-api-docs/swagger-ui.md)
 * [Export the data lineage result](3.-api-docs/export-the-data-lineage-result.md)
 
