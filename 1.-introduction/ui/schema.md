@@ -7,7 +7,7 @@ description: >-
 
 ## Schema Explorer Basic
 
-<figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 22-16-57.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-09 151129.jpg" alt=""><figcaption></figcaption></figure>
 
 Visualize SQL schema by choosing any elements
 
