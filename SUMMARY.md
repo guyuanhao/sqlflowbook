@@ -15,6 +15,7 @@
     * [Job mode](1.-introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md)
   * [Basic Usage](1.-introduction/getting-started/basic-usage.md)
   * [Convert SQL to E-R Diagram](1.-introduction/getting-started/convert-sql-to-e-r-diagram.md)
+  * [Colors in SQLFlow Diagram](1.-introduction/getting-started/colors-in-sqlflow-diagram.md)
 * [Installation](1.-introduction/installation/README.md)
   * [Versions](1.-introduction/installation/versions.md)
   * [Linux](1.-introduction/installation/linux.md)
@@ -79,6 +80,7 @@
     * [/exportLineageAsGraphml](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-exportlineageasgraphml.md)
     * [/submitPersistJob](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-submitpersistjob.md)
     * [/displayUserLatestJobTableLevelLineage](3.-api-docs/sqlflow-rest-api-reference/job-interface/displayuserlatestjobtablelevellineage.md)
+  * [Export Image](3.-api-docs/sqlflow-rest-api-reference/export-image.md)
 * [Swagger UI](3.-api-docs/swagger-ui.md)
 * [Export the data lineage result](3.-api-docs/export-the-data-lineage-result.md)
 

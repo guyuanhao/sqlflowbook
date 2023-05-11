@@ -1,6 +1,6 @@
 # /sqlflow/upstreamGraph
 
-Retrieve the upstream data lineage for data elements in [_**regular Job**_](../../../1.-introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md#regular-job). This Api corresponds to [the downstream/upstream feature](../../../1.-introduction/ui/schema.md#to-upstream-to-downstream) in SQLFlow UI.
+Retrieve the upstream data lineage for data elements in [_**regular Job**_](../../../1.-introduction/getting-started/different-modes-in-gudu-sqlflow/job-mode.md#regular-job). This API corresponds to [the downstream/upstream feature](../../../1.-introduction/ui/schema.md#to-upstream-to-downstream) in SQLFlow UI.
 
 ### Get upstream data lineage in Json
 
