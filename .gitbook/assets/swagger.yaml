@@ -987,8 +987,8 @@ paths:
       parameters:
       - name: dbvendor
         in: query
-        description: db vendor
-        required: true
+        description: db vendor, this field is not mandatory when providing JobID, otherwise it is required.
+        required: false
         schema:
           type: string
           default: dbvoracle

@@ -6,7 +6,7 @@
 [swagger.yaml](../../../.gitbook/assets/swagger.yaml)
 {% endswagger %}
 
-Sample resposne:
+Sample response:
 
 A CSV file&#x20;
 
