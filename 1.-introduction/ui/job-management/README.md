@@ -49,6 +49,14 @@ Customized the extraction/exclusion content under the `advanced` section
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-01 21-06-07.png" alt=""><figcaption></figcaption></figure>
 
+**excludedDbsSchemas**: List of databases and schemas to exclude from extraction, separated by commas database1/schema1,database2 or database1.schema1,database2. It supports wildcard characters such as database1/_,_/schema,_/_.
+
+**extractedDbsSchemas**: List of databases and schemas to extract, separated by commas, which are to be provided in the format database/schema; Or blank to extract all databases. database1/schema1,database2/schema2,database3 or database1.schema1,database2.schema2,database3. It supports wildcard characters such as database1/_,_/schema,_/_.
+
+**extractedStoredProcedures**: A list of stored procedures under the specified database and schema to extract, separated by commas, which are to be provided in the format database.schema.procedureName or schema.procedureName; Or blank to extract all databases, support expression. Example:    database1.schema1.procedureName1,database2.schema2.procedureName2,database3.schema3,database4 or database1/schema1/procedureName1,database2/schema2
+
+**extractedViews**: A list of stored views under the specified database and schema to extract, separated by commas, which are to be provided in the format database.schema.viewName or schema.viewName. Or blank to extract all databases. It supports expression. Example: database1.schema1.procedureName1,database2.schema2.procedureName2,database3.schema3,database4 or database1/schema1/procedureName1,database2/schema2
+
 ### Configurable parameters
 
 You can give the configurable parameters under the `setting` section. Check [here](../settings.md#configurable-parameters-when-creating-jobs-or-visualizing-the-sql-in-sql-editor) to get more details about these parameters.
