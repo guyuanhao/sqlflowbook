@@ -51,11 +51,15 @@ _`visualize with cloumns`_: Generate the selected db elements(could be a databas
 
 _`to left most`_: Generate the selected db elements(could be a database/schema/table/column etc) data lineage without the record set. (given a->b->c, show a->c )
 
+**Hint**: this feature only works in [regular Job](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#regular-job)
+
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 01-08-06.png" alt=""><figcaption></figcaption></figure>
 
 ### to left most with columns
 
 _`to left most with columns`_: Generate the selected db elements(could be a database/schema/table/column etc) data lineage with the column details but without the record set.
+
+**Hint**: this feature only works in [regular Job](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#regular-job)
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2022-10-28 01-10-25.png" alt=""><figcaption></figcaption></figure>
 
