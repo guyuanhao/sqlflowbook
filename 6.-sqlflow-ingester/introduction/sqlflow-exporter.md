@@ -48,6 +48,18 @@ exporter metadata success: <-save>/metadata.json
 `-extractedViews`: Export metadata under the specific view. Use comma to split if multiple views required (such as \<view1>,\<view2>). We can use this flag to [improve the export performance](sqlflow-exporter.md#improve-export-performance). \
 `-merge`: Merge the metadata results which are exported in different process. Use comma to split files to merge. Check [here](sqlflow-exporter.md#improve-export-performance) for more details.
 
+### Access Control in Oracle
+
+Since [SQLFlow-Ingester 1.2.2](https://github.com/sqlparser/sqlflow\_public/releases/tag/sqlflow-ingester1.2.2), a user with limited access can be used to export database metadata for Oracle with `SELECT_CATALOG_ROLE`.
+
+```pgsql
+create user grq identified by 123456;
+GRANT CREATE SESSION TO grq;
+GRANT SELECT_CATALOG_ROLE TO grq;
+```
+
+A user with `SELECT_CATALOG_ROLE` will have access to all `DBA_TABLES` / `DBA_VIEWS` but he cannot access to the content of any table. This helps to avoid creating a powerful user and to give only necessary access. &#x20;
+
 ### Improve Export Performance
 
 Time consumed during the export from database could be very long if the data volume is huge. Following actions are made to improve the Ingester export performance:
