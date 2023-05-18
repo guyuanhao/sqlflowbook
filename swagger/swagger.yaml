@@ -1130,180 +1130,6 @@ paths:
       security:
       - Authorization:
         - global
-  /sqlflow/generation/sqlflow/exportLineageAsCsv:
-    post:
-      tags:
-      - Sqlflow Generation Interface
-      summary: export sqlflow lineage as csv format
-      description: export sqlflow lineage as csv format
-      operationId: exportLineageAsCsvUsingPOST
-      parameters:
-      - name: dbvendor
-        in: query
-        description: db vendor
-        required: true
-        schema:
-          type: string
-          default: dbvoracle
-          enum:
-          - dbvazuresql
-          - dbvbigquery
-          - dbvcouchbase
-          - dbvdb2
-          - dbvgreenplum
-          - dbvhana
-          - dbvhive
-          - dbvimpala
-          - dbvinformix
-          - dbvmdx
-          - dbvmysql
-          - dbvnetezza
-          - dbvopenedge
-          - dbvoracle
-          - dbvpostgresql
-          - dbvredshift
-          - dbvsnowflake
-          - dbvmssql
-          - dbvsparksql
-          - dbvsybase
-          - dbvteradata
-          - dbvvertica
-      - name: delimiter
-        in: query
-        description: delimiter of the values in CSV, default would be ','
-        schema:
-          type: string
-          default: ','
-      - name: hideColumn
-        in: query
-        description: whether hide column
-        schema:
-          type: boolean
-          default: false
-        example: false
-      - name: ignoreFunction
-        in: query
-        description: whether ignore function
-        schema:
-          type: boolean
-          default: false
-        example: false
-      - name: ignoreRecordSet
-        in: query
-        description: whether ignore record set
-        schema:
-          type: boolean
-          default: false
-        example: false
-      - name: jobId
-        in: query
-        description: job Id
-        schema:
-          type: string
-      - name: normalizeIdentifier
-        in: query
-        description: whether normalize identifier
-        schema:
-          type: boolean
-          default: true
-      - name: showConstantTable
-        in: query
-        description: whether show constant table
-        schema:
-          type: boolean
-          default: false
-      - name: showLinkOnly
-        in: query
-        description: whether show link only
-        schema:
-          type: boolean
-          default: true
-      - name: showRelationType
-        in: query
-        description: show relation type, required false, default value is 'fdd', multiple
-          values seperated by comma like fdd,frd,fdr,join. Availables are 'fdd' value
-          of target column from source column, 'frd' the recordset count of target
-          column which is affected by value of source column, 'fdr' value of target
-          column which is affected by the recordset count of source column, 'join'
-          combines rows from two or more tables, based on a related column between
-          them
-        schema:
-          type: string
-          default: fdd
-      - name: showTransform
-        in: query
-        description: whether show transform
-        schema:
-          type: boolean
-          default: false
-      - name: simpleOutput
-        in: query
-        description: simple output, ignore the intermediate results, defualt is false.
-        schema:
-          type: boolean
-          default: false
-        example: false
-      - name: sqltext
-        in: query
-        description: sql text
-        schema:
-          type: string
-      - name: tableToTable
-        in: query
-        description: whether show table to table relation only. please set this to
-          true if you just want to fetch table to table relations.
-        schema:
-          type: boolean
-          default: false
-        example: false
-      - name: token
-        in: query
-        description: The token is only used when connecting to the SQLFlow Cloud server,
-          is not used when connect to the SQLFlow on-premise version.
-        schema:
-          type: string
-      - name: treatArgumentsInCountFunctionAsDirectDataflow
-        in: query
-        description: Whether treat the arguments in COUNT function as direct Dataflow
-        schema:
-          type: boolean
-          default: false
-      - name: userId
-        in: query
-        description: user id
-        required: true
-        schema:
-          type: string
-      requestBody:
-        content:
-          multipart/form-data:
-            schema:
-              type: object
-              properties:
-                sqlfile:
-                  type: string
-                  description: sql file
-                  format: binary
-      responses:
-        200:
-          description: OK
-          content:
-            application/json;charset=utf-8:
-              schema:
-                type: string
-        201:
-          description: Created
-          content: {}
-        401:
-          description: Unauthorized
-          content: {}
-        403:
-          description: Forbidden
-          content: {}
-        404:
-          description: Not Found
-          content: {}
-      deprecated: false
   /sqlflow/generation/sqlflow/getSelectedDbObjectInfo:
     post:
       tags:
@@ -2978,24 +2804,14 @@ paths:
       security:
       - Authorization:
         - global
-  /sqlflow/generation/sqlflow/selected_dbobject/exportLineageAsCsv:
+  /sqlflow/generation/sqlflow/exportFullLineageAsCsv:
     post:
       tags:
       - Sqlflow Generation Interface
-      summary: export selected dbobject lineage as csv format
-      description: export selected dbobject lineage as csv format
-      operationId: exportSelectedDbObjectLineageAsCsvUsingPOST
+      summary: export sqlflow full lineage as csv format
+      description: export sqlflow full lineage as csv format
+      operationId: exportFullLineageAsCsvUsingPOST
       parameters:
-      - name: column
-        in: query
-        description: column
-        schema:
-          type: string
-      - name: database
-        in: query
-        description: database
-        schema:
-          type: string
       - name: dbvendor
         in: query
         description: db vendor
@@ -3032,34 +2848,9 @@ paths:
         schema:
           type: string
           default: ','
-      - name: ignoreFunction
+      - name: export_include_table
         in: query
-        description: ignore function
-        schema:
-          type: boolean
-          default: false
-        example: false
-      - name: ignoreRecordSet
-        in: query
-        description: ignore record set
-        schema:
-          type: boolean
-          default: false
-        example: false
-      - name: jobId
-        in: query
-        description: jobId
-        schema:
-          type: string
-      - name: normalizeIdentifier
-        in: query
-        description: normalizeIdentifier
-        schema:
-          type: boolean
-          default: true
-      - name: schema
-        in: query
-        description: schema
+        description: export_include_table
         schema:
           type: string
       - name: sessionId
@@ -3073,53 +2864,14 @@ paths:
         schema:
           type: boolean
           default: false
-      - name: showLinkOnly
+      - name: sqltext
         in: query
-        description: show link only
-        schema:
-          type: boolean
-          default: true
-      - name: showRelationType
-        in: query
-        description: show relation type, required false, default value is 'fdd', multiple
-          values seperated by comma like fdd,frd,fdr,join. Availables are 'fdd' value
-          of target column from source column, 'frd' the recordset count of target
-          column which is affected by value of source column, 'fdr' value of target
-          column which is affected by the recordset count of source column, 'join'
-          combines rows from two or more tables, based on a related column between
-          them
+        description: sql text
         schema:
           type: string
-          default: fdd
-      - name: showTransform
-        in: query
-        description: showTransform
-        schema:
-          type: boolean
-          default: false
-      - name: simpleOutput
-        in: query
-        description: simple output, ignore the intermediate results, defualt is false.
-        schema:
-          type: boolean
-          default: false
-        example: false
-      - name: table
-        in: query
-        description: table
-        schema:
-          type: string
-      - name: tableToTable
-        in: query
-        description: show table to table relation only
-        schema:
-          type: boolean
-          default: false
-        example: false
       - name: token
         in: query
-        description: The token is only used when connecting to the SQLFlow Cloud server,
-          is not used when connect to the SQLFlow on-premise version.
+        description: The token is only used when connecting to the SQLFlow Cloud server, it is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -3134,6 +2886,15 @@ paths:
         required: true
         schema:
           type: string
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              properties:
+                sqlfile:
+                  type: string
+                  description: sqlfile
+                  format: binary
       responses:
         200:
           description: OK
@@ -3154,6 +2915,9 @@ paths:
           description: Not Found
           content: {}
       deprecated: false
+      security:
+      - Authorization:
+        - global
   /sqlflow/generation/sqlflow/selectedgraph:
     post:
       tags:
@@ -5507,141 +5271,6 @@ paths:
       - name: userId
         in: query
         description: userId
-        required: true
-        schema:
-          type: string
-      responses:
-        200:
-          description: OK
-          content:
-            application/json;charset=utf-8:
-              schema:
-                type: string
-        201:
-          description: Created
-          content: {}
-        401:
-          description: Unauthorized
-          content: {}
-        403:
-          description: Forbidden
-          content: {}
-        404:
-          description: Not Found
-          content: {}
-      deprecated: false
-  /sqlflow/job/exportLineageAsCsv:
-    post:
-      tags:
-      - Job Interface
-      summary: export sqlflow lineage as csv format
-      description: export sqlflow lineage as csv format
-      operationId: exportLineageAsCsvUsingPOST_1
-      parameters:
-      - name: column
-        in: query
-        description: column
-        schema:
-          type: string
-      - name: database
-        in: query
-        description: database
-        schema:
-          type: string
-      - name: delimiter
-        in: query
-        description: delimiter of the values in CSV, default would be ','
-        schema:
-          type: string
-          default: ','
-      - name: ignoreFunction
-        in: query
-        description: ignore function
-        schema:
-          type: boolean
-          default: false
-        example: false
-      - name: ignoreRecordSet
-        in: query
-        description: ignore record set
-        schema:
-          type: boolean
-          default: false
-        example: false
-      - name: jobId
-        in: query
-        description: job to export. will return user's latest job if empty
-        schema:
-          type: string
-      - name: schema
-        in: query
-        description: schema
-        schema:
-          type: string
-      - name: showConstantTable
-        in: query
-        description: showConstantTable
-        schema:
-          type: boolean
-          default: false
-      - name: showLinkOnly
-        in: query
-        description: show link only
-        schema:
-          type: boolean
-          default: true
-      - name: showRelationType
-        in: query
-        description: show relation type, required false, default value is 'fdd', multiple
-          values seperated by comma like fdd,frd,fdr,join. Availables are 'fdd' value
-          of target column from source column, 'frd' the recordset count of target
-          column which is affected by value of source column, 'fdr' value of target
-          column which is affected by the recordset count of source column, 'join'
-          combines rows from two or more tables, based on a related column between
-          them
-        schema:
-          type: string
-          default: fdd
-      - name: showTransform
-        in: query
-        description: showTransform
-        schema:
-          type: boolean
-          default: false
-      - name: simpleOutput
-        in: query
-        description: simple output, ignore the intermediate results, defualt is false.
-        schema:
-          type: boolean
-          default: false
-        example: false
-      - name: table
-        in: query
-        description: table
-        schema:
-          type: string
-      - name: tableToTable
-        in: query
-        description: show table to table relation only
-        schema:
-          type: boolean
-          default: false
-        example: false
-      - name: token
-        in: query
-        description: The token is only used when connecting to the SQLFlow Cloud server,
-          is not used when connect to the SQLFlow on-premise version.
-        schema:
-          type: string
-      - name: treatArgumentsInCountFunctionAsDirectDataflow
-        in: query
-        description: Whether treat the arguments in COUNT function as direct Dataflow
-        schema:
-          type: boolean
-          default: false
-      - name: userId
-        in: query
-        description: user id
         required: true
         schema:
           type: string
