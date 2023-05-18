@@ -61,7 +61,7 @@
   * [User Interface](3.-api-docs/sqlflow-rest-api-reference/user-interface.md)
   * [Generation Interface](3.-api-docs/sqlflow-rest-api-reference/generation-interface/README.md)
     * [/sqlflow](3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow.md)
-    * [/sqlflow/exportLineageAsCsv](3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md)
+    * [/sqlflow/exportFullLineageAsCsv](3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md)
     * [/sqlflow/selectedgraph/table\_level\_lineage](3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-selectedgraph-table\_level\_lineage.md)
     * [/sqlflow/selectedgraph/image](3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-selectedgraph-image.md)
     * [/sqlflow/graph](3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-graph.md)
