@@ -28,6 +28,7 @@
 * [UI](1.-introduction/ui/README.md)
   * [SQLText Editor](1.-introduction/ui/sqltext-editor.md)
   * [Schema Explorer](1.-introduction/ui/schema.md)
+  * [Diagram Panel](1.-introduction/ui/diagram-panel.md)
   * [Settings](1.-introduction/ui/settings.md)
   * [Job Management](1.-introduction/ui/job-management/README.md)
     * [Job Sources](1.-introduction/ui/job-management/job-sources.md)
