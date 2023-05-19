@@ -1,6 +1,6 @@
 # Diagram Panel
 
-Checking the related SQL statements by simply clicking the link arrow of the specific field:
+To check the related SQL statements of the data lineage, simply clicking the lineage arrow of the specific field:
 
 <figure><img src="../../.gitbook/assets/微信截图_20230519204458.png" alt=""><figcaption></figcaption></figure>
 
