@@ -51,7 +51,8 @@ Customized the extraction/exclusion content under the `advanced` section
 
 **excludedDbsSchemas**: List of databases and schemas to exclude from extraction, separated by commas database1/schema1,database2 or database1.schema1,database2. It supports wildcard characters such as database1/_,_/schema,_/_.
 
-**extractedDbsSchemas**: List of databases and schemas to extract, separated by commas, which are to be provided in the format database/schema; Or blank to extract all databases. database1/schema1,database2/schema2,database3 or database1.schema1,database2.schema2,database3. It supports wildcard characters such as database1/_,_/schema,_/_.
+**extractedDbsSchemas**: List of databases and schemas to extract, separated by commas, which are to be provided in the format database/schema; Or blank to extract all databases. database1/schema1,database2/schema2,database3 or database1.schema1,database2.schema2,database3. It supports wildcard characters such as database1/_,_/schema,_/._\
+**Hint**: In Oracle, schema name is same as DB name so only give schema name is good for Oracle.
 
 **extractedStoredProcedures**: A list of stored procedures under the specified database and schema to extract, separated by commas, which are to be provided in the format database.schema.procedureName or schema.procedureName; Or blank to extract all databases, support expression. Example:    database1.schema1.procedureName1,database2.schema2.procedureName2,database3.schema3,database4 or database1/schema1/procedureName1,database2/schema2
 

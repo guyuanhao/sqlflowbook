@@ -26,7 +26,9 @@ Read more about the `setting` section [here](./#configurable-parameters).
 
 Read more about the `setting` section [here](./#configurable-parameters).
 
-Read more about the `advanced` section [here](./#advanced).
+The schemas should be in full path. In Oracle, schema name is same as DB name so only give schema name is good for Oracle. Read more about the `advanced` section [here](./#advanced).
+
+
 
 ### Upload file + database metadata
 
