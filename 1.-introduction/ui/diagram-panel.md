@@ -21,5 +21,3 @@ Fuzzy query is enabled in the search bar and the table/view found would be highl
 <figure><img src="../../.gitbook/assets/微信截图_20230522152615 (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/Peek 2023-05-22 15-21.gif" alt=""><figcaption></figcaption></figure>
-
-**Note**: This feature only works in [Regular Job](../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#regular-job).
