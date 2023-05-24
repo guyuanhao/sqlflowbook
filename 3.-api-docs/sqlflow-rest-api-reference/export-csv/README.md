@@ -1,6 +1,10 @@
 # Export CSV
 
-There are two endpoints for the CSV export:
+The following SQLFlow APIs export the CSV result of the lineage:
 
-* [/sqlflow/exportFullLineageAsCsv](../generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md)
-* [/job/exportFullLineageAsCsv](../job-interface/sqlflow-job-exportfulllineageascsv.md)
+*   [/sqlflow/exportFullLineageAsCsv](../generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md)
+
+    Export the full lineage as CSV
+*   [/job/exportFullLineageAsCsv](../job-interface/sqlflow-job-exportfulllineageascsv.md)
+
+    Export SQLFlow Job in CSV
