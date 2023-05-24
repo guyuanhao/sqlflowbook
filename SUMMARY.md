@@ -81,8 +81,8 @@
     * [/displayUserLatestJobTableLevelLineage](3.-api-docs/sqlflow-rest-api-reference/job-interface/displayuserlatestjobtablelevellineage.md)
   * [Export Image](3.-api-docs/sqlflow-rest-api-reference/export-image.md)
   * [Export CSV](3.-api-docs/sqlflow-rest-api-reference/export-csv/README.md)
-    * [/sqlflow/exportFullLineageAsCsv](3.-api-docs/sqlflow-rest-api-reference/export-csv/sqlflow-generation-sqlflow-exportlineageascsv.md)
-    * [/job/exportFullLineageAsCsv](3.-api-docs/sqlflow-rest-api-reference/export-csv/sqlflow-job-exportfulllineageascsv.md)
+    * [/sqlflow/exportFullLineageAsCsv](3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md)
+    * [/job/exportFullLineageAsCsv](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-exportfulllineageascsv.md)
 * [Swagger UI](3.-api-docs/swagger-ui.md)
 * [Export the data lineage result](3.-api-docs/export-the-data-lineage-result.md)
 

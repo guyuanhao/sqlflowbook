@@ -1,4 +1,4 @@
-# /exportFullLineageAsCsv
+# /job/exportFullLineageAsCsv
 
 #### Export data lineage in csv format
 
