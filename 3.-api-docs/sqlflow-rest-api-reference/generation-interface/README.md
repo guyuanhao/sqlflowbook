@@ -7,7 +7,7 @@ description: https://github.com/sqlparser/sqlflow_public/tree/master/api
 * Generate sqlflow model
   * [/sqlflow/generation/sqlflow](sqlflow-generation-sqlflow.md#generate-sqlflow-model)
 * Export lineage as CSV
-  * [/sqlflow/generation/sqlflow/exportLineageAsCsv](sqlflow-generation-sqlflow-exportlineageascsv.md#export-lineage-as-csv)
+  * [/sqlflow/generation/sqlflow/exportLineageAsCsv](../export-csv/sqlflow-generation-sqlflow-exportlineageascsv.md#export-lineage-as-csv)
 
 #### [**Generate the data lineage**](sqlflow-generation-sqlflow.md)
 
@@ -33,7 +33,7 @@ curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/generation/sqlflo
 curl -X POST "http://127.0.0.1:8081/gspLive_backend/sqlflow/generation/sqlflow?showRelationType=fdd"    -H  "Request-Origion:testClientDemo" -H  "accept:application/json;charset=utf-8" -H  "Content-Type:multipart/form-data" -F "sqlfile=" -F "dbvendor=dbvoracle" -F "ignoreRecordSet=false" -F "simpleOutput=false" -F "sqltext=CREATE VIEW vsal  as select * from emp" -F "userId=gudu|0123456789" 
 ```
 
-#### [**Export the data lineage in csv format**](sqlflow-generation-sqlflow-exportlineageascsv.md)
+#### [**Export the data lineage in csv format**](../export-csv/sqlflow-generation-sqlflow-exportlineageascsv.md)
 
 Send the SQL file and get the csv result which includes the data lineage.
 

@@ -339,7 +339,7 @@ Sample Response is a file in Json format:
 }
 ```
 
-* 3.2 [Export data lineage in csv format](sqlflow-job-exportfulllineageascsv.md)
+* 3.2 [Export data lineage in csv format](../export-csv/sqlflow-job-exportfulllineageascsv.md)
 
 ```
 /gspLive_backend/sqlflow/job/exportFullLineageAsCsv

@@ -1,4 +1,4 @@
-# Table Form Data Without  Intermediates
+# Table Form Data Without Intermediates
 
 How to output only the relationships in a table form without temporary intermediates, just column to column relationships between tables?
 
@@ -72,9 +72,9 @@ source_db,source_schema,source_table,source_column,target_db,target_schema,targe
 
 ## REST Call
 
-[/sqlflow/exportLineageAsCsv](../../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md) endpoint is dedicated for CSV export.
+[/sqlflow/exportLineageAsCsv](../../3.-api-docs/sqlflow-rest-api-reference/export-csv/sqlflow-generation-sqlflow-exportlineageascsv.md) endpoint is dedicated for CSV export.
 
-If you are trying to export a Job result under CSV format, you can check  [/sqlflow/job/exportFullLineageAsCsv](../../3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-exportfulllineageascsv.md)
+If you are trying to export a Job result under CSV format, you can check  [/sqlflow/job/exportFullLineageAsCsv](../../3.-api-docs/sqlflow-rest-api-reference/export-csv/sqlflow-job-exportfulllineageascsv.md)
 
 To remove the intermediates in the result, just set `false` to the request params `showConstantTable` and `showTransform` and set `true` to the params `ignoreRecordSet` and `ignoreFunction`.&#x20;
 

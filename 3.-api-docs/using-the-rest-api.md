@@ -73,8 +73,8 @@ curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/generation/sqlflo
 
 The following Apis can take multiple SQL files as the input of analysis. Compress your SQL files into one **zip file** and upload the archive zip file as request body if you wish to submit multiple SQL files.
 
-{% content-ref url="sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md" %}
-[sqlflow-generation-sqlflow-exportlineageascsv.md](sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md)
+{% content-ref url="sqlflow-rest-api-reference/export-csv/sqlflow-generation-sqlflow-exportlineageascsv.md" %}
+[sqlflow-generation-sqlflow-exportlineageascsv.md](sqlflow-rest-api-reference/export-csv/sqlflow-generation-sqlflow-exportlineageascsv.md)
 {% endcontent-ref %}
 
 {% content-ref url="sqlflow-rest-api-reference/job-interface/" %}
