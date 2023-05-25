@@ -2,6 +2,8 @@
 
 #### Export full lineage as CSV
 
+Export the full lineage as CSV, this api is for **query mode**
+
 {% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow/exportFullLineageAsCsv" method="post" %}
 [swagger.yaml](../../../.gitbook/assets/swagger.yaml)
 {% endswagger %}
