@@ -11,6 +11,18 @@ description: >-
 
 <figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-06 16-29-30.png" alt=""><figcaption></figcaption></figure>
 
+Lineage Overview: Show the [table level lineages](../sqltext-editor.md#table-level-lineage) of the database. [Summary mode](../../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#summary-result) will be applied in case of too many relations in the database.
+
+Lineage Detail: Show the database lineage detail. [Summary mode](../../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#summary-result) will be applied in case of too many relations in the database.
+
+Job Info: Give the Job meta Info such as create time, execution time, db vendor, job type, submitter and etc.
+
+Delete Job: Delete the selected job.
+
+More Actions: More operations to the Job. Currently there's only the top action. The job will be pinned to the top of the panel if we top the job.
+
+
+
 Note that `Lineage Overview` can not be applied on[ regular job](../../getting-started/different-modes-in-gudu-sqlflow/job-mode.md#regular-job) cause process data are needed but we don't have that in the database.
 
 ## Create a job
