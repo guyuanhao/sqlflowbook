@@ -6,8 +6,6 @@ If you are Oracle user, you may find some schema exported may be absent in the r
 ORA-01000: maximum open cursors exceeded tips
 ```
 
-<figure><img src="../../.gitbook/assets/ae77f6ae_8136809.png" alt=""><figcaption></figcaption></figure>
-
 This issue is caused by the open\_cursors in Oracle. Oracle docs note this about ORA-01000:
 
 _**ORA-01000** maximum open cursors exceeded_
