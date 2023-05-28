@@ -1,6 +1,6 @@
 # Not all schema exported from Oracle
 
-If you are Oracle user, you may find some schema exported may be absent in the result. In such case, please try to check the errorMessages block in the **metadata.json** to see whether there's a ORA-01000 error.
+If you are Oracle user, you may find some schema are absent in the exported result. In such case, please try to check the errorMessages block in the **metadata.json** to see whether there's a ORA-01000 error.
 
 ```
 ORA-01000: maximum open cursors exceeded tips
