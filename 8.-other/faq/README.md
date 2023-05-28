@@ -28,3 +28,15 @@ You can archive this using one of the following two approaches:
 * You can make REST api request to get the desired CSV data.
 
 Check [Table Form Data Without Intermediates](table-form-data-without-intermediates.md) to get more details.
+
+### Q4: Some schema are missing in the result when using Oracle
+
+Try to check the metadata.json to see whether there's a ORA-01000 error.
+
+```
+ORA-01000: maximum open cursors exceeded tips
+```
+
+Alter the open\_cursors value to fix this issue .
+
+Check [Not all schema exported from Oracle ](not-all-schema-exported-from-oracle.md)to get more details.

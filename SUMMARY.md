@@ -129,4 +129,5 @@
   * [Handling Internal Database](8.-other/faq/handling-internal-database.md)
   * [Delete Your Account](8.-other/faq/delete-your-account.md)
   * [Table Form Data Without Intermediates](8.-other/faq/table-form-data-without-intermediates.md)
+  * [Not all schema exported from Oracle](8.-other/faq/not-all-schema-exported-from-oracle.md)
 * [Roadmap](8.-other/roadmap.md)
