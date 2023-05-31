@@ -194,36 +194,40 @@ When the task uploaded to SQLFlow is too large or the number of rolls parsed by 
 
 ```json
 {
-	"databaseServer":{
-		"hostname":"DESKTOP-MLUR76N\\SQLEXPRESS",
-		"port":"1443",
-		"database":"master",
-		"extractedDbsSchemas":"",
-	        "excludedDbsSchemas":"",
-	        "extractedStoredProcedures":"",
-	        "extractedViews":"",
-		"enableQueryHistory":false,
-		"queryHistoryBlockOfTimeInMinutes":0,
+        "databaseServer":{
+                "hostname":"115.159.111.11",
+                "port": "1433",
+                "username": "db_username",
+                "password": "db_password",
+                "database": "AdventureWorksDW2019",
+                "extractedDbsSchemas":"",
+                "excludedDbsSchemas": "",
+                "extractedStoredProcedures": "",
+                "extractedViews": "",
+                "enableQueryHistory": false,
+                "queryHistoryBlockOfTimeInMinutes":30,
 		"sqlsourceTableName":"",
 		"sqlsourceColumnQuerySource":"",
 		"sqlsourceColumnQueryName":"",
 		"authentication":"windowsuser"
 	},
 	"sqlFlowServer":{
-		"server":"http://sqlflow.cn",
-		"serverPort":"8081",
-		"userId":"gudu|0123456789",
+		"server":"https://api.gudusoft.com",
+		"serverPort":"443",
+		"userId":"auth0|12345",
 		"userSecret":""
 	},
 	"sqlScriptSource":"database",
 	"lineageReturnFormat":"json",
 	"lineageReturnOutputFile":"",
 	"databaseType":"mssql",
-	"taskName": "sumitterTest",
+	"taskName": "submitterTest",
 	"jobNameToId": 1,
 	"jobType":"regular",
 	"donotConnectToSQLFlowServer": 1
 }
+
+
 ```
 
 ### Snowflake query history
