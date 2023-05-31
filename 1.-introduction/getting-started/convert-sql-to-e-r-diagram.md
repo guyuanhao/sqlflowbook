@@ -15,6 +15,8 @@ description: https://blog.sqlflow.cn/gudu-sqlflow-er-diagram/
 
     You can simply make SQLFlow connect to your database for the ER diagram. SQLFlow will automatically retrieve metadata from the database and generate the ER diagram.
 
+**Hint**: The feature is only available in Simple Job. E-R Diagram visualization is currently not supported in Regular Job.
+
 ## Three Ways to Visualize ER Model
 
 Let's now take a look on how exactly to use [Gudu SQLFlow](https://sqlflow.gudusoft.com/#/).&#x20;
