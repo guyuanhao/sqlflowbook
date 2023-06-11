@@ -7,7 +7,7 @@ description: https://e.gitee.com/gudusoft/docs/824458/file/1969050?sub_id=580694
 If you are keen on virtualization and you have [Docker Engine](https://www.docker.com/) installed on your machine, you can also pull SQLFlow's docker image. However, do please note that:
 
 * The SQLFlow docker version is **for testing purposes only**
-* After getting the SQLFlow docker version installed, **contact** [**support@gudusoft.com**](mailto:support@gudusoft.com) **to obtain 1-month temporary license with your SQLFlow Id.**
+* After getting the SQLFlow docker version installed, **contact** [**support@gudusoft.com**](mailto:support@gudusoft.com) **to obtain a 1-month temporary license with your SQLFlow Id.**
 
 <figure><img src="../../.gitbook/assets/图片 (13).png" alt=""><figcaption></figcaption></figure>
 
@@ -35,7 +35,7 @@ Use http://\<your ip>:\<port> to reach sqlflow UI.
 
 ### 1. Get License fail
 
-<figure><img src="../../.gitbook/assets/图片 (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
 
 If you got this error after launching the docker image, check firstly whether the docker image is running correctly:
 
@@ -63,7 +63,7 @@ java -jar eureka.jar
 
 The error in the following capture means that there is no enough memory for the docker.
 
-<figure><img src="../../.gitbook/assets/图片 (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
 
 You can assign more memory to the docker with:
 
