@@ -13,6 +13,8 @@ If you are keen on virtualization and you have [Docker Engine](https://www.docke
 
 ## The Docker Image
 
+Pull the sqlflow docker image:
+
 ```bash
 docker pull gudusqlflow/sqlflow-simple-trial:5.7.3
 ```
