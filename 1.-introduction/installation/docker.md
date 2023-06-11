@@ -30,3 +30,62 @@ The `mysqlflow` is the name of the container. For more information of the contai
 <figure><img src="../../.gitbook/assets/图片 (14).png" alt=""><figcaption></figcaption></figure>
 
 Use http://\<your ip>:\<port> to reach sqlflow UI.
+
+## Troubleshooting
+
+### 1. Get License fail
+
+<figure><img src="../../.gitbook/assets/图片 (18).png" alt=""><figcaption></figcaption></figure>
+
+If you got this error after launching the docker image, check firstly whether the docker image is running correctly:
+
+```bash
+docker ps -a
+```
+
+In case of the docker status is `up`, the try to go into the container with:
+
+```bash
+docker exec -it mysqlflow /bin/bash
+```
+
+Go to the SQLFlow jar folder:
+
+```bash
+cd wings/sqlflow/backend/lib
+```
+
+Try directly launch the jar file:
+
+```bash
+java -jar eureka.jar
+```
+
+The error in the following capture means that there is no enough memory for the docker.
+
+<figure><img src="../../.gitbook/assets/图片 (17).png" alt=""><figcaption></figcaption></figure>
+
+You can assign more memory to the docker with:
+
+```bash
+mkdir /etc/systemd/system/docker.service.d
+sudo vi /etc/systemd/system/docker.service.d/override.conf
+```
+
+and then enter
+
+```
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd --default-ulimit nofile=65536:65536 -H fd://
+```
+
+Save and run `sudo systemctl daemon-reload` and `sudo systemctl restart docker`.
+
+```shell
+sudo systemctl daemon-reload
+```
+
+```shell
+sudo systemctl restart docker
+```
