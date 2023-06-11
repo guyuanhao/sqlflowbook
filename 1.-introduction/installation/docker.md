@@ -7,7 +7,7 @@ description: https://e.gitee.com/gudusoft/docs/824458/file/1969050?sub_id=580694
 If you are keen on virtualization and you have [Docker Engine](https://www.docker.com/) installed on your machine, you can also pull SQLFlow's docker image. However, do please note that:
 
 * The SQLFlow docker version is **for testing purposes only**
-* After getting the SQLFlow docker version installed, **contact** [**support@gudusoft.com**](mailto:support@gudusoft.com) **to obtain a 1-month temporary license with your SQLFlow Id.**
+* After getting the SQLFlow docker version installed, **contact** [**support@gudusoft.com**](mailto:support@gudusoft.com) **with your SQLFlow Id to obtain a 1-month temporary license.**
 
 <figure><img src="../../.gitbook/assets/图片 (13).png" alt=""><figcaption></figcaption></figure>
 
