@@ -21,6 +21,7 @@
   * [Linux](1.-introduction/installation/linux.md)
   * [MacOS](1.-introduction/installation/macos.md)
   * [Windows](1.-introduction/installation/windows.md)
+  * [Docker](1.-introduction/installation/docker.md)
   * [Clickhouse Installation](1.-introduction/installation/clickhouse-installation/README.md)
     * [Clickhouse For CentOs](1.-introduction/installation/clickhouse-installation/clickhouse-for-centos.md)
     * [Clickhouse For Ubuntu/Debian/RHEL](1.-introduction/installation/clickhouse-installation/clickhouse-for-ubuntu-debian.md)
