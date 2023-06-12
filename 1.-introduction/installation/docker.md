@@ -35,6 +35,8 @@ Use http://\<your ip>:\<port> to reach sqlflow UI.
 
 ## Troubleshooting
 
+The following issue only occurs in Centos stream9, we don't foresee the error in Centos 7, Centos stream8, Ubuntu20 or Debian11.
+
 ### 1. Get License fail
 
 <figure><img src="../../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
