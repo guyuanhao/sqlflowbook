@@ -16,9 +16,10 @@ echo "deb https://packages.clickhouse.com/deb stable main" | sudo tee /etc/apt/s
 sudo apt-get update
 
 sudo apt-get install -y clickhouse-server clickhouse-client
+sudo chown -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client
 ```
 
-Please set Clickhouse password to [_**sqlflow@gudu**_](https://gitee.com/link?target=mailto:sqlflow@gudu)
+**Please set Clickhouse password to** _**`sqlflow@gudu`**_
 
 #### Generate clickhouse-server key & crts
 
