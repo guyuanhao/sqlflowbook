@@ -51,4 +51,4 @@ To facilitate team working with data lineage, one of the premium account privile
 [basic-usage.md](../../1.-introduction/getting-started/basic-usage.md)
 {% endcontent-ref %}
 
-However, in case of the expiration of your premium account, **the link used for sharing will expire together** with your account even if they were generated before the account's expiration. So please remember to renew your account if the links are still in usage.
+However, in case of the expiration of your premium account, **the link used for sharing will expire together** with your account even if they were generated before the account's expiration. So please remember to renew in time if these links are still being used.
