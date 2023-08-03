@@ -156,7 +156,11 @@ See[ sqlflow client api call](../../3.-api-docs/using-the-rest-api.md)
 
 ### troubleshooting
 
+#### Hostname error
+
 Make sure the window hostname **doesn't include the underscore symbol (\_)**, otherwise, the service will not work properly. please change it to minus symbol (-)
+
+#### Cannot start&#x20;
 
 If you have following errors when starting `monitor.sh`
 
@@ -164,4 +168,16 @@ If you have following errors when starting `monitor.sh`
 'jps' is not recognized as an internal or external command
 ```
 
-Please check whether your JDK environement variable is successfully set. &#x20;
+Please check the first section of this page, confirm that your JDK environement variable is successfully set.  You may need to restart your server to enable the change.
+
+#### Error uploading large file
+
+This is due to nginx config. Nginx by default limit the size of the files uploaded. Add the following config in your `http` block of the Nginx config file to change the file upload size in Nginx
+
+```
+client_max_body_size 200m;
+```
+
+<figure><img src="../../.gitbook/assets/nginx-max-upload-file-size.png" alt=""><figcaption></figcaption></figure>
+
+This increase the limit to 200M, if needed you may change this number.
