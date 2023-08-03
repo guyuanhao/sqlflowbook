@@ -4,18 +4,33 @@
 
 * [SQLFlow on-premise version](https://www.gudusoft.com/sqlflow-on-premise-version/)
 * Server with at least 8GB memory
-* install JDK1.8 or higher\
-  SET JAVA\_HOME variable, and then add %JAVA\_HOME%\bin to the path variable
+*   install JDK1.8 or higher\
+    SET JAVA\_HOME variable, and then add %JAVA\_HOME%\bin to the path variable\
+
+
+    <figure><img src="../../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
+
+
+
+    <figure><img src="../../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+    <figure><img src="../../.gitbook/assets/图片 (2).png" alt=""><figcaption></figcaption></figure>
+
+
+
+    <figure><img src="../../.gitbook/assets/图片 (3).png" alt=""><figcaption></figcaption></figure>
 * install Nginx for windows Download the Nginx Windows version here: http://nginx.org/en/docs/windows.html
 
-### unzip SQLFlow file
+### Unzip SQLFlow file
 
 * create a folder: c:\wings\sqlflow
 * unzip SQLFlow install package to c:\wings\sqlflow, you will get 2 directories like:
   1. c:\wings\sqlflow\backend
   2. c:\wings\sqlflow\frontend
 
-### start SQLFlow backend
+### Start SQLFlow backend
 
 * Open a dos command windows
 * cd c:\wings\sqlflow\backend\bin
@@ -90,7 +105,7 @@ Open the browser and go to localhost or got to the IP where the SQLFlow is insta
 * Open http://yourIp/ to see the SQLFlow.
 * Open http://yourIp/api/gspLive\_backend/doc.html?lang=en to see the Restful API documention.
 
-### stop the SQLFlow
+### Stop the SQLFlow
 
 * close the window where the monitor.sh is running.
 * cd c:\wings\sqlflow\backend\bin
@@ -147,4 +162,12 @@ See[ sqlflow client api call](../../3.-api-docs/using-the-rest-api.md)
 
 ### troubleshooting
 
-* make sure the window hostname doesn't include the underscore symbol (\_), otherwise, the service will not work properly. please change it to minus symbol (-)
+Make sure the window hostname **doesn't include the underscore symbol (\_)**, otherwise, the service will not work properly. please change it to minus symbol (-)
+
+If you have following errors when starting `monitor.sh`
+
+```
+'jps' is not recognized as an internal or external command
+```
+
+Please check whether your JDK environement variable is successfully set. &#x20;

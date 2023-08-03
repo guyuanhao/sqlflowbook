@@ -39,7 +39,7 @@ The following issue only occurs in Centos stream9, we don't foresee the error in
 
 ### 1. Get License fail
 
-<figure><img src="../../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you got this error after launching the docker image, check firstly whether the docker image is running correctly:
 
@@ -67,7 +67,7 @@ java -jar eureka.jar
 
 The error in the following capture means that there is no enough memory for the docker.
 
-<figure><img src="../../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (5).png" alt=""><figcaption></figcaption></figure>
 
 You can assign more memory to the docker with:
 
