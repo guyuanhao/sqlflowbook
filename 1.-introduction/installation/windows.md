@@ -180,4 +180,4 @@ client_max_body_size 200m;
 
 <figure><img src="../../.gitbook/assets/nginx-max-upload-file-size.png" alt=""><figcaption></figcaption></figure>
 
-This increase the limit to 200M, if needed you may change this number.
+This increases the limit to 200M, if needed you may change this number.
