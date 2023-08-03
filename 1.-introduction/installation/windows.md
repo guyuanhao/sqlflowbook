@@ -4,23 +4,17 @@
 
 * [SQLFlow on-premise version](https://www.gudusoft.com/sqlflow-on-premise-version/)
 * Server with at least 8GB memory
-*   install JDK1.8 or higher\
-    SET JAVA\_HOME variable, and then add %JAVA\_HOME%\bin to the path variable\
+* install JDK1.8 or higher\
+  SET JAVA\_HOME variable, and then add %JAVA\_HOME%\bin to the path variable
 
+<figure><img src="../../.gitbook/assets/system-properties-advance-setting.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/set-java-home-in-system-variables.png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../../.gitbook/assets/set-java-in-path-variable.png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../../.gitbook/assets/02.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
-
-
-
-    <figure><img src="../../.gitbook/assets/图片 (2).png" alt=""><figcaption></figcaption></figure>
-
-
-
-    <figure><img src="../../.gitbook/assets/图片 (3).png" alt=""><figcaption></figcaption></figure>
 * install Nginx for windows Download the Nginx Windows version here: http://nginx.org/en/docs/windows.html
 
 ### Unzip SQLFlow file
