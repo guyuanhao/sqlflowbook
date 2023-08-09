@@ -28,7 +28,7 @@
 
 * Open a dos command windows
 * cd c:\wings\sqlflow\backend\bin
-* run monitor.bat
+* run backend.bat
 * please wait 3-5 minutes to allow the SQLFlow service to start completely.
 
 ### Nginx Reverse Proxy
@@ -101,7 +101,7 @@ Open the browser and go to localhost or got to the IP where the SQLFlow is insta
 
 ### Stop the SQLFlow
 
-* close the window where the monitor.sh is running.
+* close the window where the backend.bat is running.
 * cd c:\wings\sqlflow\backend\bin
 * run stop.bat
 
@@ -162,7 +162,7 @@ Make sure the window hostname **doesn't include the underscore symbol (\_)**, ot
 
 #### Cannot start&#x20;
 
-If you have following errors when starting `monitor.sh`
+If you have following errors when starting backend.bat
 
 ```
 'jps' is not recognized as an internal or external command
