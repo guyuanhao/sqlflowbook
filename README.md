@@ -15,7 +15,7 @@ Gudu SQLFlow is an automated data lineage tool that specializes in analyzing SQL
 With its superior ability to thoroughly and in-depth analyze different SQL syntax from multiple database providers,\
 SQLFlow is able to quickly and accurately produce data lineage results from intricate and extensive SQL queries.
 
-Gudu SQLFlow is widely used in the data governance tool of the Industry leading companies providing SQL-related data lineage analysis features.
+Gudu SQLFlow is widely used in the data governance. As tool of the Industry leading companies, it provides SQL-related data lineage analysis features.
 
 It provides a visual representation of the overall flow of data, depicting all the data movement graphically.
 
