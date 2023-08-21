@@ -38,7 +38,7 @@ Result<SQLFlow> result1 = exec.exporterMetadata(source);
 Result<String> result2 = exec.exporterMetadataString(source);
 ```
 
-For Snowflake user, you can refer to the following code sample if wish to use private key RSA for the connection:
+For Snowflake users, you can refer to the following code sample if wish to use private key RSA for the connection:
 
 ```java
 TSnowflakeSQLDataSource datasource = TSnowflakeSQLDataSource.createSQLDataSource(
