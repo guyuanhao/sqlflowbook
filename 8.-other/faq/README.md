@@ -52,3 +52,9 @@ To facilitate team working with data lineage, one of the premium account privile
 {% endcontent-ref %}
 
 However, in case of the expiration of your premium account, **the link used for sharing will expire together** with your account even if they were generated before the account's expiration. So please remember to renew in time if these links are still being used.
+
+### Q6: Getting "Failed to fetch" when creating a SQLFlow Job
+
+<figure><img src="../../.gitbook/assets/aaaaa (1).png" alt=""><figcaption></figcaption></figure>
+
+There are various possible reasons to cause this issue. Most probably, it might be due to insufficient disk space. Please contact us and send us a support request to support@gudusoft.com. Our support team will help you to solve this issue.
