@@ -57,4 +57,15 @@ However, in case of the expiration of your premium account, **the link used for 
 
 <figure><img src="../../.gitbook/assets/aaaaa (1).png" alt=""><figcaption></figcaption></figure>
 
-There are various possible reasons to cause this issue. Most probably, it might be due to insufficient disk space. Please contact us and send us a support request to support@gudusoft.com. Our support team will help you to solve this issue.
+There are various possible reasons to cause this issue:
+
+* Poor network quality
+* Cross-domain issue between the server and the client
+* Wrong Nginx config
+* Certificate problem for HTTPS
+
+Yon can check your browser console to see the error details (F12 for chrome)
+
+<figure><img src="../../.gitbook/assets/图片 (17).png" alt=""><figcaption></figcaption></figure>
+
+Please contact us and send us the error details to support@gudusoft.com. Our support team will help you to solve out this issue.
