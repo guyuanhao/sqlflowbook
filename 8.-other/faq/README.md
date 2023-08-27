@@ -63,6 +63,8 @@ There are various possible reasons to cause this issue:
 * Cross-domain issue between the server and the client
 * Wrong Nginx config
 * Certificate problem for HTTPS
+* Insufficient server storage
+* ...
 
 Yon can check your browser console to see the error details (F12 for chrome)
 
