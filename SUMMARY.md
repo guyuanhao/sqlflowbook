@@ -133,5 +133,5 @@
   * [Not all schema exported from Oracle](8.-other/faq/not-all-schema-exported-from-oracle.md)
 * [Roadmap](8.-other/roadmap.md)
 * [SQL Demo](8.-other/sql-demo/README.md)
-  * [Exchange a table partition](8.-other/sql-demo/exchange-a-table-partition.md)
+  * [Exchange table partition](8.-other/sql-demo/exchange-table-partition.md)
   * [Generate relationship for renamed table](8.-other/sql-demo/generate-relationship-for-renamed-table.md)

@@ -2,8 +2,7 @@
 
 A table can be renamed by using a system procedure in SQLServer/AzureSQL called sp\_rename. In the following sample procedure, a table gets renamed from `EmployeeSales` to `FactEmployeeSales` followed by INSERT from the renamed table:
 
-````plsql
-```
+```plsql
 CREATE TABLE dbo.EmployeeSales
 (
     DataSource varchar(20) NOT NULL,
@@ -23,7 +22,6 @@ AS
     FROM dbo.FactEmployeeSales
     GROUP BY LastName;
 ```
-````
 
 Result:
 
