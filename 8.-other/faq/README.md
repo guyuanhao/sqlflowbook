@@ -71,3 +71,18 @@ Yon can check your browser console to see the error details (F12 for chrome)
 <figure><img src="../../.gitbook/assets/图片 (17).png" alt=""><figcaption></figcaption></figure>
 
 Please contact us and send us the error details to support@gudusoft.com. Our support team will help you to solve out this issue.
+
+### Q7: Failed to start SQLflow backend for Windows users
+
+Windows users may have following issue when trying to start the sqlflow backend:
+
+<figure><img src="../../.gitbook/assets/图片 (19).png" alt=""><figcaption></figcaption></figure>
+
+This might be due to the lack of memory. SQLFlow needs at least 32G RAM available. Please check if you have enough RAM available.
+
+To assign more memory to SQLFlow, please edit the sqlservice.bat file under sqlflow\backend\bin, add the following line of code after line 16:\
+`set heapsize=4G`
+
+<figure><img src="../../.gitbook/assets/图片 (20).png" alt=""><figcaption></figcaption></figure>
+
+The more RAM you assign to SQLFlow, the more complex SQL it would be able to deal with and your host server should have enough RAM to assign.
