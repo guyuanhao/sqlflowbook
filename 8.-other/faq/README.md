@@ -86,3 +86,21 @@ To assign more memory to SQLFlow, please edit the sqlservice.bat file under sqlf
 <figure><img src="../../.gitbook/assets/图片 (20).png" alt=""><figcaption></figcaption></figure>
 
 The more RAM you assign to SQLFlow, the more complex SQL it would be able to deal with and your host server should have enough RAM to assign.
+
+### Q8: Get license fail: Could not initialize class com.gudusoft.gspLive.validate.utils.MachineFingerprint
+
+If you have installed SQLFlow On-Premise but when going to your local SQLFlow UI and see this error:
+
+```
+Get license fail: Could not initialize class com.gudusoft.gspLive.validate.utils.MachineFingerprint
+```
+
+It is probably due to the lack of disk space. You can confirm that by checking the log files under
+
+```
+/wings/sqlflow/backend/log
+```
+
+<figure><img src="../../.gitbook/assets/微信图片_20231102102102.jpg" alt=""><figcaption></figcaption></figure>
+
+You need to clean your disk and prepare more disk space to launch the SQLFlow backend.
