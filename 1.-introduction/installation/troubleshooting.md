@@ -115,3 +115,15 @@ Code: 102. DB::NetException: Unexpected packet from server locahost:9000
 <figure><img src="../../.gitbook/assets/图片 (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Please check doc [here](clickhouse-installation/clickhouse-for-ubuntu-debian.md#1.-download-and-install).
+
+### 5. Get license failed: 404 Not Found
+
+<figure><img src="../../.gitbook/assets/微信截图_20231121231106.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+This is probably caused by the port config error. Please check your port in gspLive.sh(gspLive.bat). Ensure it's corresponding to the port in the nginx config file.
+
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
