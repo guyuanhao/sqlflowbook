@@ -122,7 +122,9 @@ Please check doc [here](clickhouse-installation/clickhouse-for-ubuntu-debian.md#
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-This is probably caused by the port config error. Please check your port in gspLive.sh(gspLive.bat). Ensure it's corresponding to the port in the nginx config file.
+This is probably caused by the port config error. You might have forgot to config the same cutomized port for nginx/gspLive.
+
+Please check your port in gspLive.sh(gspLive.bat). Ensure it's aligned with the port in the nginx config file.
 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
