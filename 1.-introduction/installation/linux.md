@@ -184,11 +184,11 @@ Change the default web port from `80` to `9000` (or any port you like).
 
 Change the default gspLive port from `8081` to `9001`(or any port you like).&#x20;
 
-* Change the port in nginx config file
+**Step 1: Change the port in nginx config file**
 
 <figure><img src="../../.gitbook/assets/sqlflow-install-customize-gsplive-port-nginx.png" alt=""><figcaption></figcaption></figure>
 
-* Change the port in gspLive.sh(gspLive.bat)&#x20;
+**Step 2: Change the port in gspLive.sh(gspLive.bat)**&#x20;
 
 <figure><img src="../../.gitbook/assets/sqlflow-install-customize-port-gsplive.png" alt=""><figcaption></figcaption></figure>
 
