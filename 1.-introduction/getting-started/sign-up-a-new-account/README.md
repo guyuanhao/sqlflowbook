@@ -18,33 +18,28 @@ description: https://www.sqlflow.cn/936-2/
 
 ### Gudu SQLFlow Account
 
-There are two different account types:
+When you sign up Gudu SQLFlow for the first time, we will automatically assign you a **3 days free trial**. You can try Gudu SQLFlow during the 3 days free trial with all following features:&#x20;
 
-* Basic Account
-* Premium Account
-
-#### Basic Account
-
-* 7 days free trial
 * Support more than 20 databases
 * Share and export the data lineage result
 * Support all configuration settings
 * Connect to a database and discover data lineage instantly
 
+However, you will no longer have any access to the above features if not upgrading to the Premium Account after the trial. Only login and delete action are allowed for the basic account.
+
+**Hint**: If you choose to delete your account, **your SQLFlow account data would be completed removed**. Check this page for how to delete your account:
+
+{% content-ref url="../../../8.-other/faq/delete-your-account.md" %}
+[delete-your-account.md](../../../8.-other/faq/delete-your-account.md)
+{% endcontent-ref %}
+
+You can also extend your free trial to 30 days by sharing SQLFlow on&#x20;
+
 #### Premium Account
 
-* All features in the basic account
 * Up to 10K SQL queries per month
 * Fully Restful API access, up to 10K calls per month
 * Support to upload SQL files
 * Support Snowflake query history, Redshift log and more
 
 Get a premium account [**here**](https://www.gudusoft.com/purchase-premium-account/)!
-
-### Getting a 3 days Free Premium Account
-
-Visit [this site](https://www.gudusoft.com/request-a-premium-account/) to request for a Premium Account. An email with activation code will be sent within 5 mins. Go to [https://sqlflow.gudusoft.com](https://sqlflow.gudusoft.com), click the icon in the upper right corner and check the following page:
-
-<figure><img src="../../../.gitbook/assets/sqlflow-userid-secret-step1.png" alt=""><figcaption></figcaption></figure>
-
-Click the _Account_ menu item, chose "_activate by entering a coupon_" and enter the activation code.
