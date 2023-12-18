@@ -33,7 +33,7 @@ However, you will no longer have any access to the above features if not upgradi
 [delete-your-account.md](../../../8.-other/faq/delete-your-account.md)
 {% endcontent-ref %}
 
-You can also extend your free trial to 30 days by sharing SQLFlow on&#x20;
+You can also extend your **free trial to 30 days** by sharing SQLFlow on any social networks. Please give the details via  this form to obtain a 30-days free trail: [https://forms.gle/zgs752NMYKNUmsAM6](https://forms.gle/zgs752NMYKNUmsAM6)
 
 #### Premium Account
 
