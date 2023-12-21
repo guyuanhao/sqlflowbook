@@ -29,16 +29,19 @@ Here you can
 
 Please [check here](../1.-introduction/installation/) to see how to install SQLFlow on-premise version on you own server.&#x20;
 
-* User ID
-* Secrete Key
+There are two default accounts for SQLFlow On-Premise and you can change the default password by yourselves:
 
-Always set userId to `gudu|0123456789` and keep `userSecret` empty when connect to the SQLFlow on-premise version.
+* Admin Account\
+  username: [sqlflowadmin@gudusoft.com](mailto:sqlflowadmin@gudusoft.com)\
+  password: Tool4Datalineage@gudusoft
+* Basic Account\
+  username: [sqlflowuser@gudusoft.com](mailto:sqlflowuser@gudusoft.com)\
+  password: MyDatalineage@123&#x20;
 
 ### Difference between using SQLFlow Cloud server and SQLFlow on-premise version
 
-1. TOKEN is not needed in the API calls when connect to the SQLFlow on-premise version
-2. `userId` is always set to `gudu|0123456789` and `userSecret` is left empty when connecting to the SQLFlow on-premise version.
-3. The server port is 8081 by default for the SQLFlow on-premise version, and There is no need to specify the port.
+1. The server port is 8081 by default for the SQLFlow on-premise version, and There is no need to specify the port.
+2. SQLFlow on-premise is hosted on your own server, your business data are kept in your own domain.
 
 Please [check here](../1.-introduction/installation/linux.md#customize-the-port) if you want read more about the server port of the SQLFlow on-premise version.
 
