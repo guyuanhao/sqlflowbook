@@ -14,9 +14,13 @@ Check [this section](../../3.-api-docs/prerequisites.md#sqlflow-cloud-server) to
 
 Please [check here](../installation/) to see how to install SQLFlow on-premise version on you own server.&#x20;
 
-* User ID
-* Secrete Key
+There are two default accounts for SQLFlow On-Premise and you can change the default password by yourselves:
 
-Always set userId to `gudu|0123456789` and keep `userSecret` empty when connect to the SQLFlow on-premise version.
+* Admin Account\
+  username: [sqlflowadmin@gudusoft.com](mailto:sqlflowadmin@gudusoft.com)\
+  password: Tool4Datalineage@gudusoft
+* Basic Account\
+  username: [sqlflowuser@gudusoft.com](mailto:sqlflowuser@gudusoft.com)\
+  password: MyDatalineage@123&#x20;
 
 Check [here](../../3.-api-docs/prerequisites.md#difference-between-using-sqlflow-cloud-server-and-sqlflow-on-premise-version) to understand the difference between SQLFlow Cloud and SQLFlow On-Premise.
