@@ -110,6 +110,10 @@ $(async () => {
 
 ```
 
+If you are using SQLFlow On-Premise, you can get the token directly from your license file
+
+
+
 With the above code we will have a result:
 
 <figure><img src="../.gitbook/assets/Screenshot from 2022-10-31 18-50-46.png" alt=""><figcaption></figcaption></figure>
