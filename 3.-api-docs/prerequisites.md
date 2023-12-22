@@ -8,11 +8,11 @@ This article shows how to use the SQLFlow Rest API to communicate with the SQLFl
 
 In order to use the SQLFlow rest API, you may connect to the [**SQLFlow Cloud server**](https://sqlflow.gudusoft.com) or setup a [**SQLFlow on-premise version**](https://www.gudusoft.com/sqlflow-on-premise-version/) on your owner server.
 
-### **SQLFlow Cloud server**
+### **Generate Account Secret**
 
 If you want to connect to [the SQLFlow Cloud Server](https://sqlflow.gudusoft.com), you may [request a 30 days premium account](https://www.gudusoft.com/request-a-premium-account/) to get the necessary userId and secret code.
 
-Once getting the premium account, please click the icon at the right top of the screen:
+Once getting the premium account or if you are using SQLFlow On-Premise, please click the icon at the right top of the screen:
 
 <figure><img src="../.gitbook/assets/sqlflow_userid_secret_step1.png" alt=""><figcaption></figcaption></figure>
 
