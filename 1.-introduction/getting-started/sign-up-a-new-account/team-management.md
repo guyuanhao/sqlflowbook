@@ -26,7 +26,7 @@ Adding members:
 
 <figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-The team member can be added into the group before they signup [SQLFlow](https://sqlflow.gudusoft.com/#/) or they can signup on the site first but join the group later.  However, team member must use the email registered by the team manager to signup because when we just register the member's email.
+The team member can be added into the group before they signup [SQLFlow](https://sqlflow.gudusoft.com/#/) or they can signup on the site first but join the group later.  However, team member must use the email registered by the team manager to signup.
 
 #### Team quote
 
