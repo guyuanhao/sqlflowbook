@@ -6,8 +6,8 @@
 /sqlflow/generation/sqlflow/selectedgraph
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow/selectedgraph" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/generation/sqlflow/selectedgraph" method="post" %}
+[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
 {% endswagger %}
 
 ### Get selected dbobject image
@@ -18,8 +18,8 @@ Retrieve the data lineage image file for the selected dbobject graph
 /sqlflow/generation/sqlflow/selectedgraph/image
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow/selectedgraph/image" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/generation/sqlflow/selectedgraph/image" method="post" %}
+[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
 {% endswagger %}
 
 Sample response:

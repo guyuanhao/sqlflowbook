@@ -10,7 +10,7 @@ If your database is deployed in an internal network which is not accessible for 
 
 1. Use [sqlflow-ingester](../../6.-sqlflow-ingester/introduction/) to export the database metadata file.
 2. Create sqlflow job by [uploading that metadata file on our SQLFlow UI](../../1.-introduction/ui/job-management/job-sources.md#upload-file).
-3. Use [SQLFlow on-premise](../../1.-introduction/readme/cloud-and-on-premise-version.md#install-a-sqlflow-on-premise-version-on-your-own-server) version.
+3. Use [SQLFlow on-premise](../../1.-introduction/installation/versions/cloud-and-on-premise-version.md#install-a-sqlflow-on-premise-version-on-your-own-server) version.
 
 Check [deal with internal database](handling-internal-database.md) for more details.
 

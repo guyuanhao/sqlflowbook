@@ -17,8 +17,8 @@ Send the SQL query and get the data lineage result.
 /gspLive_backend/sqlflow/generation/sqlflow
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/generation/sqlflow" method="post" %}
+[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
 {% endswagger %}
 
 * **SQLFlow Cloud Server**
@@ -41,8 +41,8 @@ Send the SQL file and get the csv result which includes the data lineage.
 /gspLive_backend/sqlflow/generation/sqlflow/exportFullLineageAsCsv
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow/exportFullLineageAsCsv" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/generation/sqlflow/exportFullLineageAsCsv" method="post" %}
+[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
 {% endswagger %}
 
 ```
@@ -70,8 +70,8 @@ Send the SQL file and get the image result of the data lineage.
 /sqlflow/generation/sqlflow/graph/image
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow/graph/image" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/generation/sqlflow/graph/image" method="post" %}
+[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
 {% endswagger %}
 
 ```bash

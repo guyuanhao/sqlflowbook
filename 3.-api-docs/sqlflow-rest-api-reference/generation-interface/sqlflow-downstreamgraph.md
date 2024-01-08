@@ -8,8 +8,8 @@ Retrieve the upstream data lineage for data elements in [_**regular Job**_](../.
 /sqlflow/generation/sqlflow/downstreamGraph
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow/downstreamGraph" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/generation/sqlflow/downstreamGraph" method="post" %}
+[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
 {% endswagger %}
 
 ### Get downstream data lineage image
@@ -18,8 +18,8 @@ Retrieve the upstream data lineage for data elements in [_**regular Job**_](../.
 /sqlflow/generation/sqlflow/downstreamGraph/image
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow/downstreamGraph/image" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/generation/sqlflow/downstreamGraph/image" method="post" %}
+[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
 {% endswagger %}
 
 Sample:

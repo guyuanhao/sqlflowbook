@@ -1,7 +1,7 @@
 # /displayUserLatestJobTableLevelLineage
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/job/displayUserLatestJobTableLevelLineage" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/job/displayUserLatestJobTableLevelLineage" method="post" %}
+[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
 {% endswagger %}
 
 Sample response:

@@ -2,11 +2,11 @@
 
 #### Generate sqlflow model
 
-{% swagger src="../../../.gitbook/assets/swagger.yaml" path="/sqlflow/generation/sqlflow" method="post" %}
-[swagger.yaml](../../../.gitbook/assets/swagger.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/generation/sqlflow" method="post" %}
+[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
 {% endswagger %}
 
-Sample resposne:
+Sample response:
 
 ```json
 {
@@ -106,4 +106,4 @@ Sample resposne:
 }
 ```
 
-****[**Try it out!**](../../swagger-ui.md)****
+[**Try it out!**](../../swagger-ui.md)

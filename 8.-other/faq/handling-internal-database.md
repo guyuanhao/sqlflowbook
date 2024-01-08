@@ -49,6 +49,6 @@ Check the lineage overview/detail once the job is finished.
 
 ## Use SQLFlow On-Premise Version
 
-{% content-ref url="../../1.-introduction/readme/cloud-and-on-premise-version.md" %}
-[cloud-and-on-premise-version.md](../../1.-introduction/readme/cloud-and-on-premise-version.md)
+{% content-ref url="../../1.-introduction/installation/versions/cloud-and-on-premise-version.md" %}
+[cloud-and-on-premise-version.md](../../1.-introduction/installation/versions/cloud-and-on-premise-version.md)
 {% endcontent-ref %}

@@ -18,6 +18,8 @@ This API will return a temporary token that needs to be used in the API call the
 curl -X POST "https://api.gudusoft.com/gspLive_backend/user/generateToken" -H  "Request-Origion:testClientDemo" -H  "accept:application/json;charset=utf-8" -H  "Content-Type:application/x-www-form-urlencoded;charset=UTF-8" -d "secretKey=YOUR SECRET KEY" -d "userId=YOUR USER ID HERE"
 ```
 
+**Tips**: If you are using SQLFLow On-Premise, **this step is not needed**.
+
 ### **2. Generate the data lineage**
 
 Call this API by sending the SQL query and get the result includes the data lineage.

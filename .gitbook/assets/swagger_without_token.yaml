@@ -135,8 +135,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -205,8 +205,8 @@ paths:
           - dbvvertica
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -245,8 +245,8 @@ paths:
       parameters:
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -420,8 +420,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -649,8 +649,8 @@ paths:
         example: false
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -803,8 +803,8 @@ paths:
           default: .*
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -942,8 +942,8 @@ paths:
           default: .*
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -1084,7 +1084,6 @@ paths:
           default: .*
       - name: token
         in: query
-        required: true
         description: token
         schema:
           type: string
@@ -1153,8 +1152,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -1304,8 +1303,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -1753,8 +1752,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -1863,8 +1862,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -2125,8 +2124,8 @@ paths:
           default: .*
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -2270,7 +2269,6 @@ paths:
           default: .*
       - name: token
         in: query
-        required: true
         description: token
         schema:
           type: string
@@ -2361,8 +2359,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -2531,8 +2529,8 @@ paths:
         example: false
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -2644,7 +2642,6 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
         description: token
         schema:
           type: string
@@ -2757,7 +2754,6 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
         description: token
         schema:
           type: string
@@ -2875,8 +2871,7 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server, it is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -3068,8 +3063,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -3249,8 +3244,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -3370,8 +3365,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -3621,8 +3616,8 @@ paths:
           default: .*
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -3760,8 +3755,8 @@ paths:
           default: .*
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -3902,7 +3897,6 @@ paths:
           default: .*
       - name: token
         in: query
-        required: true
         description: token
         schema:
           type: string
@@ -3989,8 +3983,8 @@ paths:
           - dbvvertica
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -4088,8 +4082,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -4211,8 +4205,8 @@ paths:
           default: false
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -4280,8 +4274,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -4415,8 +4409,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -4471,8 +4465,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -4542,8 +4536,8 @@ paths:
       parameters:
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -4715,8 +4709,8 @@ paths:
         example: false
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -4842,8 +4836,8 @@ paths:
           default: .*
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -4894,8 +4888,8 @@ paths:
           default: true
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -5053,8 +5047,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -5115,8 +5109,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -5167,8 +5161,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -5224,8 +5218,8 @@ paths:
           default: false
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -5270,8 +5264,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -5393,8 +5387,8 @@ paths:
         example: false
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -5523,8 +5517,8 @@ paths:
         example: false
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -5639,8 +5633,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -5695,8 +5689,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -5747,8 +5741,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -5807,8 +5801,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -5868,8 +5862,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -5908,8 +5902,8 @@ paths:
       parameters:
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -5954,8 +5948,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -6044,8 +6038,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -6096,8 +6090,8 @@ paths:
           type: boolean
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -6229,8 +6223,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -6309,8 +6303,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -6543,8 +6537,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: treatArgumentsInCountFunctionAsDirectDataflow
@@ -6617,8 +6611,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId
@@ -6662,8 +6656,8 @@ paths:
           type: string
       - name: token
         in: query
-        required: true
-        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        description: The token is only used when connecting to the SQLFlow Cloud server,
+          is not used when connect to the SQLFlow on-premise version.
         schema:
           type: string
       - name: userId

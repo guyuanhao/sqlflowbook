@@ -8,6 +8,17 @@ If you are keen on virtualization and you have [Docker Engine](https://www.docke
 
 * The SQLFlow docker version is **for testing purposes only**
 * After getting the SQLFlow docker version installed, **contact** [**support@gudusoft.com**](mailto:support@gudusoft.com) **with your SQLFlow Id to obtain a 1-month temporary license.**
+* The docker version uses the same user management logic as SQLFlow On-Premise. It has the admin account and the basic account.
+
+```
+Admin Account
+username: sqlflowadmin@gudusoft.com
+password: Tool4Datalineage@gudusoft
+
+Basic Account
+username: sqlflowuser@gudusoft.com
+password: MyDatalineage@123 
+```
 
 <figure><img src="../../.gitbook/assets/图片 (13).png" alt=""><figcaption></figcaption></figure>
 
