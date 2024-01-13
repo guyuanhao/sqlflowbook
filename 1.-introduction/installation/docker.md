@@ -12,12 +12,12 @@ If you are keen on virtualization and you have [Docker Engine](https://www.docke
 
 ```
 Admin Account
-username: sqlflowadmin@gudusoft.com
-password: Tool4Datalineage@gudusoft
+username: admin@local.gudusoft.com
+password: admin
 
 Basic Account
-username: sqlflowuser@gudusoft.com
-password: MyDatalineage@123 
+username: user@local.gudusoft.com
+password: user
 ```
 
 <figure><img src="../../.gitbook/assets/图片 (13).png" alt=""><figcaption></figcaption></figure>
