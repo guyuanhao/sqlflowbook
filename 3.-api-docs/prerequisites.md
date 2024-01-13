@@ -32,10 +32,10 @@ Please [check here](../1.-introduction/installation/) to see how to install SQLF
 There are two default accounts for SQLFlow On-Premise and you can change the default password by yourselves:
 
 * Admin Account\
-  username: [sqlflowadmin@gudusoft.com](mailto:sqlflowadmin@gudusoft.com)\
+  username: sqlflowadmin@gudusoft.com\
   password: Tool4Datalineage@gudusoft
 * Basic Account\
-  username: [sqlflowuser@gudusoft.com](mailto:sqlflowuser@gudusoft.com)\
+  username: sqlflowuser@gudusoft.com\
   password: MyDatalineage@123&#x20;
 
 ### Difference between using SQLFlow Cloud server and SQLFlow on-premise version
