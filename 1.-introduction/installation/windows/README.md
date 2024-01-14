@@ -60,12 +60,22 @@ Add the following section in gspLive.sh(or gspLive.bat in Windows):
 * run backend.bat
 * please wait 3-5 minutes to allow the SQLFlow service to start completely.
 
+You can assign the RAM to SQLFlow by specifying the boot parameter when starting the service.
+
+```bash
+ backend.bat /m <RAM_VALUE>
+```
+
+where the RAM\_VALUE could be: **4g 8g 16g 32g or 64g**. The default value would be 4g.
+
 ### SQLFlow is ready
 
 Open the browser and go to localhost or got to the IP where the SQLFlow is installed.
 
 * Open http://yourIp/ to see the SQLFlow.
-* Open http://yourIp/api/gspLive\_backend/doc.html?lang=en to see the Restful API documention.
+* Open http://yourIp/api/gspLive\_backend/doc.html?lang=en to see the Restful API document.
+
+<figure><img src="../../../.gitbook/assets/login.png" alt=""><figcaption></figcaption></figure>
 
 ### Stop the SQLFlow
 

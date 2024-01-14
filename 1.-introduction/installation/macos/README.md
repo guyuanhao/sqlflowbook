@@ -162,7 +162,9 @@ Add the following section in gspLive.sh(or gspLive.bat in Windows):
 
 open http://yourdomain.com/ to see the SQLFlow.
 
-open `http://yourdomain.com:8165/doc.html?lang=en` or `http://localhost:8165/api/gspLive_backend/doc.html?lang=en` to see the Restful API documention.
+open `http://yourdomain.com:8165/doc.html?lang=en` or `http://localhost:8165/api/gspLive_backend/doc.html?lang=en` to see the Restful API document.
+
+<figure><img src="../../../.gitbook/assets/login.png" alt=""><figcaption></figcaption></figure>
 
 ### Sqlflow client api call
 

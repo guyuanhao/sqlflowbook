@@ -118,6 +118,14 @@ start service in background:
 sudo /wings/sqlflow/backend/bin/backend.sh
 ```
 
+You can assign the RAM to SQLFlow by specifying the boot parameter when starting the service.
+
+```bash
+ backend.sh /m <RAM_VALUE>
+```
+
+where the RAM\_VALUE could be: **4g 8g 16g 32g or 64g**. The default value would be 4g.
+
 please allow 3-5 minutes to start the service.
 
 use `ps -ef|grep java` to check those 3 processing are running.
@@ -132,7 +140,9 @@ ubuntu   11114     1  0 Nov02 ?        00:05:17 java -server -jar gspLive.jar
 
 open http://yourdomain.com/ to see the SQLFlow.
 
-open `http://yourdomain.com:8165/doc.html?lang=en` or `http://localhost:8165/api/gspLive_backend/doc.html?lang=en` to see the Restful API documention.
+open `http://yourdomain.com:8165/doc.html?lang=en` or `http://localhost:8165/api/gspLive_backend/doc.html?lang=en` to see the Restful API document.
+
+<figure><img src="../../.gitbook/assets/login.png" alt=""><figcaption></figcaption></figure>
 
 ### Gudu SQLFlow License file
 
