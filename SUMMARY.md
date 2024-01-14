@@ -141,3 +141,4 @@
   * [Exchange table partition](8.-other/sql-samples/exchange-table-partition.md)
   * [Generate relationship for renamed table](8.-other/sql-samples/generate-relationship-for-renamed-table.md)
   * [Snowflake table function lineage detection](8.-other/sql-samples/snowflake-table-function-lineage-detection.md)
+* [Change Logs](8.-other/change-logs.md)
