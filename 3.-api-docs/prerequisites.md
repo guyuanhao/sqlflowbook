@@ -42,7 +42,8 @@ There are two default accounts for SQLFlow On-Premise and you can change the def
 
 1. The server port is 8081 by default for the SQLFlow on-premise version, and There is no need to specify the port.
 2. SQLFlow on-premise is hosted on your own server, your business data are kept in your own domain.
-3. For SQLFlow on-premise, **web token is not needed**.
 
-Please [check here](../1.-introduction/installation/linux.md#customize-the-port) if you want read more about the server port of the SQLFlow on-premise version.
+
+
+Please [check here](../1.-introduction/installation/linux/#customize-the-port) if you want read more about the server port of the SQLFlow on-premise version.
 

@@ -178,7 +178,7 @@ If you don't want to change the default service port you can just ignore this se
 
 Change the default web port from `80` to `9000` (or any port you like).
 
-<figure><img src="../../.gitbook/assets/sqlflow-install-customize-web-port.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/sqlflow-install-customize-web-port.png" alt=""><figcaption></figcaption></figure>
 
 #### 3. Modify java service port
 
@@ -186,11 +186,11 @@ Change the default gspLive port from `8081` to `9001`(or any port you like).&#x2
 
 **Step 1: Change the port in nginx config file**
 
-<figure><img src="../../.gitbook/assets/sqlflow-install-customize-gsplive-port-nginx.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/sqlflow-install-customize-gsplive-port-nginx.png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Change the port in gspLive.sh(gspLive.bat)**&#x20;
 
-<figure><img src="../../.gitbook/assets/sqlflow-install-customize-port-gsplive.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/sqlflow-install-customize-port-gsplive.png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -236,7 +236,7 @@ open http://yourdomain.com:8081/gspLive\_backend/doc.html?lang=en to see the Res
 
 If this is the first time you setup the Gudu SQLFlow on a new machine, then, you will see this license UI:&#x20;
 
-<figure><img src="../../.gitbook/assets/gudu-sqlflow-license.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/gudu-sqlflow-license.png" alt=""><figcaption></figcaption></figure>
 
 1. You send us the Gudu SQLFlow Id (6 characters in red).
 2. We will generate a license file for you based on this id.
@@ -302,6 +302,6 @@ See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/
 
 If you need to enable regular job feature on your sqlflow on-premiser, you will also need to install Clickhouse on your server. Check here for Clickhouse installation:
 
-{% content-ref url="clickhouse-installation/" %}
-[clickhouse-installation](clickhouse-installation/)
+{% content-ref url="../clickhouse-installation/" %}
+[clickhouse-installation](../clickhouse-installation/)
 {% endcontent-ref %}
