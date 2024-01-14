@@ -95,22 +95,21 @@ password: user
 * cd c:\wings\sqlflow\backend\bin
 * run stop.bat
 
-### Sqlflow client api call
+### SQLFlow client api call
 
-See[ sqlflow client api call](../../../3.-api-docs/using-the-rest-api.md)
+See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/master/api/sqlflow\_api\_full.md#webapi)
 
-1. Get userId from gudu\_sqlflow.conf
+* Get userId from the account profile page and generate the secrete key
 
-* Open the configration file "c:\wings\sqlflow\backend\conf\gudu\_sqlflow.conf"
-* The value of anonymous\_user\_id field is webapi userId
+<figure><img src="../../../.gitbook/assets/微信图片_20240114114203.png" alt=""><figcaption></figcaption></figure>
 
-```bash
-  anonymous_user_id=xxx
-```
+* Generate token by invoking the token generate API
 
-* **Note:** on-promise mode, webapi call doesn't need the token parameter
+{% swagger src="../../../.gitbook/assets/swagger_with_token.yaml" path="/user/generateToken" method="post" %}
+[swagger_with_token.yaml](../../../.gitbook/assets/swagger_with_token.yaml)
+{% endswagger %}
 
-1.  Test webapi by curl
+*   Test webapi by curl
 
     * test sql:
 

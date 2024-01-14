@@ -168,27 +168,26 @@ If this is the first time you setup the Gudu SQLFlow on a new machine, then, you
 
 ### Backend Services Configuration
 
-sqlflow provides several optioins to control the service analysis logic. Open the sqlservice configuration file(conf/gudu\_sqlflow.conf)
+sqlflow provides several options to control the service analysis logic. Open the sqlservice configuration file(conf/gudu\_sqlflow.conf)
 
 * **relation\_limit**: default value is 1000. When the count of selected object relations is greater than relation\_limit, sqlflow will fallback to the simple mode, ignore all the record sets. If the relations of simple mode are still greater than relation\_limit, sqlflow will only show the summary information.
 * **big\_sql\_size**: default value is 4096. If the sql length is greater than big\_sql\_size, sqlflow submit the sql in the work queue and execute it. If the work queue is full, sqlflow throws an exception and return error message "Sorry, the service is busy. Please try again later."
 
-### Sqlflow client api call
+### SQLFlow client api call
 
 See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/master/api/sqlflow\_api\_full.md#webapi)
 
-1. Get userId from gudu\_sqlflow.conf
+* Get userId from the account profile page and generate the secrete key
 
-* Open the configration file "/wings/sqlflow/backend/conf/gudu\_sqlflow.conf"
-* The value of anonymous\_user\_id field is webapi userId
+<figure><img src="../../.gitbook/assets/微信图片_20240114114203.png" alt=""><figcaption></figcaption></figure>
 
-```bash
-  anonymous_user_id=xxx
-```
+* Generate token by invoking the token generate API
 
-* **Note:** on-promise mode, webapi call doesn't need the token parameter
+{% swagger src="../../.gitbook/assets/swagger_with_token.yaml" path="/user/generateToken" method="post" %}
+[swagger_with_token.yaml](../../.gitbook/assets/swagger_with_token.yaml)
+{% endswagger %}
 
-1.  Test webapi by curl
+*   Test webapi by curl
 
     * test sql:
 
