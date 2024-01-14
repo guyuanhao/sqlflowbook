@@ -16,10 +16,14 @@ Please [check here](../) to see how to install SQLFlow on-premise version on you
 
 There are two default accounts for SQLFlow On-Premise and you can change the default password by yourselves:
 
-* username: admin@local.gudusoft.com\
-  password: admin
-* Basic Account\
-  username: user@local.gudusoft.com\
-  password: user
+```
+Admin Account
+username: admin@local.gudusoft.com
+password: admin
+
+Basic Account
+username: user@local.gudusoft.com
+password: user
+```
 
 Check [here](../../../3.-api-docs/prerequisites.md#difference-between-using-sqlflow-cloud-server-and-sqlflow-on-premise-version) to understand the difference between SQLFlow Cloud and SQLFlow On-Premise. Check [this page](../../../3.-api-docs/using-the-rest-api.md#1.-generate-a-token) for how to generate the token required by Api invocations.

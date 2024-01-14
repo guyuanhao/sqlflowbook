@@ -7,7 +7,7 @@ info:
     url: http://www.sqlparser.com/
   version: "1.0"
 servers:
-- url: https://api.gudusoft.com/gspLive_backend
+- url: https://api.gudusoft.com/api/gspLive_backend
 tags:
 - name: User Interface
   description: User Apis

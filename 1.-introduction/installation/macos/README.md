@@ -168,16 +168,6 @@ open `http://yourdomain.com:8165/doc.html?lang=en` or `http://localhost:8165/api
 
 To login, please check the following default user credentials:
 
-```
-Admin Account
-username: admin@local.gudusoft.com
-password: admin
-
-Basic Account
-username: user@local.gudusoft.com
-password: user
-```
-
 ### SQLFlow client api call
 
 See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/master/api/sqlflow\_api\_full.md#webapi)
@@ -191,6 +181,11 @@ See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/
 {% swagger src="../../../.gitbook/assets/swagger_with_token.yaml" path="/user/generateToken" method="post" %}
 [swagger_with_token.yaml](../../../.gitbook/assets/swagger_with_token.yaml)
 {% endswagger %}
+
+```bash
+curl --location --request POST 'http://localhost:8165/api/gspLive_backend/user/generateToken?userId=%3CUSER_ID%3E&secretKey=%3CSECRET_KEY%3E' \
+--header 'Accept: application/json;charset=utf-8'
+```
 
 *   Test webapi by curl
 
