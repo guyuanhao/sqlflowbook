@@ -1,4 +1,4 @@
-# SQLFlow before 6.0.0.0
+# SQLFlow before Version 6
 
 ## SQLFlow v.6 VS SQLFlow v.5
 

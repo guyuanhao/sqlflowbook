@@ -1,4 +1,20 @@
-# Linux
+# For old SQLFlow
+
+## <mark style="color:red;">**This page is for SQLFlow 5.x.x.x**</mark>
+
+Please refer to the latest install manual if you are using the latest SQFlow(version > 6.0.0.0):
+
+{% content-ref url="../linux.md" %}
+[linux.md](../linux.md)
+{% endcontent-ref %}
+
+You can check this page for the SQLFlow berfore version&#x20;
+
+{% content-ref url="../versions/sqlflow-before-version-6.md" %}
+[sqlflow-before-version-6.md](../versions/sqlflow-before-version-6.md)
+{% endcontent-ref %}
+
+***
 
 {% embed url="https://www.youtube.com/watch?t=23s&v=dZsNRWHAPo4" %}
 Installation Guide - Linux

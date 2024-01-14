@@ -45,5 +45,5 @@ There are two default accounts for SQLFlow On-Premise and you can change the def
 
 
 
-Please [check here](../1.-introduction/installation/linux/#customize-the-port) if you want read more about the server port of the SQLFlow on-premise version.
+Please [check here](../1.-introduction/installation/linux.md#customize-the-port) if you want read more about the server port of the SQLFlow on-premise version.
 

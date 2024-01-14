@@ -1,0 +1,181 @@
+# MacOS
+
+### Prerequisites
+
+* [SQLFlow on-premise version](https://www.gudusoft.com/sqlflow-on-premise-version/)
+* Java 8
+* Port needs to be opened. (The default port is 8165 but you can customized this port)
+* At least 8GB memory
+
+### Setup Environment
+
+* [Java setup environment link](https://mkyong.com/java/how-to-set-java\_home-environment-variable-on-mac-os-x/)
+
+```
+# setup java environment
+echo export "JAVA_HOME=\$(/usr/libexec/java_home)" >> ~/.bash_profile
+source ~/.bash_profile
+```
+
+### Upload Files
+
+create a directory :
+
+```
+# example you can use other path
+sudo mkdir -p /wings/sqlflow
+```
+
+upload your backend and frontend file to `sqlflow` folder, like this :
+
+```
+/wings/
+└── sqlflow
+    ├── backend
+    │   ├── bin
+    │   │   ├── backend.bat
+    │   │   ├── backend.sh
+    │   │   ├── eureka.bat
+    │   │   ├── eureka.sh
+    │   │   ├── eureka.vbs
+    │   │   ├── gspLive.bat
+    │   │   ├── gspLive.sh
+    │   │   ├── gspLive.vbs
+    │   │   ├── init_regular.sh
+    │   │   ├── monitor.bat
+    │   │   ├── monitor.sh
+    │   │   ├── sqlservice.bat
+    │   │   ├── sqlservice.sh
+    │   │   ├── sqlservice.vbs
+    │   │   ├── stop.bat
+    │   │   ├── stop.sh
+    │   │   ├── taskscheduler.bat
+    │   │   ├── taskscheduler.sh
+    │   │   └── taskscheduler.vbs
+    │   ├── conf
+    │   │   └── gudu_sqlflow.conf
+    │   └── lib
+    │       ├── eureka.jar
+    │       ├── gspLive.jar
+    │       ├── sqlservice.jar
+    │       └── taskscheduler.jar
+
+```
+
+### Set scripts permissions :
+
+```
+chmod +x /wings/sqlflow/backend/bin
+```
+
+### Start Backend Services
+
+If your computer has more than 8G of memory, you can change the boot parameters to recommended
+
+Please use the gspLive.sh, eureka.sh and sqlservice.sh under mac directory instead of the original one.
+
+* /wings/sqlflow/backend/bin/gspLive.sh
+
+```
+#  defult and less than or equal to 8G recommended
+heapsize="2g";
+# greater than 8G  recommended
+# heapsize="3g"; 
+```
+
+* /wings/sqlflow/backend/bin/eureka.sh
+
+```
+#  defult and less than or equal to 8G recommended
+heapsize="256m";
+# greater than 8G  recommended
+# heapsize="512m"; 
+```
+
+* /wings/sqlflow/backend/bin/sqlservice.sh
+
+```
+#  defult and less than or equal to 8G recommended
+heapsize="4g";
+# greater than 8G  recommended
+# heapsize="10g"; 
+```
+
+start service in background:
+
+```
+sh /wings/sqlflow/backend/bin/backend.sh
+```
+
+please allow 1-2 minutes to start the service.
+
+use `jps` to check those 3 processing are running.
+
+```
+58497 sqlservice.jar
+58516 gspLive.jar
+58477 eureka.jar
+```
+
+**Java service port**
+
+| File           | Port |
+| -------------- | ---- |
+| eureka.jar     | 8761 |
+| gspLive.jar    | 8165 |
+| sqlservice.jar | 8083 |
+
+### Open SQLFlow
+
+open http://yourdomain.com/ to see the SQLFlow.
+
+open `http://yourdomain.com:8165/doc.html?lang=en` or `http://localhost:8165/api/gspLive_backend/doc.html?lang=en` to see the Restful API documention.
+
+### Sqlflow client api call
+
+See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/master/api/sqlflow\_api\_full.md#webapi)
+
+1. Get userId from gudu\_sqlflow.conf
+
+* Open the configration file "/wings/sqlflow/backend/conf/gudu\_sqlflow.conf"
+* The value of anonymous\_user\_id field is webapi userId
+
+```
+  anonymous_user_id=xxx
+```
+
+* **Note:** on-promise mode, webapi call doesn't need the token parameter
+
+1.  Test webapi by curl
+
+    * test sql:
+
+    ```
+      select name from user
+    ```
+
+    * curl command:
+
+    ```
+    curl -X POST "http://yourdomain.com/api/gspLive_backend/sqlflow/generation/sqlflow" -H "accept:application/json;charset=utf-8" -F "userId=YOUR USER ID HERE" -F  "dbvendor=dbvoracle" -F "sqltext=select name from user"
+    ```
+
+    * response:
+
+    ```
+      {
+        "code": 200,
+        "data": {
+          "dbvendor": "dbvoracle",
+          "dbobjs": [
+            ...
+          ],
+          "relations": [
+            ...
+          ]
+        },
+        "sessionId": ...
+      }
+    ```
+
+    * If the code returns **401**, please check the userId is set or the userId is valid.
