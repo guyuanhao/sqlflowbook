@@ -124,7 +124,9 @@ You can assign the RAM to SQLFlow by specifying the boot parameter when starting
  backend.sh /m <RAM_VALUE>
 ```
 
-where the RAM\_VALUE could be: **4g 8g 16g 32g or 64g**. The default value would be 4g.
+The RAM\_VALUE could be: **4g 8g 16g 32g or 64g**.&#x20;
+
+SQLFlow will automatically allocate the memory based on the status of the installed server if this parameter is not given. SQLFlow would allocate less than 31 GB memory if that is the case. However, if your total memory is less than 32 GB, SQLFlow would allocate all the remaining memory on your server.
 
 please allow 3-5 minutes to start the service.
 

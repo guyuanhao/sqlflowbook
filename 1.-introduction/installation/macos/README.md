@@ -76,36 +76,15 @@ chmod +x /wings/sqlflow/backend/bin
 
 ### Start Backend Services
 
-If your computer has more than 8G of memory, you can change the boot parameters to recommended
+You can assign the RAM to SQLFlow by specifying the boot parameter when starting the service.
 
-Please use the gspLive.sh, eureka.sh and sqlservice.sh under mac directory instead of the original one.
-
-* /wings/sqlflow/backend/bin/gspLive.sh
-
-```
-#  defult and less than or equal to 8G recommended
-heapsize="2g";
-# greater than 8G  recommended
-# heapsize="3g"; 
+```bash
+ backend.sh /m <RAM_VALUE>
 ```
 
-* /wings/sqlflow/backend/bin/eureka.sh
+The RAM\_VALUE could be: **4g 8g 16g 32g or 64g**.&#x20;
 
-```
-#  defult and less than or equal to 8G recommended
-heapsize="256m";
-# greater than 8G  recommended
-# heapsize="512m"; 
-```
-
-* /wings/sqlflow/backend/bin/sqlservice.sh
-
-```
-#  defult and less than or equal to 8G recommended
-heapsize="4g";
-# greater than 8G  recommended
-# heapsize="10g"; 
-```
+SQLFlow will automatically allocate the memory based on the status of the installed server if this parameter is not given. SQLFlow would allocate less than 31 GB memory if that is the case. However, if your total memory is less than 32 GB, SQLFlow would allocate all the remaining memory on your server.
 
 start service in background:
 
