@@ -1,4 +1,4 @@
-# For old SQLFlow
+# For older version SQLFlow under Linux
 
 ## <mark style="color:red;">**This page is for SQLFlow 5.x.x.x**</mark>
 

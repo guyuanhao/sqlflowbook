@@ -4,8 +4,8 @@
 
 Please refer to the latest install manual if you are using the latest SQFlow(version > 6.0.0.0):
 
-{% content-ref url="../macos/" %}
-[macos](../macos/)
+{% content-ref url="./" %}
+[.](./)
 {% endcontent-ref %}
 
 You can check this page for the SQLFlow berfore version&#x20;

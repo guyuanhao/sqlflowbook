@@ -2,8 +2,8 @@
 
 Please check the following page for the old SQLFlow installation:
 
-{% content-ref url="for-older-version-sqlflow-under-macos.md" %}
-[for-older-version-sqlflow-under-macos.md](for-older-version-sqlflow-under-macos.md)
+{% content-ref url="for-older-version-sqlflow.md" %}
+[for-older-version-sqlflow.md](for-older-version-sqlflow.md)
 {% endcontent-ref %}
 
 ### Prerequisites
