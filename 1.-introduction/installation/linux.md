@@ -175,7 +175,12 @@ See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/
     * curl command:
 
     ```bash
-      curl -X POST "http://yourdomain.com/api/gspLive_backend/sqlflow/generation/sqlflow" -H "accept:application/json;charset=utf-8" -F "userId=YOUR USER ID HERE" -F  "dbvendor=dbvoracle" -F "sqltext=select name from user"
+    curl --location 'http://localhost:8165/api/gspLive_backend/sqlflow/generation/sqlflow' \
+    --header 'accept: application/json;charset=utf-8' \
+    --form 'userId="<USER ID>"' \
+    --form 'dbvendor="dbvoracle"' \
+    --form 'sqltext="select name from user"' \
+    --form 'token="<TOKEN>"'
     ```
 
     * response:

@@ -1,4 +1,20 @@
-# Windows
+# For older version SQLFlow
+
+## <mark style="color:red;">**This page is for SQLFlow 5.x.x.x**</mark>
+
+Please refer to the latest install manual if you are using the latest SQFlow(version > 6.0.0.0):
+
+{% content-ref url="../macos/" %}
+[macos](../macos/)
+{% endcontent-ref %}
+
+You can check this page for the SQLFlow berfore version&#x20;
+
+{% content-ref url="../versions/sqlflow-before-version-6.md" %}
+[sqlflow-before-version-6.md](../versions/sqlflow-before-version-6.md)
+{% endcontent-ref %}
+
+***
 
 ### Prerequisites
 
@@ -7,13 +23,13 @@
 * install JDK1.8 or higher\
   SET JAVA\_HOME variable, and then add %JAVA\_HOME%\bin to the path variable
 
-<figure><img src="../../.gitbook/assets/system-properties-advance-setting.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/system-properties-advance-setting.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/set-java-home-in-system-variables.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/set-java-home-in-system-variables.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/set-java-in-path-variable.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/set-java-in-path-variable.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/02.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/02.png" alt=""><figcaption></figcaption></figure>
 
 * install Nginx for windows Download the Nginx Windows version here: http://nginx.org/en/docs/windows.html
 
@@ -107,7 +123,7 @@ Open the browser and go to localhost or got to the IP where the SQLFlow is insta
 
 ### Sqlflow client api call
 
-See[ sqlflow client api call](../../3.-api-docs/using-the-rest-api.md)
+See[ sqlflow client api call](../../../3.-api-docs/using-the-rest-api.md)
 
 1. Get userId from gudu\_sqlflow.conf
 
@@ -178,6 +194,6 @@ This is due to nginx config. Nginx by default limit the size of the files upload
 client_max_body_size 200m;
 ```
 
-<figure><img src="../../.gitbook/assets/nginx-max-upload-file-size.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/nginx-max-upload-file-size.png" alt=""><figcaption></figcaption></figure>
 
 This increases the limit to 200M, if needed you may change this number.
