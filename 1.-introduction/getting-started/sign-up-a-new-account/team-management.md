@@ -14,6 +14,14 @@ When you purchase a team version license of SQLFlow. A SQLFlow team account will
 
 A team can have more than one team manager.
 
+### User management
+
+Create and manager user with the user management system:
+
+<figure><img src="../../../.gitbook/assets/user.png" alt=""><figcaption></figcaption></figure>
+
+The number of users created by the administrator cannot exceed the maximum number of users in the license, including the two default accounts of the system.
+
 ### Team manager
 
 Team manager can add member to the team. They can change the team name. After [login the SQLFlow](https://sqlflow.gudusoft.com), click the menu icon at the right top:
