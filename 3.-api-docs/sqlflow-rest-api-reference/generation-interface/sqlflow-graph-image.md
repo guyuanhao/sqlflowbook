@@ -2,8 +2,8 @@
 
 Return the data lineage image file for the given SQL file.
 
-{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/generation/sqlflow/graph/image" method="post" %}
-[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_with_token.yaml" path="/sqlflow/generation/sqlflow/graph/image" method="post" %}
+[swagger_with_token.yaml](../../../.gitbook/assets/swagger_with_token.yaml)
 {% endswagger %}
 
 Sample response:

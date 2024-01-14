@@ -2,8 +2,8 @@
 
 #### Submit a simple sqlflow job. Send the SQL files and get the data lineage result. SQLFlow job supports both of multiple files and zip archive file.
 
-{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/job/submitUserJob" method="post" %}
-[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_with_token.yaml" path="/sqlflow/job/submitUserJob" method="post" %}
+[swagger_with_token.yaml](../../../.gitbook/assets/swagger_with_token.yaml)
 {% endswagger %}
 
 Sample response:

@@ -4,8 +4,8 @@
 
 Export the full lineage as CSV, this api is for **query mode**
 
-{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/generation/sqlflow/exportFullLineageAsCsv" method="post" %}
-[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_with_token.yaml" path="/sqlflow/generation/sqlflow/exportFullLineageAsCsv" method="post" %}
+[swagger_with_token.yaml](../../../.gitbook/assets/swagger_with_token.yaml)
 {% endswagger %}
 
 Sample response:

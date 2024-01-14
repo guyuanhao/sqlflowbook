@@ -8,8 +8,8 @@ Show the E-R Diagram based on the given source (sqltext/sessionId). Check [here]
 /sqlflow/generation/sqlflow/erdiagramSelectGraph
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/generation/sqlflow/erdiagramSelectGraph" method="post" %}
-[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_with_token.yaml" path="/sqlflow/generation/sqlflow/erdiagramSelectGraph" method="post" %}
+[swagger_with_token.yaml](../../../.gitbook/assets/swagger_with_token.yaml)
 {% endswagger %}
 
 Sample:
@@ -31,8 +31,8 @@ curl --location 'https://<SQLFLOW URL>/gspLive_backend/sqlflow/generation/sqlflo
 /sqlflow/generation/sqlflow/erdiagramSelectGraph/image
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/generation/sqlflow/erdiagramSelectGraph/image" method="post" %}
-[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_with_token.yaml" path="/sqlflow/generation/sqlflow/erdiagramSelectGraph/image" method="post" %}
+[swagger_with_token.yaml](../../../.gitbook/assets/swagger_with_token.yaml)
 {% endswagger %}
 
 Sample:

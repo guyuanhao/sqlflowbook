@@ -8,8 +8,8 @@ This API returns the left most result for the data element. Corresponds to [this
 /sqlflow/generation/sqlflow/leftMostSourceTableGraph
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/generation/sqlflow/leftMostSourceTableGraph" method="post" %}
-[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_with_token.yaml" path="/sqlflow/generation/sqlflow/leftMostSourceTableGraph" method="post" %}
+[swagger_with_token.yaml](../../../.gitbook/assets/swagger_with_token.yaml)
 {% endswagger %}
 
 Sample:
@@ -30,8 +30,8 @@ curl --location 'https://<SQLFLOW URL>/gspLive_backend/sqlflow/generation/sqlflo
 /sqlflow/generation/sqlflow/leftMostSourceTableGraph/image
 ```
 
-{% swagger src="../../../.gitbook/assets/swagger_without_token.yaml" path="/sqlflow/generation/sqlflow/leftMostSourceTableGraph/image" method="post" %}
-[swagger_without_token.yaml](../../../.gitbook/assets/swagger_without_token.yaml)
+{% swagger src="../../../.gitbook/assets/swagger_with_token.yaml" path="/sqlflow/generation/sqlflow/leftMostSourceTableGraph/image" method="post" %}
+[swagger_with_token.yaml](../../../.gitbook/assets/swagger_with_token.yaml)
 {% endswagger %}
 
 Sample:
