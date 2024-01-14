@@ -27,13 +27,13 @@ password: user
 Pull the sqlflow docker image:
 
 ```bash
-docker pull gudusqlflow/sqlflow-simple-trial:5.7.3
+docker pull gudusqlflow/sqlflow-simple-trial:6.1.0.0
 ```
 
 ## Create the SQLFlow Container
 
 ```bash
-docker run -it -p7090:80 --name mysqlflow gudusqlflow/sqlflow-simple-trial:5.7.3
+docker run -d -p 7090:8165 --name mysqlflow gudusqlflow/sqlflow-simple-trial:6.1.0.0
 ```
 
 The `7090` in the above command will be the port to visit SQLFlow UI. You can change the port if 7090 is occupied in your machine.&#x20;

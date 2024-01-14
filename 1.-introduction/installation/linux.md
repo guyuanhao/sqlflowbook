@@ -144,6 +144,18 @@ open `http://yourdomain.com:8165/doc.html?lang=en` or `http://localhost:8165/api
 
 <figure><img src="../../.gitbook/assets/login.png" alt=""><figcaption></figcaption></figure>
 
+To login, please check the following default user credentials:
+
+```
+Admin Account
+username: admin@local.gudusoft.com
+password: admin
+
+Basic Account
+username: user@local.gudusoft.com
+password: user
+```
+
 ### Gudu SQLFlow License file
 
 If this is the first time you setup the Gudu SQLFlow on a new machine, then, you will see this license UI:&#x20;

@@ -166,6 +166,18 @@ open `http://yourdomain.com:8165/doc.html?lang=en` or `http://localhost:8165/api
 
 <figure><img src="../../../.gitbook/assets/login.png" alt=""><figcaption></figcaption></figure>
 
+To login, please check the following default user credentials:
+
+```
+Admin Account
+username: admin@local.gudusoft.com
+password: admin
+
+Basic Account
+username: user@local.gudusoft.com
+password: user
+```
+
 ### Sqlflow client api call
 
 See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/master/api/sqlflow\_api\_full.md#webapi)

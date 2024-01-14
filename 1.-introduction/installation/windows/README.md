@@ -77,6 +77,18 @@ Open the browser and go to localhost or got to the IP where the SQLFlow is insta
 
 <figure><img src="../../../.gitbook/assets/login.png" alt=""><figcaption></figcaption></figure>
 
+To login, please check the following default user credentials:
+
+```
+Admin Account
+username: admin@local.gudusoft.com
+password: admin
+
+Basic Account
+username: user@local.gudusoft.com
+password: user
+```
+
 ### Stop the SQLFlow
 
 * close the window where the backend.bat is running.
