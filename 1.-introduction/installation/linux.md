@@ -1,8 +1,10 @@
 # Linux
 
-{% embed url="https://www.youtube.com/watch?t=23s&v=dZsNRWHAPo4" %}
-Installation Guide - Linux
-{% endembed %}
+Please check the following page for the old SQLFlow installation:
+
+{% content-ref url="linux/for-older-version-sqlflow-under-linux.md" %}
+[for-older-version-sqlflow-under-linux.md](linux/for-older-version-sqlflow-under-linux.md)
+{% endcontent-ref %}
 
 ### Prerequisites
 

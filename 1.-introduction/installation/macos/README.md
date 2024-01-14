@@ -1,5 +1,11 @@
 # MacOS
 
+Please check the following page for the old SQLFlow installation:
+
+{% content-ref url="for-older-version-sqlflow-under-macos.md" %}
+[for-older-version-sqlflow-under-macos.md](for-older-version-sqlflow-under-macos.md)
+{% endcontent-ref %}
+
 ### Prerequisites
 
 * [SQLFlow on-premise version](https://www.gudusoft.com/sqlflow-on-premise-version/)
