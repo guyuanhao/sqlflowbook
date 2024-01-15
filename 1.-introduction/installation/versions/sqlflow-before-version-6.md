@@ -4,7 +4,7 @@
 
 For the SQLFlow before version 6.0.0.0, please refer to [this page](../linux.md). The installation steps are slightly different.
 
-The 5.x.x.x and 4.x.x.x SQLFlow needs to:&#x20;
+The SQLFlow 5.x.x.x and 4.x.x.x needs to:&#x20;
 
 * Config a Nginx proxy
 * Manually start  the frontend service
