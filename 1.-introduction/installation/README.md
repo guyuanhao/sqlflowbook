@@ -10,7 +10,7 @@ If you need to enable regular job features, you will also need to install Clickh
 
 You can check for [SQLFlow Widget](../../4.-sqlflow-widget/get-started.md) once you have your SQLFlow on-premise Installed on your server and Widget will read the data from the SQLFlow on your server.
 
-### Video Guide
+### Video Guides(For SQLFlow before V.6.0)
 
 #### Installation Guide - Linux
 
