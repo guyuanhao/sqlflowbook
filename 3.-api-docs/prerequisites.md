@@ -31,16 +31,13 @@ Please [check here](../1.-introduction/installation/) to see how to install SQLF
 
 There are two default accounts for SQLFlow On-Premise and you can change the default password by yourselves:
 
-* Admin Account\
-  username: admin@local.gudusoft.com\
-  password: admin
-* Basic Account\
-  username: user@local.gudusoft.com\
-  password: user
+{% content-ref url="../1.-introduction/installation/versions/cloud-and-on-premise-version.md" %}
+[cloud-and-on-premise-version.md](../1.-introduction/installation/versions/cloud-and-on-premise-version.md)
+{% endcontent-ref %}
 
 ### Difference between using SQLFlow Cloud server and SQLFlow on-premise version
 
-1. The server port is 8081 by default for the SQLFlow on-premise version, and There is no need to specify the port.
+1. The server port is 8165 by default for the SQLFlow on-premise version,(8081 for SQLFlow 5.x) and There is no need to specify the port.
 2. SQLFlow on-premise is hosted on your own server, your business data are kept in your own domain.
 
 
