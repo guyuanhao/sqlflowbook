@@ -131,7 +131,7 @@
 
 ## 8. other
 
-* [Oracle XML functions](8.-other/oracle-xml-functions.md)
+* [SQLFlow with Oracle XML functions](8.-other/sqlflow-with-oracle-xml-functions.md)
 * [FAQ](8.-other/faq/README.md)
   * [Handling Internal Database](8.-other/faq/handling-internal-database.md)
   * [Delete Your Account](8.-other/faq/delete-your-account.md)

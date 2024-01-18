@@ -120,7 +120,7 @@ Please check doc [here](clickhouse-installation/clickhouse-for-ubuntu-debian.md#
 
 <figure><img src="../../.gitbook/assets/微信截图_20231121231106.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 This is probably caused by the port config error. You might have forgot to config the same cutomized port for nginx/gspLive.
 
