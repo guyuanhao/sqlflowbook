@@ -72,8 +72,67 @@ SELECT xmlconcat(xmlelement("ename", EMP.ENAME), xmlelement("sal", EMP.SAL)) xml
 
 <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+Result:
+
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### XMLCOLATTVAL（value\_expr\[,value\_expr2],...)
+
+This function is used to generate an XML block, and the parameter value\_expr is used to specify the column name or alias as the attribute name.
+
+```sql
+SELECT xmlelement ("emp",xmlcolattval (ename,sal)) xml FROM emp WHERE DEPTNO = 10;
+```
+
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Result:
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+### SYS\_DBURIGEN({column|attribute})
+
+`SYS_DBURIGen` takes as its argument one or more columns or attributes, and optionally a rowid, and generates a URL of data type `DBURIType` to a particular column or row object. You can then use the URL to retrieve an XML document from the database.\
+[https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SYS\_DBURIGEN.html#GUID-ABA33BEB-F7B7-477B-9FF2-028D62768797](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SYS\_DBURIGEN.html#GUID-ABA33BEB-F7B7-477B-9FF2-028D62768797)
+
+```sql
+SELECT sys_dburigen(ename) url FROM emp WHERE deptno=10;
+```
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Result:
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+### SYS\_XMLAGG（expr\[，fmt]）
+
+`SYS_XMLAgg` aggregates all of the XML documents or fragments represented by `expr` and produces a single XML document. It adds a new enclosing element with a default name `ROWSET`. If you want to format the XML document differently, then specify `fmt`, which is an instance of the `XMLFormat` object.\
+[https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SYS\_XMLAGG.html#GUID-BEDD241D-360A-46A2-AEBF-C8B70E465D75](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SYS\_XMLAGG.html#GUID-BEDD241D-360A-46A2-AEBF-C8B70E465D75)
+
+```sql
+SELECT SYS_XMLAGG(SYS_XMLGEN(ename))  xml_content FROM emp;
+```
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+Result:
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+### SYS\_XMLGEN(expr\[,fmt])
+
+`SYS_XMLGen` takes an expression that evaluates to a particular row and column of the database, and returns an instance of type `XMLType` containing an XML document. The `expr` can be a scalar value, a user-defined type, or an `XMLType` instance.\
+[https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SYS\_XMLGEN.html#GUID-1AC25984-F4AB-468E-BF53-561275AD44E8](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SYS\_XMLGEN.html#GUID-1AC25984-F4AB-468E-BF53-561275AD44E8)
+
+```sql
+SELECT sys_xmlgen(ename) xml FROM emp WHERE deptno=10;
+```
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+Result:
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
