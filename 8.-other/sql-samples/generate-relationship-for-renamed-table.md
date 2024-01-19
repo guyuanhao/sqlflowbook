@@ -25,7 +25,7 @@ AS
 
 Result:
 
-<figure><img src="../../.gitbook/assets/图片 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (7).png" alt=""><figcaption></figcaption></figure>
 
 With Oracle, `ALTER TABLE table_name RENAME [TO|AS] new_table_name` is used to rename a table.&#x20;
 

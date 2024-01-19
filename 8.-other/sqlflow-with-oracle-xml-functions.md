@@ -145,11 +145,11 @@ This function is used to aggregate multiple XML fragment and generate an XML doc
 SELECT xmlagg(xmlelement("employee",ename||' '||sal))  xml FROM emp WHERE deptno=10;
 ```
 
-<figure><img src="../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (4).png" alt=""><figcaption></figcaption></figure>
 
 Result:
 
-<figure><img src="../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (5).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLELEMENT(identifier\[,xml\_attribute\_clause]\[,value\_expr])
 
@@ -160,8 +160,100 @@ Result:
 select xmlelement ("DATE",sysdate)  from dual;
 ```
 
-<figure><img src="../.gitbook/assets/图片 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (6).png" alt=""><figcaption></figcaption></figure>
 
 Result:
 
 <figure><img src="../.gitbook/assets/图片 (21).png" alt=""><figcaption></figcaption></figure>
+
+### XMLFOREST（value\_expr1\[,value\_expr2],...)
+
+`XMLForest` converts each of its argument parameters to XML, and then returns an XML fragment that is the concatenation of these converted arguments.
+
+* If `value_expr` is a scalar expression, then you can omit the `AS` clause, and Oracle Database uses the column name as the element name.
+*   If `value_expr` is an object type or collection, then the `AS` clause is mandatory, and Oracle uses the specified expression as the enclosing tag.
+
+    You can do this by specifying `c_alias`, which is a string literal, or by specifying `EVALNAME` `value_expr`. In the latter case, the value expression is evaluated and the result, which must be a string literal, is used as the identifier. The identifier does not have to be a column name or column reference. It cannot be an expression or null. It can be up to 4000 characters if the initialization parameter `MAX_STRING_SIZE` `=` `STANDARD`, and 32767 characters if `MAX_STRING_SIZE` `=` `EXTENDED`. See "[Extended Data Types](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Data-Types.html#GUID-8EFA29E9-E8D8-40A6-A43E-954908C954A4)" for more information.
+* If `value_expr` is null, then no element is created for that `value_expr`.\
+  [https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/XMLFOREST.html#GUID-68E5C67E-CE97-4BF8-B7FF-2365E062C363](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/XMLFOREST.html#GUID-68E5C67E-CE97-4BF8-B7FF-2365E062C363)
+
+```sql
+ SELECT xmlelement ("Employee",xmlforest(ename,sal))  FROM emp WHERE empno=7788;
+XMLELEMENT ("EMPLOYEE",XMLFOREST(ENAME,SAL))
+------------------------------------------------
+<Employee>
+    <ENAME>SCOTT</ENAME>
+    <SAL>3000</SAL>
+</Employee>
+```
+
+Result:
+
+<figure><img src="../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
+
+### XMLSEQUENCE（xmltype\_instance)
+
+This function is used to return the VARRAY elements below the top node in the XMLType instance.
+
+```sql
+ SELECT xmlsequence(extract(value(x),    '/PurchaseOrder/LineItem/*'))  varray FROM xmltable x;
+VARRAY
+--------------------------------------------------
+XMLSEQUENCETYPE(XMLTYPE(<LineItem ItemNumber="1">
+    <Description>The Ruling Class</Description>
+    <Part Id="715515012423" UnitPrice="29.95" Quantity="2"/>
+</LineItem>
+),  XMLTYPE(<LineItem ItemNumber="2">
+  <Description>Diabolique</Description>
+  <Part Id="037429135020" UnitPrice="29.95" Quantity="3"/>
+</LineItem>
+),  XMLTYPE(<LineItem ItemNumber="3">
+  <Description>8 1/2</Description>
+  <Part Id="037429135624" UnitPrice="39.95" Quantity="4"/>
+</LineItem>
+))
+```
+
+<figure><img src="../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
+
+### XMLTRANSFORM（xmltype\_instance,xsl\_ss)
+
+This function is used to convert XMLType instances according to XSL style and generate new XMLType instances.
+
+```sql
+ SELECT XMLTRANSFORM(w.warehouse-spec,x.coll).GetClobVal()  FROM warehouse w,xsl_tab x   WHERE w.warehouse_name='San Francisco';
+```
+
+Result:
+
+<figure><img src="../.gitbook/assets/图片 (2).png" alt=""><figcaption></figcaption></figure>
+
+### PATH（correction\_integer)
+
+This function is used to return the relative path corresponding to a specific XML resource, and the parameter correction\_integer is used to specify the number of path levels.
+
+```sql
+ SELECT PATH(1), DEPTH(2)    FROM  resource_view  WHERE UNDER_PATH(res, '/sys/schemas/OE', 1)=1   AND INDER_PATH(res,'/sys/schemas/OE',2)=1;
+PATH(1)                                                   DEPTH(2)
+----------------------------                             --------
+/www.oracle.com                                                1
+/www.oracle.com/xwarehouses.xsd             
+```
+
+<figure><img src="../.gitbook/assets/图片 (3).png" alt=""><figcaption></figcaption></figure>
+
+### DEPTH（n）
+
+This function is used to return the relative level number corresponding to the UNDER\_PATH path in the XML scheme, where the parameter n is used to specify the relative level number.
+
+```sql
+ SELECT PATH(1),DEPTH(2) FROM resource_view WHERE UNDER_PATH(res, '/sys/schema/OE', 1)=1  AND UNDER_PATH(res, '/sys/schema/OE', 2)=1;
+PATH(1)                                                  DEPTH(2)
+----------------------------                               --------
+/www.oracle.com                                                1
+/www.oracle.com/xwarehouses.xsd                      2
+```
+
+Result:
+
+<figure><img src="../.gitbook/assets/图片 (22).png" alt=""><figcaption></figcaption></figure>

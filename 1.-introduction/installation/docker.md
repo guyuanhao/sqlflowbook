@@ -78,7 +78,7 @@ java -jar eureka.jar
 
 The error in the following capture means that there is no enough memory for the docker.
 
-<figure><img src="../../.gitbook/assets/图片 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can assign more memory to the docker with:
 
