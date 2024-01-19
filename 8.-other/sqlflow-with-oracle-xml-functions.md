@@ -136,3 +136,32 @@ SELECT sys_xmlgen(ename) xml FROM emp WHERE deptno=10;
 Result:
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+### XMLAGG（XMLType\_instance\[ORDER BY sort\_list])
+
+This function is used to aggregate multiple XML fragment and generate an XML document. The parameter XMLType\_instance is used to specify the XMLType instance, and sort\_list is used to generate the specified sorting method.
+
+```sql
+SELECT xmlagg(xmlelement("employee",ename||' '||sal))  xml FROM emp WHERE deptno=10;
+```
+
+<figure><img src="../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
+
+Result:
+
+<figure><img src="../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
+
+### XMLELEMENT(identifier\[,xml\_attribute\_clause]\[,value\_expr])
+
+`XMLElement` takes an element name for `identifier` or evaluates an element name for `EVALNAME` `value_expr`, an optional collection of attributes for the element, and arguments that make up the content of the element. It returns an instance of type `XMLType`. `XMLElement` is similar to `SYS_XMLGen` except that `XMLElement` can include attributes in the XML returned, but it does not accept formatting using the `XMLFormat` object.\
+[https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/XMLELEMENT.html#GUID-DEA75423-00EA-4034-A246-4A774ADC988E](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/XMLELEMENT.html#GUID-DEA75423-00EA-4034-A246-4A774ADC988E)
+
+```sql
+select xmlelement ("DATE",sysdate)  from dual;
+```
+
+<figure><img src="../.gitbook/assets/图片 (2).png" alt=""><figcaption></figcaption></figure>
+
+Result:
+
+<figure><img src="../.gitbook/assets/图片 (21).png" alt=""><figcaption></figcaption></figure>
