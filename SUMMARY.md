@@ -131,7 +131,6 @@
 
 ## 8. other
 
-* [SQLFlow with Oracle XML functions](8.-other/sqlflow-with-oracle-xml-functions.md)
 * [FAQ](8.-other/faq/README.md)
   * [Handling Internal Database](8.-other/faq/handling-internal-database.md)
   * [Delete Your Account](8.-other/faq/delete-your-account.md)
@@ -143,3 +142,4 @@
   * [Generate relationship for renamed table](8.-other/sql-samples/generate-relationship-for-renamed-table.md)
   * [Snowflake table function lineage detection](8.-other/sql-samples/snowflake-table-function-lineage-detection.md)
 * [Change Logs](8.-other/change-logs.md)
+* [SQLFlow with Oracle XML functions](8.-other/sqlflow-with-oracle-xml-functions.md)
