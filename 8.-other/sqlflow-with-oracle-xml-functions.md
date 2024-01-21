@@ -214,7 +214,7 @@ XMLSEQUENCETYPE(XMLTYPE(<LineItem ItemNumber="1">
 ))
 ```
 
-<figure><img src="../.gitbook/assets/图片 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLTRANSFORM（xmltype\_instance,xsl\_ss)
 
@@ -226,7 +226,7 @@ This function is used to convert XMLType instances according to XSL style and ge
 
 Result:
 
-<figure><img src="../.gitbook/assets/图片 (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### PATH（correction\_integer)
 
@@ -240,7 +240,7 @@ PATH(1)                                                   DEPTH(2)
 /www.oracle.com/xwarehouses.xsd             
 ```
 
-<figure><img src="../.gitbook/assets/图片 (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### DEPTH（n）
 
@@ -282,7 +282,7 @@ Seattle, Washington N Y
 
 Result
 
-<figure><img src="../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (3).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLCAST
 
@@ -318,7 +318,7 @@ XMLCData
 
 Result:
 
-<figure><img src="../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLCOMMENT
 
@@ -334,7 +334,7 @@ XMLCOMMENT
 
 Result:
 
-<figure><img src="../.gitbook/assets/图片 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLDIFF
 
@@ -374,7 +374,7 @@ FROM DUAL;
 
 Result:
 
-<figure><img src="../.gitbook/assets/图片 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLEXISTS
 
@@ -399,3 +399,111 @@ PO
  <itemNo>32987457</itemNo>
  </purchaseOrder>
 ```
+
+Result:
+
+<figure><img src="../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
+
+### XMLPATCH
+
+The following example patches an XMLType document with the changes specified in another XMLType and returns a patched XMLType document:
+
+```sql
+SELECT XMLPATCH(
+XMLTYPE('<?xml version="1.0"?>
+<bk:book xmlns:bk="http://example.com">
+ <bk:tr>
+ <bk:td>
+ <bk:chapter>
+ Chapter 1.
+ </bk:chapter>
+ </bk:td>
+ <bk:td>
+ <bk:chapter>
+ Chapter 2.
+ </bk:chapter>
+ </bk:td>
+ </bk:tr>
+</bk:book>'),
+XMLTYPE('<?xml version="1.0"?>
+<xd:xdiff xsi:schemaLocation="http://xmlns.oracle.com/xdb/xdiff.xsd
+ http://xmlns.oracle.com/xdb/xdiff.xsd"
+ xmlns:xd="http://xmlns.oracle.com/xdb/xdiff.xsd"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:bk="http://example.com">
+ <?oracle-xmldiff operations-in-docorder="true" output-model="snapshot"
+ diff-algorithm="global"?>
+ <xd:delete-node xd:node-type="element"
+ xd:xpath="/bk:book[1]/bk:tr[1]/bk:td[2]/bk:chapter[1]"/>
+</xd:xdiff>')
+)
+FROM DUAL;
+```
+
+Result:
+
+<figure><img src="../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
+
+### XMLPI
+
+The following statement uses the DUAL table to illustrate the use of the XMLPI syntax:
+
+```sql
+SELECT XMLPI(NAME "Order analysisComp", 'imported, reconfigured, disassembled')
+ AS "XMLPI" FROM DUAL;
+XMLPI
+--------------------------------------------------------------------------------
+<?Order analysisComp imported, reconfigured, disassembled?>
+```
+
+Result:
+
+<figure><img src="../.gitbook/assets/图片 (2).png" alt=""><figcaption></figcaption></figure>
+
+### XMLQUERY
+
+The following statement specifies the warehouse\_spec column of the oe.warehouses table in the XML\_passing\_clause as a context item. The statement returns specific information about the warehouses with area greater than 50K.
+
+```sql
+SELECT warehouse_name,
+EXTRACTVALUE(warehouse_spec, '/Warehouse/Area'),
+XMLQuery(
+ 'for $i in /Warehouse
+ where $i/Area > 50000
+ return <Details>
+ <Docks num="{$i/Docks}"/>
+ <Rail>
+ {
+ if ($i/RailAccess = "Y") then "true" else "false"
+ }
+ </Rail>
+ </Details>' PASSING warehouse_spec RETURNING CONTENT) "Big_warehouses"
+ FROM warehouses;
+WAREHOUSE_ID Area Big_warehouses
+------------ --------- --------------------------------------------------------
+ 1 25000
+ 2 50000
+ 3 85700 <Details><Docks></Docks><Rail>false</Rail></Details>
+ 4 103000 <Details><Docks num="3"></Docks><Rail>true</Rail></Details>
+ . . . 
+```
+
+Result:
+
+
+
+### XMLSERIALIZE
+
+The following statement uses the DUAL table to illustrate the syntax of XMLSerialize:
+
+```sql
+SELECT XMLSERIALIZE(CONTENT XMLTYPE('<Owner>Grandco</Owner>')) AS 
+xmlserialize_doc
+ FROM DUAL;
+XMLSERIALIZE_DOC
+----------------
+<Owner>Grandco</Owner>
+```
+
+Result:
+
