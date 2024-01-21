@@ -112,7 +112,7 @@ if you got:
 Code: 102. DB::NetException: Unexpected packet from server locahost:9000
 ```
 
-<figure><img src="../../.gitbook/assets/图片 (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/图片 (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Please check doc [here](clickhouse-installation/clickhouse-for-ubuntu-debian.md#1.-download-and-install).
 

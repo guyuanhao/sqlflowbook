@@ -145,7 +145,7 @@ This function is used to aggregate multiple XML fragment and generate an XML doc
 SELECT xmlagg(xmlelement("employee",ename||' '||sal))  xml FROM emp WHERE deptno=10;
 ```
 
-<figure><img src="../.gitbook/assets/图片 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Result:
 
@@ -189,7 +189,7 @@ XMLELEMENT ("EMPLOYEE",XMLFOREST(ENAME,SAL))
 
 Result:
 
-<figure><img src="../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (4).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLSEQUENCE（xmltype\_instance)
 
@@ -214,7 +214,7 @@ XMLSEQUENCETYPE(XMLTYPE(<LineItem ItemNumber="1">
 ))
 ```
 
-<figure><img src="../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLTRANSFORM（xmltype\_instance,xsl\_ss)
 
@@ -226,7 +226,7 @@ This function is used to convert XMLType instances according to XSL style and ge
 
 Result:
 
-<figure><img src="../.gitbook/assets/图片 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### PATH（correction\_integer)
 
@@ -240,7 +240,7 @@ PATH(1)                                                   DEPTH(2)
 /www.oracle.com/xwarehouses.xsd             
 ```
 
-<figure><img src="../.gitbook/assets/图片 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### DEPTH（n）
 
@@ -257,3 +257,145 @@ PATH(1)                                                  DEPTH(2)
 Result:
 
 <figure><img src="../.gitbook/assets/图片 (22).png" alt=""><figcaption></figcaption></figure>
+
+### XMLTABLE
+
+The following example converts the result of applying the XQuery '/Warehouse' to each value in the warehouse\_spec column of the warehouses table into a virtual relational table with columns Water and Rail:
+
+```sql
+SELECT warehouse_name warehouse,
+ warehouse2."Water", warehouse2."Rail"
+ FROM warehouses,
+ XMLTABLE('/Warehouse'
+ PASSING warehouses.warehouse_spec
+ COLUMNS 
+ "Water" varchar2(6) PATH 'WaterAccess',
+ "Rail" varchar2(6) PATH 'RailAccess') 
+ warehouse2;
+WAREHOUSE Water Rail
+----------------------------------- ------ ------
+Southlake, Texas Y N
+San Francisco Y N
+New Jersey N N
+Seattle, Washington N Y
+```
+
+Result
+
+<figure><img src="../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
+
+### XMLCAST
+
+NA
+
+### XMLCDATA
+
+The following statement uses the DUAL table to illustrate the syntax of XMLCData:
+
+```sql
+SELECT XMLELEMENT("PurchaseOrder",
+ XMLAttributes(dummy as "pono"),
+ XMLCdata('<!DOCTYPE po_dom_group [
+ <!ELEMENT po_dom_group(student_name)*>
+ <!ELEMENT po_purch_name (#PCDATA)>
+ <!ATTLIST po_name po_no ID #REQUIRED>
+ <!ATTLIST po_name trust_1 IDREF #IMPLIED>
+ <!ATTLIST po_name trust_2 IDREF #IMPLIED>
+ ]>')) "XMLCData" FROM DUAL;
+XMLCData
+----------------------------------------------------------
+<PurchaseOrder pono="X"><![CDATA[
+<!DOCTYPE po_dom_group [
+ <!ELEMENT po_dom_group(student_name)*>
+ <!ELEMENT po_purch_name (#PCDATA)>
+ <!ATTLIST po_name po_no ID #REQUIRED>
+ <!ATTLIST po_name trust_1 IDREF #IMPLIED>
+ <!ATTLIST po_name trust_2 IDREF #IMPLIED>
+ ]>
+ ]]>
+</PurchaseOrder>
+```
+
+Result:
+
+<figure><img src="../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
+
+### XMLCOMMENT
+
+The following example uses the DUAL table to illustrate the XMLComment syntax:
+
+```sql
+SELECT XMLCOMMENT('OrderAnalysisComp imported, reconfigured, disassembled')
+ AS "XMLCOMMENT" FROM DUAL;
+XMLCOMMENT
+--------------------------------------------------------------------------------
+<!--OrderAnalysisComp imported, reconfigured, disassembled-->
+```
+
+Result:
+
+<figure><img src="../.gitbook/assets/图片 (2).png" alt=""><figcaption></figcaption></figure>
+
+### XMLDIFF
+
+The following example compares two XML documents and returns the difference as an XMLType document:
+
+```sql
+SELECT XMLDIFF(
+XMLTYPE('<?xml version="1.0"?>
+<bk:book xmlns:bk="http://example.com">
+ <bk:tr>
+ <bk:td>
+ <bk:chapter>
+ Chapter 1.
+ </bk:chapter>
+ </bk:td>
+ <bk:td>
+ <bk:chapter>
+ Chapter 2.
+ </bk:chapter>
+ </bk:td>
+ </bk:tr>
+</bk:book>'),
+XMLTYPE('<?xml version="1.0"?>
+<bk:book xmlns:bk="http://example.com">
+ <bk:tr>
+ <bk:td>
+ <bk:chapter>
+ Chapter 1.
+ </bk:chapter>
+ </bk:td>
+ <bk:td/>
+ </bk:tr>
+</bk:book>')
+)
+FROM DUAL; 
+```
+
+Result:
+
+<figure><img src="../.gitbook/assets/图片 (3).png" alt=""><figcaption></figcaption></figure>
+
+### XMLEXISTS
+
+NA
+
+### XMLISVALID
+
+NA
+
+### XMLPARSE
+
+```sql
+SELECT XMLPARSE(CONTENT '124 <purchaseOrder poNo="12435"> 
+ <customerName> Acme Enterprises</customerName>
+ <itemNo>32987457</itemNo>
+ </purchaseOrder>' 
+WELLFORMED) AS PO FROM DUAL;
+PO
+-----------------------------------------------------------------
+124 <purchaseOrder poNo="12435">
+ <customerName> Acme Enterprises</customerName>
+ <itemNo>32987457</itemNo>
+ </purchaseOrder>
+```
