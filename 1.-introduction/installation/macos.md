@@ -2,8 +2,8 @@
 
 Please check the following page for the old SQLFlow installation:
 
-{% content-ref url="for-older-version-sqlflow.md" %}
-[for-older-version-sqlflow.md](for-older-version-sqlflow.md)
+{% content-ref url="versions/sqlflow-before-version-6/for-older-version-sqlflow-under-macos.md" %}
+[for-older-version-sqlflow-under-macos.md](versions/sqlflow-before-version-6/for-older-version-sqlflow-under-macos.md)
 {% endcontent-ref %}
 
 ### Prerequisites
@@ -135,7 +135,7 @@ Add the following section in gspLive.sh(or gspLive.bat in Windows):
 --server.port=<customized_port>
 ```
 
-<figure><img src="../../../.gitbook/assets/sqlflow-install-customize-port-gsplive.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sqlflow-install-customize-port-gsplive.png" alt=""><figcaption></figcaption></figure>
 
 ### Open SQLFlow
 
@@ -143,7 +143,7 @@ open http://yourdomain.com/ to see the SQLFlow.
 
 open `http://yourdomain.com:8165/doc.html?lang=en` or `http://localhost:8165/api/gspLive_backend/doc.html?lang=en` to see the Restful API document.
 
-<figure><img src="../../../.gitbook/assets/login.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/login.png" alt=""><figcaption></figcaption></figure>
 
 To login, please check the following default user credentials:
 
@@ -153,12 +153,12 @@ See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/
 
 * Get userId from the account profile page and generate the secrete key
 
-<figure><img src="../../../.gitbook/assets/微信图片_20240114114203.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/微信图片_20240114114203.png" alt=""><figcaption></figcaption></figure>
 
 * Generate token by invoking the token generate API
 
-{% swagger src="../../../.gitbook/assets/swagger_with_token.yaml" path="/user/generateToken" method="post" %}
-[swagger_with_token.yaml](../../../.gitbook/assets/swagger_with_token.yaml)
+{% swagger src="../../.gitbook/assets/swagger_with_token.yaml" path="/user/generateToken" method="post" %}
+[swagger_with_token.yaml](../../.gitbook/assets/swagger_with_token.yaml)
 {% endswagger %}
 
 ```bash

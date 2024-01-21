@@ -2,8 +2,8 @@
 
 Please check the following page for the old SQLFlow installation:
 
-{% content-ref url="for-older-version-sqlflow.md" %}
-[for-older-version-sqlflow.md](for-older-version-sqlflow.md)
+{% content-ref url="versions/sqlflow-before-version-6/for-older-version-sqlflow-under-windows.md" %}
+[for-older-version-sqlflow-under-windows.md](versions/sqlflow-before-version-6/for-older-version-sqlflow-under-windows.md)
 {% endcontent-ref %}
 
 ### Prerequisites
@@ -13,13 +13,13 @@ Please check the following page for the old SQLFlow installation:
 * install JDK1.8 or higher\
   SET JAVA\_HOME variable, and then add %JAVA\_HOME%\bin to the path variable
 
-<figure><img src="../../../.gitbook/assets/system-properties-advance-setting.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/system-properties-advance-setting.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/set-java-home-in-system-variables.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/set-java-home-in-system-variables.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/set-java-in-path-variable.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/set-java-in-path-variable.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/02.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/02.png" alt=""><figcaption></figcaption></figure>
 
 ### Unzip SQLFlow file
 
@@ -51,7 +51,7 @@ Add the following section in gspLive.sh(or gspLive.bat in Windows):
 --server.port=<customized_port>
 ```
 
-<figure><img src="../../../.gitbook/assets/sqlflow-install-customize-port-gsplive.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sqlflow-install-customize-port-gsplive.png" alt=""><figcaption></figcaption></figure>
 
 ### Start SQLFlow backend
 
@@ -77,12 +77,12 @@ Open the browser and go to localhost or got to the IP where the SQLFlow is insta
 * Open http://yourIp/ to see the SQLFlow.
 * Open http://yourIp/api/gspLive\_backend/doc.html?lang=en to see the Restful API document.
 
-<figure><img src="../../../.gitbook/assets/login.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/login.png" alt=""><figcaption></figcaption></figure>
 
 To login, please check the following default user credentials:
 
-{% content-ref url="../versions/cloud-and-on-premise-version.md" %}
-[cloud-and-on-premise-version.md](../versions/cloud-and-on-premise-version.md)
+{% content-ref url="versions/cloud-and-on-premise-version.md" %}
+[cloud-and-on-premise-version.md](versions/cloud-and-on-premise-version.md)
 {% endcontent-ref %}
 
 ### Stop the SQLFlow
@@ -97,12 +97,12 @@ See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/
 
 * Get userId from the account profile page and generate the secrete key
 
-<figure><img src="../../../.gitbook/assets/微信图片_20240114114203.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/微信图片_20240114114203.png" alt=""><figcaption></figcaption></figure>
 
 * Generate token by invoking the token generate API
 
-{% swagger src="../../../.gitbook/assets/swagger_with_token.yaml" path="/user/generateToken" method="post" %}
-[swagger_with_token.yaml](../../../.gitbook/assets/swagger_with_token.yaml)
+{% swagger src="../../.gitbook/assets/swagger_with_token.yaml" path="/user/generateToken" method="post" %}
+[swagger_with_token.yaml](../../.gitbook/assets/swagger_with_token.yaml)
 {% endswagger %}
 
 ```bash

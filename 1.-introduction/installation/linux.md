@@ -2,8 +2,8 @@
 
 Please check the following page for the old SQLFlow installation:
 
-{% content-ref url="linux/for-older-version-sqlflow.md" %}
-[for-older-version-sqlflow.md](linux/for-older-version-sqlflow.md)
+{% content-ref url="versions/sqlflow-before-version-6/for-older-version-sqlflow-under-linux.md" %}
+[for-older-version-sqlflow-under-linux.md](versions/sqlflow-before-version-6/for-older-version-sqlflow-under-linux.md)
 {% endcontent-ref %}
 
 ### Prerequisites

@@ -2,7 +2,7 @@
 
 ## SQLFlow v.6 VS SQLFlow v.5
 
-For the SQLFlow before version 6.0.0.0, please refer to [this page](../linux.md). The installation steps are slightly different.
+For the SQLFlow before version 6.0.0.0, please refer to [this page](../../linux.md). The installation steps are slightly different.
 
 The SQLFlow 5.x.x.x and 4.x.x.x needs to:&#x20;
 
@@ -145,7 +145,7 @@ If you don't want to change the default service port you can just ignore this se
 
 Change the default web port from `80` to `9000` (or any port you like).
 
-<figure><img src="../../../.gitbook/assets/sqlflow-install-customize-web-port.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/sqlflow-install-customize-web-port.png" alt=""><figcaption></figcaption></figure>
 
 #### 3. Modify java service port
 
@@ -153,11 +153,11 @@ Change the default gspLive port from `8081` to `9001`(or any port you like).&#x2
 
 **Step 1: Change the port in nginx config file**
 
-<figure><img src="../../../.gitbook/assets/sqlflow-install-customize-gsplive-port-nginx.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/sqlflow-install-customize-gsplive-port-nginx.png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Change the port in gspLive.sh(gspLive.bat)**&#x20;
 
-<figure><img src="../../../.gitbook/assets/sqlflow-install-customize-port-gsplive.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/sqlflow-install-customize-port-gsplive.png" alt=""><figcaption></figcaption></figure>
 
 ### Start Frontend Services
 
