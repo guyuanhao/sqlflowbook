@@ -214,7 +214,7 @@ XMLSEQUENCETYPE(XMLTYPE(<LineItem ItemNumber="1">
 ))
 ```
 
-<figure><img src="../.gitbook/assets/图片 (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLTRANSFORM（xmltype\_instance,xsl\_ss)
 
@@ -226,7 +226,7 @@ This function is used to convert XMLType instances according to XSL style and ge
 
 Result:
 
-<figure><img src="../.gitbook/assets/图片 (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### PATH（correction\_integer)
 
@@ -318,7 +318,7 @@ XMLCData
 
 Result:
 
-<figure><img src="../.gitbook/assets/图片 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLCOMMENT
 
@@ -334,7 +334,7 @@ XMLCOMMENT
 
 Result:
 
-<figure><img src="../.gitbook/assets/图片 (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLDIFF
 
@@ -402,7 +402,7 @@ PO
 
 Result:
 
-<figure><img src="../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLPATCH
 
@@ -442,7 +442,7 @@ FROM DUAL;
 
 Result:
 
-<figure><img src="../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLPI
 
@@ -458,7 +458,7 @@ XMLPI
 
 Result:
 
-<figure><img src="../.gitbook/assets/图片 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/图片 (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLQUERY
 
@@ -490,7 +490,7 @@ WAREHOUSE_ID Area Big_warehouses
 
 Result:
 
-
+<figure><img src="../.gitbook/assets/图片.png" alt=""><figcaption></figcaption></figure>
 
 ### XMLSERIALIZE
 
@@ -507,3 +507,4 @@ XMLSERIALIZE_DOC
 
 Result:
 
+<figure><img src="../.gitbook/assets/图片 (1).png" alt=""><figcaption></figcaption></figure>
