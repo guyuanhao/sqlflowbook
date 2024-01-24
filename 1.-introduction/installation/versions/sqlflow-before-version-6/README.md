@@ -2,7 +2,7 @@
 
 ## SQLFlow v.6 VS SQLFlow v.5
 
-For the SQLFlow before version 6.0.0.0, please refer to [this page](../../linux.md). The installation steps are slightly different.
+For the SQLFlow after version 6.0.0.0, please refer to [this page](../../linux.md). The installation steps are slightly different.
 
 The SQLFlow 5.x.x.x and 4.x.x.x needs to:&#x20;
 
