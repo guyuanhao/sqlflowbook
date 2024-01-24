@@ -44,4 +44,4 @@ cp -r <old sqlflow backup>/conf/gudu_sqlflow_license.txt  <new sqlflow>/conf/
 sudo /wings/sqlflow/backend/bin/backend.sh
 ```
 
-If send an email to support@gudusoft.com if there's any issues with the license file.
+Please send an email to support@gudusoft.com if there's any issues with your license file.
