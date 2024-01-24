@@ -31,6 +31,7 @@
     * [Clickhouse For CentOs](1.-introduction/installation/clickhouse-installation/clickhouse-for-centos.md)
     * [Clickhouse For Ubuntu/Debian/RHEL](1.-introduction/installation/clickhouse-installation/clickhouse-for-ubuntu-debian.md)
   * [Troubleshooting](1.-introduction/installation/troubleshooting.md)
+  * [Upgrade](1.-introduction/installation/upgrade.md)
 * [UI](1.-introduction/ui/README.md)
   * [SQLText Editor](1.-introduction/ui/sqltext-editor.md)
   * [Schema Explorer](1.-introduction/ui/schema.md)
