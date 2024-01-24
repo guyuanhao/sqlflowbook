@@ -6,6 +6,12 @@ Please check the following page for the old SQLFlow installation:
 [for-older-version-sqlflow-under-macos.md](versions/sqlflow-before-version-6/for-older-version-sqlflow-under-macos.md)
 {% endcontent-ref %}
 
+If you have SQLFlow 5.x installed on your server and would like to upgrade to SQLFlow 6.x, please refer to this page:
+
+{% content-ref url="upgrade.md" %}
+[upgrade.md](upgrade.md)
+{% endcontent-ref %}
+
 ### Prerequisites
 
 * [SQLFlow on-premise version](https://www.gudusoft.com/sqlflow-on-premise-version/)
