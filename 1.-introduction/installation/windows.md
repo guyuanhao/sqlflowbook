@@ -16,7 +16,7 @@ If you have SQLFlow 5.x installed on your server and would like to upgrade to SQ
 
 * [SQLFlow on-premise version](https://www.gudusoft.com/sqlflow-on-premise-version/)
 * Server with at least 8GB memory
-* install JDK1.8 or higher\
+* install JDK1.8 \
   SET JAVA\_HOME variable, and then add %JAVA\_HOME%\bin to the path variable
 
 <figure><img src="../../.gitbook/assets/system-properties-advance-setting.png" alt=""><figcaption></figcaption></figure>
