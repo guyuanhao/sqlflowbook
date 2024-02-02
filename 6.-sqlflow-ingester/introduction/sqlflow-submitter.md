@@ -12,7 +12,7 @@ With SQLFlow-Submitter, you will be able to submit SQL and metadata to the SQLFl
 *   SQLFlow-Ingester package
 
     Download our latest SQFlow-Ingester package [here](https://github.com/sqlparser/sqlflow\_public/releases).
-* Java 8 or higher version must be installed and configured correctly.
+* Java 8 must be installed and configured correctly.
 
 ## Installation
 
