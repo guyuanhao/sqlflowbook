@@ -1,9 +1,5 @@
 # Troubleshooting
 
-1. [Failed to get license info.](troubleshooting.md#1.-failed-to-get-license-info.)
-2. [Config nginx on RHEL: Redhat linux](troubleshooting.md#2.-config-nginx-on-rhel-redhat-linux)
-3. [Get license fail: 502 Bad Gateway](troubleshooting.md#3.-get-license-fail-502-bad-gateway)
-
 ### 1. Failed to get license info.
 
 If you see this error, just wait another 3-5 minutes to wait the backend service startup successfully and refresh the web page.
