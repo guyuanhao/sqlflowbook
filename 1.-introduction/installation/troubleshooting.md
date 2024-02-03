@@ -129,3 +129,14 @@ Please check your port in gspLive.sh(gspLive.bat). Ensure it's aligned with the 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+### 6. org.springframework.beans.factory.BeanCreationException
+
+If you find following error logs after installing SQLFlow
+
+```log
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.eurekaClient' defined in class path resource [org/springframework/cloud/netflix/eureka/EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.class]: Bean instantiation via factory method failed; nested exception is 
+org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.discovery.EurekaClient]: Factory method 'eurekaClient' threw exception; nested exception is java.lang.RuntimeException: Failed to initialize DiscoveryClient!
+```
+
+Please consider to check your java version. SQLFlow only works with JDK 1.8. JDK 17 or JDK 21 is not supported.
