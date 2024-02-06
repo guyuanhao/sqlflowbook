@@ -21,7 +21,7 @@ curl -X POST "https://api.gudusoft.com/gspLive_backend/user/generateToken" -H  "
 **Tips**: If you are using SQLFLow On-Premise,  **this step could be skipped you have the following config flag in** `/wings/sqlflow/backend/conf/gudu_sqlflow.conf`
 
 ```bash
-ignore_user_token=false
+ignore_user_token=true
 ```
 
 ### **2. Generate the data lineage**
