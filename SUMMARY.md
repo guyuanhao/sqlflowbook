@@ -121,6 +121,7 @@
   * [PostgreSQL](6.-sqlflow-ingester/understanding-the-format-of-exported-data/postgresql.md)
 * [List of Supported dbVendors](6.-sqlflow-ingester/list-of-supported-dbvendors.md)
 * [Git Repo](6.-sqlflow-ingester/git-repo.md)
+* [Third Party Components](6.-sqlflow-ingester/third-party-components.md)
 
 ## 7. Reference
 
