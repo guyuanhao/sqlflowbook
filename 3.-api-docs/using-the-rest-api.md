@@ -24,6 +24,8 @@ curl -X POST "https://api.gudusoft.com/gspLive_backend/user/generateToken" -H  "
 ignore_user_token=true
 ```
 
+The TTL for the token is configurable in gudu\_sqlflow.conf, check [here ](../1.-introduction/installation/linux.md#backend-services-configuration)for more details.
+
 ### **2. Generate the data lineage**
 
 Call this API by sending the SQL query and get the result includes the data lineage.
