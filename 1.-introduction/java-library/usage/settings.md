@@ -10,14 +10,28 @@ java -jar gudusoft.dlineage.jar /t mssql /f path_to_sql_file /s
 java -jar gudusoft.dlineage.jar /t mssql /f path_to_sql_file
 ```
 
-In Simple mode, the intermediate results will not be displayed and only [fdd relationships](../../../2.-concepts/data-lineage/dataflow/relations-generated-by-sqlflow.md#the-meaning-of-the-letter-in-fdd-fdr) are present. The Simple mode is related to two options: `setSimpleShowTopSelectResultSet` and `setSimpleShowFunction`.
+In Simple mode, the intermediate results will not be displayed and only [fdd relationships](../../../2.-concepts/data-lineage/dataflow/relations-generated-by-sqlflow.md#the-meaning-of-the-letter-in-fdd-fdr) are present. The Simple mode is related to two options: `setSimpleShowTopSelectResultSet`, `setSimpleShowFunction` and `setSimpleShowUdfFunctionOnly`.
 
-* setSimpleShowTopSelectResultSet: whether display the select result set on the top, default value is false.
-* setSimpleShowFunction: whether display function, default value is false.
+_**setSimpleShowTopSelectResultSet**_
 
-_**dataflowAnalyzer**_ is in Simple mode by default so there's no select result set on the top nethier no function displayed. Sqlflow UI will always have setSimpleShowTopSelectResultSet as true because the select query must be displayed on the top.
+whether to display the select result set on the top, default value is false.
 
-_**dataflowAnalyzer**_ has a function to deal with the dataflow in regular mode and customize the analysis type for the relations. The function can analysize [fdd](../../../2.-concepts/data-lineage/dataflow/relations-generated-by-sqlflow.md#the-meaning-of-the-letter-in-fdd-fdr) and [fdr](../../../2.-concepts/data-lineage/dataflow/relations-generated-by-sqlflow.md#the-meaning-of-the-letter-in-fdd-fdr) relations.
+_**setSimpleShowFunction**_
+
+whether to  display function, default value is false.
+
+_**setSimpleShowUdfFunctionOnly**_
+
+whether to display only User Define Function, we need to set `setSimpleShowFunction` as well to use this feature.
+
+```java
+dlineage.getOption().setSimpleShowFunction(true); 
+dlineage.getOption().setSimpleShowUdfFunctionOnly(true);
+```
+
+_dataflowAnalyzer_ is in Simple mode by default so there's no select result set on the top nethier no function displayed. Sqlflow UI will always have setSimpleShowTopSelectResultSet as true because the select query must be displayed on the top.
+
+_dataflowAnalyzer_ has a function to deal with the dataflow in regular mode and customize the analysis type for the relations. The function can analysize [fdd](../../../2.-concepts/data-lineage/dataflow/relations-generated-by-sqlflow.md#the-meaning-of-the-letter-in-fdd-fdr) and [fdr](../../../2.-concepts/data-lineage/dataflow/relations-generated-by-sqlflow.md#the-meaning-of-the-letter-in-fdd-fdr) relations.
 
 ```java
 Dataflow getSimpleDataflow(Dataflow instance, boolean simpleOutput, List <String> types)
