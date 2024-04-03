@@ -22,7 +22,7 @@ whether to  display function, default value is false.
 
 _**setSimpleShowUdfFunctionOnly**_
 
-whether to display only User Define Function, we need to set `setSimpleShowFunction` as well to use this feature.
+whether to display only User Define Function, we also need to turn on `setSimpleShowFunction` as well so that functions are displayed.
 
 ```java
 dlineage.getOption().setSimpleShowFunction(true); 
