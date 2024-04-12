@@ -83,7 +83,7 @@
     * [/submitUserJob](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-submituserjob.md)
     * [/displayUserJobSummary](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-displayuserjobsummary.md)
     * [/displayUserJobsSummary](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-displayuserjobssummary.md)
-    * [/exportLineageAsJson](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-exportlineageasjson.md)
+    * [/exportFullLineageAsJson](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-exportlineageasjson.md)
     * [/exportLineageAsGraphml](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-exportlineageasgraphml.md)
     * [/submitPersistJob](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-submitpersistjob.md)
     * [/displayUserLatestJobTableLevelLineage](3.-api-docs/sqlflow-rest-api-reference/job-interface/displayuserlatestjobtablelevellineage.md)

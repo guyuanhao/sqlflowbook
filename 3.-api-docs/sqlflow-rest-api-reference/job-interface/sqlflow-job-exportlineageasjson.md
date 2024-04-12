@@ -1,8 +1,8 @@
-# /exportLineageAsJson
+# /exportFullLineageAsJson
 
-#### Export data lineage in json format
+#### Export the full data lineage in json format
 
-{% swagger src="../../../.gitbook/assets/swagger_with_token.yaml" path="/sqlflow/job/exportLineageAsJson" method="post" %}
+{% swagger src="../../../.gitbook/assets/swagger_with_token.yaml" path="/sqlflow/job/exportFullLineageAsJson" method="post" %}
 [swagger_with_token.yaml](../../../.gitbook/assets/swagger_with_token.yaml)
 {% endswagger %}
 

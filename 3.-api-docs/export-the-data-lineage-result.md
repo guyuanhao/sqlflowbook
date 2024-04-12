@@ -10,7 +10,7 @@ When the job status is **success**, you can export the data lineage in json, csv
 ### Export data lineage in json format
 
 ```
-/gspLive_backend/sqlflow/job/exportLineageAsJson
+/gspLive_backend/sqlflow/job/exportFullLineageAsJson
 ```
 
 **Example in** `Curl`**:**
@@ -18,13 +18,13 @@ When the job status is **success**, you can export the data lineage in json, csv
 SQLFlow Cloud Server
 
 ```
-curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/job/exportLineageAsJson" -F "userId=YOUR USER ID HERE" -F "token=YOUR TOKEN HERE" -F "jobId=c359aef4bd9641d697732422debd8055" --output lineage.json
+curl -X POST "https://api.gudusoft.com/gspLive_backend/sqlflow/job/exportFullLineageAsJson" -F "userId=YOUR USER ID HERE" -F "token=YOUR TOKEN HERE" -F "jobId=c359aef4bd9641d697732422debd8055" --output lineage.json
 ```
 
 SQLFlow on-premise version
 
 ```
-curl -X POST "http://127.0.0.1:8081/gspLive_backend/sqlflow/job/exportLineageAsJson" -F "userId=YOUR USER ID HERE" -F "token=YOUR TOKEN HERE" -F "jobId=c359aef4bd9641d697732422debd8055" --output lineage.json
+curl -X POST "http://127.0.0.1:8081/gspLive_backend/sqlflow/job/exportFullLineageAsJson" -F "userId=YOUR USER ID HERE" -F "token=YOUR TOKEN HERE" -F "jobId=c359aef4bd9641d697732422debd8055" --output lineage.json
 ```
 
 **Note:**
