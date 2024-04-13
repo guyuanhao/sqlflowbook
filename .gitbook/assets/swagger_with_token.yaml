@@ -5260,7 +5260,7 @@ paths:
       tags:
       - Job Interface
       summary: export sqlflow full lineage as json format
-      description: export full sqlflow lineage as csv format
+      description: export full sqlflow lineage as json format
       operationId: exportFullLineageAsJsonUsingPOST
       parameters:
       - name: jobId
@@ -5280,6 +5280,18 @@ paths:
         required: true
         schema:
           type: string
+      - name: showRelationType
+        in: query
+        description: show relation type, required false, default value is 'fdd', multiple
+          values seperated by comma like fdd,frd,fdr,join. Availables are 'fdd' value
+          of target column from source column, 'frd' the recordset count of target
+          column which is affected by value of source column, 'fdr' value of target
+          column which is affected by the recordset count of source column, 'join'
+          combines rows from two or more tables, based on a related column between
+          them
+        schema:
+          type: string
+          default: fdd
       responses:
         200:
           description: OK
