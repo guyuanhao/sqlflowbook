@@ -24,6 +24,6 @@ Fuzzy query is enabled in the search bar and the table/view found would be highl
 
 ### Adjust elements position
 
-The table elements in the SQLFlow UI supports manual position adjustment and is free to be dragged.
+The table element in the SQLFlow UI supports manual position adjustment and is free to be dragged.
 
 <figure><img src="../../.gitbook/assets/6993db26_2068361.gif" alt=""><figcaption></figcaption></figure>
