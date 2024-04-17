@@ -21,3 +21,9 @@ Fuzzy query is enabled in the search bar and the table/view found would be highl
 <figure><img src="../../.gitbook/assets/微信截图_20230522152615 (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/Peek 2023-05-22 15-21.gif" alt=""><figcaption></figcaption></figure>
+
+### Adjust elements position
+
+The table elements in the SQLFlow UI supports manual position adjustment and is free to be dragged.
+
+<figure><img src="../../.gitbook/assets/6993db26_2068361.gif" alt=""><figcaption></figcaption></figure>
