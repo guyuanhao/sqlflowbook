@@ -243,7 +243,7 @@ If you need to enable regular job feature on your sqlflow on-premiser, you will 
 
 ### Enable HTTPS
 
-To use HTTPS with your domain name, you need a SSL or TLS certificate installed. You can directly buy a certificate from CA. If you don't need a recognized certificate, you can generate one for your own.
+To use HTTPS with your domain name, you need a SSL or TLS certificate installed. You can directly buy a certificate from CA. If you don't need a recognized certificate, you can generate one by yourselves.
 
 To generate the certificate files, you can use the following commands:
 
