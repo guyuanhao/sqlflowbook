@@ -162,6 +162,10 @@ open `http://yourdomain.com:8165/doc.html?lang=en` or `http://localhost:8165/api
 
 To login, please check the following default user credentials:
 
+{% content-ref url="versions/cloud-and-on-premise-version.md" %}
+[cloud-and-on-premise-version.md](versions/cloud-and-on-premise-version.md)
+{% endcontent-ref %}
+
 ### SQLFlow client api call
 
 See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/master/api/sqlflow\_api\_full.md#webapi)
