@@ -94,7 +94,7 @@ sqlflow provides several options to control the service analysis logic. Open the
 You can assign the RAM to SQLFlow by specifying the boot parameter when starting the service.
 
 ```bash
- backend.sh /m <RAM_VALUE>
+ sudo backend.sh /m <RAM_VALUE>
 ```
 
 The RAM\_VALUE could be: **4g 8g 16g 32g or 64g**.&#x20;
@@ -219,3 +219,30 @@ curl --location --request POST 'http://localhost:8165/api/gspLive_backend/user/g
     ```
 
     * If the code returns **401**, please check the userId is set or the userId is valid.
+
+### Enable HTTPS
+
+To use HTTPS with your domain name, you need a SSL or TLS certificate installed. You can directly buy a certificate from CA. If you don't need a recognized certificate, you can generate one by yourselves.
+
+To generate the certificate files, you can use the following commands:
+
+```bash
+openssl req -newkey rsa:2048 -nodes -keyout sqlflow.key -out sqlflow.csr -subj "/CN=127.0.0.1"
+openssl x509 -req -days 365 -in sqlflow.csr -signkey sqlflow.key -out sqlflow.crt
+openssl pkcs8 -topk8 -inform PEM -outform PEM -in sqlflow.key -out sqlflow-pkcs8.key -nocrypt
+openssl pkcs12 -export -in sqlflow.crt -inkey sqlflow-pkcs8.key -out sqlflow_keystore.p12 -name sqlflow
+```
+
+You will have **sqlflow\_keystore.p12** and **sqlflow-pkcs8.key** generated with the above commands.
+
+Copy **sqlflow\_keystore.p12** and **sqlflow-pkcs8.key** to `/wings/sqlflow/backend/conf` and add  following configs in `/wings/sqlflow/backend/bin/gspLive.sh`:
+
+```
+--server.ssl.enabled=true --server.ssl.key-store-password=<your password> --server.ssl.key-store-type=PKCS12 --server.ssl.key-alias=sqlflow --server.ssl.key-store=file:../conf/sqlflow_keystore.p12
+```
+
+<figure><img src="../../.gitbook/assets/微信图片_20240424154609.jpg" alt=""><figcaption></figcaption></figure>
+
+Restart the SQLFlow and https is now enabled.
+
+<figure><img src="../../.gitbook/assets/微信图片_20240424154654.png" alt=""><figcaption></figcaption></figure>

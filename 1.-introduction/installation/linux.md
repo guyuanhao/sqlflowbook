@@ -256,7 +256,7 @@ openssl pkcs12 -export -in sqlflow.crt -inkey sqlflow-pkcs8.key -out sqlflow_key
 
 You will have **sqlflow\_keystore.p12** and **sqlflow-pkcs8.key** generated with the above commands.
 
-Copy **sqlflow\_keystore.p12** and **sqlflow-pkcs8.key** to `/wings/sqlflow/backend/conf` and add  following configs in `/wings/sqlflow/backend/bin/sqlservice.sh`:
+Copy **sqlflow\_keystore.p12** and **sqlflow-pkcs8.key** to `/wings/sqlflow/backend/conf` and add  following configs in `/wings/sqlflow/backend/bin/gspLive.sh`:
 
 ```
 --server.ssl.enabled=true --server.ssl.key-store-password=<your password> --server.ssl.key-store-type=PKCS12 --server.ssl.key-alias=sqlflow --server.ssl.key-store=file:../conf/sqlflow_keystore.p12
