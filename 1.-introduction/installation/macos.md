@@ -94,7 +94,7 @@ sqlflow provides several options to control the service analysis logic. Open the
 You can assign the RAM to SQLFlow by specifying the boot parameter when starting the service.
 
 ```bash
- sudo backend.sh /m <RAM_VALUE>
+ sudo ./backend.sh /m <RAM_VALUE>
 ```
 
 The RAM\_VALUE could be: **4g 8g 16g 32g or 64g**.&#x20;
@@ -104,7 +104,7 @@ SQLFlow will automatically allocate the memory based on the status of the instal
 start service in background:
 
 ```
-sh /wings/sqlflow/backend/bin/backend.sh
+sudo sh /wings/sqlflow/backend/bin/backend.sh
 ```
 
 please allow 1-2 minutes to start the service.
