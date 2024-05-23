@@ -105,7 +105,7 @@ It is probably due to the lack of disk space. You can confirm that by checking t
 
 You need to clean your disk and prepare more disk space to launch the SQLFlow backend.
 
-### Q9: Doesn't match the license&#x20;
+### Q9: License check failed&#x20;
 
 If your network is protected by some email protectors, you may get the dismatch license failure.
 
