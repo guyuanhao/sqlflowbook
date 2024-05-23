@@ -109,8 +109,9 @@ You need to clean your disk and prepare more disk space to launch the SQLFlow ba
 
 If your network is protected by some email protectors, you may get the dismatch license failure.
 
-The root cause of this issue is some email protectors could mistakenly rewrite the license file that we send to you via email:
+The root cause of this issue is that some email system could mistakenly rewrite the license file when we send it to you via email:
 
 <figure><img src="../../.gitbook/assets/1716473018781.png" alt=""><figcaption></figcaption></figure>
 
-Our license file is text file and some network protectors will trat the license file like part of the email body for scanning purposes.
+Our license file is a text file and some network protectors will trat the license file like part of the email body for scanning purposes.\
+Please reach out to us if you find the license file you receive does not work.
