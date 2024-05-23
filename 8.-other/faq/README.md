@@ -104,3 +104,13 @@ It is probably due to the lack of disk space. You can confirm that by checking t
 <figure><img src="../../.gitbook/assets/微信图片_20231102102102.jpg" alt=""><figcaption></figcaption></figure>
 
 You need to clean your disk and prepare more disk space to launch the SQLFlow backend.
+
+### Q9: Doesn't match the license&#x20;
+
+If your network is protected by some email protectors, you may get the dismatch license failure.
+
+The root cause of this issue is some email protectors could mistakenly rewrite the license file that we send to you via email:
+
+<figure><img src="../../.gitbook/assets/1716473018781.png" alt=""><figcaption></figcaption></figure>
+
+Our license file is text file and some network protectors will trat the license file like part of the email body for scanning purposes.
