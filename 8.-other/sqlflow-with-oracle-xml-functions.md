@@ -72,11 +72,11 @@ SELECT xmlconcat(xmlelement("ename", EMP.ENAME), xmlelement("sal", EMP.SAL)) xml
 
 <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 Result:
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLCOLATTVAL（value\_expr\[,value\_expr2],...)
 
@@ -86,11 +86,11 @@ This function is used to generate an XML block, and the parameter value\_expr is
 SELECT xmlelement ("emp",xmlcolattval (ename,sal)) xml FROM emp WHERE DEPTNO = 10;
 ```
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 Result:
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### SYS\_DBURIGEN({column|attribute})
 
@@ -101,11 +101,11 @@ Result:
 SELECT sys_dburigen(ename) url FROM emp WHERE deptno=10;
 ```
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Result:
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### SYS\_XMLAGG（expr\[，fmt]）
 
@@ -116,11 +116,11 @@ Result:
 SELECT SYS_XMLAGG(SYS_XMLGEN(ename))  xml_content FROM emp;
 ```
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Result:
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### SYS\_XMLGEN(expr\[,fmt])
 
@@ -131,11 +131,11 @@ Result:
 SELECT sys_xmlgen(ename) xml FROM emp WHERE deptno=10;
 ```
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Result:
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### XMLAGG（XMLType\_instance\[ORDER BY sort\_list])
 

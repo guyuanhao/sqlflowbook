@@ -85,7 +85,7 @@ to
 
 Re-[generate clickhouse-server key & crts](clickhouse-for-ubuntu-debian.md#generate-clickhouse-server-key-and-crts) if you meet the following error after properly configuring the `listen.xml`:
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Memory Settings
 
