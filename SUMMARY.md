@@ -147,3 +147,4 @@
   * [Snowflake table function lineage detection](8.-other/sql-samples/snowflake-table-function-lineage-detection.md)
 * [Change Logs](8.-other/change-logs.md)
 * [SQLFlow with Oracle XML functions](8.-other/sqlflow-with-oracle-xml-functions.md)
+* [Major Organizations Utilizing SQLFlow](8.-other/major-organizations-utilizing-sqlflow.md)
