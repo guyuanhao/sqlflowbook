@@ -94,6 +94,9 @@
     * [/job/exportFullLineageAsCsv](3.-api-docs/sqlflow-rest-api-reference/job-interface/sqlflow-job-exportfulllineageascsv.md)
 * [Swagger UI](3.-api-docs/swagger-ui.md)
 * [Export the data lineage result](3.-api-docs/export-the-data-lineage-result.md)
+* [Python](3.-api-docs/python/README.md)
+  * [Basic Usage](3.-api-docs/python/basic-usage.md)
+  * [Advanced Usage](3.-api-docs/python/advanced-usage.md)
 
 ## 4. SQLFlow Widget
 

@@ -308,11 +308,11 @@ The format of the Json is described in [https://docs.gudusoft.com/7.-reference/l
 
 The payload is the sqlflow part of the response in the [graph interface](../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-graph.md):
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 And giving that value to the widget:
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **7. Visualize data lineage in a separate json file**
 
