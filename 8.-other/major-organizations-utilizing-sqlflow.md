@@ -5,9 +5,9 @@ SQLFlow has been instrumental in enhancing data governance for a variety of indu
 ### Major Clients in Financial Industry
 
 * [https://www.aliorbank.pl/](https://www.aliorbank.pl/)\
-  <img src="../.gitbook/assets/image (1).png" alt="" data-size="original">
+  <img src="../.gitbook/assets/image (1) (1).png" alt="" data-size="original">
 * [https://www.jpmorgan.com/](https://www.jpmorgan.com/)\
-  ![](<../.gitbook/assets/image (2).png>)
+  ![](<../.gitbook/assets/image (2) (1).png>)
 * [https://www.judo.bank/](https://www.judo.bank/)\
   ![](<../.gitbook/assets/image (5).png>)
 * [https://www.moneta.cz/](https://www.moneta.cz/)\

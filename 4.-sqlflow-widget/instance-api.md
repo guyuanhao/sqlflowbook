@@ -304,6 +304,16 @@ Find the example code under the directory:
 └── 6\
 ```
 
+The format of the Json is described in [https://docs.gudusoft.com/7.-reference/lineage-model/json-format-lineage-model#id-4.-dbobjs-payload](https://docs.gudusoft.com/7.-reference/lineage-model/json-format-lineage-model#id-4.-dbobjs-payload)&#x20;
+
+The payload is the sqlflow part of the response in the [graph interface](../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-graph.md):
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+And giving that value to the widget:
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 ## **7. Visualize data lineage in a separate json file**
 
 Read and visualize the data lineage in a json file. This json file should be accessable in the same server as the SQLFlow widget.
