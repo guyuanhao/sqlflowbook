@@ -5,3 +5,5 @@ description: >-
 
 # Python
 
+* [Basic Usage](basic-usage.md)
+* [Advanced Usage](advanced-usage.md)

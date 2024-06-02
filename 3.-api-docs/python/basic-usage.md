@@ -7,7 +7,7 @@ description: >-
 
 A basic tutorial for using the Python version of the SQLFlow API.
 
-Here is an advanced version of how to use [Python to get the data lineage](https://github.com/sqlparser/sqlflow\_public/tree/master/api/python/advanced).
+Here is an advanced version of how to use[ Python to get the data lineage](advanced-usage.md).
 
 #### Prerequisites
 

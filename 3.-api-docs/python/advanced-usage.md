@@ -1,6 +1,6 @@
 # Advanced Usage
 
-This article illustrates how to discover the data lineage using Python and the SQLFlow REST API.
+This page describes how to discover the data lineage using Python and the SQLFlow REST API.
 
 By using the SQLFlow REST API, you can code in python to discover the data lineage in SQL scripts and get the result in an actionable diagram, json, csv or graphml format.
 
