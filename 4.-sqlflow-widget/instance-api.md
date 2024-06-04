@@ -310,6 +310,3348 @@ The payload is the sqlflow part of the response in the [graph interface](../3.-a
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
+```json
+{
+  "dbobjs": {
+    "createdBy": "sqlflow v1.0.0",
+    "servers": [
+      {
+        "name": "DEFAULT_SERVER",
+        "dbVendor": "dbvoracle",
+        "supportsCatalogs": true,
+        "supportsSchemas": true,
+        "databases": [
+          {
+            "name": "DEFAULT",
+            "schemas": [
+              {
+                "name": "DEFAULT",
+                "tables": [
+                  {
+                    "id": "95",
+                    "name": "customers",
+                    "displayName": "customers",
+                    "type": "table",
+                    "columns": [
+                      {
+                        "id": "96",
+                        "name": "credit_limit",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 21
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 35
+                          }
+                        ]
+                      },
+                      {
+                        "id": "97",
+                        "name": "cust_email",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 40
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 52
+                          }
+                        ]
+                      },
+                      {
+                        "id": "98",
+                        "name": "customer_id",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 33,
+                            "y": 23
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 33,
+                            "y": 36
+                          }
+                        ]
+                      }
+                    ],
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 32,
+                        "y": 16
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 32,
+                        "y": 27
+                      }
+                    ]
+                  },
+                  {
+                    "id": "75",
+                    "name": "large_orders",
+                    "displayName": "large_orders",
+                    "type": "table",
+                    "columns": [
+                      {
+                        "id": "74",
+                        "name": "RelationRows",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 26,
+                            "y": 8
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 26,
+                            "y": 20
+                          }
+                        ],
+                        "source": "system",
+                        "uiVisible": false
+                      },
+                      {
+                        "id": "124",
+                        "name": "cem",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 53
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 56
+                          }
+                        ]
+                      },
+                      {
+                        "id": "138",
+                        "name": "cid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 27,
+                            "y": 27
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 27,
+                            "y": 30
+                          }
+                        ]
+                      },
+                      {
+                        "id": "123",
+                        "name": "cl",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 36
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 38
+                          }
+                        ]
+                      },
+                      {
+                        "id": "135",
+                        "name": "oid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 27,
+                            "y": 11
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 27,
+                            "y": 14
+                          }
+                        ]
+                      },
+                      {
+                        "id": "136",
+                        "name": "ottl",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 27,
+                            "y": 16
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 27,
+                            "y": 20
+                          }
+                        ]
+                      },
+                      {
+                        "id": "137",
+                        "name": "sid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 27,
+                            "y": 22
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 27,
+                            "y": 25
+                          }
+                        ]
+                      }
+                    ],
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 26,
+                        "y": 8
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 26,
+                        "y": 20
+                      }
+                    ]
+                  },
+                  {
+                    "id": "67",
+                    "name": "medium_orders",
+                    "displayName": "medium_orders",
+                    "type": "table",
+                    "columns": [
+                      {
+                        "id": "66",
+                        "name": "RelationRows",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 23,
+                            "y": 8
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 23,
+                            "y": 21
+                          }
+                        ],
+                        "source": "system",
+                        "uiVisible": false
+                      },
+                      {
+                        "id": "118",
+                        "name": "cem",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 53
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 56
+                          }
+                        ]
+                      },
+                      {
+                        "id": "142",
+                        "name": "cid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 24,
+                            "y": 27
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 24,
+                            "y": 30
+                          }
+                        ]
+                      },
+                      {
+                        "id": "117",
+                        "name": "cl",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 36
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 38
+                          }
+                        ]
+                      },
+                      {
+                        "id": "139",
+                        "name": "oid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 24,
+                            "y": 11
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 24,
+                            "y": 14
+                          }
+                        ]
+                      },
+                      {
+                        "id": "140",
+                        "name": "ottl",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 24,
+                            "y": 16
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 24,
+                            "y": 20
+                          }
+                        ]
+                      },
+                      {
+                        "id": "141",
+                        "name": "sid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 24,
+                            "y": 22
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 24,
+                            "y": 25
+                          }
+                        ]
+                      }
+                    ],
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 23,
+                        "y": 8
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 23,
+                        "y": 21
+                      }
+                    ]
+                  },
+                  {
+                    "id": "87",
+                    "name": "orders",
+                    "displayName": "orders",
+                    "type": "table",
+                    "columns": [
+                      {
+                        "id": "89",
+                        "name": "customer_id",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 24
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 37
+                          }
+                        ]
+                      },
+                      {
+                        "id": "88",
+                        "name": "order_id",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 8
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 18
+                          }
+                        ]
+                      },
+                      {
+                        "id": "90",
+                        "name": "order_total",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 43
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 56
+                          }
+                        ]
+                      },
+                      {
+                        "id": "91",
+                        "name": "sales_rep_id",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 1
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 15
+                          }
+                        ]
+                      }
+                    ],
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 32,
+                        "y": 6
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 32,
+                        "y": 14
+                      }
+                    ]
+                  },
+                  {
+                    "id": "58",
+                    "name": "small_orders",
+                    "displayName": "small_orders",
+                    "type": "table",
+                    "columns": [
+                      {
+                        "id": "57",
+                        "name": "RelationRows",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 20,
+                            "y": 8
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 20,
+                            "y": 20
+                          }
+                        ],
+                        "source": "system",
+                        "uiVisible": false
+                      },
+                      {
+                        "id": "112",
+                        "name": "cem",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 53
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 56
+                          }
+                        ]
+                      },
+                      {
+                        "id": "134",
+                        "name": "cid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 21,
+                            "y": 27
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 21,
+                            "y": 30
+                          }
+                        ]
+                      },
+                      {
+                        "id": "111",
+                        "name": "cl",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 36
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 38
+                          }
+                        ]
+                      },
+                      {
+                        "id": "131",
+                        "name": "oid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 21,
+                            "y": 14
+                          }
+                        ]
+                      },
+                      {
+                        "id": "132",
+                        "name": "ottl",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 21,
+                            "y": 16
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 21,
+                            "y": 20
+                          }
+                        ]
+                      },
+                      {
+                        "id": "133",
+                        "name": "sid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 21,
+                            "y": 22
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 21,
+                            "y": 25
+                          }
+                        ]
+                      }
+                    ],
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 20,
+                        "y": 8
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 20,
+                        "y": 20
+                      }
+                    ]
+                  },
+                  {
+                    "id": "83",
+                    "name": "special_orders",
+                    "displayName": "special_orders",
+                    "type": "table",
+                    "columns": [
+                      {
+                        "id": "82",
+                        "name": "RelationRows",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 29,
+                            "y": 8
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 29,
+                            "y": 22
+                          }
+                        ],
+                        "source": "system",
+                        "uiVisible": false
+                      },
+                      {
+                        "id": "130",
+                        "name": "cem",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 53
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 56
+                          }
+                        ]
+                      },
+                      {
+                        "id": "126",
+                        "name": "cid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 38
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 41
+                          }
+                        ]
+                      },
+                      {
+                        "id": "129",
+                        "name": "cl",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 36
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 38
+                          }
+                        ]
+                      },
+                      {
+                        "id": "125",
+                        "name": "oid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 19
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 22
+                          }
+                        ]
+                      },
+                      {
+                        "id": "127",
+                        "name": "ottl",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 57
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 61
+                          }
+                        ]
+                      },
+                      {
+                        "id": "128",
+                        "name": "sid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 16
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 19
+                          }
+                        ]
+                      }
+                    ],
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 29,
+                        "y": 8
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 29,
+                        "y": 22
+                      }
+                    ]
+                  }
+                ],
+                "views": [
+                  {
+                    "id": "50",
+                    "name": "vsal",
+                    "displayName": "vsal",
+                    "type": "view",
+                    "columns": [
+                      {
+                        "id": "52",
+                        "name": "\"Department\"",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 3,
+                            "y": 36
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 3,
+                            "y": 48
+                          }
+                        ]
+                      },
+                      {
+                        "id": "53",
+                        "name": "\"Employees\"",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 4,
+                            "y": 36
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 4,
+                            "y": 47
+                          }
+                        ]
+                      },
+                      {
+                        "id": "54",
+                        "name": "\"Salary\"",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 5,
+                            "y": 36
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 5,
+                            "y": 44
+                          }
+                        ]
+                      },
+                      {
+                        "id": "49",
+                        "name": "RelationRows",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 16,
+                            "y": 2
+                          }
+                        ],
+                        "source": "system",
+                        "uiVisible": false
+                      }
+                    ],
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 16,
+                        "y": 2
+                      }
+                    ]
+                  }
+                ],
+                "others": [
+                  {
+                    "id": "100",
+                    "name": "INSERT-SELECT-1",
+                    "displayName": "INSERT-SELECT-1",
+                    "type": "insert-select",
+                    "columns": [
+                      {
+                        "id": "99",
+                        "name": "RelationRows",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 8
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 56
+                          }
+                        ],
+                        "source": "system",
+                        "uiVisible": false
+                      },
+                      {
+                        "id": "106",
+                        "name": "cem",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 40
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 56
+                          }
+                        ]
+                      },
+                      {
+                        "id": "102",
+                        "name": "cid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 24
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 41
+                          }
+                        ]
+                      },
+                      {
+                        "id": "105",
+                        "name": "cl",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 21
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 38
+                          }
+                        ]
+                      },
+                      {
+                        "id": "101",
+                        "name": "oid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 8
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 22
+                          }
+                        ]
+                      },
+                      {
+                        "id": "103",
+                        "name": "ottl",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 43
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 30,
+                            "y": 61
+                          }
+                        ]
+                      },
+                      {
+                        "id": "104",
+                        "name": "sid",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 1
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 31,
+                            "y": 19
+                          }
+                        ]
+                      }
+                    ],
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 30,
+                        "y": 8
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 31,
+                        "y": 56
+                      }
+                    ]
+                  },
+                  {
+                    "id": "24",
+                    "name": "RESULT_OF_A-1",
+                    "displayName": "RESULT_OF_A-1",
+                    "type": "select_list",
+                    "columns": [
+                      {
+                        "id": "23",
+                        "name": "RelationRows",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 11,
+                            "y": 29
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 11,
+                            "y": 30
+                          }
+                        ],
+                        "source": "system",
+                        "uiVisible": false
+                      },
+                      {
+                        "id": "25",
+                        "name": "deptno",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 6,
+                            "y": 18
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 6,
+                            "y": 24
+                          }
+                        ]
+                      },
+                      {
+                        "id": "26",
+                        "name": "num_emp",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 7,
+                            "y": 18
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 7,
+                            "y": 34
+                          }
+                        ]
+                      },
+                      {
+                        "id": "30",
+                        "name": "sal_sum",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 8,
+                            "y": 18
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 8,
+                            "y": 34
+                          }
+                        ]
+                      }
+                    ],
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 11,
+                        "y": 29
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 11,
+                        "y": 30
+                      }
+                    ]
+                  },
+                  {
+                    "id": "35",
+                    "name": "RESULT_OF_B-1",
+                    "displayName": "RESULT_OF_B-1",
+                    "type": "select_list",
+                    "columns": [
+                      {
+                        "id": "34",
+                        "name": "RelationRows",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 15,
+                            "y": 32
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 15,
+                            "y": 33
+                          }
+                        ],
+                        "source": "system",
+                        "uiVisible": false
+                      },
+                      {
+                        "id": "36",
+                        "name": "total_count",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 12,
+                            "y": 18
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 12,
+                            "y": 38
+                          }
+                        ]
+                      },
+                      {
+                        "id": "40",
+                        "name": "total_sal",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 13,
+                            "y": 18
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 13,
+                            "y": 36
+                          }
+                        ]
+                      }
+                    ],
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 15,
+                        "y": 33
+                      }
+                    ]
+                  },
+                  {
+                    "id": "45",
+                    "name": "RS-1",
+                    "displayName": "RS-1",
+                    "type": "select_list",
+                    "columns": [
+                      {
+                        "id": "46",
+                        "name": "\"Department\"",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 3,
+                            "y": 10
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 3,
+                            "y": 48
+                          }
+                        ]
+                      },
+                      {
+                        "id": "47",
+                        "name": "\"Employees\"",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 4,
+                            "y": 10
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 4,
+                            "y": 47
+                          }
+                        ]
+                      },
+                      {
+                        "id": "48",
+                        "name": "\"Salary\"",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 5,
+                            "y": 10
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 5,
+                            "y": 44
+                          }
+                        ]
+                      },
+                      {
+                        "id": "44",
+                        "name": "RelationRows",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 3,
+                            "y": 10
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 5,
+                            "y": 44
+                          }
+                        ],
+                        "source": "system",
+                        "uiVisible": false
+                      }
+                    ],
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 3,
+                        "y": 10
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 5,
+                        "y": 44
+                      }
+                    ]
+                  }
+                ],
+                "processes": [
+                  {
+                    "id": "22",
+                    "name": "Query Create Table-1",
+                    "procedureName": "batchQueries",
+                    "queryHashId": "c7b73401c07136c0134ea030644be362",
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 42,
+                        "y": 1
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 53,
+                        "y": 3
+                      }
+                    ],
+                    "uiVisible": false
+                  },
+                  {
+                    "id": "51",
+                    "name": "Query Create View-1",
+                    "procedureName": "batchQueries",
+                    "queryHashId": "4ef278b9a7850f717990e96aae7a3f43",
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 16,
+                        "y": 2
+                      }
+                    ],
+                    "uiVisible": false
+                  },
+                  {
+                    "id": "63",
+                    "name": "Query Insert-1",
+                    "procedureName": "batchQueries",
+                    "queryHashId": "96cd680daef072c1a4c4b255d830f205",
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 18,
+                        "y": 1
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 33,
+                        "y": 37
+                      }
+                    ],
+                    "uiVisible": false
+                  }
+                ]
+              },
+              {
+                "name": "SCOTT",
+                "tables": [
+                  {
+                    "id": "4",
+                    "name": "dept",
+                    "displayName": "scott.dept",
+                    "type": "table",
+                    "columns": [
+                      {
+                        "id": "5",
+                        "name": "deptno",
+                        "dataType": "number",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 36,
+                            "y": 3
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 36,
+                            "y": 9
+                          }
+                        ],
+                        "primaryKey": true
+                      },
+                      {
+                        "id": "6",
+                        "name": "dname",
+                        "dataType": "varchar2",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 37,
+                            "y": 3
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 37,
+                            "y": 8
+                          }
+                        ]
+                      },
+                      {
+                        "id": "7",
+                        "name": "loc",
+                        "dataType": "varchar2",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 38,
+                            "y": 3
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 38,
+                            "y": 6
+                          }
+                        ]
+                      }
+                    ],
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 35,
+                        "y": 1
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 40,
+                        "y": 3
+                      }
+                    ]
+                  },
+                  {
+                    "id": "11",
+                    "name": "emp",
+                    "displayName": "scott.emp",
+                    "type": "table",
+                    "columns": [
+                      {
+                        "id": "10",
+                        "name": "RelationRows",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 42,
+                            "y": 1
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 53,
+                            "y": 3
+                          }
+                        ],
+                        "source": "system",
+                        "uiVisible": false
+                      },
+                      {
+                        "id": "18",
+                        "name": "comm",
+                        "dataType": "number",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 49,
+                            "y": 3
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 49,
+                            "y": 7
+                          }
+                        ]
+                      },
+                      {
+                        "id": "19",
+                        "name": "deptno",
+                        "dataType": "number",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 50,
+                            "y": 3
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 50,
+                            "y": 9
+                          }
+                        ],
+                        "foreignKey": true
+                      },
+                      {
+                        "id": "12",
+                        "name": "empno",
+                        "dataType": "number",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 43,
+                            "y": 3
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 43,
+                            "y": 8
+                          }
+                        ],
+                        "primaryKey": true
+                      },
+                      {
+                        "id": "13",
+                        "name": "ename",
+                        "dataType": "varchar2",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 44,
+                            "y": 3
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 44,
+                            "y": 8
+                          }
+                        ]
+                      },
+                      {
+                        "id": "16",
+                        "name": "hiredate",
+                        "dataType": "date",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 47,
+                            "y": 3
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 47,
+                            "y": 11
+                          }
+                        ]
+                      },
+                      {
+                        "id": "14",
+                        "name": "job",
+                        "dataType": "varchar2",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 45,
+                            "y": 3
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 45,
+                            "y": 6
+                          }
+                        ]
+                      },
+                      {
+                        "id": "15",
+                        "name": "mgr",
+                        "dataType": "number",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 46,
+                            "y": 3
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 46,
+                            "y": 6
+                          }
+                        ]
+                      },
+                      {
+                        "id": "17",
+                        "name": "sal",
+                        "dataType": "number",
+                        "coordinates": [
+                          {
+                            "hashCode": "0",
+                            "x": 48,
+                            "y": 3
+                          },
+                          {
+                            "hashCode": "0",
+                            "x": 48,
+                            "y": 6
+                          }
+                        ]
+                      }
+                    ],
+                    "coordinates": [
+                      {
+                        "hashCode": "0",
+                        "x": 42,
+                        "y": 1
+                      },
+                      {
+                        "hashCode": "0",
+                        "x": 53,
+                        "y": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "id": "5501",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "140",
+        "column": "OTTL",
+        "parentId": "67",
+        "parentName": "MEDIUM_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 24,
+            "y": 16
+          },
+          {
+            "hashCode": "0",
+            "x": 24,
+            "y": 20
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "103",
+          "column": "OTTL",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 43
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 61
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5502",
+      "type": "fdd",
+      "effectType": "create_view",
+      "target": {
+        "id": "52",
+        "column": "Department",
+        "parentId": "50",
+        "parentName": "VSAL",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 3,
+            "y": 36
+          },
+          {
+            "hashCode": "0",
+            "x": 3,
+            "y": 48
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "46",
+          "column": "Department",
+          "parentId": "45",
+          "parentName": "RS-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 3,
+              "y": 10
+            },
+            {
+              "hashCode": "0",
+              "x": 3,
+              "y": 48
+            }
+          ]
+        }
+      ],
+      "processId": "51"
+    },
+    {
+      "id": "5503",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "141",
+        "column": "SID",
+        "parentId": "67",
+        "parentName": "MEDIUM_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 24,
+            "y": 22
+          },
+          {
+            "hashCode": "0",
+            "x": 24,
+            "y": 25
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "104",
+          "column": "SID",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 1
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 19
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5504",
+      "type": "fdd",
+      "effectType": "create_view",
+      "target": {
+        "id": "53",
+        "column": "Employees",
+        "parentId": "50",
+        "parentName": "VSAL",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 4,
+            "y": 36
+          },
+          {
+            "hashCode": "0",
+            "x": 4,
+            "y": 47
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "47",
+          "column": "Employees",
+          "parentId": "45",
+          "parentName": "RS-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 4,
+              "y": 10
+            },
+            {
+              "hashCode": "0",
+              "x": 4,
+              "y": 47
+            }
+          ]
+        }
+      ],
+      "processId": "51"
+    },
+    {
+      "id": "5505",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "117",
+        "column": "CL",
+        "parentId": "67",
+        "parentName": "MEDIUM_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 36
+          },
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 38
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "105",
+          "column": "CL",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 21
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 38
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5506",
+      "type": "fdd",
+      "effectType": "create_view",
+      "target": {
+        "id": "54",
+        "column": "Salary",
+        "parentId": "50",
+        "parentName": "VSAL",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 5,
+            "y": 36
+          },
+          {
+            "hashCode": "0",
+            "x": 5,
+            "y": 44
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "48",
+          "column": "Salary",
+          "parentId": "45",
+          "parentName": "RS-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 5,
+              "y": 10
+            },
+            {
+              "hashCode": "0",
+              "x": 5,
+              "y": 44
+            }
+          ]
+        }
+      ],
+      "processId": "51"
+    },
+    {
+      "id": "5507",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "118",
+        "column": "CEM",
+        "parentId": "67",
+        "parentName": "MEDIUM_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 53
+          },
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 56
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "106",
+          "column": "CEM",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 40
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 56
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5508",
+      "type": "fdd",
+      "effectType": "select",
+      "target": {
+        "id": "101",
+        "column": "OID",
+        "parentId": "100",
+        "parentName": "INSERT-SELECT-1",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 30,
+            "y": 8
+          },
+          {
+            "hashCode": "0",
+            "x": 30,
+            "y": 22
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "88",
+          "column": "ORDER_ID",
+          "parentId": "87",
+          "parentName": "ORDERS",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 8
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5509",
+      "type": "fdd",
+      "effectType": "select",
+      "target": {
+        "id": "40",
+        "column": "TOTAL_SAL",
+        "parentId": "35",
+        "parentName": "RESULT_OF_B-1",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 13,
+            "y": 18
+          },
+          {
+            "hashCode": "0",
+            "x": 13,
+            "y": 36
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "17",
+          "column": "SAL",
+          "parentId": "11",
+          "parentName": "SCOTT.EMP",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 48,
+              "y": 3
+            },
+            {
+              "hashCode": "0",
+              "x": 48,
+              "y": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5510",
+      "type": "fdd",
+      "effectType": "foreign_key",
+      "target": {
+        "id": "19",
+        "column": "DEPTNO",
+        "parentId": "11",
+        "parentName": "SCOTT.EMP",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 50,
+            "y": 3
+          },
+          {
+            "hashCode": "0",
+            "x": 50,
+            "y": 9
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "5",
+          "column": "DEPTNO",
+          "parentId": "4",
+          "parentName": "SCOTT.DEPT",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 36,
+              "y": 3
+            },
+            {
+              "hashCode": "0",
+              "x": 36,
+              "y": 9
+            }
+          ]
+        }
+      ],
+      "processId": "22"
+    },
+    {
+      "id": "5511",
+      "type": "fdd",
+      "effectType": "select",
+      "target": {
+        "id": "25",
+        "column": "DEPTNO",
+        "parentId": "24",
+        "parentName": "RESULT_OF_A-1",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 6,
+            "y": 18
+          },
+          {
+            "hashCode": "0",
+            "x": 6,
+            "y": 24
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "19",
+          "column": "DEPTNO",
+          "parentId": "11",
+          "parentName": "SCOTT.EMP",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 50,
+              "y": 3
+            },
+            {
+              "hashCode": "0",
+              "x": 50,
+              "y": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5512",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "135",
+        "column": "OID",
+        "parentId": "75",
+        "parentName": "LARGE_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 27,
+            "y": 11
+          },
+          {
+            "hashCode": "0",
+            "x": 27,
+            "y": 14
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "101",
+          "column": "OID",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 8
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 22
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5513",
+      "type": "fdd",
+      "effectType": "select",
+      "target": {
+        "id": "102",
+        "column": "CID",
+        "parentId": "100",
+        "parentName": "INSERT-SELECT-1",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 30,
+            "y": 24
+          },
+          {
+            "hashCode": "0",
+            "x": 30,
+            "y": 41
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "89",
+          "column": "CUSTOMER_ID",
+          "parentId": "87",
+          "parentName": "ORDERS",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 24
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 37
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5514",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "138",
+        "column": "CID",
+        "parentId": "75",
+        "parentName": "LARGE_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 27,
+            "y": 27
+          },
+          {
+            "hashCode": "0",
+            "x": 27,
+            "y": 30
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "102",
+          "column": "CID",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 24
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 41
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5515",
+      "type": "fdd",
+      "effectType": "select",
+      "target": {
+        "id": "103",
+        "column": "OTTL",
+        "parentId": "100",
+        "parentName": "INSERT-SELECT-1",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 30,
+            "y": 43
+          },
+          {
+            "hashCode": "0",
+            "x": 30,
+            "y": 61
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "90",
+          "column": "ORDER_TOTAL",
+          "parentId": "87",
+          "parentName": "ORDERS",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 43
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 56
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5516",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "136",
+        "column": "OTTL",
+        "parentId": "75",
+        "parentName": "LARGE_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 27,
+            "y": 16
+          },
+          {
+            "hashCode": "0",
+            "x": 27,
+            "y": 20
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "103",
+          "column": "OTTL",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 43
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 61
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5517",
+      "type": "fdd",
+      "effectType": "select",
+      "target": {
+        "id": "104",
+        "column": "SID",
+        "parentId": "100",
+        "parentName": "INSERT-SELECT-1",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 1
+          },
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 19
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "91",
+          "column": "SALES_REP_ID",
+          "parentId": "87",
+          "parentName": "ORDERS",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 1
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5518",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "137",
+        "column": "SID",
+        "parentId": "75",
+        "parentName": "LARGE_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 27,
+            "y": 22
+          },
+          {
+            "hashCode": "0",
+            "x": 27,
+            "y": 25
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "104",
+          "column": "SID",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 1
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 19
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5519",
+      "type": "fdd",
+      "effectType": "select",
+      "target": {
+        "id": "105",
+        "column": "CL",
+        "parentId": "100",
+        "parentName": "INSERT-SELECT-1",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 21
+          },
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 38
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "96",
+          "column": "CREDIT_LIMIT",
+          "parentId": "95",
+          "parentName": "CUSTOMERS",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 21
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5520",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "123",
+        "column": "CL",
+        "parentId": "75",
+        "parentName": "LARGE_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 36
+          },
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 38
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "105",
+          "column": "CL",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 21
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 38
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5521",
+      "type": "fdd",
+      "effectType": "select",
+      "target": {
+        "id": "106",
+        "column": "CEM",
+        "parentId": "100",
+        "parentName": "INSERT-SELECT-1",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 40
+          },
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 56
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "97",
+          "column": "CUST_EMAIL",
+          "parentId": "95",
+          "parentName": "CUSTOMERS",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 40
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 52
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5522",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "124",
+        "column": "CEM",
+        "parentId": "75",
+        "parentName": "LARGE_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 53
+          },
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 56
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "106",
+          "column": "CEM",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 40
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 56
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5523",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "125",
+        "column": "OID",
+        "parentId": "83",
+        "parentName": "SPECIAL_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 30,
+            "y": 19
+          },
+          {
+            "hashCode": "0",
+            "x": 30,
+            "y": 22
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "101",
+          "column": "OID",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 8
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 22
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5524",
+      "type": "fdd",
+      "effectType": "select",
+      "target": {
+        "id": "46",
+        "column": "Department",
+        "parentId": "45",
+        "parentName": "RS-1",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 3,
+            "y": 10
+          },
+          {
+            "hashCode": "0",
+            "x": 3,
+            "y": 48
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "25",
+          "column": "DEPTNO",
+          "parentId": "24",
+          "parentName": "RESULT_OF_A-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 6,
+              "y": 18
+            },
+            {
+              "hashCode": "0",
+              "x": 6,
+              "y": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5525",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "131",
+        "column": "OID",
+        "parentId": "58",
+        "parentName": "SMALL_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 21,
+            "y": 11
+          },
+          {
+            "hashCode": "0",
+            "x": 21,
+            "y": 14
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "101",
+          "column": "OID",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 8
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 22
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5526",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "126",
+        "column": "CID",
+        "parentId": "83",
+        "parentName": "SPECIAL_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 30,
+            "y": 38
+          },
+          {
+            "hashCode": "0",
+            "x": 30,
+            "y": 41
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "102",
+          "column": "CID",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 24
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 41
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5527",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "134",
+        "column": "CID",
+        "parentId": "58",
+        "parentName": "SMALL_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 21,
+            "y": 27
+          },
+          {
+            "hashCode": "0",
+            "x": 21,
+            "y": 30
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "102",
+          "column": "CID",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 24
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 41
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5528",
+      "type": "fdd",
+      "effectType": "select",
+      "target": {
+        "id": "47",
+        "column": "Employees",
+        "parentId": "45",
+        "parentName": "RS-1",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 4,
+            "y": 10
+          },
+          {
+            "hashCode": "0",
+            "x": 4,
+            "y": 47
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "26",
+          "column": "NUM_EMP",
+          "parentId": "24",
+          "parentName": "RESULT_OF_A-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 7,
+              "y": 18
+            },
+            {
+              "hashCode": "0",
+              "x": 7,
+              "y": 34
+            }
+          ]
+        },
+        {
+          "id": "36",
+          "column": "TOTAL_COUNT",
+          "parentId": "35",
+          "parentName": "RESULT_OF_B-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 12,
+              "y": 18
+            },
+            {
+              "hashCode": "0",
+              "x": 12,
+              "y": 38
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5529",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "132",
+        "column": "OTTL",
+        "parentId": "58",
+        "parentName": "SMALL_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 21,
+            "y": 16
+          },
+          {
+            "hashCode": "0",
+            "x": 21,
+            "y": 20
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "103",
+          "column": "OTTL",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 43
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 61
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5530",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "127",
+        "column": "OTTL",
+        "parentId": "83",
+        "parentName": "SPECIAL_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 30,
+            "y": 57
+          },
+          {
+            "hashCode": "0",
+            "x": 30,
+            "y": 61
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "103",
+          "column": "OTTL",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 43
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 61
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5531",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "128",
+        "column": "SID",
+        "parentId": "83",
+        "parentName": "SPECIAL_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 16
+          },
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 19
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "104",
+          "column": "SID",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 1
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 19
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5532",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "133",
+        "column": "SID",
+        "parentId": "58",
+        "parentName": "SMALL_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 21,
+            "y": 22
+          },
+          {
+            "hashCode": "0",
+            "x": 21,
+            "y": 25
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "104",
+          "column": "SID",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 1
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 19
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5533",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "129",
+        "column": "CL",
+        "parentId": "83",
+        "parentName": "SPECIAL_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 36
+          },
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 38
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "105",
+          "column": "CL",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 21
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 38
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5534",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "111",
+        "column": "CL",
+        "parentId": "58",
+        "parentName": "SMALL_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 36
+          },
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 38
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "105",
+          "column": "CL",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 21
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 38
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5535",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "130",
+        "column": "CEM",
+        "parentId": "83",
+        "parentName": "SPECIAL_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 53
+          },
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 56
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "106",
+          "column": "CEM",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 40
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 56
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5536",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "112",
+        "column": "CEM",
+        "parentId": "58",
+        "parentName": "SMALL_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 53
+          },
+          {
+            "hashCode": "0",
+            "x": 31,
+            "y": 56
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "106",
+          "column": "CEM",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 40
+            },
+            {
+              "hashCode": "0",
+              "x": 31,
+              "y": 56
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5537",
+      "type": "fdd",
+      "effectType": "select",
+      "target": {
+        "id": "48",
+        "column": "Salary",
+        "parentId": "45",
+        "parentName": "RS-1",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 5,
+            "y": 10
+          },
+          {
+            "hashCode": "0",
+            "x": 5,
+            "y": 44
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "30",
+          "column": "SAL_SUM",
+          "parentId": "24",
+          "parentName": "RESULT_OF_A-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 8,
+              "y": 18
+            },
+            {
+              "hashCode": "0",
+              "x": 8,
+              "y": 34
+            }
+          ]
+        },
+        {
+          "id": "40",
+          "column": "TOTAL_SAL",
+          "parentId": "35",
+          "parentName": "RESULT_OF_B-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 13,
+              "y": 18
+            },
+            {
+              "hashCode": "0",
+              "x": 13,
+              "y": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5538",
+      "type": "fdd",
+      "effectType": "select",
+      "target": {
+        "id": "30",
+        "column": "SAL_SUM",
+        "parentId": "24",
+        "parentName": "RESULT_OF_A-1",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 8,
+            "y": 18
+          },
+          {
+            "hashCode": "0",
+            "x": 8,
+            "y": 34
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "17",
+          "column": "SAL",
+          "parentId": "11",
+          "parentName": "SCOTT.EMP",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 48,
+              "y": 3
+            },
+            {
+              "hashCode": "0",
+              "x": 48,
+              "y": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5539",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "139",
+        "column": "OID",
+        "parentId": "67",
+        "parentName": "MEDIUM_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 24,
+            "y": 11
+          },
+          {
+            "hashCode": "0",
+            "x": 24,
+            "y": 14
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "101",
+          "column": "OID",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 8
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 22
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    },
+    {
+      "id": "5540",
+      "type": "fdd",
+      "effectType": "insert",
+      "target": {
+        "id": "142",
+        "column": "CID",
+        "parentId": "67",
+        "parentName": "MEDIUM_ORDERS",
+        "coordinates": [
+          {
+            "hashCode": "0",
+            "x": 24,
+            "y": 27
+          },
+          {
+            "hashCode": "0",
+            "x": 24,
+            "y": 30
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "102",
+          "column": "CID",
+          "parentId": "100",
+          "parentName": "INSERT-SELECT-1",
+          "coordinates": [
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 24
+            },
+            {
+              "hashCode": "0",
+              "x": 30,
+              "y": 41
+            }
+          ]
+        }
+      ],
+      "processId": "63"
+    }
+  ],
+  "processes": [
+    {
+      "id": "22",
+      "name": "Query Create Table-1",
+      "procedureName": "batchQueries",
+      "queryHashId": "c7b73401c07136c0134ea030644be362",
+      "type": "sstcreatetable",
+      "coordinates": [
+        {
+          "hashCode": "0",
+          "x": 42,
+          "y": 1
+        },
+        {
+          "hashCode": "0",
+          "x": 53,
+          "y": 3
+        }
+      ],
+      "uiVisible": false
+    },
+    {
+      "id": "51",
+      "name": "Query Create View-1",
+      "procedureName": "batchQueries",
+      "queryHashId": "4ef278b9a7850f717990e96aae7a3f43",
+      "type": "sstcreateview",
+      "coordinates": [
+        {
+          "hashCode": "0",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "hashCode": "0",
+          "x": 16,
+          "y": 2
+        }
+      ],
+      "uiVisible": false
+    },
+    {
+      "id": "63",
+      "name": "Query Insert-1",
+      "procedureName": "batchQueries",
+      "queryHashId": "96cd680daef072c1a4c4b255d830f205",
+      "type": "sstinsert",
+      "coordinates": [
+        {
+          "hashCode": "0",
+          "x": 18,
+          "y": 1
+        },
+        {
+          "hashCode": "0",
+          "x": 33,
+          "y": 37
+        }
+      ],
+      "uiVisible": false
+    }
+  ]
+}
+```
+
 And giving that value to the widget:
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
