@@ -44,6 +44,85 @@ The `mysqlflow` is the name of the container. For more information of the contai
 
 Use http://\<your ip>:\<port> to reach sqlflow UI.
 
+## Invoke the SQLFlow API from Docker Container
+
+The SQLFlow API will be available once you have uploaded the license file and get the docker container up running.&#x20;
+
+There's no difference between invoking SQLFlow API from your docker container and from SQLFlow Cloud/On-Premise. Following are some samples to invoke the SQLFlow API from the docker container in Python:
+
+### Generate token
+
+```python
+def getToken(userId, server, port, screctKey):
+    if userId == 'gudu|0123456789':
+        return 'token'
+    url = '/api/gspLive_backend/user/generateToken'
+    if port != '':
+        url = server + ':' + port + url
+    else:
+        url = server + url
+    mapA = {'secretKey': screctKey, 'userId': userId}
+    header_dict = {"Content-Type": "application/x-www-form-urlencoded"}
+
+    try:
+        r = requests.post(url, data=mapA, headers=header_dict)
+    except Exception as e:
+        print('get token failed.', e)
+    result = json.loads(r.text)
+
+    if result['code'] == '200':
+        return result['token']
+    else:
+        print(result['error'])
+
+```
+
+### Upload SQL and Retrieve Lineage in CSV
+
+```python
+def getResult(userId, token, server, port, delimiter, export_include_table, showConstantTable,
+              treatArgumentsInCountFunctionAsDirectDataflow, dbvendor, sqltext, sqlfile):
+    url = "/api/gspLive_backend/sqlflow/generation/sqlflow/exportFullLineageAsCsv"
+    if port != '':
+        url = server + ':' + port + url
+    else:
+        url = server + url
+
+    files = ''
+    if sqlfile != '':
+        if os.path.isdir(sqlfile):
+            print('The SQL file cannot be a directory.')
+            sys.exit(0)
+        files = {'sqlfile': open(sqlfile, 'rb')}
+
+    data = {'dbvendor': dbvendor, 'token': token, 'userId': userId}
+    if delimiter != '':
+        data['delimiter'] = delimiter
+    if export_include_table != '':
+        data['export_include_table'] = export_include_table
+    if showConstantTable != '':
+        data['showConstantTable'] = showConstantTable
+    if treatArgumentsInCountFunctionAsDirectDataflow != '':
+        data['treatArgumentsInCountFunctionAsDirectDataflow'] = treatArgumentsInCountFunctionAsDirectDataflow
+    if sqltext != '':
+        data['sqltext'] = sqltext
+    datastr = json.dumps(data)
+
+    print('start get csv result from sqlflow.')
+    try:
+        if sqlfile != '':
+            response = requests.post(url, data=eval(datastr), files=files)
+        else:
+            response = requests.post(url, data=eval(datastr))
+    except Exception as e:
+        print('get csv result from sqlflow failed.', e)
+        sys.exit(0)
+
+    print('get csv result from sqlflow successful. result : ')
+    print()
+    return response.text
+```
+
 ## Troubleshooting
 
 The following issue only occurs in Centos stream9, we don't foresee the error in Centos 7, Centos stream8, Ubuntu20 or Debian11.
