@@ -77,6 +77,10 @@ def getToken(userId, server, port, screctKey):
 
 ```
 
+{% content-ref url="../../3.-api-docs/sqlflow-rest-api-reference/user-interface.md" %}
+[user-interface.md](../../3.-api-docs/sqlflow-rest-api-reference/user-interface.md)
+{% endcontent-ref %}
+
 ### Upload SQL and Retrieve Lineage in CSV
 
 ```python
@@ -122,6 +126,12 @@ def getResult(userId, token, server, port, delimiter, export_include_table, show
     print()
     return response.text
 ```
+
+{% content-ref url="../../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md" %}
+[sqlflow-generation-sqlflow-exportlineageascsv.md](../../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md)
+{% endcontent-ref %}
+
+Please check our python demo if you need more samples: [https://github.com/sqlparser/sqlflow\_public/blob/master/api/python/basic/getcsv.py](https://github.com/sqlparser/sqlflow\_public/blob/master/api/python/basic/getcsv.py)
 
 ## Troubleshooting
 
