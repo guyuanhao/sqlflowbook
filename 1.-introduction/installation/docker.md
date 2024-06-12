@@ -50,6 +50,72 @@ The SQLFlow API will be available once you have uploaded the license file and ge
 
 There's no difference between invoking SQLFlow API from your docker container and from SQLFlow Cloud/On-Premise. Following are some samples to invoke the SQLFlow API from the docker container in Python:
 
+```python
+# the user id of sqlflow web or client, required true
+userId = ''
+
+# the secret key of sqlflow user for webapi request, required true
+screctKey = ''
+
+# sqlflow server, For the cloud version, the value is https://api.gudusoft.com
+server = 'http://127.0.0.1'
+
+# sqlflow api port, For the cloud version, the value is 80
+port = '8165'
+
+# For the cloud version
+# server = 'https://api.gudusoft.com'
+# port = '80'
+
+# The token is generated from userid and usersecret. It is used in every Api invocation.
+token = GenerateToken.getToken(userId, server, port, screctKey)
+
+# delimiter of the values in CSV, default would be ',' string
+delimiter = ','
+
+# export_include_table, string
+export_include_table = ''
+
+# showConstantTable, boolean
+showConstantTable = 'true'
+
+# Whether treat the arguments in COUNT function as direct Dataflow, boolean
+treatArgumentsInCountFunctionAsDirectDataflow = ''
+
+# database type,
+# dbvazuresql
+# dbvbigquery
+# dbvcouchbase
+# dbvdb2
+# dbvgreenplum
+# dbvhana
+# dbvhive
+# dbvimpala
+# dbvinformix
+# dbvmdx
+# dbvmysql
+# dbvnetezza
+# dbvopenedge
+# dbvoracle
+# dbvpostgresql
+# dbvredshift
+# dbvsnowflake
+# dbvmssql
+# dbvsparksql
+# dbvsybase
+# dbvteradata
+# dbvvertica
+dbvendor = 'dbvoracle'
+
+# sql text
+# sqltext = 'select * from table'
+# data = GenerateLineageParam.buildSqltextParam(userId, token, delimiter, export_include_table, showConstantTable, treatArgumentsInCountFunctionAsDirectDataflow, dbvendor, sqltext)
+# resp = getResult(server, port, data, '')
+
+# sql file
+sqlfile = 'test.sql'
+```
+
 ### Generate token
 
 ```python
