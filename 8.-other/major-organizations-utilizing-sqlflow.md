@@ -19,4 +19,6 @@ SQLFlow has been instrumental in enhancing data governance for a variety of indu
 * [https://www.wellsfargo.com/](https://www.wellsfargo.com/)\
   ![](<../.gitbook/assets/image (11).png>)
 * [https://libertybank.ge/en/](https://libertybank.ge/en/)\
-  ![](../.gitbook/assets/logo-en@2x.png)\
+  ![](../.gitbook/assets/logo-en@2x.png)
+* [https://www.tatrabanka.sk/en/personal/](https://www.tatrabanka.sk/en/personal/)\
+  ![](<../.gitbook/assets/image (30).png>)
