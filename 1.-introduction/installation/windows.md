@@ -90,7 +90,7 @@ SQLFlow will automatically allocate the memory based on the status of the instal
 Open the browser and go to localhost or got to the IP where the SQLFlow is installed.
 
 * Open http://yourIp/ to see the SQLFlow.
-* Open http://yourIp/api/gspLive\_backend/doc.html?lang=en to see the Restful API document.
+* Open http://yourIp/api/gspLive\_backend/doc.html?lang=en to see the Restful API document. (Will need to turn on the doc, check [this page](../../8.-other/faq/#turn-on-the-swagger-doc).)
 
 <figure><img src="../../.gitbook/assets/login.png" alt=""><figcaption></figcaption></figure>
 

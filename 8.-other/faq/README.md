@@ -115,3 +115,11 @@ The root cause of this issue is that some email system could mistakenly rewrite 
 
 Our license file is a text file and some network protectors will trat the license file like part of the email body for scanning purposes.\
 Please reach out to us if you find the license file you receive does not work.
+
+### Q10: Turn on the Swagger Doc
+
+If you need check detailed local Swagger Doc (http://\<yourIp>/api/gspLive\_backend/doc.html?lang=en), please add one extra config flag in the `gspLive.sh/gspLive.bat`:
+
+<figure><img src="../../.gitbook/assets/56aa1062b68235693b7e10316b306df.png" alt=""><figcaption></figcaption></figure>
+
+Add `--swagger.enable=true` to the execution command `nohup` to turn on the Swagger Doc.
