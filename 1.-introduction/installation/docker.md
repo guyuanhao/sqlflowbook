@@ -60,7 +60,7 @@ screctKey = ''
 # sqlflow server, For the cloud version, the value is https://api.gudusoft.com
 server = 'http://127.0.0.1'
 
-# sqlflow api port, For the cloud version, the value is 80
+# sqlflow api port, For the cloud version, the value is 443
 port = '8165'
 
 # For the cloud version
