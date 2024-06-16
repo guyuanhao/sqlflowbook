@@ -118,7 +118,7 @@ Please reach out to us if you find the license file you receive does not work.
 
 ### Q10: Turn on the Swagger Doc
 
-If you need check detailed local Swagger Doc (http://\<yourIp>/api/gspLive\_backend/doc.html?lang=en), please add one extra config flag in the `gspLive.sh/gspLive.bat`:
+If you need to check the detailed local Swagger Doc (http://\<yourIp>/api/gspLive\_backend/doc.html?lang=en), please add one extra config flag in the `gspLive.sh/gspLive.bat`:
 
 <figure><img src="../../.gitbook/assets/56aa1062b68235693b7e10316b306df.png" alt=""><figcaption></figcaption></figure>
 
