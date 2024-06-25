@@ -48,7 +48,11 @@ Use http://\<your ip>:\<port> to reach sqlflow UI.
 
 The SQLFlow API will be available once you have uploaded the license file and get the docker container up running.&#x20;
 
-There's no difference between invoking SQLFlow API from your docker container and from SQLFlow Cloud/On-Premise. Following are some samples to invoke the SQLFlow API from the docker container in Python:
+There's no difference between invoking SQLFlow API from your docker container and from SQLFlow Cloud/On-Premise. **Please check our python demo if you need any samples:**&#x20;
+
+{% embed url="https://github.com/sqlparser/sqlflow_public/tree/master/api/python/basic" %}
+
+Following are some samples to invoke the SQLFlow API from the docker container in Python:
 
 ```python
 # the user id of sqlflow web or client, required true
@@ -217,8 +221,6 @@ def getResult(userId, token, server, port, delimiter, export_include_table, show
 {% content-ref url="../../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md" %}
 [sqlflow-generation-sqlflow-exportlineageascsv.md](../../3.-api-docs/sqlflow-rest-api-reference/generation-interface/sqlflow-generation-sqlflow-exportlineageascsv.md)
 {% endcontent-ref %}
-
-Please check our python demo if you need more samples: [https://github.com/sqlparser/sqlflow\_public/tree/master/api/python/basic](https://github.com/sqlparser/sqlflow\_public/tree/master/api/python/basic)
 
 ## Troubleshooting
 
