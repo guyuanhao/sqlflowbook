@@ -116,6 +116,8 @@ dbvendor = 'dbvoracle'
 sqlfile = 'test.sql'
 ```
 
+[https://github.com/sqlparser/sqlflow\_public/blob/master/api/python/basic/GenerateDataLineageDemo.py](https://github.com/sqlparser/sqlflow\_public/blob/master/api/python/basic/GenerateDataLineageDemo.py)
+
 ### Generate token
 
 ```python
@@ -146,6 +148,25 @@ def getToken(userId, server, port, screctKey):
 {% content-ref url="../../3.-api-docs/sqlflow-rest-api-reference/user-interface.md" %}
 [user-interface.md](../../3.-api-docs/sqlflow-rest-api-reference/user-interface.md)
 {% endcontent-ref %}
+
+### Build Lineage based on SQL text
+
+```python
+def buildSqltextParam(userId, token, delimiter, export_include_table, showConstantTable,
+                      treatArgumentsInCountFunctionAsDirectDataflow, dbvendor, sqltext):
+    data = {'dbvendor': dbvendor, 'token': token, 'userId': userId}
+    if delimiter != '':
+        data['delimiter'] = delimiter
+    if export_include_table != '':
+        data['export_include_table'] = export_include_table
+    if showConstantTable != '':
+        data['showConstantTable'] = showConstantTable
+    if treatArgumentsInCountFunctionAsDirectDataflow != '':
+        data['treatArgumentsInCountFunctionAsDirectDataflow'] = treatArgumentsInCountFunctionAsDirectDataflow
+    if sqltext != '':
+        data['sqltext'] = sqltext
+    return data
+```
 
 ### Upload SQL and Retrieve Lineage in CSV
 
