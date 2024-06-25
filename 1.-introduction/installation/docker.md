@@ -69,7 +69,7 @@ port = '8165'
 
 # For the cloud version
 # server = 'https://api.gudusoft.com'
-# port = '80'
+# port = '443'
 
 # The token is generated from userid and usersecret. It is used in every Api invocation.
 token = GenerateToken.getToken(userId, server, port, screctKey)
