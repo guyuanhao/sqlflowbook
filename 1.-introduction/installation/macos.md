@@ -12,6 +12,8 @@ If you have SQLFlow 5.x installed on your server and would like to upgrade to SQ
 [upgrade.md](upgrade.md)
 {% endcontent-ref %}
 
+Starting from **SQLFlow 6.0**, we have integrate web package into the backend service, **no Frontend installation and nginx configuration is required!**
+
 ### Prerequisites
 
 * [SQLFlow on-premise version](https://www.gudusoft.com/sqlflow-on-premise-version/)
