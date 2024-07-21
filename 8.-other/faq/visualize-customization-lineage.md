@@ -180,3 +180,11 @@ Note that:
 * Ensure the uniqueness of the id. Duplicate id makes error in the syntax.
 
 Please check [https://docs.gudusoft.com/7.-reference/lineage-model](https://docs.gudusoft.com/7.-reference/lineage-model) if more detailed information is required.
+
+### Visualization
+
+Paste the updated lineage mode(Json/XML) in the query editor of the SQLFlow Web and it generates the updated graph:&#x20;
+
+<figure><img src="../../.gitbook/assets/微信图片_20240721100744.png" alt=""><figcaption></figcaption></figure>
+
+You can change the display configuration and export the image files with SQLFlow Web.
