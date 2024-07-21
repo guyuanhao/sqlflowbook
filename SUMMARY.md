@@ -143,6 +143,7 @@
   * [Delete Your Account](8.-other/faq/delete-your-account.md)
   * [Table Form Data Without Intermediates](8.-other/faq/table-form-data-without-intermediates.md)
   * [Not all schema exported from Oracle](8.-other/faq/not-all-schema-exported-from-oracle.md)
+  * [Visualize Customization Lineage](8.-other/faq/visualize-customization-lineage.md)
 * [Roadmap](8.-other/roadmap.md)
 * [SQL Samples](8.-other/sql-samples/README.md)
   * [Exchange table partition](8.-other/sql-samples/exchange-table-partition.md)
