@@ -1,4 +1,4 @@
-# Visualize Customization Lineage
+# Lineage Customization
 
 SQLFlow enables the customization of the data lineage in case users need to build their own visual representaiton of the query making it more comprehensible for non DBA people.
 
@@ -97,7 +97,7 @@ A Json/XML format SQLFlow lineage model is now available:
 
 ### The D**bobjs**&#x20;
 
-`dbobjs` lists all data objects, and it is the data source of relationships. The target and source in relationships are all in the `dbobjs`. You can customize your own lineage by updating this object.
+`dbobjs` lists all data objects, and it is the data source of relationships. The target and source in relationships are all in the `dbobjs`.&#x20;
 
 ```json
 {
@@ -149,7 +149,7 @@ A Json/XML format SQLFlow lineage model is now available:
 
 ### The Relationships
 
-`relationships` has all data lineage relationships. The neighborhoring lineage of each field is regarded as one item. The target and source of each relationship can be found in dbobjs.
+`relationships` has all data lineage relationships. The neighborhoring lineage of each field is regarded as one item. The target and source of each relationship can be found in dbobjs. You can customize your own lineage by updating this object.
 
 ```json
  [
