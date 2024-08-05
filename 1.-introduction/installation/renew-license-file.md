@@ -16,12 +16,16 @@ In case you wish to renew a license before it expires to avoid any impact of use
 /wings/sqlflow/backend/conf
 ```
 
-Please make sure the license has the correct access. You can use&#x20;
+Windows users can find the license file under&#x20;
+
+```
+C:\wings\sqlflow\backend\conf
+```
+
+Please make sure the license has the correct access. You can use the following command to to grant the access for the license file:
 
 ```bash
 sudo chmod 755 gudu_sqlflow_license.txt
 ```
-
-to grant the access for the license file.
 
 Once updated, please restart the SQLFlow.
