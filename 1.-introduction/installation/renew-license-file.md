@@ -4,7 +4,7 @@
 
 If your license file is expired, the following error will pop out:
 
-<figure><img src="../../.gitbook/assets/微信图片_20240805125530.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/微信图片_20240805194951.png" alt=""><figcaption></figcaption></figure>
 
 Please send us the Gudu SQLFlow Id (6 characters in red) and we will send you the renewed license file. Upload the renewd license file by click the "upload license file" link.
 
