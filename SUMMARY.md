@@ -33,6 +33,7 @@
   * [Troubleshooting](1.-introduction/installation/troubleshooting.md)
   * [Upgrade](1.-introduction/installation/upgrade.md)
   * [Third Party Components](1.-introduction/installation/third-party-components.md)
+  * [Renew License File](1.-introduction/installation/renew-license-file.md)
 * [UI](1.-introduction/ui/README.md)
   * [SQLText Editor](1.-introduction/ui/sqltext-editor.md)
   * [Schema Explorer](1.-introduction/ui/schema.md)
