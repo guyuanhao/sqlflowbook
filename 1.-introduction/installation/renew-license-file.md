@@ -12,7 +12,7 @@ Please send us the Gudu SQLFlow Id (6 characters in red) and we will send you th
 
 In case you wish to renew a license before it expires to avoid any impact of use, you can either directly update the license file `gudu_sqlflow_license.txt` or upload the license on the web page.
 
-#### Upload the license on the web
+#### Option1: Upload the license on the web
 
 Click the Information button in the left toolbar:
 
@@ -22,7 +22,7 @@ Upload the new license file with `Upload License File`:
 
 <figure><img src="../../.gitbook/assets/微信图片_20240806215615.png" alt=""><figcaption></figcaption></figure>
 
-#### Replace the license file
+#### Option2: Replace the license file directly
 
 The following folder contains SQLFlow license file:
 
