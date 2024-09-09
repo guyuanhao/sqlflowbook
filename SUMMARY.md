@@ -16,6 +16,7 @@
   * [Basic Usage](1.-introduction/getting-started/basic-usage.md)
   * [Convert SQL to E-R Diagram](1.-introduction/getting-started/convert-sql-to-e-r-diagram.md)
   * [Colors in SQLFlow Diagram](1.-introduction/getting-started/colors-in-sqlflow-diagram.md)
+  * [Show call relationship](1.-introduction/getting-started/show-call-relationship.md)
 * [Installation](1.-introduction/installation/README.md)
   * [Version and Users](1.-introduction/installation/versions/README.md)
     * [Cloud and On-Premise version](1.-introduction/installation/versions/cloud-and-on-premise-version.md)
