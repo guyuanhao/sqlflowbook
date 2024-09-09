@@ -92,7 +92,7 @@ END;
 EXEC GetEmployeeSummary 2;
 ```
 
-This SQL contains a relatively complex case which involves different SQL procedure invocation, multiple procedures and functions get invoked. Using "Show call relationship" brings us following diagram:
+This SQL contains a relatively complex case which involves different SQL procedure invocations, multiple procedures and functions are get invoked. Using "Show call relationship" brings us the following diagram:
 
 <figure><img src="../../.gitbook/assets/29b61854dee2852aded76e90b27fa47.png" alt=""><figcaption></figcaption></figure>
 
