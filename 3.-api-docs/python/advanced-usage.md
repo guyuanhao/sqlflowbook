@@ -8,7 +8,7 @@ You can integerate the python code provided here into your own project and add t
 
 #### 1. interactive data lineage visualizations
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### [2. Data lineage in JSON format](https://github.com/sqlparser/sqlflow\_public/blob/master/api/python/advanced/python-data-lineage-result.json)
 

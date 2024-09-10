@@ -1,6 +1,12 @@
 # Show call relationship
 
-Starting from SQLFlow v6.2.0.6, a new feature called "Show Call Relationship" was introduced, enhancing its SQL procedure analysis capabilities. This feature allows users to **automatically generate a detailed SQL procedure invocation relationship diagram**. By visualizing how different procedures call and interact with each other, users can gain deeper insights into complex stored procedures and their dependencies.
+The "Show Call Relationship" feature allows users to **automatically generate a detailed SQL procedure invocation relationship diagram**. By visualizing how different procedures call and interact with each other, users can gain deeper insights into complex stored procedures and their dependencies.
+
+* In Editor mode, click the following button to get the call relation
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+* Under Job mode, right click the data source and choose "show call relationship" to visualize the invocations
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
