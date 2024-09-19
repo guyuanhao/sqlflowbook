@@ -99,6 +99,8 @@
 * [Python](3.-api-docs/python/README.md)
   * [Basic Usage](3.-api-docs/python/basic-usage.md)
   * [Advanced Usage](3.-api-docs/python/advanced-usage.md)
+* [SQL Parser API](3.-api-docs/sql-parser-api/README.md)
+  * [checkSyntax](3.-api-docs/sql-parser-api/checksyntax.md)
 
 ## 4. SQLFlow Widget
 
