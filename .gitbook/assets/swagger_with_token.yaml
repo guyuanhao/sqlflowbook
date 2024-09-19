@@ -15,7 +15,86 @@ tags:
   description: Sqlflow Generation Apis
 - name: Job Interface
   description: Job Apis
+- name: Syntax Check Interface
+  description: Check Syntax
 paths:
+  /demo/syntax/check:
+    post:
+      tags:
+        - Syntax Check Interface
+      summary: check sql syntax
+      operationId: checkSyntaxUsingPOST_1
+      parameters:
+      - name: dbvendor
+        in: query
+        description: db vendor, allowableValues=dbvansi,dbvathena,dbvazuresql,dbvbigquery,dbvcouchbase,dbvdb2,dbvgreenplum,dbvgaussdb,dbvhana,dbvhive,dbvimpala,dbvinformix,dbvmdx,dbvmysql,dbvnetezza,dbvopenedge,dbvoracle,dbvpresto,dbvpostgresql,dbvredshift,dbvsnowflake,dbvmssql,dbvsparksql,dbvsybase,dbvteradata,dbvvertica
+        required: true
+        schema:
+          type: string
+          enum:
+            - dbvansi
+            - dbvathena
+            - dbvazuresql
+            - dbvbigquery
+            - dbvcouchbase
+            - dbvdb2
+            - dbvgreenplum
+            - dbvgaussdb
+            - dbvhana
+            - dbvhive
+            - dbvimpala
+            - dbvinformix
+            - dbvmdx
+            - dbvmysql
+            - dbvnetezza
+            - dbvopenedge
+            - dbvoracle
+            - dbvpresto
+            - dbvpostgresql
+            - dbvredshift
+            - dbvsnowflake
+            - dbvmssql
+            - dbvsparksql
+            - dbvsybase
+            - dbvteradata
+            - dbvvertica
+      - name: sql
+        in: query
+        description: input sql statement to be checked
+        required: true
+        schema:
+          type: string
+      - name: token
+        in: query
+        required: true
+        description: The token is generated from userid and usersecret. It is used in every Api invocation.
+        schema:
+          type: string
+      - name: userId
+        in: query
+        description: userId
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json;charset=utf-8:
+              schema:
+                type: string
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      security:
+        - Authorization:
+            - global
+      deprecated: false
   /user/generateSecretKey:
     post:
       tags:
@@ -2814,7 +2893,7 @@ paths:
       - Sqlflow Generation Interface
       summary: export sqlflow full lineage as csv format
       description: export sqlflow full lineage as csv format
-      operationId: exportFullLineageAsCsvUsingPOST
+      operationId: exportFullLineageAsCsvUsingPOSTGeneration
       parameters:
       - name: dbvendor
         in: query
