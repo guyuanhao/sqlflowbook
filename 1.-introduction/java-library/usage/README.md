@@ -24,7 +24,7 @@ java -jar gudusoft.dlineage.jar /t mssql /f path_to_sql_file
 /stat: Optional, output the analysis statistic information.
 /tableLineage [/csv]: Optional, output tabel level lineage.
 /csv: Optional, output column level lineage in csv format.
-/t: Option, database type, check following list to see all the support types. The default value is oracle
+/t: Option, database type, check the following list to see all the support types. The default value is oracle
 /o: Optional, write the output stream to the specified file.
 /log: Optional, generate a dataflow.log file to log information.
 /env: Optional, specify a metadata.json to get the database metadata information.
