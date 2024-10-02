@@ -7,7 +7,7 @@ java -jar gudusoft.dlineage.jar /t mssql /f path_to_sql_file
 ```
 
 ```
-"Usage: java -jar gudusoft.dlineage.jar [/f <path_to_sql_file>] [/d <path_to_directory_includes_sql_files>] [/stat] [/s [/topselectlist] [/text] ] [/i] [/ic] [/lof] [/j] [/json] [/traceView] [/t <database type>] [/o <output file path>] [/version] [/env <path_to_metadata.json>] [/tableLineage [/csv]] [/transform [/coor]]");
+Usage: java -jar gudusoft.dlineage.jar [/f <path_to_sql_file>] [/d <path_to_directory_includes_sql_files>] [/stat] [/s [/topselectlist] [/text] ] [/i] [/ic] [/lof] [/j] [/json] [/traceView] [/t <database type>] [/o <output file path>] [/version] [/env <path_to_metadata.json>] [/tableLineage [/csv]] [/transform [/coor]]
 
 /f: Optional, the full path to SQL file.
 /d: Optional, the full path to the directory includes the SQL files.
