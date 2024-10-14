@@ -9,6 +9,7 @@
   * [Sign up a new account](1.-introduction/getting-started/sign-up-a-new-account/README.md)
     * [Team Management](1.-introduction/getting-started/sign-up-a-new-account/team-management.md)
     * [Delete My Account](1.-introduction/getting-started/sign-up-a-new-account/delete-my-account.md)
+    * [Activate by entering a coupon](1.-introduction/getting-started/sign-up-a-new-account/activate-by-entering-a-coupon.md)
   * [How to use SQLFlow](1.-introduction/getting-started/how-to-use-sqlflow.md)
   * [Different modes in Gudu SQLFlow](1.-introduction/getting-started/different-modes-in-gudu-sqlflow/README.md)
     * [Query mode](1.-introduction/getting-started/different-modes-in-gudu-sqlflow/query-mode.md)
