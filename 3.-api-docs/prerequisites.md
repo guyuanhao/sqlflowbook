@@ -10,7 +10,7 @@ In order to use the SQLFlow rest API, you may connect to the [**SQLFlow Cloud se
 
 ### **Generate Account Secret**
 
-If you want to connect to [the SQLFlow Cloud Server](https://sqlflow.gudusoft.com), you may [request a 30 days premium account](https://www.gudusoft.com/request-a-premium-account/) to get the necessary userId and secret code.
+If you want to connect to [the SQLFlow Cloud Server](https://sqlflow.gudusoft.com), you may [request a 3 days premium account](https://www.gudusoft.com/request-a-premium-account/) to get the necessary userId and secret code.
 
 Once getting the premium account or if you are using SQLFlow On-Premise, please click the icon at the right top of the screen:
 
