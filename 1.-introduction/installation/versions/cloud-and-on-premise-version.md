@@ -28,4 +28,4 @@ password: user
 
 Check [here](../../../3.-api-docs/prerequisites.md#difference-between-using-sqlflow-cloud-server-and-sqlflow-on-premise-version) to understand the difference between SQLFlow Cloud and SQLFlow On-Premise. Check [this page](../../../3.-api-docs/using-the-rest-api.md#1.-generate-a-token) for how to generate the token required by Api invocations.
 
-**Hint: The default license supports maximum 50 users by default. If you need SQLFlow to support more users, please contact support@gudusoft.com**
+**Hint: The default license supports up to 50 users by default. If you need SQLFlow to support more users, please contact support@gudusoft.com**
