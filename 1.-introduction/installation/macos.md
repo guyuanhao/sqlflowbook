@@ -23,7 +23,7 @@ Starting from **SQLFlow 6.0**, we have integrated web packages into the backend 
 
 ### Setup Environment
 
-* [Java setup environment link](https://mkyong.com/java/how-to-set-java\_home-environment-variable-on-mac-os-x/)
+* [Java setup environment link](https://mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/)
 
 ```
 # setup java environment
@@ -87,7 +87,7 @@ chmod +x /wings/sqlflow/backend/bin
 sqlflow provides several options to control the service analysis logic. Open the sqlservice configuration file(**conf/gudu\_sqlflow.conf**)
 
 * **user\_token\_expire\_hours**: default value is 24. User can customize the TTL of the token by setting this field. In case user\_token\_expire\_hours less than or equals to 0, the user token would never expire.&#x20;
-* **ignore\_user\_token**: default value is false, token auth is skipped in case the value is set to true.
+* **ignore\_user\_token**: default value is false, token auth is skipped in case the value is set to true. When the `ignore_user_token` option is turned on, users are no longer required to login and account icon will disappear. As a result, the system does not enforce team management since any user can access it without authentication.
 * **relation\_limit**: default value is 1000. When the count of selected object relations is greater than relation\_limit, sqlflow will fallback to the simple mode, ignore all the record sets. If the relations of simple mode are still greater than relation\_limit, sqlflow will only show the summary information.
 * **big\_sql\_size**: default value is 4096. If the sql length is greater than big\_sql\_size, sqlflow submit the sql in the work queue and execute it. If the work queue is full, sqlflow throws an exception and returns error message "Sorry, the service is busy. Please try again later."
 
@@ -170,7 +170,7 @@ To login, please check the following default user credentials:
 
 ### SQLFlow client api call
 
-See [sqlflow client api call](https://github.com/sqlparser/sqlflow\_public/blob/master/api/sqlflow\_api\_full.md#webapi)
+See [sqlflow client api call](https://github.com/sqlparser/sqlflow_public/blob/master/api/sqlflow_api_full.md#webapi)
 
 * Get userId from the account profile page and generate the secrete key
 
