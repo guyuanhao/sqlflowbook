@@ -125,3 +125,31 @@ If you need to check the detailed local Swagger Doc (http://\<yourIp>/api/gspLiv
 <figure><img src="../../.gitbook/assets/56aa1062b68235693b7e10316b306df.png" alt=""><figcaption></figcaption></figure>
 
 Add `--swagger.enable=true` to the execution command `nohup` to turn on the Swagger Doc.
+
+### Q11: Avoid memory issue&#x20;
+
+If the SQLFlow jobs end failure because of any OOM issue, you may try the following three approaches:
+
+* Assigning more memory to SQLFlow
+
+Please check this page for the detail: [https://docs.gudusoft.com/1.-introduction/installation/linux#start-backend-services](https://docs.gudusoft.com/1.-introduction/installation/linux#start-backend-services)
+
+* Restricting memory usage
+
+Update the `gudu_sqlflow.conf` file:
+
+```
+# Execution amount, the larger the value, the more memory is occupied
+parallel=1
+# Split SQL, Unit MB, default 20MB
+# The larger the value, the more memory SQLFlow occupies
+split_sql_size=5
+```
+
+The smaller above values ​​are, the slower the job execution will be.
+
+* Enable parallel mode
+
+Turning on the parallel mode makes each SQL statement be executed separately which reduces memory usage.
+
+<figure><img src="../../.gitbook/assets/074b25ea9301b828a1dbdb9badcde48.png" alt=""><figcaption></figcaption></figure>
