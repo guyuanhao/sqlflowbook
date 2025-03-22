@@ -126,7 +126,7 @@ If you need to check the detailed local Swagger Doc (http://\<yourIp>/api/gspLiv
 
 Add `--swagger.enable=true` to the execution command `nohup` to turn on the Swagger Doc.
 
-### Q11: Reduce memory usage&#x20;
+### Q11: Avoid memory issues&#x20;
 
 In case the SQLFlow jobs end failure for any memory issues, you may try the following approaches:
 
