@@ -11,8 +11,8 @@ SQLFlow Job mode is dedicated for handling large amounts of SQL Scripts or direc
 
 There are two job types:
 
-* Simple Job
-* Regular Job
+* **Simple Job (Standard Job)**
+* **Regular Job (Incremental Job)**
 
 &#x20;
 

@@ -12,7 +12,9 @@ Job source can be from one of the following sources:
 
 Check our [Ingester tool](../../../6.-sqlflow-ingester/introduction/) if you would like to take this approach but don't have any compatible sql metadata file.
 
-<figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-04 21-56-01.png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="../../../.gitbook/assets/微信图片_20250407105331.png" alt=""><figcaption></figcaption></figure>
 
 Read more about the `setting` section [here](./#configurable-parameters).
 
@@ -22,7 +24,7 @@ Read more about the `setting` section [here](./#configurable-parameters).
 
 `from database`: SQLFLow is able to directly read information from the database server and analyze your data lineage. Connection information is required in this mode.
 
-<figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-04 22-09-25.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/微信截图_20250407105447.png" alt=""><figcaption></figcaption></figure>
 
 Read more about the `setting` section [here](./#configurable-parameters).
 

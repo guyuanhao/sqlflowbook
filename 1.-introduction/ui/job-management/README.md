@@ -53,7 +53,7 @@ Give the default value for server/database/schema when there's no related metada
 
 Choose the Job type when creating the Job. Read more on the [Job type](../../getting-started/different-modes-in-gudu-sqlflow/job-mode.md).
 
-<figure><img src="../../../.gitbook/assets/Screenshot from 2022-11-01 21-04-21.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/微信截图_20250407110022.png" alt=""><figcaption></figcaption></figure>
 
 ### Advanced
 
