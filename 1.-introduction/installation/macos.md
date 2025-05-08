@@ -70,9 +70,11 @@ upload your backend and frontend file to `sqlflow` folder, like this :
     │   │   └── gudu_sqlflow.conf
     │   └── lib
     │       ├── eureka.jar
+    │       ├── gsp.jar
     │       ├── gspLive.jar
     │       ├── sqlservice.jar
     │       └── taskscheduler.jar
+    
 
 ```
 
@@ -178,9 +180,9 @@ See [sqlflow client api call](https://github.com/sqlparser/sqlflow_public/blob/m
 
 * Generate token by invoking the token generate API
 
-{% swagger src="../../.gitbook/assets/swagger_with_token.yaml" path="/user/generateToken" method="post" %}
+{% openapi src="../../.gitbook/assets/swagger_with_token.yaml" path="/user/generateToken" method="post" %}
 [swagger_with_token.yaml](../../.gitbook/assets/swagger_with_token.yaml)
-{% endswagger %}
+{% endopenapi %}
 
 ```bash
 curl --location --request POST 'http://localhost:8165/api/gspLive_backend/user/generateToken?userId=%3CUSER_ID%3E&secretKey=%3CSECRET_KEY%3E' \
