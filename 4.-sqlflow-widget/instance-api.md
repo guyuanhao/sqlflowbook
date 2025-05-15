@@ -3699,7 +3699,8 @@ $(async () => {
         width: 1000,
         height: 400,
         apiPrefix: 'http://xxx.com/api',
-        token: '', // input your token
+        token: '', // input your token,
+        userId: '21232f297a57a5a743894a0e4a801fc3'//in case using token free mode, this is an admin id, static value
     });
 
     // set dbvendor property
@@ -3755,7 +3756,8 @@ $(async () => {
         width: 1000,
         height: 400,
         apiPrefix: 'http://xxx.com/api',
-        token: '', // input your token
+        token: '', // input your token,
+        userId: '21232f297a57a5a743894a0e4a801fc3'//in case using token free mode, this is an admin id, static value
     });
 
     // set dbvendor property
@@ -3886,7 +3888,8 @@ $(async () => {
         width: 1000,
         height: 800,
         apiPrefix: 'http://xxx.com/api',
-        token: '', // input your token
+        token: '', // input your token,
+        userId: '21232f297a57a5a743894a0e4a801fc3'//in case using token free mode, this is an admin id, static value
     });
 
     // set dbvendor property
@@ -3959,7 +3962,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 width: 1000,
                 height: 315,
                 apiPrefix: 'http://xxx.com/api',
-                token: '', // input your token
+                token: '', // input your token,
+        userId: '21232f297a57a5a743894a0e4a801fc3'//in case using token free mode, this is an admin id, static value
             });
 
             // set dbvendor property
@@ -4019,7 +4023,8 @@ $(async () => {
         width: 1000,
         height: 400,
         apiPrefix: 'http://xxx.com/api',
-        token: '', // input your token
+        token: '', // input your token,
+        userId: '21232f297a57a5a743894a0e4a801fc3'//in case using token free mode, this is an admin id, static value
     });
 
     // set dbvendor property
