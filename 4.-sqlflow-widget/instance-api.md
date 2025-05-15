@@ -23,7 +23,8 @@ $(async () => {
         width: 1000,
         height: 315,
         apiPrefix: 'http://xxx.com/api',
-        token: '', // input your token
+        token: '', // input your token,
+        userId: '21232f297a57a5a743894a0e4a801fc3'//in case using token free mode, this is an admin id, static value
     });
 
     // set dbvendor property
@@ -72,7 +73,7 @@ $(async () => {
         width: 1000,
         height: 800,
         apiPrefix: 'http://xxx.com/api',
-        userId: <userId>
+        userId: '21232f297a57a5a743894a0e4a801fc3'//in case using token free mode, this is an admin id, static value
     });
 
     // view job detail by job id, or leave it empty to view the latest job
@@ -106,6 +107,7 @@ $(async () => {
         width: 1000,
         height: 700,
         apiPrefix: 'http://xxx.com/api',
+        userId: '21232f297a57a5a743894a0e4a801fc3'//in case using token free mode, this is an admin id, static value
     });
 
     // view job detail by job id, or leave it empty to view the latest job
@@ -156,6 +158,7 @@ $(async () => {
         height: 800,
         apiPrefix: 'http://xxx.com/api',
         token: '', // input your token
+        userId: '21232f297a57a5a743894a0e4a801fc3'//in case using token free mode, this is an admin id, static value
     });
 
     const visualize = async () => {
@@ -221,6 +224,7 @@ $(async () => {
         height: 800,
         apiPrefix: 'http://xxx.com/api',
         token: '', // input your token
+        userId: '21232f297a57a5a743894a0e4a801fc3'//in case using token free mode, this is an admin id, static value
     });
 
     // set dbvendor property
