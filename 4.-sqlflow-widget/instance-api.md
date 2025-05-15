@@ -72,6 +72,7 @@ $(async () => {
         width: 1000,
         height: 800,
         apiPrefix: 'http://xxx.com/api',
+        userId: 'gudu|0123456789'
     });
 
     // view job detail by job id, or leave it empty to view the latest job
@@ -3816,13 +3817,13 @@ To match `mio.public.usecase_na_mio004_infohubview006` with base string `mio.pub
 
 The regex expression should be: `mio.public.usecase_na_mio004_infohub.*`
 
-![](https://foruda.gitee.com/images/1676387254568489058/34f24b0f\_1228015.png)
+![](https://foruda.gitee.com/images/1676387254568489058/34f24b0f_1228015.png)
 
 `.` matches any single character, \* matches the preceding element zero or more times(in this case, it can be any character).
 
 we cannot use `mio.public.usecase_na_mio004_infohub.？` to match because `?` indicates only zero or one occurrences of the preceding element, it is not a exact match:
 
-![](https://foruda.gitee.com/images/1676387786494834978/5084551f\_1228015.png)
+![](https://foruda.gitee.com/images/1676387786494834978/5084551f_1228015.png)
 
 **Use Regex Expression in stopat:**
 
