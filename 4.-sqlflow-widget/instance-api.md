@@ -72,7 +72,7 @@ $(async () => {
         width: 1000,
         height: 800,
         apiPrefix: 'http://xxx.com/api',
-        userId: 'gudu|0123456789'
+        userId: <userId>
     });
 
     // view job detail by job id, or leave it empty to view the latest job
