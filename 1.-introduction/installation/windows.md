@@ -102,6 +102,18 @@ To login, please check the following default user credentials:
 [cloud-and-on-premise-version.md](versions/cloud-and-on-premise-version.md)
 {% endcontent-ref %}
 
+### Gudu SQLFlow License file
+
+If this is the first time you setup the Gudu SQLFlow on a new machine, then, you will see this license UI:&#x20;
+
+<figure><img src="../../.gitbook/assets/gudu-sqlflow-license.png" alt=""><figcaption></figcaption></figure>
+
+1. You send us the Gudu SQLFlow Id (6 characters in red).
+2. We will generate three license files for you based on this id.
+3. You upload the license file by click the "upload license file" link.
+
+SQLFlow's official On-Prem license includes three separate files, each designated for **production, development, and testing environments**.&#x20;
+
 ### Stop the SQLFlow
 
 * close the window where the backend.bat is running.
@@ -118,9 +130,9 @@ See [sqlflow client api call](https://github.com/sqlparser/sqlflow_public/blob/m
 
 * Generate token by invoking the token generate API
 
-{% swagger src="../../.gitbook/assets/swagger_with_token.yaml" path="/user/generateToken" method="post" %}
+{% openapi src="../../.gitbook/assets/swagger_with_token.yaml" path="/user/generateToken" method="post" %}
 [swagger_with_token.yaml](../../.gitbook/assets/swagger_with_token.yaml)
-{% endswagger %}
+{% endopenapi %}
 
 ```bash
 curl --location --request POST 'http://localhost:8165/api/gspLive_backend/user/generateToken?userId=%3CUSER_ID%3E&secretKey=%3CSECRET_KEY%3E' \

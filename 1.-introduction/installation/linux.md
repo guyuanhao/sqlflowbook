@@ -167,8 +167,10 @@ If this is the first time you setup the Gudu SQLFlow on a new machine, then, you
 <figure><img src="../../.gitbook/assets/gudu-sqlflow-license.png" alt=""><figcaption></figcaption></figure>
 
 1. You send us the Gudu SQLFlow Id (6 characters in red).
-2. We will generate a license file for you based on this id.
+2. We will generate three license files for you based on this id.
 3. You upload the license file by click the "upload license file" link.
+
+SQLFlow's official On-Prem license includes three separate files, each designated for **production, development, and testing environments**.&#x20;
 
 ### Backend Services Configuration
 
